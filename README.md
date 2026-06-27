@@ -34,6 +34,7 @@ Governance documents:
 - [CLINICAL_BOUNDARY.md](CLINICAL_BOUNDARY.md)
 - [CLAIM_POLICY.md](CLAIM_POLICY.md)
 - [SOURCE_POLICY.md](SOURCE_POLICY.md)
+- [CONTENT_PRODUCTION_POLICY.md](CONTENT_PRODUCTION_POLICY.md)
 - [INTERFACE_THESIS.md](INTERFACE_THESIS.md)
 - [BUYER_LOGIC.md](BUYER_LOGIC.md)
 - [MONETIZATION_BOUNDARY.md](MONETIZATION_BOUNDARY.md)
@@ -53,6 +54,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\foundation_integri
 ```
 
 The gate checks required governance files, README links, the Sprint 0 decision, clinical boundary references, high-risk phrase context, and broken internal Markdown links.
+
+Sprint 1 content must also follow [CONTENT_PRODUCTION_POLICY.md](CONTENT_PRODUCTION_POLICY.md). Content is not page filling. Content is layered reference infrastructure by audience.
 
 ## Methodology
 

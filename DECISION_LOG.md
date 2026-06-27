@@ -30,9 +30,33 @@ Integrity:
 - Sprint 0A adds a foundation integrity gate before Sprint 1.
 - Governance documents must remain linked, internally consistent, and clinically bounded.
 
+## DEC-002 - Sprint 1 content must be layered reference infrastructure
+
+Decision:
+
+**Sprint 1 content is not page filling. It is layered reference infrastructure by audience.**
+
+Every public page must be useful to a human, legible to an AI system, credible to a specialist, and strategically meaningful to a buyer.
+
+Date: 2026-06-27
+
+Rationale:
+
+- Ketonemia.com must not produce generic articles.
+- A single page can serve multiple audiences only if it has a governed reference core and explicit depth layers.
+- The public surface must prove category authority without content inflation.
+- Source discipline, clinical boundary language, internal linking, and AI-readable summaries must be part of page production from the beginning.
+
+Consequences:
+
+- Sprint 1 is renamed "Public Reference Surface v1 with Layered Content Depth."
+- Every Sprint 1 page must answer the five content production questions before being built.
+- Every Sprint 1 page must include definition, category role, nearby-concept distinctions, context, interpretation limits, internal links, source support or placeholders, AI-readable summary, and audience notes.
+- Shallow "What is X?" pages, repeated ideas, unsupported medical claims, keto hype, and pages without reference or buyer logic are prohibited.
+
 ## Open Decisions
 
 - Which sources become the first official source index?
-- Which eight Sprint 1 pages ship first?
+- Which source placeholders should be accepted for Sprint 1 before full citations are collected?
 - What exact fields belong in the first AI Reference Pack?
 - What is the minimum viable Blood Ketone Signal Map interaction?

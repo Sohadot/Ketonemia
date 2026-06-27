@@ -31,6 +31,16 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Does it have a unique strategic purpose?
 - Does it link into the category graph?
 
+## Content Production Gate
+
+- What reference idea does this page prove?
+- Which audience layer does it serve?
+- What depth level is required?
+- Which claims require sources?
+- How does the page link back into the Ketonemia category rather than standing alone?
+- Does the page include a clear definition, interpretation limits, internal links, source placeholders or citations, an AI-readable summary, and audience notes?
+- Is the page useful to a human, legible to an AI system, credible to a specialist, and strategically meaningful to a buyer?
+
 ## Interface Gate
 
 - Does the interface embody signal -> context -> boundary?

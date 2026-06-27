@@ -41,9 +41,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\foundation_integri
 
 Status: complete as a local verification script.
 
-## Sprint 1 - Public Reference Surface
+## Sprint 1 - Public Reference Surface v1 with Layered Content Depth
 
-Goal: launch a small, high-trust reference surface.
+Goal: convert governance into a small, high-trust, public reference surface without content inflation.
 
 Initial pages:
 
@@ -63,6 +63,10 @@ Requirements:
 - canonical internal links;
 - no thin pages;
 - no diagnosis language.
+- every page must answer the five content production questions;
+- every page must include an AI-readable summary;
+- every page must include audience notes;
+- every page must serve a defined reference layer and buyer or category logic.
 
 ## Sprint 2 - Signal Map Interface
 

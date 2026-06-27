@@ -12,6 +12,7 @@ $requiredFiles = @(
     "CLINICAL_BOUNDARY.md",
     "CLAIM_POLICY.md",
     "SOURCE_POLICY.md",
+    "CONTENT_PRODUCTION_POLICY.md",
     "INTERFACE_THESIS.md",
     "BUYER_LOGIC.md",
     "MONETIZATION_BOUNDARY.md",
