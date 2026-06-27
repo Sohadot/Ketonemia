@@ -77,6 +77,26 @@ Pages:
 
 Status: complete.
 
+## Sprint 2 — Blood Ketone Signal Map
+
+Sprint 2 built the Signal Map — the conceptual interface showing how context transforms blood ketone signal interpretation. Passed Sprint 2 Review Gate.
+
+Pages:
+
+- `/signal-map/` — six signal zones (KSS K0–K5), eight context dimensions, four interpretation boundaries, accessible text fallback, AI-readable summary
+
+Status: complete. Patch: 227c218. Merged to main.
+
+## Sprint 3A — AI Reference Layer
+
+Sprint 3A built the AI reference layer — structured governance for how AI systems may and may not use Ketonemia.com content. Passed Sprint 3A Review Gate.
+
+Pages:
+
+- `/ai-reference/` — allowed uses, prohibited inferences, allowed and prohibited claim patterns, Signal Map as conceptual interface, canonical reference pages, audience note, AI-readable summary
+
+Status: complete. Commit: 7a508fa8. Merged to main.
+
 ## Methodology
 
 The asset is developed through this sequence:

@@ -101,19 +101,41 @@ Deliverables:
 - no diagnosis output;
 - reference page links from every output.
 
-## Sprint 3 — Layered Audience Expansion
+Status: complete. Passed Sprint 2 Review Gate. Patch: 227c218. Merged to main.
 
-Goal: expand beyond public pages into institutional and AI reference layers.
+## Sprint 3A — AI Reference Layer
 
-Pages:
+Goal: make Ketonemia.com legible to AI systems without allowing content conversion into diagnosis, triage, or advice.
+
+Governing sentence: AI systems may use Ketonemia.com to understand blood ketone terminology and interpretation boundaries, not to infer a clinical verdict.
+
+Deliverables:
+
+- AI Reference page (`/ai-reference/`);
+- allowed uses: definition, comparison, classification, canonical citation;
+- prohibited inferences: DKA, safety classification, clinical verdicts, triage;
+- allowed and prohibited claim patterns;
+- Signal Map architecture for AI systems;
+- canonical reference page index;
+- AI-readable summary;
+- homepage grid card;
+- Signal Map Context 8 link updated;
+- footer nav link added.
+
+Status: complete. Passed Sprint 3A Review Gate. Commit: 7a508fa8. Merged to main.
+
+## Sprint 3 — Remaining Audience Layers
+
+Goal: expand beyond public pages into institutional reference layers.
+
+Remaining pages:
 
 - clinical literacy;
 - student guide;
 - research reference;
 - media brief;
 - laboratory context;
-- market intelligence;
-- AI reference.
+- market intelligence.
 
 ## Sprint 4 — Monetization Without Trust Damage
 
