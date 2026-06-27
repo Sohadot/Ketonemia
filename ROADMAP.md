@@ -19,6 +19,28 @@ Deliverables:
 
 Status: complete as foundation documents.
 
+## Sprint 0A - Foundation Integrity Gate
+
+Goal: turn the Sprint 0 foundation into a verifiable contract before public pages are built.
+
+Deliverables:
+
+- required governance file check;
+- README governance link check;
+- DEC-001 decision check;
+- clinical boundary presence check;
+- claim and source policy presence check;
+- high-risk phrase context check;
+- internal Markdown link check.
+
+Command:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\foundation_integrity_gate.ps1
+```
+
+Status: complete as a local verification script.
+
 ## Sprint 1 - Public Reference Surface
 
 Goal: launch a small, high-trust reference surface.

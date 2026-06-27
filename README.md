@@ -44,6 +44,16 @@ Governance documents:
 - [DECISION_LOG.md](DECISION_LOG.md)
 - [ROADMAP.md](ROADMAP.md)
 
+## Sprint 0A Integrity Gate
+
+Before Sprint 1 pages are built, run the foundation integrity gate:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\foundation_integrity_gate.ps1
+```
+
+The gate checks required governance files, README links, the Sprint 0 decision, clinical boundary references, high-risk phrase context, and broken internal Markdown links.
+
 ## Methodology
 
 The asset is developed through this sequence:
