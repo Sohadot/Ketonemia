@@ -95,6 +95,13 @@ Merged to main.
 
 Sprint 3C added /laboratory-context/ as the measurement reference layer for blood ketone signals. The page covers three substrates (BHB, AcAc, acetone) and three measurement technologies (electrochemical blood meters, colorimetric urine strips, breath analyzers), BHB as the primary blood measurement anchor, report language limits, and device and method variation including hematocrit effects, strip lot variation, and urine-blood discordance in DKA resolution. Patches updated /blood-ketones/, /beta-hydroxybutyrate/, /signal-map/ (Context 6 ctx-links, Reference Pages grid, AI summary), and the homepage card grid. No DEC was created because no production friction required a new governance rule.
 
+### Sprint 3D — Student Guide
+
+Status: complete.
+Merged to main.
+
+Sprint 3D added /student-guide/ as the learning pathway reference layer for blood ketone terminology. The page organizes ketonemia as a layered concept (term → molecule → measurement → context → boundary) with a terminology ladder covering nine terms from ketone body to ketoacidosis, measurement layer, comparison layer, signal context layer, boundary layer, ordered study pathway (eight pages), and seven student mistakes to avoid. Audience notes cover five disciplines: medicine, pharmacy, nursing, biochemistry/laboratory science, and nutrition. Patches updated /definition/, /ketonemia-vs-ketosis/, /ketonemia-vs-ketoacidosis/ (Related Pages with Student Guide card and AI summary Linked pages), /laboratory-context/ (Reference Pathways with Student Guide card and AI summary Linked pages), and the homepage card grid (Student Guide as card 8, total 13 cards). No DEC was created because no production friction required a new governance rule.
+
 ## Open Decisions
 
 - Which sources become the first official source index?
