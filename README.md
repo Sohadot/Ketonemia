@@ -124,6 +124,24 @@ Patches:
 
 Status: complete. Commit: 9f044714. Merged to main.
 
+## Sprint 3D — Student Guide
+
+Sprint 3D built the student guide — a structured learning pathway for blood ketone terminology across academic disciplines. Passed Sprint 3D Review Gate.
+
+Pages:
+
+- `/student-guide/` — governing rule, terminology ladder (9 terms: ketone body through ketoacidosis), measurement layer (three technologies), comparison layer (ketonemia vs. ketosis / ketonemia vs. ketoacidosis), signal context layer (8 dimensions), boundary layer (5-row can/cannot table), ordered study pathway (8 pages), student mistakes to avoid (7 items), audience notes for 5 disciplines (medicine, pharmacy, nursing, biochemistry/laboratory science, nutrition), reference pathways (9 cards), AI-readable summary
+
+Patches:
+
+- `/definition/` — Related Pages and AI summary Linked pages updated with /student-guide/
+- `/ketonemia-vs-ketosis/` — Related Pages and AI summary Linked pages updated with /student-guide/
+- `/ketonemia-vs-ketoacidosis/` — Related Pages and AI summary Linked pages updated with /student-guide/
+- `/laboratory-context/` — Reference Pathways and AI summary Linked pages updated with /student-guide/
+- `/` — homepage card grid updated (Student Guide as card 8, total 13 cards)
+
+Status: complete. Commit: d6427f88. Merged to main.
+
 ## Methodology
 
 The asset is developed through this sequence:

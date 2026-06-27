@@ -160,7 +160,7 @@ Deliverables:
 - governing rule;
 - three-substrate table: BHB (blood, electrochemical enzymatic) / AcAc (urine, colorimetric nitroprusside) / Acetone (breath, sensor proxy);
 - BHB as primary blood measurement anchor: predominance at elevation, chemical stability, measurement responsiveness, enzymatic mechanism (BDH1/NADH);
-- report language limits table: Detected / Elevated / Normal / numeric value / mmol L vs mg dL;
+- report language limits table: Detected / Elevated / Normal / numeric value / mmol L vs mg dL;
 - device and method variation: at-home meter vs. lab analyzer precision gap, hematocrit effects, strip lot variation, sample timing, urine-blood discordance in DKA resolution;
 - reference pathways: /blood-ketones/, /beta-hydroxybutyrate/, /signal-map/, /ketonemia-vs-ketoacidosis/, /clinical-boundary/, /sources/, /ai-reference/;
 - audience notes: laboratory professionals, clinicians, students, researchers, AI systems;
@@ -175,13 +175,41 @@ Deliverables:
 
 Status: complete. Passed Sprint 3C Review Gate. Commit: 9f044714. Merged to main.
 
+## Sprint 3D — Student Guide
+
+Goal: build the learning pathway reference layer for blood ketone terminology across academic disciplines.
+
+Governing sentence: The student guide organizes ketonemia as terminology, measurement, context, and boundary — not as a shortcut to clinical judgment.
+
+Deliverables:
+
+- Student Guide page (`/student-guide/`);
+- governing rule;
+- terminology ladder: 9 terms from ketone body (biochemical) through BHB/AcAc/acetone/ketogenesis/ketonemia/ketosis/ketonuria to ketoacidosis (clinical syndrome);
+- measurement layer: three technologies (blood meter, urine strip, breath analyzer) with links to /blood-ketones/, /beta-hydroxybutyrate/, /laboratory-context/;
+- comparison layer: ketonemia vs. ketosis / ketonemia vs. ketoacidosis;
+- signal context layer: 8 context dimensions linking to /signal-map/;
+- boundary layer: 5-row can/cannot table linking to /clinical-boundary/;
+- study pathway: 8 pages in order (/definition/ through /clinical-boundary/);
+- student mistakes to avoid: 7 items;
+- audience notes: medicine, pharmacy, nursing, biochemistry/laboratory science, nutrition;
+- reference pathways: 9 cards;
+- AI-readable summary;
+- homepage grid card (card 8, total 13 cards);
+- /definition/ Related Pages and AI summary Linked pages updated;
+- /ketonemia-vs-ketosis/ Related Pages and AI summary Linked pages updated;
+- /ketonemia-vs-ketoacidosis/ Related Pages and AI summary Linked pages updated;
+- /laboratory-context/ Reference Pathways and AI summary Linked pages updated;
+- DECISION_LOG Implementation Record: Sprint 3D entry added.
+
+Status: complete. Passed Sprint 3D Review Gate. Commit: d6427f88. Merged to main.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
 
 Remaining pages:
 
-- student guide;
 - research reference;
 - media brief;
 - market intelligence.
