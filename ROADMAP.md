@@ -124,13 +124,36 @@ Deliverables:
 
 Status: complete. Passed Sprint 3A Review Gate. Commit: 7a508fa8. Merged to main.
 
+## Sprint 3B — Clinical Literacy Layer
+
+Goal: provide responsible language patterns for communicating blood ketone signals without diagnostic overreach.
+
+Governing sentence: Clinical literacy explains how to communicate ketone signals responsibly; it does not replace clinical judgment.
+
+Deliverables:
+
+- Clinical Literacy page (`/clinical-literacy/`);
+- governing rule;
+- responsible language patterns table (8 rows: Avoid / Prefer);
+- three-layer clinical communication framework: measurement state / metabolic context / clinical concern boundary;
+- reference pathways to all adjacent pages;
+- audience notes for clinicians, educators, care teams, students, product and content teams, AI systems;
+- AI-readable summary;
+- homepage grid card (card 9);
+- Signal Map Context 7 ctx-links updated;
+- Signal Map Reference Pages grid updated;
+- clinical-boundary Related Pages updated;
+- ai-reference Canonical Pages, AI summary, and Audience Note updated;
+- DECISION_LOG Implementation Record: Sprint 3B entry added.
+
+Status: complete. Passed Sprint 3B Review Gate. Commit: b6f65244. Merged to main.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
 
 Remaining pages:
 
-- clinical literacy;
 - student guide;
 - research reference;
 - media brief;

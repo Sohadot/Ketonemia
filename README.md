@@ -97,6 +97,16 @@ Pages:
 
 Status: complete. Commit: 7a508fa8. Merged to main.
 
+## Sprint 3B — Clinical Literacy Layer
+
+Sprint 3B built the clinical literacy layer — responsible language patterns for communicating blood ketone signals without diagnostic overreach. Passed Sprint 3B Review Gate.
+
+Pages:
+
+- `/clinical-literacy/` — governing rule, responsible language table (8 patterns), three-layer clinical communication framework (measurement state / metabolic context / clinical concern boundary), reference pathways, audience notes, AI-readable summary
+
+Status: complete. Commit: b6f65244. Merged to main.
+
 ## Methodology
 
 The asset is developed through this sequence:
