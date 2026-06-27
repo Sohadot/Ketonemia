@@ -22,7 +22,7 @@ Final asset statement:
 
 ## Sprint 0 Foundation
 
-This repository currently contains the doctrine and governance layer for the asset. The purpose of Sprint 0 is to lock the category thesis before building public pages or tools.
+This repository contains the doctrine and governance layer for the asset. Sprint 0 locked the category thesis before public pages or tools were built.
 
 Governance documents:
 
@@ -45,9 +45,11 @@ Governance documents:
 - [DECISION_LOG.md](DECISION_LOG.md)
 - [ROADMAP.md](ROADMAP.md)
 
+Status: complete.
+
 ## Sprint 0A Integrity Gate
 
-Before Sprint 1 pages are built, run the foundation integrity gate:
+Before Sprint 1 pages were built, the foundation integrity gate was run:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\foundation_integrity_gate.ps1
@@ -55,7 +57,25 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\foundation_integri
 
 The gate checks required governance files, README links, the Sprint 0 decision, clinical boundary references, high-risk phrase context, and broken internal Markdown links.
 
-Sprint 1 content must also follow [CONTENT_PRODUCTION_POLICY.md](CONTENT_PRODUCTION_POLICY.md). Content is not page filling. Content is layered reference infrastructure by audience.
+Status: complete.
+
+## Sprint 1 — Public Reference Surface v1
+
+Sprint 1 built nine public reference pages. All pages comply with [CONTENT_PRODUCTION_POLICY.md](CONTENT_PRODUCTION_POLICY.md) — layered by audience, clinically bounded, AI-readable, and source-disciplined. The Sprint 1 Review Gate passed before merge.
+
+Pages:
+
+- `/` — category identity and reference map
+- `/definition/` — governed definition of ketonemia as a blood state
+- `/ketonemia-vs-ketosis/` — blood measurement state vs. metabolic state
+- `/ketonemia-vs-ketoacidosis/` — signal vs. clinical syndrome, clinically bounded
+- `/blood-ketones/` — signal layer and measurement context
+- `/beta-hydroxybutyrate/` — primary blood ketone marker, biochemistry depth
+- `/clinical-boundary/` — formal trust and safety boundary
+- `/sources/` — source discipline policy and reference index
+- `/strategic-availability/` — category intelligence for strategic buyers
+
+Status: complete.
 
 ## Methodology
 

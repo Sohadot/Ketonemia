@@ -1,6 +1,6 @@
 # Roadmap
 
-## Sprint 0 - Doctrine and Asset Foundation
+## Sprint 0 — Doctrine and Asset Foundation
 
 Goal: establish Ketonemia.com as Blood Ketone Intelligence Infrastructure.
 
@@ -17,9 +17,9 @@ Deliverables:
 - monetization boundary;
 - decision log.
 
-Status: complete as foundation documents.
+Status: complete.
 
-## Sprint 0A - Foundation Integrity Gate
+## Sprint 0A — Foundation Integrity Gate
 
 Goal: turn the Sprint 0 foundation into a verifiable contract before public pages are built.
 
@@ -39,48 +39,69 @@ Command:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\foundation_integrity_gate.ps1
 ```
 
-Status: complete as a local verification script.
+Status: complete.
 
-## Sprint 1 - Public Reference Surface v1 with Layered Content Depth
+## Sprint 1A — Content Production Policy
 
-Goal: convert governance into a small, high-trust, public reference surface without content inflation.
-
-Initial pages:
-
-- homepage;
-- definition;
-- ketonemia vs ketosis;
-- ketonemia vs ketoacidosis;
-- blood ketones;
-- beta-hydroxybutyrate;
-- clinical boundary;
-- sources;
-- strategic availability.
-
-Requirements:
-
-- source-backed medical claims;
-- canonical internal links;
-- no thin pages;
-- no diagnosis language.
-- every page must answer the five content production questions;
-- every page must include an AI-readable summary;
-- every page must include audience notes;
-- every page must serve a defined reference layer and buyer or category logic.
-
-## Sprint 2 - Signal Map Interface
-
-Goal: embody the thesis through an educational interface.
+Goal: define the content production standard before building public pages.
 
 Deliverables:
 
-- Blood Ketone Signal Map;
-- accessible fallback;
+- CONTENT_PRODUCTION_POLICY.md;
+- five required questions per page;
+- content layers by audience (public, clinical, academic, student, strategic, laboratory, media, AI);
+- single-page standard with ten required elements;
+- Sprint 1 page role table;
+- prohibited content list.
+
+Status: complete.
+
+## Sprint 1B — Public Reference Surface v1
+
+Goal: convert governance into a small, high-trust, public reference surface without content inflation.
+
+Pages built:
+
+- homepage (`/`);
+- definition (`/definition/`);
+- ketonemia vs ketosis (`/ketonemia-vs-ketosis/`);
+- ketonemia vs ketoacidosis (`/ketonemia-vs-ketoacidosis/`);
+- blood ketones (`/blood-ketones/`);
+- beta-hydroxybutyrate (`/beta-hydroxybutyrate/`);
+- clinical boundary (`/clinical-boundary/`);
+- sources (`/sources/`);
+- strategic availability (`/strategic-availability/`).
+
+Requirements met:
+
+- source-backed medical claims;
+- canonical internal links (minimum three per page);
+- no thin pages;
+- no diagnosis language;
+- every page answers the five content production questions;
+- every page includes an AI-readable summary;
+- every page includes audience notes by relevant layer;
+- every page serves a defined reference layer and buyer or category logic.
+
+Status: complete. Passed Sprint 1 Review Gate. Merged to main.
+
+## Sprint 2 — Blood Ketone Signal Map
+
+Goal: embody the category thesis through an educational interface.
+
+Governing sentence: The map shows context-dependence, not clinical judgment.
+
+Deliverables:
+
+- Blood Ketone Signal Map (`/signal-map/`);
+- accessible text fallback;
+- context layers: fasting, nutritional, diabetes, illness, medication, laboratory;
+- boundary layer: informational / context required / clinical concern / emergency referral;
 - no personal data collection;
 - no diagnosis output;
 - reference page links from every output.
 
-## Sprint 3 - Layered Audience Expansion
+## Sprint 3 — Layered Audience Expansion
 
 Goal: expand beyond public pages into institutional and AI reference layers.
 
@@ -94,7 +115,7 @@ Pages:
 - market intelligence;
 - AI reference.
 
-## Sprint 4 - Monetization Without Trust Damage
+## Sprint 4 — Monetization Without Trust Damage
 
 Goal: create revenue paths that strengthen authority.
 
