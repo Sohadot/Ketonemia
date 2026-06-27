@@ -148,6 +148,33 @@ Deliverables:
 
 Status: complete. Passed Sprint 3B Review Gate. Commit: b6f65244. Merged to main.
 
+## Sprint 3C — Laboratory Context
+
+Goal: establish the measurement science reference layer for blood ketone signals.
+
+Governing sentence: Laboratory context explains how ketone measurement is reported and bounded; it does not interpret a patient or replace clinical assessment.
+
+Deliverables:
+
+- Laboratory Context page (`/laboratory-context/`);
+- governing rule;
+- three-substrate table: BHB (blood, electrochemical enzymatic) / AcAc (urine, colorimetric nitroprusside) / Acetone (breath, sensor proxy);
+- BHB as primary blood measurement anchor: predominance at elevation, chemical stability, measurement responsiveness, enzymatic mechanism (BDH1/NADH);
+- report language limits table: Detected / Elevated / Normal / numeric value / mmol L vs mg dL;
+- device and method variation: at-home meter vs. lab analyzer precision gap, hematocrit effects, strip lot variation, sample timing, urine-blood discordance in DKA resolution;
+- reference pathways: /blood-ketones/, /beta-hydroxybutyrate/, /signal-map/, /ketonemia-vs-ketoacidosis/, /clinical-boundary/, /sources/, /ai-reference/;
+- audience notes: laboratory professionals, clinicians, students, researchers, AI systems;
+- AI-readable summary;
+- homepage grid card (card 7);
+- Signal Map Context 6 ctx-links updated;
+- Signal Map Reference Pages grid updated;
+- Signal Map AI summary Related pages updated;
+- /blood-ketones/ Related Pages and AI summary Linked pages updated;
+- /beta-hydroxybutyrate/ Related Pages and AI summary Linked pages updated;
+- DECISION_LOG Implementation Record: Sprint 3C entry added.
+
+Status: complete. Passed Sprint 3C Review Gate. Commit: 9f044714. Merged to main.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
@@ -157,7 +184,6 @@ Remaining pages:
 - student guide;
 - research reference;
 - media brief;
-- laboratory context;
 - market intelligence.
 
 ## Sprint 4 — Monetization Without Trust Damage

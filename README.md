@@ -107,6 +107,23 @@ Pages:
 
 Status: complete. Commit: b6f65244. Merged to main.
 
+## Sprint 3C — Laboratory Context
+
+Sprint 3C built the laboratory context layer — the measurement science reference for blood ketone signals. Passed Sprint 3C Review Gate.
+
+Pages:
+
+- `/laboratory-context/` — governing rule, three-substrate table (BHB/AcAc/acetone across blood/urine/breath), BHB as primary blood measurement anchor with enzymatic mechanism, report language limits table (Detected/Elevated/Normal/numeric value/units), device and method variation (at-home vs. lab precision gap, hematocrit effects, strip lot variation, sample timing, urine-blood discordance in DKA resolution), reference pathways, audience notes, AI-readable summary
+
+Patches:
+
+- `/blood-ketones/` — Related Pages and AI summary Linked pages updated with /laboratory-context/
+- `/beta-hydroxybutyrate/` — Related Pages and AI summary Linked pages updated with /laboratory-context/
+- `/signal-map/` — Context 6 ctx-links, Reference Pages grid, and AI summary Related pages updated with /laboratory-context/
+- `/` — homepage card grid updated (Laboratory Context as card 7)
+
+Status: complete. Commit: 9f044714. Merged to main.
+
 ## Methodology
 
 The asset is developed through this sequence:
