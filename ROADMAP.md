@@ -224,7 +224,7 @@ Deliverables:
 - related-page links from /beta-hydroxybutyrate/, /laboratory-context/, /ai-reference/, and /signal-map/;
 - /sources/ Claim Source Registry pages-using-source updated.
 
-Status: complete. Ready for merge.
+Status: complete. Commit: 8421c8c. Merged to main.
 
 ## Sprint 3 — Remaining Audience Layers
 

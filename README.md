@@ -150,7 +150,7 @@ Pages:
 
 - `/research/` - research use of ketonemia, measurement variables, adjacent research terms, claim boundaries, source pathways, audience notes, AI-readable summary
 
-Status: complete. Ready for merge.
+Status: complete. Commit: 8421c8c. Merged to main.
 
 ## Methodology
 
