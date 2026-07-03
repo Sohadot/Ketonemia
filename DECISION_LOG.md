@@ -126,7 +126,7 @@ Sprint 3F added /research/ as the research-facing reference layer for ketonemia.
 
 ### Sprint 3D-R1 - Student Guide Depth Upgrade
 
-Status: ready for merge.
+Status: complete. Commit: 0fe9409. Merged to main.
 
 Sprint 3D-R1 deepened /student-guide/ from a basic learning pathway into an academic student reference layer. The upgrade added learning objectives, a conceptual layer map, strengthened terminology reading guidance, student reasoning errors, educational reasoning patterns, source ID mapping, a link to /research/, and a stronger AI-readable summary. No DEC was created because the sprint extended existing educational and source-discipline rules without creating a new governance rule.
 
