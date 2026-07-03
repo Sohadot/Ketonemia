@@ -54,9 +54,30 @@ Consequences:
 - Every Sprint 1 page must include definition, category role, nearby-concept distinctions, context, interpretation limits, internal links, source support or placeholders, AI-readable summary, and audience notes.
 - Shallow "What is X?" pages, repeated ideas, unsupported medical claims, keto hype, and pages without reference or buyer logic are prohibited.
 
+## Implementation Records
+
+### Sprint 3E - Source Registry and Accuracy Hardening
+
+Date: 2026-07-03
+
+Scope:
+
+- Added a visible Claim Source Registry to `/sources/` with source IDs, titles, organizations/publications, source classes, URLs or citations, access dates, supported claims, population/context notes, and pages using each source.
+- Added page-level source ID references to existing high-risk pages: `/ketonemia-vs-ketoacidosis/`, `/clinical-boundary/`, `/beta-hydroxybutyrate/`, and `/blood-ketones/`.
+- Confirmed `/laboratory-context/` and `/student-guide/` are not present as public pages in this repository snapshot; no new pages were created during this source-hardening sprint.
+- Patched BHB page NAD markup from superscript-plus glyph usage to `NAD<sup>+</sup>` markup where embedded in HTML text.
+- Patched the AcAc/BHB discordance explanation on `/blood-ketones/` because `/laboratory-context/` is not present in this repository snapshot.
+- Preserved clinical-boundary language: no diagnosis, triage, individualized safety claim, or treatment instruction was added.
+
+No new DEC was created. The sprint did not establish a new governance rule; it implemented existing source and claim discipline.
+
+Closed stale open decisions:
+
+- "Which sources become the first official source index?" Closed by the Sprint 3E Claim Source Registry on `/sources/`.
+- "Which source placeholders should be accepted for Sprint 1 before full citations are collected?" Closed by replacing high-risk placeholders with source IDs and visible registry entries.
+- "What exact fields belong in the first AI Reference Pack?" Closed for current scope by `AI_REFERENCE_POLICY.md`, which records definitions, term relationships, KSO ontology classes, KSS state language, allowed claims, prohibited claims, citation requirements, emergency boundary language, and page-to-page internal link map.
+- "What is the minimum viable Blood Ketone Signal Map interaction?" Closed by the Sprint 2 `/signal-map/` implementation.
+
 ## Open Decisions
 
-- Which sources become the first official source index?
-- Which source placeholders should be accepted for Sprint 1 before full citations are collected?
-- What exact fields belong in the first AI Reference Pack?
-- What is the minimum viable Blood Ketone Signal Map interaction?
+- None at this time.
