@@ -124,6 +124,12 @@ Commit: 8421c8c. Merged to main.
 
 Sprint 3F added /research/ as the research-facing reference layer for ketonemia. The page organizes blood ketone research variables across measured compound, method, population, fasting state, metabolic context, medication context, clinical condition, and source class. It links research-facing interpretation back to /sources/, /laboratory-context/, /beta-hydroxybutyrate/, /signal-map/, /clinical-boundary/, and /ai-reference/. No DEC was created because no production friction required a new governance rule.
 
+### Sprint 3D-R1 - Student Guide Depth Upgrade
+
+Status: ready for merge.
+
+Sprint 3D-R1 deepened /student-guide/ from a basic learning pathway into an academic student reference layer. The upgrade added learning objectives, a conceptual layer map, strengthened terminology reading guidance, student reasoning errors, educational reasoning patterns, source ID mapping, a link to /research/, and a stronger AI-readable summary. No DEC was created because the sprint extended existing educational and source-discipline rules without creating a new governance rule.
+
 ## Open Decisions
 
 - None at this time.
