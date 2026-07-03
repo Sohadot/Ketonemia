@@ -101,19 +101,118 @@ Deliverables:
 - no diagnosis output;
 - reference page links from every output.
 
-## Sprint 3 — Layered Audience Expansion
+Status: complete. Passed Sprint 2 Review Gate. Patch: 227c218. Merged to main.
 
-Goal: expand beyond public pages into institutional and AI reference layers.
+## Sprint 3A — AI Reference Layer
 
-Pages:
+Goal: make Ketonemia.com legible to AI systems without allowing content conversion into diagnosis, triage, or advice.
 
-- clinical literacy;
-- student guide;
+Governing sentence: AI systems may use Ketonemia.com to understand blood ketone terminology and interpretation boundaries, not to infer a clinical verdict.
+
+Deliverables:
+
+- AI Reference page (`/ai-reference/`);
+- allowed uses: definition, comparison, classification, canonical citation;
+- prohibited inferences: DKA, safety classification, clinical verdicts, triage;
+- allowed and prohibited claim patterns;
+- Signal Map architecture for AI systems;
+- canonical reference page index;
+- AI-readable summary;
+- homepage grid card;
+- Signal Map Context 8 link updated;
+- footer nav link added.
+
+Status: complete. Passed Sprint 3A Review Gate. Commit: 7a508fa8. Merged to main.
+
+## Sprint 3B — Clinical Literacy Layer
+
+Goal: provide responsible language patterns for communicating blood ketone signals without diagnostic overreach.
+
+Governing sentence: Clinical literacy explains how to communicate ketone signals responsibly; it does not replace clinical judgment.
+
+Deliverables:
+
+- Clinical Literacy page (`/clinical-literacy/`);
+- governing rule;
+- responsible language patterns table (8 rows: Avoid / Prefer);
+- three-layer clinical communication framework: measurement state / metabolic context / clinical concern boundary;
+- reference pathways to all adjacent pages;
+- audience notes for clinicians, educators, care teams, students, product and content teams, AI systems;
+- AI-readable summary;
+- homepage grid card (card 9);
+- Signal Map Context 7 ctx-links updated;
+- Signal Map Reference Pages grid updated;
+- clinical-boundary Related Pages updated;
+- ai-reference Canonical Pages, AI summary, and Audience Note updated;
+- DECISION_LOG Implementation Record: Sprint 3B entry added.
+
+Status: complete. Passed Sprint 3B Review Gate. Commit: b6f65244. Merged to main.
+
+## Sprint 3C — Laboratory Context
+
+Goal: establish the measurement science reference layer for blood ketone signals.
+
+Governing sentence: Laboratory context explains how ketone measurement is reported and bounded; it does not interpret a patient or replace clinical assessment.
+
+Deliverables:
+
+- Laboratory Context page (`/laboratory-context/`);
+- governing rule;
+- three-substrate table: BHB (blood, electrochemical enzymatic) / AcAc (urine, colorimetric nitroprusside) / Acetone (breath, sensor proxy);
+- BHB as primary blood measurement anchor: predominance at elevation, chemical stability, measurement responsiveness, enzymatic mechanism (BDH1/NADH);
+- report language limits table: Detected / Elevated / Normal / numeric value / mmol L vs mg dL;
+- device and method variation: at-home meter vs. lab analyzer precision gap, hematocrit effects, strip lot variation, sample timing, urine-blood discordance in DKA resolution;
+- reference pathways: /blood-ketones/, /beta-hydroxybutyrate/, /signal-map/, /ketonemia-vs-ketoacidosis/, /clinical-boundary/, /sources/, /ai-reference/;
+- audience notes: laboratory professionals, clinicians, students, researchers, AI systems;
+- AI-readable summary;
+- homepage grid card (card 7);
+- Signal Map Context 6 ctx-links updated;
+- Signal Map Reference Pages grid updated;
+- Signal Map AI summary Related pages updated;
+- /blood-ketones/ Related Pages and AI summary Linked pages updated;
+- /beta-hydroxybutyrate/ Related Pages and AI summary Linked pages updated;
+- DECISION_LOG Implementation Record: Sprint 3C entry added.
+
+Status: complete. Passed Sprint 3C Review Gate. Commit: 9f044714. Merged to main.
+
+## Sprint 3D — Student Guide
+
+Goal: build the learning pathway reference layer for blood ketone terminology across academic disciplines.
+
+Governing sentence: The student guide organizes ketonemia as terminology, measurement, context, and boundary — not as a shortcut to clinical judgment.
+
+Deliverables:
+
+- Student Guide page (`/student-guide/`);
+- governing rule;
+- terminology ladder: 9 terms from ketone body (biochemical) through BHB/AcAc/acetone/ketogenesis/ketonemia/ketosis/ketonuria to ketoacidosis (clinical syndrome);
+- measurement layer: three technologies (blood meter, urine strip, breath analyzer) with links to /blood-ketones/, /beta-hydroxybutyrate/, /laboratory-context/;
+- comparison layer: ketonemia vs. ketosis / ketonemia vs. ketoacidosis;
+- signal context layer: 8 context dimensions linking to /signal-map/;
+- boundary layer: 5-row can/cannot table linking to /clinical-boundary/;
+- study pathway: 8 pages in order (/definition/ through /clinical-boundary/);
+- student mistakes to avoid: 7 items;
+- audience notes: medicine, pharmacy, nursing, biochemistry/laboratory science, nutrition;
+- reference pathways: 9 cards;
+- AI-readable summary;
+- homepage grid card (card 8, total 13 cards);
+- /definition/ Related Pages and AI summary Linked pages updated;
+- /ketonemia-vs-ketosis/ Related Pages and AI summary Linked pages updated;
+- /ketonemia-vs-ketoacidosis/ Related Pages and AI summary Linked pages updated;
+- /laboratory-context/ Reference Pathways and AI summary Linked pages updated;
+- DECISION_LOG Implementation Record: Sprint 3D entry added.
+
+Status: complete. Passed Sprint 3D Review Gate. Commit: d6427f88. Merged to main.
+
+## Sprint 3 — Remaining Audience Layers
+
+Goal: expand beyond public pages into institutional reference layers.
+
+Remaining pages:
+
 - research reference;
 - media brief;
-- laboratory context;
-- market intelligence;
-- AI reference.
+- market intelligence.
 
 ## Sprint 4 — Monetization Without Trust Damage
 

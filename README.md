@@ -77,6 +77,71 @@ Pages:
 
 Status: complete.
 
+## Sprint 2 — Blood Ketone Signal Map
+
+Sprint 2 built the Signal Map — the conceptual interface showing how context transforms blood ketone signal interpretation. Passed Sprint 2 Review Gate.
+
+Pages:
+
+- `/signal-map/` — six signal zones (KSS K0–K5), eight context dimensions, four interpretation boundaries, accessible text fallback, AI-readable summary
+
+Status: complete. Patch: 227c218. Merged to main.
+
+## Sprint 3A — AI Reference Layer
+
+Sprint 3A built the AI reference layer — structured governance for how AI systems may and may not use Ketonemia.com content. Passed Sprint 3A Review Gate.
+
+Pages:
+
+- `/ai-reference/` — allowed uses, prohibited inferences, allowed and prohibited claim patterns, Signal Map as conceptual interface, canonical reference pages, audience note, AI-readable summary
+
+Status: complete. Commit: 7a508fa8. Merged to main.
+
+## Sprint 3B — Clinical Literacy Layer
+
+Sprint 3B built the clinical literacy layer — responsible language patterns for communicating blood ketone signals without diagnostic overreach. Passed Sprint 3B Review Gate.
+
+Pages:
+
+- `/clinical-literacy/` — governing rule, responsible language table (8 patterns), three-layer clinical communication framework (measurement state / metabolic context / clinical concern boundary), reference pathways, audience notes, AI-readable summary
+
+Status: complete. Commit: b6f65244. Merged to main.
+
+## Sprint 3C — Laboratory Context
+
+Sprint 3C built the laboratory context layer — the measurement science reference for blood ketone signals. Passed Sprint 3C Review Gate.
+
+Pages:
+
+- `/laboratory-context/` — governing rule, three-substrate table (BHB/AcAc/acetone across blood/urine/breath), BHB as primary blood measurement anchor with enzymatic mechanism, report language limits table (Detected/Elevated/Normal/numeric value/units), device and method variation (at-home vs. lab precision gap, hematocrit effects, strip lot variation, sample timing, urine-blood discordance in DKA resolution), reference pathways, audience notes, AI-readable summary
+
+Patches:
+
+- `/blood-ketones/` — Related Pages and AI summary Linked pages updated with /laboratory-context/
+- `/beta-hydroxybutyrate/` — Related Pages and AI summary Linked pages updated with /laboratory-context/
+- `/signal-map/` — Context 6 ctx-links, Reference Pages grid, and AI summary Related pages updated with /laboratory-context/
+- `/` — homepage card grid updated (Laboratory Context as card 7)
+
+Status: complete. Commit: 9f044714. Merged to main.
+
+## Sprint 3D — Student Guide
+
+Sprint 3D built the student guide — a structured learning pathway for blood ketone terminology across academic disciplines. Passed Sprint 3D Review Gate.
+
+Pages:
+
+- `/student-guide/` — governing rule, terminology ladder (9 terms: ketone body through ketoacidosis), measurement layer (three technologies), comparison layer (ketonemia vs. ketosis / ketonemia vs. ketoacidosis), signal context layer (8 dimensions), boundary layer (5-row can/cannot table), ordered study pathway (8 pages), student mistakes to avoid (7 items), audience notes for 5 disciplines (medicine, pharmacy, nursing, biochemistry/laboratory science, nutrition), reference pathways (9 cards), AI-readable summary
+
+Patches:
+
+- `/definition/` — Related Pages and AI summary Linked pages updated with /student-guide/
+- `/ketonemia-vs-ketosis/` — Related Pages and AI summary Linked pages updated with /student-guide/
+- `/ketonemia-vs-ketoacidosis/` — Related Pages and AI summary Linked pages updated with /student-guide/
+- `/laboratory-context/` — Reference Pathways and AI summary Linked pages updated with /student-guide/
+- `/` — homepage card grid updated (Student Guide as card 8, total 13 cards)
+
+Status: complete. Commit: d6427f88. Merged to main.
+
 ## Methodology
 
 The asset is developed through this sequence:

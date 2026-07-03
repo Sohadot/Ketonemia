@@ -54,7 +54,53 @@ Consequences:
 - Every Sprint 1 page must include definition, category role, nearby-concept distinctions, context, interpretation limits, internal links, source support or placeholders, AI-readable summary, and audience notes.
 - Shallow "What is X?" pages, repeated ideas, unsupported medical claims, keto hype, and pages without reference or buyer logic are prohibited.
 
-## Implementation Records
+## Implementation Record
+
+This section records completed sprint implementations that did not require a new governance decision. Every completed sprint leaves one of two traces: a DEC entry if production friction created a new governance rule, or an Implementation Record entry if production completed without requiring one.
+
+### Sprint 1B — Public Reference Surface v1
+
+Status: complete.
+Merged to main.
+
+Sprint 1B created the first public reference surface for Ketonemia.com, including the homepage and eight reference pages: /, /definition/, /ketonemia-vs-ketosis/, /ketonemia-vs-ketoacidosis/, /blood-ketones/, /beta-hydroxybutyrate/, /clinical-boundary/, /sources/, /strategic-availability/.
+
+The Sprint 1 Review Gate passed without requiring a new governance decision. No DEC was created because no production friction required a new rule.
+
+### Sprint 2 — Blood Ketone Signal Map
+
+Status: complete.
+Patch: 227c218. Merged to main.
+
+Sprint 2 added /signal-map/ as a conceptual interface showing that blood ketone signal meaning depends on context, not clinical judgment. The review identified one production gap: context cards needed specific reference links. The gap was patched in the same branch. No DEC was created because the fix was an implementation correction, not a new governance rule.
+
+### Sprint 3A — AI Reference Layer
+
+Status: complete.
+Merge commit: 7a508fa8. Docs: fb41b05e.
+
+Sprint 3A added /ai-reference/ as a visible AI-readable reference layer. The page defines allowed AI uses, prohibited inferences, allowed and prohibited claim patterns, Signal Map interpretation boundaries, canonical reference pages, and AI-readable summary structure. No DEC was created because no new friction emerged around KSS classification, prohibited-phrase scope, or JSON-LD structure.
+
+### Sprint 3B — Clinical Literacy Layer
+
+Status: complete.
+Merge commit: b6f65244. Docs: 0de43976.
+
+Sprint 3B added /clinical-literacy/ as the responsible language layer for clinicians, educators, care teams, students, and product teams. The page includes the Responsible Language Patterns table (8 rows), the three-layer clinical communication framework (measurement state / metabolic context / clinical concern boundary), reference pathways to all adjacent pages, and full AI-readable summary. Patches updated /clinical-boundary/, /ai-reference/, /signal-map/ (Context 7 ctx-links and Reference Pages grid), and the homepage card grid. No DEC was created because no production friction required a new governance rule.
+
+### Sprint 3C — Laboratory Context
+
+Status: complete.
+Merged to main.
+
+Sprint 3C added /laboratory-context/ as the measurement reference layer for blood ketone signals. The page covers three substrates (BHB, AcAc, acetone) and three measurement technologies (electrochemical blood meters, colorimetric urine strips, breath analyzers), BHB as the primary blood measurement anchor, report language limits, and device and method variation including hematocrit effects, strip lot variation, and urine-blood discordance in DKA resolution. Patches updated /blood-ketones/, /beta-hydroxybutyrate/, /signal-map/ (Context 6 ctx-links, Reference Pages grid, AI summary), and the homepage card grid. No DEC was created because no production friction required a new governance rule.
+
+### Sprint 3D — Student Guide
+
+Status: complete.
+Merged to main.
+
+Sprint 3D added /student-guide/ as the learning pathway reference layer for blood ketone terminology. The page organizes ketonemia as a layered concept (term → molecule → measurement → context → boundary) with a terminology ladder covering nine terms from ketone body to ketoacidosis, measurement layer, comparison layer, signal context layer, boundary layer, ordered study pathway (eight pages), and seven student mistakes to avoid. Audience notes cover five disciplines: medicine, pharmacy, nursing, biochemistry/laboratory science, and nutrition. Patches updated /definition/, /ketonemia-vs-ketosis/, /ketonemia-vs-ketoacidosis/ (Related Pages with Student Guide card and AI summary Linked pages), /laboratory-context/ (Reference Pathways with Student Guide card and AI summary Linked pages), and the homepage card grid (Student Guide as card 8, total 13 cards). No DEC was created because no production friction required a new governance rule.
 
 ### Sprint 3E - Source Registry and Accuracy Hardening
 
@@ -70,13 +116,6 @@ Scope:
 - Preserved clinical-boundary language: no diagnosis, triage, individualized safety claim, or treatment instruction was added.
 
 No new DEC was created. The sprint did not establish a new governance rule; it implemented existing source and claim discipline.
-
-Closed stale open decisions:
-
-- "Which sources become the first official source index?" Closed by the Sprint 3E Claim Source Registry on `/sources/`.
-- "Which source placeholders should be accepted for Sprint 1 before full citations are collected?" Closed by replacing high-risk placeholders with source IDs and visible registry entries.
-- "What exact fields belong in the first AI Reference Pack?" Closed for current scope by `AI_REFERENCE_POLICY.md`, which records definitions, term relationships, KSO ontology classes, KSS state language, allowed claims, prohibited claims, citation requirements, emergency boundary language, and page-to-page internal link map.
-- "What is the minimum viable Blood Ketone Signal Map interaction?" Closed by the Sprint 2 `/signal-map/` implementation.
 
 ## Open Decisions
 
