@@ -142,6 +142,16 @@ Patches:
 
 Status: complete. Commit: d6427f88. Merged to main.
 
+## Sprint 3F - Research Reference Layer
+
+Sprint 3F built the research reference layer - a source-bound framework for interpreting ketonemia as a measurable blood signal in research contexts.
+
+Pages:
+
+- `/research/` - research use of ketonemia, measurement variables, adjacent research terms, claim boundaries, source pathways, audience notes, AI-readable summary
+
+Status: complete. Ready for merge.
+
 ## Methodology
 
 The asset is developed through this sequence:
@@ -205,6 +215,7 @@ Strategic and AI:
 - `/continuous-ketone-monitoring/`
 - `/market-intelligence/`
 - `/media-brief/`
+- `/research/`
 - `/ai-reference/`
 - `/strategic-availability/`
 

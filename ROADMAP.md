@@ -204,13 +204,34 @@ Deliverables:
 
 Status: complete. Passed Sprint 3D Review Gate. Commit: d6427f88. Merged to main.
 
+## Sprint 3F - Research Reference Layer
+
+Goal: build the research-facing reference layer for ketonemia as a measurable, contextual, source-bound blood signal.
+
+Deliverables:
+
+- Research Reference page (`/research/`);
+- governing rule: research reference organizes ketonemia as a measurable, contextual, source-bound blood signal, not as a single clinical meaning;
+- research use of ketonemia terms: ketonemia, blood BHB, AcAc, acetone, ketosis, ketoacidosis;
+- research contexts table: fasting metabolism, nutritional ketosis, diabetes and DKA contexts, SGLT2 inhibitor contexts, illness and metabolic stress, exercise and substrate use, laboratory measurement studies, device and monitoring studies, AI and retrieval terminology contexts;
+- measurement variables researchers must preserve: measured compound, sample type, method, units, timing, population, medication context, clinical condition, source class;
+- adjacent research terms and internal links;
+- research claim boundaries table;
+- source pathways and Source IDs Used;
+- audience notes for metabolism researchers, diabetes researchers, nutrition researchers, laboratory medicine, device teams, and AI systems;
+- AI-readable summary;
+- homepage grid card;
+- related-page links from /beta-hydroxybutyrate/, /laboratory-context/, /ai-reference/, and /signal-map/;
+- /sources/ Claim Source Registry pages-using-source updated.
+
+Status: complete. Ready for merge.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
 
 Remaining pages:
 
-- research reference;
 - media brief;
 - market intelligence.
 

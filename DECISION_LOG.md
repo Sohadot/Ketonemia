@@ -117,6 +117,13 @@ Scope:
 
 No new DEC was created. The sprint did not establish a new governance rule; it implemented existing source and claim discipline.
 
+### Sprint 3F - Research Reference
+
+Status: complete.
+Ready for merge.
+
+Sprint 3F added /research/ as the research-facing reference layer for ketonemia. The page organizes blood ketone research variables across measured compound, method, population, fasting state, metabolic context, medication context, clinical condition, and source class. It links research-facing interpretation back to /sources/, /laboratory-context/, /beta-hydroxybutyrate/, /signal-map/, /clinical-boundary/, and /ai-reference/. No DEC was created because no production friction required a new governance rule.
+
 ## Open Decisions
 
 - None at this time.
