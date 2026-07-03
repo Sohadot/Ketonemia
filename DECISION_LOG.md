@@ -109,10 +109,10 @@ Date: 2026-07-03
 Scope:
 
 - Added a visible Claim Source Registry to `/sources/` with source IDs, titles, organizations/publications, source classes, URLs or citations, access dates, supported claims, population/context notes, and pages using each source.
-- Added page-level source ID references to existing high-risk pages: `/ketonemia-vs-ketoacidosis/`, `/clinical-boundary/`, `/beta-hydroxybutyrate/`, and `/blood-ketones/`.
-- Confirmed `/laboratory-context/` and `/student-guide/` are not present as public pages in this repository snapshot; no new pages were created during this source-hardening sprint.
-- Patched BHB page NAD markup from superscript-plus glyph usage to `NAD<sup>+</sup>` markup where embedded in HTML text.
-- Patched the AcAc/BHB discordance explanation on `/blood-ketones/` because `/laboratory-context/` is not present in this repository snapshot.
+- Added page-level source ID references to existing high-risk pages: `/ketonemia-vs-ketoacidosis/`, `/clinical-boundary/`, `/beta-hydroxybutyrate/`, `/blood-ketones/`, `/laboratory-context/`, and `/student-guide/`.
+- Sprint 3E was initially executed from a local snapshot that was behind GitHub main. After reconciliation, `/laboratory-context/` and `/student-guide/` are confirmed as active public pages and remain part of the source-mapping scope.
+- Patched NAD markup from superscript-plus glyph usage to `NAD<sup>+</sup>` markup where embedded in HTML text.
+- Patched the AcAc/BHB discordance explanation on `/blood-ketones/` and `/laboratory-context/` to preserve consistent urine AcAc vs blood BHB DKA-resolution wording.
 - Preserved clinical-boundary language: no diagnosis, triage, individualized safety claim, or treatment instruction was added.
 
 No new DEC was created. The sprint did not establish a new governance rule; it implemented existing source and claim discipline.
