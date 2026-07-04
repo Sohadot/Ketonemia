@@ -152,6 +152,24 @@ Pages:
 
 Status: complete. Commit: 8421c8c. Merged to main.
 
+## Sprint 3G - Deep Media Brief Layer
+
+Sprint 3G built the media brief layer - a public-language guidance system for describing ketonemia without collapsing measurement, metabolic, urinary, or clinical layers.
+
+Pages:
+
+- `/media-brief/` - media layer map, search-intent explanation blocks, headline-risk framework, allowed/avoid/because wording guidance, quote-ready lines with boundary language, source-class logic, audience layering, reference pathways, source IDs, and AI-readable summary
+
+Patches:
+
+- `/` - homepage card grid updated with Media Brief
+- `/ai-reference/` - Canonical Reference Pages and AI summary updated with /media-brief/
+- `/research/` - Source Pathways and AI summary updated with /media-brief/
+- `/clinical-boundary/` - Related Pages and AI summary updated with media route
+- `QUALITY_GATE.md` - Deep Media Brief Gate added
+
+Status: complete. Commit: ce3f718. Merged to main.
+
 ## Methodology
 
 The asset is developed through this sequence:

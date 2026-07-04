@@ -226,13 +226,40 @@ Deliverables:
 
 Status: complete. Commit: 8421c8c. Merged to main.
 
+## Sprint 3G - Deep Media Brief Layer
+
+Goal: build the media-facing public-language layer for ketonemia without turning it into marketing copy, clinical advice, or a thin press reference.
+
+Governing sentence: Media language must preserve the layer of meaning: ketonemia is a blood measurement state; ketosis is a metabolic process; ketonuria is a urinary finding; ketoacidosis is a clinical syndrome; and none of them should be collapsed into diet culture, panic language, or individual medical advice.
+
+Deliverables:
+
+- Media Brief page (`/media-brief/`);
+- SEO title and meta description;
+- media layer map separating molecule, measurement, metabolic state, urinary finding, clinical syndrome, DKA, BHB, and AcAc;
+- search-intent explanation blocks for ketonemia, ketosis, ketoacidosis, blood vs. urine ketones, and BHB;
+- headline-risk framework with better public framing and reference pages;
+- allowed / avoid / because wording table;
+- quote-ready public-language lines with explicit boundary language;
+- source-class logic for biochemistry, measurement, DKA, medication-risk, and media-safe wording;
+- audience notes for journalists, editors, health writers, medical communicators, AI systems, and strategic reviewers;
+- reference pathways to definition, comparison, measurement, student, research, boundary, sources, AI, and Signal Map layers;
+- AI-readable summary;
+- homepage grid card;
+- /ai-reference/ Canonical Reference Pages and AI summary updated;
+- /research/ Source Pathways and AI summary updated;
+- /clinical-boundary/ Related Pages and AI summary updated;
+- Deep Media Brief Gate added to QUALITY_GATE.md;
+- DECISION_LOG Implementation Record: Sprint 3G entry added.
+
+Status: complete. Commit: ce3f718. Merged to main.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
 
 Remaining pages:
 
-- media brief;
 - market intelligence.
 
 ## Sprint 4 — Monetization Without Trust Damage

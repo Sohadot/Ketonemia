@@ -132,7 +132,7 @@ Sprint 3D-R1 deepened /student-guide/ from a basic learning pathway into an acad
 
 ### Sprint 3G - Deep Media Brief Layer
 
-Status: ready for review / merge.
+Status: complete. Commit: ce3f718. Merged to main.
 
 Sprint 3G added /media-brief/ as the public-language guidance layer for ketonemia. The page separates media wording across molecule, measurement, metabolic state, urinary finding, clinical syndrome, and boundary layers; adds search-intent explanation blocks, headline-risk analysis, allowed/avoid/because wording guidance, quote-ready lines with clinical limits, source-class logic, audience layering, internal reference pathways, source IDs, and a rich AI-readable summary. Patches updated the homepage card grid, /ai-reference/, /research/, /clinical-boundary/, and QUALITY_GATE.md. No DEC was created because the sprint applies existing source discipline and clinical-boundary rules to media-facing language without creating a new governance rule.
 
