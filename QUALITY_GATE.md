@@ -31,6 +31,17 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Does it have a unique strategic purpose?
 - Does it link into the category graph?
 
+## Deep Media Brief Gate
+
+- Does the page have search-intent blocks, not only a generic article?
+- Does it include a layer map separating molecule, measurement, metabolic state, urinary finding, and clinical syndrome?
+- Does it include headline-risk analysis?
+- Does it explain why wording choices are safer, not only which words to use?
+- Does it have source-class logic, not only source IDs?
+- Is it quote-ready without being clinically directive?
+- Does it serve journalists, editors, health writers, AI systems, and strategic reviewers?
+- Does it strengthen internal linking across definition, lab, student, research, boundary, sources, and AI layers?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?
