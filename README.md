@@ -44,6 +44,7 @@ Governance documents:
 - [QUALITY_GATE.md](QUALITY_GATE.md)
 - [DECISION_LOG.md](DECISION_LOG.md)
 - [ASSET_INTELLIGENCE_FACTORY_PLAN.md](ASSET_INTELLIGENCE_FACTORY_PLAN.md)
+- [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md)
 - [ROADMAP.md](ROADMAP.md)
 
 Status: complete.
@@ -194,6 +195,16 @@ Patches:
 - `/ai-reference/` - Machine-Readable Reference Files section, AI summary, and footer updated
 - `QUALITY_GATE.md` - Agent-Readable Reference Layer Gate added
 - Governing rule: the machine-readable layer is never looser than the human-facing site; prohibited claims stay prohibited in every format; every claim traces to a canonical page and, where medical, to a source ID (see [AI_REFERENCE_POLICY.md](AI_REFERENCE_POLICY.md)).
+
+Status: complete.
+
+## F2 - Classification Protocol
+
+F2 added [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) as the governed bridge between KSO, KSS, source discipline, and future engine outputs. The protocol defines allowed context inputs, prohibited outputs, deterministic classification rules, reference mapping patterns, an output template, and engine-readiness boundaries. It converts observed context into a KSO class, KSS zone language, a boundary statement, canonical references, and source requirements - without diagnosis, triage, treatment, individualized interpretation, safety or danger verdicts, or risk scoring.
+
+Governing sentence: The protocol classifies the interpretive frame, not the person.
+
+This is the operational bridge between knowledge and tool: KSO says what the context classes are, KSS says what the signal-zone language is, F2 says how they are used together under governance, and a future engine (F4) would run F2 in an interface. Any engine built on the asset must produce outputs no broader than this protocol allows.
 
 Status: complete.
 

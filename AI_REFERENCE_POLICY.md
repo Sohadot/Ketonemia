@@ -32,6 +32,14 @@ The AI Reference Pack should include:
 - emergency boundary language;
 - page-to-page internal link map.
 
+## Classification Governance
+
+CLASSIFICATION_PROTOCOL.md governs how observed context is mapped to reference
+categories, and it governs any future machine or engine output. It prevents AI
+systems from converting reference classification into clinical interpretation: a
+classification names the interpretive frame, not the person. No AI system, engine,
+or agent integration may produce outputs broader than that protocol allows.
+
 ## AI Safety Rule
 
 AI-facing material must not be looser than human-facing material.

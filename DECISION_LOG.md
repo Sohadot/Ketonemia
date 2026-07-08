@@ -142,6 +142,12 @@ Status: complete.
 
 Sprint 4A (build phase F1 of the Asset Intelligence Factory Plan) added the machine-readable reference layer that begins the transition from category asset to category intelligence source. Files added: /llms.txt, /robots.txt, /sitemap.xml, /data/reference-pack.json, /data/glossary.json, /data/kso-ontology.json, /data/kss-standard.json, /data/source-registry.json, /data/page-index.json, and the human-readable /reference-pack/ index with Dataset JSON-LD. The KSO and KSS JSON files mirror KETONEMIA_SIGNAL_ONTOLOGY.md and KETONEMIA_STATE_STANDARD.md without inventing classes or thresholds; source-registry.json mirrors the visible registry on /sources/. Patches updated the homepage card grid and footer, /ai-reference/ (Machine-Readable Reference Files section, AI summary, footer), ROADMAP.md, and QUALITY_GATE.md (Agent-Readable Reference Layer Gate). No new DEC was created: the layer is a direct extension of AI_REFERENCE_POLICY.md, which already requires that machine-readable output must not be looser than human-facing content. Clinical-boundary language was preserved: the data does not diagnose, triage, declare a reader safe, or provide treatment instruction.
 
+### F2 - Classification Protocol
+
+Status: complete.
+
+F2 added CLASSIFICATION_PROTOCOL.md as the governed protocol layer connecting observed context to KSO class, KSS language, boundary statement, canonical references, and source requirements. The protocol prepares the future engine layer (F4) while prohibiting diagnosis, triage, treatment guidance, individualized interpretation, safety verdicts, danger verdicts, risk scoring, and device endorsement. It accepts context-only inputs, never numeric thresholds, and keeps blood BHB, urine AcAc, and breath acetone as non-interchangeable signals. The mapping table and output template use the real KSO classes and KSS K0-K5 labels from KETONEMIA_SIGNAL_ONTOLOGY.md and KETONEMIA_STATE_STANDARD.md. Governing sentence: the protocol classifies the interpretive frame, not the person. Patches: README governance index, README F2 section, ROADMAP F2 entry, and an /ai-reference/ note that the protocol governs future machine outputs. No DEC was created because the sprint operationalized existing KSO, KSS, source-discipline, AI-reference, and clinical-boundary rules without creating a new governance rule.
+
 ## Open Decisions
 
 - None at this time.
