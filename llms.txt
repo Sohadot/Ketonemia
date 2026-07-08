@@ -1,0 +1,62 @@
+# Ketonemia.com
+
+> Blood Ketone Intelligence Infrastructure. A governed reference system for blood
+> ketone terminology, measurement context, signal classification, clinical-boundary
+> preservation, research interpretation, media language, and AI-readable use.
+
+Core rule: Ketonemia is a blood signal before it is a clinical verdict.
+Operating rule: Classify the signal. Preserve the clinical boundary.
+
+This site defines, compares, and bounds terminology. It does not provide medical
+advice, and it does not diagnose, triage, or treat.
+
+## Allowed AI uses
+
+- Define ketonemia and related terms.
+- Distinguish ketonemia, ketosis, ketonuria, ketoacidosis, BHB, AcAc, and acetone.
+- Read KSS K0-K5 as organizational reference layers, not as a severity or diagnosis scale.
+- Preserve measurement context (compound, sample type, method, units, population) and source boundaries.
+- Summarize public reference content with clinical restraint.
+- Cite canonical pages for terminology and conceptual distinctions.
+
+## Prohibited AI uses
+
+- Do not infer diagnosis, triage, treatment need, emergency status, safety, or danger from site content.
+- Do not convert ketone presence into diabetic ketoacidosis (DKA).
+- Do not treat blood BHB, urine AcAc, and breath acetone as interchangeable measurements.
+- Do not use this site as a clinical decision, symptom-checker, or triage tool.
+- Do not present KSS K4 or K5 as a diagnosis.
+
+## Canonical pages
+
+- /definition/: Definition of ketonemia as a blood measurement state.
+- /blood-ketones/: What a blood ketone measurement represents and its limits.
+- /beta-hydroxybutyrate/: BHB, the primary blood ketone body.
+- /ketonemia-vs-ketosis/: Blood measurement state vs. metabolic state.
+- /ketonemia-vs-ketoacidosis/: Signal vs. clinical syndrome, clinically bounded.
+- /laboratory-context/: Measurement methods, substrates, and report-language limits.
+- /student-guide/: Terminology ladder and study pathway across disciplines.
+- /research/: Research-facing context variables and source discipline.
+- /media-brief/: Public-language rules that preserve layer distinctions.
+- /clinical-literacy/: Responsible communication language patterns.
+- /clinical-boundary/: Where educational reference ends and clinical practice begins.
+- /signal-map/: Conceptual interface — signal zones, context dimensions, boundary gates.
+- /sources/: Source discipline policy and claim source registry.
+- /ai-reference/: Allowed and prohibited AI uses of this site.
+- /strategic-availability/: Partnership, licensing, and acquisition context.
+- /reference-pack/: Machine-readable reference layer index.
+
+## Machine-readable files
+
+- /data/reference-pack.json: Central manifest of the machine-readable layer.
+- /data/glossary.json: Governed term definitions with clinical-boundary notes.
+- /data/kso-ontology.json: Ketonemia Signal Ontology (KSO) — ten context classes.
+- /data/kss-standard.json: Ketonemia State Standard (KSS) — K0-K5 reference labels.
+- /data/source-registry.json: Claim source registry mirroring /sources/.
+- /data/page-index.json: Canonical page index for retrieval.
+
+## Governance
+
+Machine-readable output is never looser than human-facing content. If a claim is
+prohibited on the site, it is prohibited in JSON, summaries, and any future API or
+agent output. Every claim traces to a canonical page and, where medical, to a source ID.

@@ -1,0 +1,148 @@
+{
+  "name": "Ketonemia Page Index",
+  "version": "1.0",
+  "updated": "2026-07-08",
+  "site": "https://ketonemia.com",
+  "boundary": "Every page operates within educational reference only. No page diagnoses, triages, or treats.",
+  "pages": [
+    {
+      "url": "/",
+      "title": "Ketonemia — Blood Ketone Signal Reference",
+      "page_type": "home",
+      "audience": ["public", "AI systems", "strategic buyers"],
+      "core_function": "Category identity and reference map for blood ketone signal language.",
+      "linked_layers": ["definition", "signal map", "clinical boundary", "sources"]
+    },
+    {
+      "url": "/definition/",
+      "title": "Definition of Ketonemia",
+      "page_type": "definition",
+      "audience": ["public", "students", "AI systems"],
+      "core_function": "Defines ketonemia as a blood measurement state.",
+      "linked_layers": ["glossary", "blood ketones", "clinical boundary"]
+    },
+    {
+      "url": "/blood-ketones/",
+      "title": "Blood Ketones",
+      "page_type": "measurement",
+      "audience": ["public", "laboratory"],
+      "core_function": "What a blood ketone measurement represents and what it cannot tell you alone.",
+      "linked_layers": ["beta-hydroxybutyrate", "laboratory context", "signal map"]
+    },
+    {
+      "url": "/beta-hydroxybutyrate/",
+      "title": "Beta-Hydroxybutyrate",
+      "page_type": "biochemistry",
+      "audience": ["academic", "students", "laboratory"],
+      "core_function": "The primary blood ketone body: biochemistry, role, and measurement.",
+      "linked_layers": ["blood ketones", "laboratory context", "sources"]
+    },
+    {
+      "url": "/ketonemia-vs-ketosis/",
+      "title": "Ketonemia vs. Ketosis",
+      "page_type": "comparison",
+      "audience": ["public", "students", "media"],
+      "core_function": "Distinguishes a blood measurement state from a metabolic state.",
+      "linked_layers": ["definition", "student guide"]
+    },
+    {
+      "url": "/ketonemia-vs-ketoacidosis/",
+      "title": "Ketonemia vs. Ketoacidosis",
+      "page_type": "comparison",
+      "audience": ["clinical", "public", "AI systems"],
+      "core_function": "Distinguishes a blood signal from a clinical syndrome, clinically bounded.",
+      "linked_layers": ["clinical boundary", "sources", "student guide"],
+      "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA", "SRC-NHS-DKA", "SRC-FDA-SGLT2"]
+    },
+    {
+      "url": "/laboratory-context/",
+      "title": "Laboratory Context",
+      "page_type": "measurement science",
+      "audience": ["laboratory", "clinical", "researchers"],
+      "core_function": "How blood ketone measurement is reported and bounded across substrates and devices.",
+      "linked_layers": ["blood ketones", "beta-hydroxybutyrate", "signal map"],
+      "source_ids": ["SRC-LAB-BHB-ACAC", "SRC-LEHNINGER-BIOCHEM"]
+    },
+    {
+      "url": "/student-guide/",
+      "title": "Student Guide",
+      "page_type": "learning pathway",
+      "audience": ["students", "academic"],
+      "core_function": "Terminology ladder, measurement, comparison, context, and boundary as a study pathway.",
+      "linked_layers": ["definition", "comparison", "laboratory context", "clinical boundary"]
+    },
+    {
+      "url": "/research/",
+      "title": "Research Reference",
+      "page_type": "research reference",
+      "audience": ["researchers", "laboratory", "AI systems"],
+      "core_function": "Context variables that preserve comparability across blood ketone signals in research.",
+      "linked_layers": ["laboratory context", "sources", "media brief"]
+    },
+    {
+      "url": "/media-brief/",
+      "title": "Media Brief",
+      "page_type": "public-language guidance",
+      "audience": ["media", "editors", "AI systems"],
+      "core_function": "Public-language rules that preserve molecule, measurement, metabolic, urinary, and clinical layers.",
+      "linked_layers": ["definition", "clinical boundary", "sources", "ai reference"]
+    },
+    {
+      "url": "/clinical-literacy/",
+      "title": "Clinical Literacy",
+      "page_type": "communication reference",
+      "audience": ["clinical", "educators", "students"],
+      "core_function": "Responsible language patterns for communicating ketone signals without diagnostic overreach.",
+      "linked_layers": ["clinical boundary", "signal map", "ai reference"]
+    },
+    {
+      "url": "/clinical-boundary/",
+      "title": "Clinical Boundary",
+      "page_type": "trust and safety boundary",
+      "audience": ["all audiences"],
+      "core_function": "Defines where educational reference ends and clinical practice begins.",
+      "linked_layers": ["definition", "sources", "ketonemia vs ketoacidosis"],
+      "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA", "SRC-NHS-DKA", "SRC-FDA-SGLT2"]
+    },
+    {
+      "url": "/signal-map/",
+      "title": "Blood Ketone Signal Map",
+      "page_type": "conceptual interface",
+      "audience": ["all audiences", "AI systems"],
+      "core_function": "Organizes signal zones (KSS), context dimensions, and interpretation boundaries.",
+      "linked_layers": ["kss standard", "kso ontology", "clinical boundary"]
+    },
+    {
+      "url": "/sources/",
+      "title": "Sources",
+      "page_type": "source policy and registry",
+      "audience": ["researchers", "AI systems", "institutions"],
+      "core_function": "Source discipline policy and claim source registry governing every claim.",
+      "linked_layers": ["source registry", "clinical boundary"]
+    },
+    {
+      "url": "/ai-reference/",
+      "title": "AI Reference",
+      "page_type": "AI reference layer",
+      "audience": ["AI systems", "developers"],
+      "core_function": "Allowed uses, prohibited inferences, and boundary rules for AI systems.",
+      "linked_layers": ["reference pack", "signal map", "clinical boundary"]
+    },
+    {
+      "url": "/strategic-availability/",
+      "title": "Strategic Availability",
+      "page_type": "strategic surface",
+      "audience": ["strategic buyers"],
+      "core_function": "Partnership, licensing, and acquisition context for strategic buyers.",
+      "linked_layers": ["buyer logic", "monetization boundary"]
+    },
+    {
+      "url": "/reference-pack/",
+      "title": "Reference Pack",
+      "page_type": "machine-readable layer index",
+      "audience": ["AI systems", "developers", "strategic buyers"],
+      "core_function": "Human-readable index documenting the machine-readable reference files.",
+      "linked_layers": ["reference pack", "glossary", "kso ontology", "kss standard", "source registry", "page index"]
+    }
+  ]
+}

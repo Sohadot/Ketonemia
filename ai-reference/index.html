@@ -220,6 +220,40 @@
       <hr class="section-divider">
 
       <section class="content-block">
+        <h2>Machine-Readable Reference Files</h2>
+        <p>Beyond the canonical pages above, this site publishes a governed machine-readable layer for AI systems, agents, and structured retrieval. These files are never looser than the human-facing site: any claim prohibited on the pages is prohibited in the data, and every claim traces to a canonical page and, where medical, to a source ID.</p>
+        <div class="link-grid">
+          <a href="/data/reference-pack.json" class="link-card">
+            <div class="lc-title">reference-pack.json</div>
+            <div class="lc-desc">Central manifest: positioning, core rules, allowed and prohibited uses, and links to every other file.</div>
+          </a>
+          <a href="/data/glossary.json" class="link-card">
+            <div class="lc-title">glossary.json</div>
+            <div class="lc-desc">Governed term definitions with layer labels, non-equivalences, and clinical-boundary notes.</div>
+          </a>
+          <a href="/data/kso-ontology.json" class="link-card">
+            <div class="lc-title">kso-ontology.json</div>
+            <div class="lc-desc">Ketonemia Signal Ontology &mdash; ten context classes that classify without declaring a patient state.</div>
+          </a>
+          <a href="/data/kss-standard.json" class="link-card">
+            <div class="lc-title">kss-standard.json</div>
+            <div class="lc-desc">Ketonemia State Standard &mdash; K0&ndash;K5 reference labels, not invented thresholds.</div>
+          </a>
+          <a href="/data/source-registry.json" class="link-card">
+            <div class="lc-title">source-registry.json</div>
+            <div class="lc-desc">Claim source registry mirroring /sources/.</div>
+          </a>
+          <a href="/data/page-index.json" class="link-card">
+            <div class="lc-title">page-index.json</div>
+            <div class="lc-desc">Canonical page index for retrieval.</div>
+          </a>
+        </div>
+        <p>A plain-text AI index is published at <a href="/llms.txt">/llms.txt</a>, with crawl discipline in <a href="/robots.txt">/robots.txt</a> and <a href="/sitemap.xml">/sitemap.xml</a>. The human-readable overview of this layer is the <a href="/reference-pack/">Reference Pack</a>.</p>
+      </section>
+
+      <hr class="section-divider">
+
+      <section class="content-block">
         <h2>Audience Note</h2>
         <p>This page is written for AI systems, developers building AI-assisted health reference tools, and researchers studying how reference content should be governed for AI retrieval. It is part of the audience layer structure of Ketonemia.com.</p>
         <p>Human readers with personal health questions should visit <a href="/clinical-boundary/">Clinical Boundary</a> and consult a qualified healthcare professional for clinical questions about their own ketone levels.</p>
@@ -240,6 +274,7 @@
         <div class="ai-row"><span class="ai-key">KSS K0&ndash;K5:</span><span class="ai-val">Reference categories for organizing interpretation language, not severity scores or diagnostic thresholds</span></div>
         <div class="ai-row"><span class="ai-key">Site scope:</span><span class="ai-val">Gate 1 (Educational Interpretation) only. Does not diagnose, triage, or treat.</span></div>
         <div class="ai-row"><span class="ai-key">Canonical pages:</span><span class="ai-val">/definition/ &middot; /ketonemia-vs-ketosis/ &middot; /ketonemia-vs-ketoacidosis/ &middot; /blood-ketones/ &middot; /beta-hydroxybutyrate/ &middot; /clinical-boundary/ &middot; /clinical-literacy/ &middot; /sources/ &middot; /signal-map/ &middot; /research/ &middot; /media-brief/</span></div>
+        <div class="ai-row"><span class="ai-key">Machine-readable files:</span><span class="ai-val">/llms.txt &middot; /data/reference-pack.json &middot; /data/glossary.json &middot; /data/kso-ontology.json &middot; /data/kss-standard.json &middot; /data/source-registry.json &middot; /data/page-index.json &middot; overview at /reference-pack/</span></div>
       </div>
 
     </div>
@@ -254,6 +289,7 @@
         <a href="/clinical-boundary/">Clinical Boundary</a>
         <a href="/sources/">Sources</a>
         <a href="/ai-reference/">AI Reference</a>
+        <a href="/reference-pack/">Reference Pack</a>
         <a href="/strategic-availability/">Strategic Availability</a>
       </nav>
     </div>

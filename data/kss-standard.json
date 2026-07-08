@@ -1,0 +1,55 @@
+{
+  "name": "Ketonemia State Standard",
+  "abbreviation": "KSS",
+  "version": "1.0",
+  "updated": "2026-07-08",
+  "source_document": "KETONEMIA_STATE_STANDARD.md",
+  "purpose": "Organize blood ketone signal language into a governed reference model. KSS does not invent medical thresholds; it organizes cited guidance and preserves the clinical boundary.",
+  "threshold_rule": "KSS must never publish internally invented clinical cutoffs. When numeric ranges are used, they must cite an external source, identify population or context, state measurement type, avoid universal claims, and distinguish educational framing from medical advice.",
+  "zones": [
+    {
+      "code": "K0",
+      "state": "Baseline",
+      "reference_meaning": "Low or non-prominent ketone signal.",
+      "clinical_boundary": "Not a safety declaration."
+    },
+    {
+      "code": "K1",
+      "state": "Low Presence",
+      "reference_meaning": "Detectable ketone presence requiring context before meaning is assigned.",
+      "clinical_boundary": "Not a diagnosis; context is required."
+    },
+    {
+      "code": "K2",
+      "state": "Nutritional / Fasting Range",
+      "reference_meaning": "Signal that may appear in fasting or nutritional contexts.",
+      "clinical_boundary": "Context does not by itself indicate safety."
+    },
+    {
+      "code": "K3",
+      "state": "Elevated Context Signal",
+      "reference_meaning": "Reading that requires context and should not be interpreted as a standalone verdict.",
+      "clinical_boundary": "Not a standalone clinical verdict."
+    },
+    {
+      "code": "K4",
+      "state": "Clinical Concern Boundary",
+      "reference_meaning": "Concern zone where cited guidance may recommend professional medical contact or assessment.",
+      "clinical_boundary": "A boundary label, not a diagnosis. Refers outward to professional care."
+    },
+    {
+      "code": "K5",
+      "state": "Emergency Referral Boundary",
+      "reference_meaning": "Urgent-care language zone when cited guidance supports emergency referral.",
+      "clinical_boundary": "A boundary label, not treatment advice. Points toward professional emergency evaluation where source guidance supports it."
+    }
+  ],
+  "prohibited_use": [
+    "diagnose DKA",
+    "declare a reader safe",
+    "recommend treatment",
+    "replace clinician judgment",
+    "automate emergency triage",
+    "create unsourced thresholds"
+  ]
+}

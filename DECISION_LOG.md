@@ -136,6 +136,12 @@ Status: complete. Commit: ce3f718. Merged to main.
 
 Sprint 3G added /media-brief/ as the public-language guidance layer for ketonemia. The page separates media wording across molecule, measurement, metabolic state, urinary finding, clinical syndrome, and boundary layers; adds search-intent explanation blocks, headline-risk analysis, allowed/avoid/because wording guidance, quote-ready lines with clinical limits, source-class logic, audience layering, internal reference pathways, source IDs, and a rich AI-readable summary. Patches updated the homepage card grid, /ai-reference/, /research/, /clinical-boundary/, and QUALITY_GATE.md. No DEC was created because the sprint applies existing source discipline and clinical-boundary rules to media-facing language without creating a new governance rule.
 
+### Sprint 4A / F1 - Agent-Readable Reference Layer
+
+Status: complete.
+
+Sprint 4A (build phase F1 of the Asset Intelligence Factory Plan) added the machine-readable reference layer that begins the transition from category asset to category intelligence source. Files added: /llms.txt, /robots.txt, /sitemap.xml, /data/reference-pack.json, /data/glossary.json, /data/kso-ontology.json, /data/kss-standard.json, /data/source-registry.json, /data/page-index.json, and the human-readable /reference-pack/ index with Dataset JSON-LD. The KSO and KSS JSON files mirror KETONEMIA_SIGNAL_ONTOLOGY.md and KETONEMIA_STATE_STANDARD.md without inventing classes or thresholds; source-registry.json mirrors the visible registry on /sources/. Patches updated the homepage card grid and footer, /ai-reference/ (Machine-Readable Reference Files section, AI summary, footer), ROADMAP.md, and QUALITY_GATE.md (Agent-Readable Reference Layer Gate). No new DEC was created: the layer is a direct extension of AI_REFERENCE_POLICY.md, which already requires that machine-readable output must not be looser than human-facing content. Clinical-boundary language was preserved: the data does not diagnose, triage, declare a reader safe, or provide treatment instruction.
+
 ## Open Decisions
 
 - None at this time.

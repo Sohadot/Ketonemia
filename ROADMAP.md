@@ -254,6 +254,31 @@ Deliverables:
 
 Status: complete. Commit: ce3f718. Merged to main.
 
+## Sprint 4A / F1 — Agent-Readable Reference Layer
+
+Goal: make Ketonemia.com readable, citeable, and retrievable by AI systems, agents, and structured consumers without adding clinical interpretation. Build phase F1 of the Asset Intelligence Factory Plan — the transition from category asset to machine-readable category intelligence source.
+
+Governing sentence: The machine-readable layer is never looser than the human-facing site; if a claim is prohibited on the pages, it is prohibited in the data.
+
+Deliverables:
+
+- `/llms.txt` — public AI index with allowed and prohibited AI uses, canonical pages, and machine-readable files;
+- `/robots.txt` — crawl policy pointing to the sitemap;
+- `/sitemap.xml` — all canonical public routes;
+- `/data/reference-pack.json` — central manifest;
+- `/data/glossary.json` — governed term definitions with clinical-boundary notes;
+- `/data/kso-ontology.json` — Ketonemia Signal Ontology, ten context classes;
+- `/data/kss-standard.json` — Ketonemia State Standard, K0–K5 reference labels;
+- `/data/source-registry.json` — claim source registry mirroring `/sources/`;
+- `/data/page-index.json` — canonical page index for retrieval;
+- `/reference-pack/` — human-readable index of the machine-readable layer with Dataset JSON-LD;
+- homepage card and footer updated;
+- `/ai-reference/` Machine-Readable Reference Files section, AI summary, and footer updated;
+- Agent-Readable Reference Layer Gate added to QUALITY_GATE.md;
+- DECISION_LOG Implementation Record: Sprint 4A entry added.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
