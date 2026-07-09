@@ -365,6 +365,25 @@ Prohibited: new sources (registry reused), invented class or KSS names, threshol
 
 Status: complete.
 
+## F6 — Monetization Proof
+
+Goal: turn the monetization layer from boundary-only into a governed, demonstrable revenue path — the first governed product spec plus an inquiry surface. Build phase F6 of the Asset Intelligence Factory Plan (layer 10 proof).
+
+Governing sentence: Revenue must extend trust, not replace it.
+
+Deliverables:
+
+- `MONETIZATION_SPEC.md` — internal spec operationalizing MONETIZATION_BOUNDARY.md: product catalog mapped to permitted lines, flagship spec, inquiry mechanism, and hard rules;
+- `/briefs/` — public product catalog and inquiry surface: what these are, the catalog table, the flagship AI Reference Pack License spec, sponsorship rule, "what this is not," and a plain inquiry surface;
+- static-only: no store, checkout, payment, ads, or data-collection form (no new security surface);
+- SEO: unique title, meta, canonical, CollectionPage + BreadcrumbList JSON-LD with no Offer/price markup;
+- wire-in and route-count reconciliation 28 → 29: `/architecture/` + `SYSTEM_ARCHITECTURE.md` (Monetization layer Owned, Strategic cluster, ItemList), `/strategic-availability/`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- `QUALITY_GATE.md` Monetization Proof Gate; README and DECISION_LOG entries.
+
+Prohibited: on-site prices, checkout, payment processing, data-collection forms, ads, affiliate content, paid rankings, lead generation, restricted/prohibited monetization categories, Offer/price structured data.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

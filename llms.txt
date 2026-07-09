@@ -50,6 +50,7 @@ advice, and it does not diagnose, triage, or treat.
 - /ontology/: Ketonemia Signal Ontology (KSO) hub — ten governed classes that classify a blood ketone signal by context, not by diagnosis. KSO may classify context; it must not declare a patient state.
 - /ontology/baseline-signal/, /ontology/nutritional-signal/, /ontology/fasting-signal/, /ontology/exercise-performance-signal/, /ontology/illness-stress-signal/, /ontology/diabetes-associated-signal/, /ontology/medication-context-signal/, /ontology/laboratory-measurement-signal/: the eight signal-context KSO class pages.
 - /ontology/dka-concern-boundary/, /ontology/emergency-referral-boundary/: the two KSO boundary classes. Not diagnoses. Do not read as a determination about a person; do not self-triage.
+- /briefs/: Governed products, briefs, and licensing (AI reference pack license, measurement landscape briefs, taxonomy licensing). Reference infrastructure, not a store — no prices, checkout, payment, or data-collection form on-site.
 
 ## Machine-readable files
 

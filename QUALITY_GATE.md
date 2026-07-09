@@ -91,6 +91,18 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Is the route count reconciled to 28 everywhere it appears (architecture Layer Stack and AI summary, SYSTEM_ARCHITECTURE.md, JSON-LD ItemList), with every route in the Reference Map exactly once?
 - Do all JSON files validate and does the sitemap contain the eleven new routes?
 
+## Monetization Proof Gate
+
+- Does every product on `/briefs/` come from the Permitted Monetization list in `MONETIZATION_BOUNDARY.md`, with no restricted or prohibited category offered?
+- Is the page static with no store, checkout, payment processing, or data-collection form (no new security or personal-data surface)?
+- Are there no on-site prices, and no "buy now" / cart / checkout language?
+- Is there no advertising, affiliate content, paid ranking presented as neutral, or lead-generation funnel?
+- Does any sponsorship language use "Supported by," never "recommended by," and never touch the clinical boundary or source discipline?
+- Does the inquiry surface route to the existing neutral contact with no data collection?
+- Does the structured data carry no `Product`, `Offer`, or price markup?
+- Does the page preserve the clinical boundary (no diagnosis, triage, or device ranking)?
+- Are route counts reconciled to 29 everywhere they appear, and do all JSON files validate?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?
