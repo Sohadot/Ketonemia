@@ -31,7 +31,8 @@
     "ontology": "/data/kso-ontology.json",
     "standard": "/data/kss-standard.json",
     "sources": "/data/source-registry.json",
-    "pages": "/data/page-index.json"
+    "pages": "/data/page-index.json",
+    "classification_rules": "/data/classification-rules.json"
   },
   "governance_documents": [
     "FOUNDATION_DOCTRINE.md",
@@ -40,7 +41,8 @@
     "SOURCE_POLICY.md",
     "AI_REFERENCE_POLICY.md",
     "KETONEMIA_SIGNAL_ONTOLOGY.md",
-    "KETONEMIA_STATE_STANDARD.md"
+    "KETONEMIA_STATE_STANDARD.md",
+    "CLASSIFICATION_PROTOCOL.md"
   ],
   "canonical_pages": [
     "/definition/",
@@ -58,6 +60,7 @@
     "/sources/",
     "/ai-reference/",
     "/strategic-availability/",
-    "/architecture/"
+    "/architecture/",
+    "/classification-engine/"
   ]
 }

@@ -323,6 +323,28 @@ Prohibited: any new clinical content, thresholds, diagnosis, triage, or verdicts
 
 Status: complete.
 
+## F4 — Governed Classification Engine
+
+Goal: build the first operational tool on Ketonemia.com — a deterministic reference engine that runs the Classification Protocol. Build phase F4 of the Asset Intelligence Factory Plan (layer 6, Engine / Tool).
+
+Governing sentence: The engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.
+
+Deliverables:
+
+- `/classification-engine/` — boundary notice, engine thesis, context-only input form, nine-field governed output template, protocol explanation, AI-readable summary;
+- `/data/classification-rules.json` — 15 deterministic rules, first-match priority order, unconditional catch-all, using only real KSO classes and KSS labels;
+- `/assets/js/classification-engine.js` — vanilla JS, no backend, no external API, no tracking, no storage, output rendered via `textContent`;
+- `<noscript>` static fallback explaining the engine and linking to `/signal-map/` and `/clinical-boundary/`;
+- sensitive-context routing (diabetes + illness/stress, diabetes + medication) to explicit clinical-concern-boundary language, never a verdict;
+- SEO: unique title, meta description, canonical, `WebPage` + `BreadcrumbList` JSON-LD (deliberately not `MedicalWebPage`, `MedicalRiskCalculator`, or `MedicalTest`);
+- wire-in: homepage, `/architecture/` and `SYSTEM_ARCHITECTURE.md` (Engine/Tool layer, route-count correction 16→17), `/signal-map/`, `/ai-reference/`, `/reference-pack/`, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- `QUALITY_GATE.md` Governed Classification Engine Gate;
+- README and DECISION_LOG entries.
+
+Prohibited: numeric inputs, thresholds, symptom fields, personal data, diagnosis/triage/treatment/risk-score language, invented KSO/KSS names, backend or external API calls.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

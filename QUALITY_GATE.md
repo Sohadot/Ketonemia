@@ -64,6 +64,21 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Do SYSTEM_ARCHITECTURE.md and ASSET_INTELLIGENCE_FACTORY_PLAN.md §2 agree on the layer stack?
 - Are stale page counts and route lists reconciled across `/strategic-availability/`, sitemap, llms.txt, and page-index.json?
 
+## Governed Classification Engine Gate
+
+- Does `/classification-engine/` exist and is it deterministic (same inputs always produce the same output)?
+- Is there no backend, no external API, and no tracking of any kind?
+- Are there zero personal-medical input fields, zero numeric ketone values or thresholds, and zero symptom fields?
+- Does every output avoid diagnosis, triage, treatment guidance, risk scoring, and safety/danger verdicts?
+- Do outputs include KSO class, KSS language, boundary statement, canonical references, and source requirements?
+- Do all KSO/KSS names in `data/classification-rules.json` match `data/kso-ontology.json` and `data/kss-standard.json` exactly, with no invented classes or labels?
+- Do sensitive context combinations (diabetes + illness/stress, diabetes + medication) route to explicit clinical-concern-boundary language rather than a verdict?
+- Does the page work meaningfully without JavaScript (a readable static explanation, not a broken form)?
+- Does the mobile layout pass, do internal links pass, and does all JSON validate?
+- Is the inline rules JSON in the page byte-identical to `data/classification-rules.json`?
+- Are `llms.txt`, `sitemap.xml`, `data/page-index.json`, and `data/reference-pack.json` updated with the new route and file?
+- Do `/architecture/`, `/ai-reference/`, and `/signal-map/` link to the engine, and are stale route counts corrected everywhere they appear?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?

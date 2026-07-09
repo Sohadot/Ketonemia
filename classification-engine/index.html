@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governed Classification Engine &mdash; Ketonemia</title>
+  <meta name="description" content="A deterministic reference tool that organizes blood ketone signal context without diagnosis, triage, treatment guidance, risk scoring, or individual interpretation.">
+  <link rel="canonical" href="https://ketonemia.com/classification-engine/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Governed Classification Engine",
+    "url": "https://ketonemia.com/classification-engine/",
+    "description": "A deterministic reference tool that organizes blood ketone signal context without diagnosis, triage, treatment guidance, risk scoring, or individual interpretation. Educational reference only — not a clinical tool.",
+    "isPartOf": { "@type": "WebSite", "name": "Ketonemia", "url": "https://ketonemia.com" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ketonemia", "item": "https://ketonemia.com" },
+        { "@type": "ListItem", "position": 2, "name": "Governed Classification Engine", "item": "https://ketonemia.com/classification-engine/" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="wrapper">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">Ketonemia<span>.com</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/definition/">Definition</a>
+        <a href="/blood-ketones/">Blood Ketones</a>
+        <a href="/signal-map/">Signal Map</a>
+        <a href="/classification-engine/" aria-current="page">Classification Engine</a>
+        <a href="/clinical-boundary/">Clinical Boundary</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="boundary-notice">
+        <strong>Educational Reference Only.</strong>
+        This engine classifies reference context. It does not evaluate your situation, assign a risk level, or substitute for clinical judgment. Nothing on this page is medical advice. If you have concerns about your ketone levels &mdash; particularly with symptoms &mdash; contact a qualified healthcare professional or seek emergency care.
+      </div>
+
+      <div class="page-header">
+        <span class="page-label">Signal Intelligence &middot; Operational Tool</span>
+        <h1>Governed Classification Engine</h1>
+        <p class="thesis">A deterministic reference tool that organizes blood ketone signal context without diagnosis, triage, treatment guidance, risk scoring, or individual interpretation. It runs the <a href="/architecture/#layer-stack">Classification Protocol</a> that already governs this site.</p>
+      </div>
+
+      <div class="def-block">
+        <strong>Governing Sentence</strong>
+        <p>This engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.</p>
+      </div>
+
+      <section class="content-block" id="engine-tool">
+        <h2>Classify Reference Context</h2>
+        <p class="engine-note">Select the context you want to classify. Do not enter personal readings, symptoms, medical history, or emergency information. The engine only organizes reference context.</p>
+
+        <noscript>
+          <div class="boundary-notice">
+            <strong>JavaScript is required for the interactive form.</strong>
+            Without it, here is what the engine would tell you: a blood ketone signal cannot be interpreted without knowing what was measured, by what method, and in what context. See the <a href="/signal-map/">Signal Map</a> for the same signal &rarr; context &rarr; boundary model in static form, and <a href="/clinical-boundary/">Clinical Boundary</a> for where educational reference ends and clinical practice begins.
+          </div>
+        </noscript>
+
+        <form id="engine-form" class="engine-form">
+          <div class="engine-field">
+            <label class="engine-label" for="measurement-type">Measurement type</label>
+            <select id="measurement-type" name="measurement_type">
+              <option value="unspecified">Not specified</option>
+              <option value="blood">Blood</option>
+              <option value="urine">Urine</option>
+              <option value="breath">Breath</option>
+              <option value="laboratory">Laboratory / point-of-care</option>
+            </select>
+          </div>
+
+          <div class="engine-field">
+            <label class="engine-label" for="measured-compound">Measured compound</label>
+            <select id="measured-compound" name="measured_compound">
+              <option value="unspecified">Not specified</option>
+              <option value="BHB">Beta-hydroxybutyrate (BHB)</option>
+              <option value="AcAc">Acetoacetate (AcAc)</option>
+              <option value="acetone">Acetone</option>
+            </select>
+          </div>
+
+          <fieldset class="engine-field">
+            <legend>Context (select any that apply)</legend>
+            <div class="engine-checkbox-grid">
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="fasting"> Fasting</label>
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="nutritional ketosis"> Nutritional ketosis</label>
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="diabetes"> Diabetes</label>
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="illness-stress"> Illness / metabolic stress</label>
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="medication"> Medication context</label>
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="laboratory"> Laboratory context</label>
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="research"> Research context</label>
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="media"> Media / public language</label>
+            </div>
+          </fieldset>
+
+          <div class="engine-field">
+            <label class="engine-label" for="audience">Audience</label>
+            <select id="audience" name="audience">
+              <option value="public">Public reader</option>
+              <option value="student">Student</option>
+              <option value="laboratory">Laboratory</option>
+              <option value="researcher">Researcher</option>
+              <option value="media">Media</option>
+              <option value="clinician-educator">Clinician / pharmacist / nurse educator</option>
+              <option value="ai-system">AI system</option>
+              <option value="strategic-reviewer">Strategic reviewer</option>
+            </select>
+          </div>
+
+          <button type="submit" class="engine-submit">Classify Reference Context</button>
+        </form>
+
+        <div id="engine-output" class="engine-output" role="region" aria-live="polite" tabindex="-1">
+          <div class="engine-output-empty">Select context above and choose &ldquo;Classify Reference Context&rdquo; to see the governed reference output.</div>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <section class="content-block" id="protocol">
+        <h2>How This Engine Is Governed</h2>
+        <p>The engine is a deterministic lookup, not a model and not a calculator. Every output follows the same nine-field template defined in the Classification Protocol: context classification, KSO class, KSS language, measurement note, boundary statement, allowed language, prohibited inference, canonical references, and source requirements. The boundary statement and prohibited-inference language never soften, regardless of which context is selected &mdash; only the surrounding explanation adapts to the chosen audience.</p>
+        <p>The rules themselves are published and reviewable at <a href="/data/classification-rules.json">/data/classification-rules.json</a>, and the reasoning they encode is documented in full in the <a href="/reference-pack/">Reference Pack</a> and the site&rsquo;s governance layer.</p>
+      </section>
+
+      <hr class="section-divider">
+
+      <section class="content-block">
+        <h3>Related Pages</h3>
+        <div class="link-grid">
+          <a href="/signal-map/" class="link-card"><div class="lc-title">Signal Map</div><div class="lc-desc">The conceptual interface this engine operationalizes.</div></a>
+          <a href="/architecture/" class="link-card"><div class="lc-title">System Architecture</div><div class="lc-desc">Where the engine sits in the governed layer stack.</div></a>
+          <a href="/clinical-boundary/" class="link-card"><div class="lc-title">Clinical Boundary</div><div class="lc-desc">Where educational reference ends and clinical practice begins.</div></a>
+          <a href="/sources/" class="link-card"><div class="lc-title">Sources</div><div class="lc-desc">The source discipline behind every source requirement the engine cites.</div></a>
+          <a href="/ai-reference/" class="link-card"><div class="lc-title">AI Reference</div><div class="lc-desc">How AI systems may cite engine output.</div></a>
+          <a href="/reference-pack/" class="link-card"><div class="lc-title">Reference Pack</div><div class="lc-desc">The machine-readable layer this engine's rules belong to.</div></a>
+        </div>
+      </section>
+
+      <div class="ai-summary">
+        <h3>AI-Readable Summary</h3>
+        <div class="ai-row"><span class="ai-key">Page type:</span><span class="ai-val">Governed classification engine &mdash; deterministic reference tool</span></div>
+        <div class="ai-row"><span class="ai-key">Governing rule:</span><span class="ai-val">This engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.</span></div>
+        <div class="ai-row"><span class="ai-key">Inputs:</span><span class="ai-val">Measurement type, measured compound, context (multi-select), audience &mdash; no numeric values, no symptoms, no personal data</span></div>
+        <div class="ai-row"><span class="ai-key">Outputs:</span><span class="ai-val">Context classification, KSO class, KSS language, measurement note, boundary statement, allowed language, prohibited inference, canonical references, source requirements</span></div>
+        <div class="ai-row"><span class="ai-key">Prohibited AI use:</span><span class="ai-val">Do not convert engine output into diagnosis, triage, risk scoring, or individualized advice. Cite it as reference classification only.</span></div>
+        <div class="ai-row"><span class="ai-key">Architecture:</span><span class="ai-val">Static page, vanilla JavaScript, no backend, no external API, no tracking, no data storage. Rules are published at /data/classification-rules.json.</span></div>
+        <div class="ai-row"><span class="ai-key">Related pages:</span><span class="ai-val">/signal-map/ &middot; /architecture/ &middot; /clinical-boundary/ &middot; /sources/ &middot; /ai-reference/ &middot; /reference-pack/</span></div>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="application/json" id="classification-rules">
+{
+  "name": "Ketonemia Classification Rules",
+  "version": "1.0",
+  "updated": "2026-07-09",
+  "source_document": "CLASSIFICATION_PROTOCOL.md",
+  "purpose": "Deterministic, reviewable rule set that runs the Classification Protocol. Maps structured context inputs to governed reference output: KSO class, KSS language, boundary statement, canonical references, and source requirements.",
+  "governing_rule": "This engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.",
+  "matching": "First rule in this array whose 'when' conditions all match the selected inputs wins. Fields omitted from 'when' are wildcards. The final rule is an unconditional catch-all so the engine never fails to produce a governed output.",
+  "constant_boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+  "sensitive_boundary_statement": "This belongs near the clinical-boundary layer. Ketonemia.com can explain terminology and source pathways, but it cannot assess a person, determine urgency, diagnose DKA, or provide instructions.",
+  "rules": [
+    {
+      "id": "RULE-MEASUREMENT-INCOMPLETE",
+      "when": { "measurement_type": "unspecified", "measured_compound": "unspecified", "context": [] },
+      "output": {
+        "context_classification": "Measurement-context incomplete.",
+        "kso_class": "Baseline Signal",
+        "kss_language": "K0 — Baseline",
+        "measurement_note": "No measurement type or compound was selected. A ketone signal cannot be classified without knowing what was measured and how.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Blood ketone signals require a measurement type and compound before they can be classified."
+        ],
+        "prohibited_inference": [
+          "Do not infer any signal meaning from an unspecified measurement.",
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/blood-ketones/", "/laboratory-context/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-LAB-URINE-ACAC",
+      "when": { "measurement_type": "urine", "measured_compound": "AcAc" },
+      "output": {
+        "context_classification": "Laboratory / sample-method context.",
+        "kso_class": "Laboratory Measurement Signal",
+        "kss_language": "K1 — Low Presence, non-equivalent signal",
+        "measurement_note": "Urine AcAc and blood BHB are different measurement signals and should not be treated as interchangeable.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Urine and blood ketone tests measure different signals."
+        ],
+        "prohibited_inference": [
+          "Do not infer blood BHB level from urine AcAc language alone.",
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-LAB-BHB-ACAC"]
+      }
+    },
+    {
+      "id": "RULE-LAB-BREATH-ACETONE",
+      "when": { "measurement_type": "breath", "measured_compound": "acetone" },
+      "output": {
+        "context_classification": "Laboratory / sample-method context.",
+        "kso_class": "Laboratory Measurement Signal",
+        "kss_language": "K1 — Low Presence, proxy signal",
+        "measurement_note": "Breath acetone is a proxy measurement and is not interchangeable with blood BHB or urine AcAc.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Breath ketone measurement is a proxy signal, distinct from blood or urine measurement."
+        ],
+        "prohibited_inference": [
+          "Do not infer blood BHB level from breath acetone language alone.",
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/sources/"],
+        "source_ids": ["SRC-LAB-BHB-ACAC"]
+      }
+    },
+    {
+      "id": "RULE-DIABETES-ILLNESS-SENSITIVE",
+      "when": { "context": ["diabetes", "illness-stress"] },
+      "output": {
+        "context_classification": "Diabetes and illness/stress context — clinical concern boundary.",
+        "kso_class": "DKA Concern Boundary",
+        "kss_language": "K4 — Clinical Concern Boundary",
+        "measurement_note": "Illness combined with diabetes context changes how ketone signals should be read, but no measurement alone determines urgency.",
+        "boundary_statement": "This belongs near the clinical-boundary layer. Ketonemia.com can explain terminology and source pathways, but it cannot assess a person, determine urgency, diagnose DKA, or provide instructions.",
+        "allowed_language": [
+          "Diabetes and illness together are a context that clinical guidance treats with particular caution.",
+          "Ketonemia.com can explain terminology and point to source guidance; it cannot assess an individual."
+        ],
+        "prohibited_inference": [
+          "Do not infer a diagnosis of DKA.",
+          "Do not declare the person safe or in danger.",
+          "Do not provide sick-day instructions or treatment guidance.",
+          "Do not assign a risk score or urgency level."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA", "SRC-NHS-DKA"]
+      }
+    },
+    {
+      "id": "RULE-DIABETES-MEDICATION-SENSITIVE",
+      "when": { "context": ["diabetes", "medication"] },
+      "output": {
+        "context_classification": "Diabetes and medication context — clinical concern boundary.",
+        "kso_class": "DKA Concern Boundary",
+        "kss_language": "K4 — Clinical Concern Boundary",
+        "measurement_note": "Certain diabetes medications, including SGLT2 inhibitors, are documented to affect ketone signals independently of glucose level.",
+        "boundary_statement": "This belongs near the clinical-boundary layer. Ketonemia.com can explain terminology and source pathways, but it cannot assess a person, determine urgency, diagnose DKA, or provide instructions.",
+        "allowed_language": [
+          "Some diabetes medications are documented to change how ketone signals should be read.",
+          "Ketonemia.com documents this phenomenon; it does not assess individual medication risk."
+        ],
+        "prohibited_inference": [
+          "Do not infer a diagnosis of DKA.",
+          "Do not declare the medication safe or unsafe for the person.",
+          "Do not provide dosing or treatment guidance.",
+          "Do not assign a risk score or urgency level."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-FDA-SGLT2"]
+      }
+    },
+    {
+      "id": "RULE-DIABETES-ALONE",
+      "when": { "context": ["diabetes"] },
+      "output": {
+        "context_classification": "Diabetes-associated context.",
+        "kso_class": "Diabetes-Associated Signal",
+        "kss_language": "K3 — Elevated Context Signal",
+        "measurement_note": "Diabetes context changes how a ketone signal is approached, but this classification does not evaluate an individual's status.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "For people with diabetes, ketone signal interpretation follows monitoring guidance distinct from non-diabetic contexts."
+        ],
+        "prohibited_inference": [
+          "Do not diagnose DKA or declare the person safe.",
+          "Do not provide monitoring or treatment instructions."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA"]
+      }
+    },
+    {
+      "id": "RULE-ILLNESS-ALONE",
+      "when": { "context": ["illness-stress"] },
+      "output": {
+        "context_classification": "Illness / metabolic stress context.",
+        "kso_class": "Illness / Stress Signal",
+        "kss_language": "K3 — Elevated Context Signal",
+        "measurement_note": "Illness, vomiting, infection, and dehydration can elevate ketone signals independently of diet.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Illness can elevate ketone signals through a stress response rather than a nutritional cause."
+        ],
+        "prohibited_inference": [
+          "Do not diagnose DKA or declare the person safe.",
+          "Do not provide sick-day instructions."
+        ],
+        "canonical_references": ["/clinical-boundary/", "/blood-ketones/", "/sources/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-MEDICATION-ALONE",
+      "when": { "context": ["medication"] },
+      "output": {
+        "context_classification": "Medication context.",
+        "kso_class": "Medication-Context Signal",
+        "kss_language": "K4 — Clinical Concern Boundary",
+        "measurement_note": "Certain medications, including SGLT2 inhibitors, are documented to affect ketone signals, sometimes without markedly elevated glucose.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Some medications are documented to change how ketone signals should be read."
+        ],
+        "prohibited_inference": [
+          "Do not infer a diagnosis of DKA.",
+          "Do not assess individual medication risk or provide dosing guidance."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-FDA-SGLT2"]
+      }
+    },
+    {
+      "id": "RULE-FASTING-BLOOD",
+      "when": { "measurement_type": "blood", "measured_compound": "BHB", "context": ["fasting"] },
+      "output": {
+        "context_classification": "Fasting context.",
+        "kso_class": "Fasting Signal",
+        "kss_language": "K2 — Nutritional / Fasting Range",
+        "measurement_note": "Ketone elevation during fasting reflects a well-documented metabolic fuel-switching process and rises predictably with fasting duration.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Fasting-related ketone elevation reflects a documented physiological process."
+        ],
+        "prohibited_inference": [
+          "Do not infer that a fasting reading is safe for a specific person.",
+          "Do not diagnose DKA."
+        ],
+        "canonical_references": ["/blood-ketones/", "/ketonemia-vs-ketosis/", "/clinical-boundary/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-NUTRITIONAL-BLOOD",
+      "when": { "measurement_type": "blood", "measured_compound": "BHB", "context": ["nutritional ketosis"] },
+      "output": {
+        "context_classification": "Nutritional ketosis context.",
+        "kso_class": "Nutritional Signal",
+        "kss_language": "K2 — Nutritional / Fasting Range",
+        "measurement_note": "Sustained ketone elevation is expected in intentional low-carbohydrate or ketogenic nutrition contexts.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Nutritional ketosis is a documented, intentional dietary context associated with ketone elevation."
+        ],
+        "prohibited_inference": [
+          "Do not infer that a nutritional-ketosis reading is beneficial or safe for a specific person.",
+          "Do not diagnose DKA."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketosis/", "/blood-ketones/", "/clinical-boundary/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-LABORATORY-CONTEXT",
+      "when": { "context": ["laboratory"] },
+      "output": {
+        "context_classification": "Laboratory measurement context.",
+        "kso_class": "Laboratory Measurement Signal",
+        "kss_language": "Reference language only — not a clinical threshold",
+        "measurement_note": "Measurement method, device, hematocrit, and timing affect the reported number; the number is not context-free.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Measurement method changes how a ketone signal should be described."
+        ],
+        "prohibited_inference": [
+          "Do not infer DKA, safety, danger, or treatment need from method language alone."
+        ],
+        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-LAB-BHB-ACAC"]
+      }
+    },
+    {
+      "id": "RULE-RESEARCH-CONTEXT",
+      "when": { "context": ["research"] },
+      "output": {
+        "context_classification": "Research comparability context.",
+        "kso_class": "Laboratory Measurement Signal",
+        "kss_language": "Reference language only — source-bound",
+        "measurement_note": "Research use requires preserving compound, method, population, fasting state, medication context, and source class for comparability.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Research comparability depends on preserving measurement and population variables."
+        ],
+        "prohibited_inference": [
+          "Do not generalize a research context to an individual reading.",
+          "Do not infer DKA, safety, or danger."
+        ],
+        "canonical_references": ["/research/", "/sources/", "/laboratory-context/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-MEDIA-CONTEXT",
+      "when": { "context": ["media"] },
+      "output": {
+        "context_classification": "Public-language / media context.",
+        "kso_class": "Baseline Signal",
+        "kss_language": "Terminology-accuracy layer — not a clinical zone",
+        "measurement_note": "Media language must preserve the distinction between molecule, measurement, metabolic state, urinary finding, and clinical syndrome.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Ketonemia, ketosis, ketonuria, and ketoacidosis name different layers and should not be collapsed into one term."
+        ],
+        "prohibited_inference": [
+          "Do not use panic or safety framing.",
+          "Do not infer DKA, safety, or danger from terminology alone."
+        ],
+        "canonical_references": ["/media-brief/", "/clinical-boundary/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-MEASUREMENT-ONLY",
+      "when": { "context": [] },
+      "output": {
+        "context_classification": "Measurement context, no interpretive context selected.",
+        "kso_class": "Baseline Signal",
+        "kss_language": "K1 — Low Presence, context required",
+        "measurement_note": "A measurement type or compound was selected without a context. The signal cannot be interpreted without a context dimension.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "A ketone measurement requires a context dimension before it can carry reference meaning."
+        ],
+        "prohibited_inference": [
+          "Do not infer any signal meaning without a context dimension.",
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/signal-map/", "/blood-ketones/", "/clinical-boundary/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-DEFAULT-CATCHALL",
+      "when": {},
+      "output": {
+        "context_classification": "General reference context.",
+        "kso_class": "Baseline Signal",
+        "kss_language": "Reference language only",
+        "measurement_note": "The selected inputs did not match a more specific reference pattern. General reference and boundary language applies.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Blood ketone signals require context before interpretation."
+        ],
+        "prohibited_inference": [
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/signal-map/", "/clinical-boundary/", "/sources/"],
+        "source_ids": []
+      }
+    }
+  ]
+}
+  </script>
+  <script src="/assets/js/classification-engine.js"></script>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-disclaimer">Ketonemia.com is an educational and reference resource. This site does not provide medical advice, diagnosis, or treatment. Consult a qualified healthcare professional for clinical questions.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/definition/">Definition</a>
+        <a href="/signal-map/">Signal Map</a>
+        <a href="/classification-engine/">Classification Engine</a>
+        <a href="/clinical-boundary/">Clinical Boundary</a>
+        <a href="/sources/">Sources</a>
+        <a href="/ai-reference/">AI Reference</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
