@@ -345,6 +345,26 @@ Prohibited: numeric inputs, thresholds, symptom fields, personal data, diagnosis
 
 Status: complete.
 
+## F5 — Deep KSO Ontology Class Pages
+
+Goal: turn the ten-class Ketonemia Signal Ontology from a governance spec into a citable reference structure. Build phase F5 of the Asset Intelligence Factory Plan (deepens layer 3).
+
+Governing sentence: KSO may classify context. It must not declare a patient state.
+
+Deliverables:
+
+- `/ontology/` hub + ten `/ontology/<slug>/` class pages, one per KSO class, each deep and distinct: governing rule, definition, context map, "what it is not" distinction, KSS relationship, boundary language, audience notes, source IDs, AI-readable summary;
+- boundary classes (DKA Concern, Emergency Referral) carry the strongest restraint — not diagnoses, no self-triage;
+- engine integration: `kso_class_page` added to every rule in `data/classification-rules.json`; the Classification Engine renders the KSO-class result as a link to the matching class page; inline rules stay byte-identical;
+- `data/kso-ontology.json` — `ontology_page` per class;
+- built with existing CSS only; `DefinedTerm` / `DefinedTermSet` + `BreadcrumbList` JSON-LD, no medical claims in structured data;
+- wire-in and route-count reconciliation 17 → 28: `/architecture/` + `SYSTEM_ARCHITECTURE.md` (Ontology layer Owned, new Ontology cluster, ItemList), `/signal-map/`, `/ai-reference/`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- `QUALITY_GATE.md` KSO Class Pages Gate; README and DECISION_LOG entries.
+
+Prohibited: new sources (registry reused), invented class or KSS names, thresholds, diagnosis/triage/self-triage language, thin pages.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

@@ -30,11 +30,11 @@ be kept in sync with it.
 | --- | --- | --- | --- | --- |
 | 1 | Domain thesis | What sentence makes the name necessary? | [ASSET_THESIS.md](ASSET_THESIS.md), [FOUNDATION_DOCTRINE.md](FOUNDATION_DOCTRINE.md) | Owned |
 | 2 | Category language | What vocabulary does the asset own? | [CATEGORY_LANGUAGE.md](CATEGORY_LANGUAGE.md) | Owned |
-| 3 | Ontology | How do we classify the category? | [KETONEMIA_SIGNAL_ONTOLOGY.md](KETONEMIA_SIGNAL_ONTOLOGY.md), `/data/kso-ontology.json` | Owned (spec); class pages pending |
+| 3 | Ontology | How do we classify the category? | [KETONEMIA_SIGNAL_ONTOLOGY.md](KETONEMIA_SIGNAL_ONTOLOGY.md), `/ontology/` (hub + 10 class pages), `/data/kso-ontology.json` | Owned (F5) |
 | 4 | Standard | What is good / complete / trusted? | [KETONEMIA_STATE_STANDARD.md](KETONEMIA_STATE_STANDARD.md), `/data/kss-standard.json` | Owned |
 | 5 | Protocol | How is context classified under governance? | [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) | Owned (F2) |
 | 6 | Engine / Tool | How does the system produce operational output? | [`/classification-engine/`](classification-engine/index.html), `/data/classification-rules.json` | Owned (F4) |
-| 7 | Reference layer | Is the site archivable, searchable, citable? | 17 canonical routes (see Route Map) | Owned |
+| 7 | Reference layer | Is the site archivable, searchable, citable? | 28 canonical routes (see Route Map) | Owned |
 | 8 | Governance | How are stability, versioning, and trust ensured? | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), policy docs | Owned |
 | 9 | Interface thesis | Does the interface embody the asset's meaning? | [INTERFACE_THESIS.md](INTERFACE_THESIS.md), `/signal-map/`, `/architecture/` | Owned |
 | 10 | Monetization | How does it earn without lowering trust? | [MONETIZATION_BOUNDARY.md](MONETIZATION_BOUNDARY.md) | Boundary owned; proof pending |
@@ -80,6 +80,19 @@ this graph so every route is reachable from one page.
 - `/strategic-availability/` — partnership, licensing, and acquisition context
 - `/architecture/` — this system map (Reference System layer)
 
+### Cluster G — Ontology (KSO Classes)
+- `/ontology/` — the Signal Ontology hub
+- `/ontology/baseline-signal/` — Baseline Signal
+- `/ontology/nutritional-signal/` — Nutritional Signal
+- `/ontology/fasting-signal/` — Fasting Signal
+- `/ontology/exercise-performance-signal/` — Exercise / Performance Signal
+- `/ontology/illness-stress-signal/` — Illness / Stress Signal
+- `/ontology/diabetes-associated-signal/` — Diabetes-Associated Signal
+- `/ontology/medication-context-signal/` — Medication-Context Signal
+- `/ontology/laboratory-measurement-signal/` — Laboratory Measurement Signal
+- `/ontology/dka-concern-boundary/` — DKA Concern Boundary (boundary class)
+- `/ontology/emergency-referral-boundary/` — Emergency Referral Boundary (boundary class)
+
 ---
 
 ## Dependency and Build Order
@@ -90,8 +103,8 @@ The asset is built in the phased order defined in
 - **F1** — Agent-readable machine layer (complete).
 - **F2** — Classification Protocol (complete).
 - **F3** — System Architecture / Reference Map (complete).
-- **F4** — Deterministic reference engine, runs the F2 protocol (this layer).
-- **F5** — Ten deep ontology class pages (deepens layer 3).
+- **F4** — Deterministic reference engine, runs the F2 protocol (complete).
+- **F5** — Ten deep ontology class pages under `/ontology/`, deepening layer 3 (this layer).
 - **F6** — First governed product spec + inquiry surface (layer 10 proof).
 - **F7** — Acquisition dossier (layer 11 proof).
 

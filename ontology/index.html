@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketonemia Signal Ontology (KSO) — Ketonemia</title>
+  <meta name="description" content="The Ketonemia Signal Ontology: ten governed classes that classify the context around a blood ketone signal without declaring a patient state.">
+  <link rel="canonical" href="https://ketonemia.com/ontology/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Ketonemia Signal Ontology",
+    "url": "https://ketonemia.com/ontology/",
+    "description": "The Ketonemia Signal Ontology (KSO): ten governed classes that classify the context around a blood ketone signal without declaring a patient state. Educational reference only — not a clinical tool.",
+    "isPartOf": { "@type": "WebSite", "name": "Ketonemia", "url": "https://ketonemia.com" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ketonemia", "item": "https://ketonemia.com" },
+        { "@type": "ListItem", "position": 2, "name": "Signal Ontology", "item": "https://ketonemia.com/ontology/" }
+      ]
+    },
+    "hasPart": {
+      "@type": "ItemList",
+      "name": "KSO classes",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Baseline Signal", "url": "https://ketonemia.com/ontology/baseline-signal/" },
+        { "@type": "ListItem", "position": 2, "name": "Nutritional Signal", "url": "https://ketonemia.com/ontology/nutritional-signal/" },
+        { "@type": "ListItem", "position": 3, "name": "Fasting Signal", "url": "https://ketonemia.com/ontology/fasting-signal/" },
+        { "@type": "ListItem", "position": 4, "name": "Exercise / Performance Signal", "url": "https://ketonemia.com/ontology/exercise-performance-signal/" },
+        { "@type": "ListItem", "position": 5, "name": "Illness / Stress Signal", "url": "https://ketonemia.com/ontology/illness-stress-signal/" },
+        { "@type": "ListItem", "position": 6, "name": "Diabetes-Associated Signal", "url": "https://ketonemia.com/ontology/diabetes-associated-signal/" },
+        { "@type": "ListItem", "position": 7, "name": "Medication-Context Signal", "url": "https://ketonemia.com/ontology/medication-context-signal/" },
+        { "@type": "ListItem", "position": 8, "name": "Laboratory Measurement Signal", "url": "https://ketonemia.com/ontology/laboratory-measurement-signal/" },
+        { "@type": "ListItem", "position": 9, "name": "DKA Concern Boundary", "url": "https://ketonemia.com/ontology/dka-concern-boundary/" },
+        { "@type": "ListItem", "position": 10, "name": "Emergency Referral Boundary", "url": "https://ketonemia.com/ontology/emergency-referral-boundary/" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="wrapper">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">Ketonemia<span>.com</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/definition/">Definition</a>
+        <a href="/blood-ketones/">Blood Ketones</a>
+        <a href="/signal-map/">Signal Map</a>
+        <a href="/ontology/" aria-current="page">Ontology</a>
+        <a href="/clinical-boundary/">Clinical Boundary</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="boundary-notice">
+        <strong>Educational Reference Only.</strong>
+        The Signal Ontology classifies the <em>context</em> around a blood ketone signal. It does not classify a person, assess a reading, or provide medical advice. Boundary classes point toward professional care; they do not triage. If you have concerns about your ketone levels, contact a qualified healthcare professional.
+      </div>
+
+      <div class="page-header">
+        <span class="page-label">Reference System &middot; Ontology</span>
+        <h1>Ketonemia Signal Ontology</h1>
+        <p class="thesis">The Ketonemia Signal Ontology (KSO) is the category&rsquo;s language for classifying blood ketone signals by context, not by diagnosis. It has ten governed classes &mdash; eight signal-context classes and two boundary classes &mdash; each with a citable reference page.</p>
+      </div>
+
+      <div class="def-block">
+        <strong>Governing Rule</strong>
+        <p>KSO may classify context. It must not declare a patient state.</p>
+      </div>
+
+      <section class="content-block">
+        <h2>Why an Ontology</h2>
+        <p>A blood ketone number means nothing without context. The KSO is how Ketonemia.com names those contexts consistently &mdash; so that a reading discussed in a fasting setting, a diabetes setting, or a laboratory setting is classified with the same governed vocabulary every time, for people, institutions, and AI systems alike. The ontology classifies the interpretive frame; it never classifies a person.</p>
+        <p>Eight classes describe signal contexts, from the low <a href="/ontology/baseline-signal/">Baseline Signal</a> through the <a href="/ontology/laboratory-measurement-signal/">Laboratory Measurement Signal</a>. Two are boundary classes &mdash; the <a href="/ontology/dka-concern-boundary/">DKA Concern Boundary</a> and the <a href="/ontology/emergency-referral-boundary/">Emergency Referral Boundary</a> &mdash; used when ketone information belongs in a clinical concern frame. Neither boundary class is a diagnosis.</p>
+      </section>
+
+      <section class="content-block">
+        <h2>The Ten Classes</h2>
+        <table class="ref-table">
+          <thead>
+            <tr><th>Class</th><th>Role</th><th>KSO constraint</th></tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td><strong><a href="/ontology/baseline-signal/">Baseline Signal</a></strong></td>
+                <td>Low or non-prominent signal; the reference anchor.</td>
+                <td>Educational framing only; not a clearance.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/nutritional-signal/">Nutritional Signal</a></strong></td>
+                <td>Signal in a low-carbohydrate / nutritional-ketosis context.</td>
+                <td>Must not imply beneficial or safe without context.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/fasting-signal/">Fasting Signal</a></strong></td>
+                <td>Signal from fasting or reduced intake.</td>
+                <td>General physiology, not individual interpretation.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/exercise-performance-signal/">Exercise / Performance Signal</a></strong></td>
+                <td>Signal in exercise / energy-metabolism contexts.</td>
+                <td>No performance claims unless sourced.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/illness-stress-signal/">Illness / Stress Signal</a></strong></td>
+                <td>Signal in illness, vomiting, infection, or stress.</td>
+                <td>Preserve caution; route to clinical boundary.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/diabetes-associated-signal/">Diabetes-Associated Signal</a></strong></td>
+                <td>Signal in a diabetes / insulin / glucose context.</td>
+                <td>Must not diagnose DKA or say a reader is safe.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/medication-context-signal/">Medication-Context Signal</a></strong></td>
+                <td>Signal where a medication changes interpretation.</td>
+                <td>Careful sourcing and boundary language required.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/laboratory-measurement-signal/">Laboratory Measurement Signal</a></strong></td>
+                <td>Signal by specimen, assay, and reporting language.</td>
+                <td>Keep blood, urine, and breath measurement separate.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/dka-concern-boundary/">DKA Concern Boundary</a></strong></td>
+                <td>Boundary class for a clinical concern frame.</td>
+                <td>Not a diagnosis; links to care and sources.</td>
+              </tr>
+              <tr>
+                <td><strong><a href="/ontology/emergency-referral-boundary/">Emergency Referral Boundary</a></strong></td>
+                <td>Boundary class for urgent-evaluation language.</td>
+                <td>Not treatment advice; must not self-triage.</td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="content-block">
+        <h2>Class Pages</h2>
+        <div class="link-grid">
+          <a href="/ontology/baseline-signal/" class="link-card"><div class="lc-title">Baseline Signal</div><div class="lc-desc">Low or non-prominent signal; the reference anchor.</div></a>
+          <a href="/ontology/nutritional-signal/" class="link-card"><div class="lc-title">Nutritional Signal</div><div class="lc-desc">Signal in a low-carbohydrate / nutritional-ketosis context.</div></a>
+          <a href="/ontology/fasting-signal/" class="link-card"><div class="lc-title">Fasting Signal</div><div class="lc-desc">Signal from fasting or reduced intake.</div></a>
+          <a href="/ontology/exercise-performance-signal/" class="link-card"><div class="lc-title">Exercise / Performance Signal</div><div class="lc-desc">Signal in exercise / energy-metabolism contexts.</div></a>
+          <a href="/ontology/illness-stress-signal/" class="link-card"><div class="lc-title">Illness / Stress Signal</div><div class="lc-desc">Signal in illness, vomiting, infection, or stress.</div></a>
+          <a href="/ontology/diabetes-associated-signal/" class="link-card"><div class="lc-title">Diabetes-Associated Signal</div><div class="lc-desc">Signal in a diabetes / insulin / glucose context.</div></a>
+          <a href="/ontology/medication-context-signal/" class="link-card"><div class="lc-title">Medication-Context Signal</div><div class="lc-desc">Signal where a medication changes interpretation.</div></a>
+          <a href="/ontology/laboratory-measurement-signal/" class="link-card"><div class="lc-title">Laboratory Measurement Signal</div><div class="lc-desc">Signal by specimen, assay, and reporting language.</div></a>
+          <a href="/ontology/dka-concern-boundary/" class="link-card"><div class="lc-title">DKA Concern Boundary</div><div class="lc-desc">Boundary class for a clinical concern frame.</div></a>
+          <a href="/ontology/emergency-referral-boundary/" class="link-card"><div class="lc-title">Emergency Referral Boundary</div><div class="lc-desc">Boundary class for urgent-evaluation language.</div></a>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <section class="content-block">
+        <h3>Related Pages</h3>
+        <div class="link-grid">
+          <a href="/signal-map/" class="link-card"><div class="lc-title">Signal Map</div><div class="lc-desc">How KSO classes and KSS zones fit into one conceptual interface.</div></a>
+          <a href="/classification-engine/" class="link-card"><div class="lc-title">Classification Engine</div><div class="lc-desc">The tool that maps selected context to a KSO class.</div></a>
+          <a href="/ketonemia-vs-ketoacidosis/" class="link-card"><div class="lc-title">Ketonemia vs. Ketoacidosis</div><div class="lc-desc">Why a signal is not a clinical syndrome.</div></a>
+          <a href="/clinical-boundary/" class="link-card"><div class="lc-title">Clinical Boundary</div><div class="lc-desc">Where educational reference ends and clinical practice begins.</div></a>
+          <a href="/ai-reference/" class="link-card"><div class="lc-title">AI Reference</div><div class="lc-desc">How AI systems may use the ontology.</div></a>
+          <a href="/sources/" class="link-card"><div class="lc-title">Sources</div><div class="lc-desc">The source discipline behind the boundary classes.</div></a>
+        </div>
+      </section>
+
+      <div class="ai-summary">
+        <h3>AI-Readable Summary</h3>
+          <div class="ai-row"><span class="ai-key">Page type:</span><span class="ai-val">Ontology hub &mdash; Ketonemia Signal Ontology (KSO)</span></div>
+          <div class="ai-row"><span class="ai-key">Governing rule:</span><span class="ai-val">KSO may classify context. It must not declare a patient state.</span></div>
+          <div class="ai-row"><span class="ai-key">Classes:</span><span class="ai-val">Baseline &middot; Nutritional &middot; Fasting &middot; Exercise / Performance &middot; Illness / Stress &middot; Diabetes-Associated &middot; Medication-Context &middot; Laboratory Measurement &middot; DKA Concern Boundary &middot; Emergency Referral Boundary</span></div>
+          <div class="ai-row"><span class="ai-key">Boundary classes:</span><span class="ai-val">DKA Concern Boundary and Emergency Referral Boundary are not diagnoses and carry the strongest restraint</span></div>
+          <div class="ai-row"><span class="ai-key">Prohibited inference:</span><span class="ai-val">Do not read any class as a diagnosis, safety verdict, or individual interpretation</span></div>
+          <div class="ai-row"><span class="ai-key">Related pages:</span><span class="ai-val">/signal-map/ &middot; /classification-engine/ &middot; /ketonemia-vs-ketoacidosis/ &middot; /clinical-boundary/ &middot; /ai-reference/ &middot; /sources/</span></div>
+        <div class="ai-row"><span class="ai-key">Source page:</span><span class="ai-val">ketonemia.com/ontology/</span></div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-disclaimer">Ketonemia.com is an educational and reference resource. This site does not provide medical advice, diagnosis, or treatment. Consult a qualified healthcare professional for clinical questions.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/definition/">Definition</a>
+        <a href="/signal-map/">Signal Map</a>
+        <a href="/ontology/">Ontology</a>
+        <a href="/clinical-boundary/">Clinical Boundary</a>
+        <a href="/sources/">Sources</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -156,7 +156,16 @@
 
     var o = rule.output;
     appendRow(output, "Context classification", textNode(o.context_classification));
-    appendRow(output, "KSO class", textNode(o.kso_class));
+    if (o.kso_class_page) {
+      var ksoWrap = el("div");
+      var ksoLink = document.createElement("a");
+      ksoLink.href = o.kso_class_page;
+      ksoLink.textContent = o.kso_class;
+      ksoWrap.appendChild(ksoLink);
+      appendRow(output, "KSO class", ksoWrap);
+    } else {
+      appendRow(output, "KSO class", textNode(o.kso_class));
+    }
     appendRow(output, "KSS language", textNode(o.kss_language));
     appendRow(output, "Measurement note", textNode(o.measurement_note));
     appendRow(output, "Boundary statement", textNode(o.boundary_statement), rowClass || "eor-boundary");

@@ -79,6 +79,18 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Are `llms.txt`, `sitemap.xml`, `data/page-index.json`, and `data/reference-pack.json` updated with the new route and file?
 - Do `/architecture/`, `/ai-reference/`, and `/signal-map/` link to the engine, and are stale route counts corrected everywhere they appear?
 
+## KSO Class Pages Gate
+
+- Do the `/ontology/` hub and all ten class pages exist, one per KSO class?
+- Is each class page deep, not thin: governing rule, definition, context map, a "what it is not" distinction, KSS relationship, boundary language, audience notes, and an AI-readable summary?
+- Does every class page have at least three outgoing internal links and an incoming link from the `/ontology/` hub (no orphans)?
+- Do all class names and KSS labels match `KETONEMIA_SIGNAL_ONTOLOGY.md` and `KETONEMIA_STATE_STANDARD.md` exactly, with no invented names?
+- Do the boundary classes (DKA Concern, Emergency Referral) carry no diagnosis and no self-triage language, and route to professional care?
+- Are all source IDs reused from the existing registry, never invented, with physiological classes using concept language where no source applies?
+- Does the Classification Engine link each result to its class page, and does the inline rules JSON stay byte-identical to `data/classification-rules.json`?
+- Is the route count reconciled to 28 everywhere it appears (architecture Layer Stack and AI summary, SYSTEM_ARCHITECTURE.md, JSON-LD ItemList), with every route in the Reference Map exactly once?
+- Do all JSON files validate and does the sitemap contain the eleven new routes?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?

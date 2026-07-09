@@ -258,6 +258,31 @@ Patches:
 
 Status: complete.
 
+## F5 - Deep KSO Ontology Class Pages
+
+F5 turned the Ketonemia Signal Ontology from a governance spec into a citable reference structure the category owns: an `/ontology/` hub and ten deep class pages, one per KSO class. Each page is a governed reference artifact - definition, context map, an explicit "what it is not" distinction from adjacent classes, the KSS relationship, boundary language, audience notes, source IDs, and an AI-readable summary - not a thin glossary entry.
+
+Governing sentence: KSO may classify context. It must not declare a patient state.
+
+Pages:
+
+- `/ontology/` - the Signal Ontology hub: the ontology rule, a table of all ten classes, and links to each class page, the Signal Map, the Classification Engine, and AI Reference
+- `/ontology/baseline-signal/`, `/ontology/nutritional-signal/`, `/ontology/fasting-signal/`, `/ontology/exercise-performance-signal/`, `/ontology/illness-stress-signal/`, `/ontology/diabetes-associated-signal/`, `/ontology/medication-context-signal/`, `/ontology/laboratory-measurement-signal/` - the eight signal-context class pages
+- `/ontology/dka-concern-boundary/`, `/ontology/emergency-referral-boundary/` - the two boundary class pages, carrying the strongest restraint: not diagnoses, no self-triage
+
+Engine integration:
+
+- Each rule in `/data/classification-rules.json` now carries a `kso_class_page`, and the Classification Engine renders the KSO-class result as a link directly to the matching class page - closing the loop from the operational tool into the reference structure. The inline rules block in the engine page stays byte-identical to the JSON file.
+
+Patches and reconciliation (route count 17 to 28):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` - Ontology layer marked Owned pointing to `/ontology/`; new Ontology (KSO Classes) cluster added to the Reference Map / Route Map; JSON-LD ItemList extended; route counts corrected
+- `/signal-map/`, `/ai-reference/` - Reference Pages and AI summaries updated with the ontology
+- `/` - homepage card and footer; `/data/kso-ontology.json` - `ontology_page` added to each class; `/data/reference-pack.json`, `/data/page-index.json`, `/llms.txt`, `/sitemap.xml` - new routes registered
+- `QUALITY_GATE.md` - KSO Class Pages Gate added
+
+Sources are reused from the existing registry, never invented; boundary classes carry no self-triage language. Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:
