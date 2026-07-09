@@ -384,6 +384,24 @@ Prohibited: on-site prices, checkout, payment processing, data-collection forms,
 
 Status: complete.
 
+## F7 — Acquisition Dossier
+
+Goal: build the final layer of the Asset Intelligence Factory — the acquisition dossier that inventories the asset as a strategic acquisition (layer 11 buyer-logic proof).
+
+Governing sentence: Owning Ketonemia.com means owning a reference layer around an emerging metabolic signal category.
+
+Deliverables:
+
+- `ACQUISITION_DOSSIER.md` — private-facing, public-safe dossier: what is owned, the moat, machine and reference footprints, governance record, per-buyer-class cost of not owning it, and the constraints an acquirer inherits;
+- `/acquisition/` — the public dossier surface (owned-asset table, moat table, footprints, per-buyer-class cost table), distinct in role from `/strategic-availability/`;
+- neutral and boundary-safe: no price, valuation, financial projection, medical claim, or data-collection form; CollectionPage + BreadcrumbList JSON-LD with no Offer/price;
+- wire-in and route-count reconciliation 29 → 30: `/architecture/` + `SYSTEM_ARCHITECTURE.md` (Buyer logic layer Owned, Strategic cluster, ItemList, build order complete), `ASSET_INTELLIGENCE_FACTORY_PLAN.md` (sequence complete), `/strategic-availability/`, `/briefs/`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- `QUALITY_GATE.md` Acquisition Dossier Gate; README and DECISION_LOG entries.
+
+Prohibited: prices, valuations, forward-looking financial figures, new clinical claims, data-collection forms, raw-domain-listing tone.
+
+Status: complete. With F7 the F1–F7 build sequence is complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

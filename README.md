@@ -47,6 +47,7 @@ Governance documents:
 - [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md)
 - [SYSTEM_ARCHITECTURE.md](SYSTEM_ARCHITECTURE.md)
 - [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md)
+- [ACQUISITION_DOSSIER.md](ACQUISITION_DOSSIER.md)
 - [ROADMAP.md](ROADMAP.md)
 
 Status: complete.
@@ -308,6 +309,36 @@ Patches and reconciliation (route count 28 to 29):
 - `/strategic-availability/` - governed-revenue value-stack row and a Related Pages link to `/briefs/`
 - `/` - homepage card and footer; `/data/reference-pack.json`, `/data/page-index.json`, `/llms.txt`, `/sitemap.xml` - new route registered
 - `QUALITY_GATE.md` - Monetization Proof Gate added
+
+Status: complete.
+
+## F7 - Acquisition Dossier
+
+F7 built the final layer of the Asset Intelligence Factory: the acquisition dossier that turns "the asset is valuable" into a structured, neutral account a corporate-development team can read. It added [ACQUISITION_DOSSIER.md](ACQUISITION_DOSSIER.md) and the public `/acquisition/` page.
+
+Governing sentence: Owning Ketonemia.com means owning a reference layer around an emerging metabolic signal category.
+
+Pages:
+
+- `/acquisition/` - what is owned (the full layer stack), the moat (each line tied to the shipped artifact that proves it), the machine and reference footprints, the governance record, a cost-of-not-owning table for each of the eight priority buyer classes, and the constraints an acquirer inherits
+
+Files:
+
+- `ACQUISITION_DOSSIER.md` - the private-facing but public-safe dossier that governs the public page
+
+Discipline:
+
+- The dossier is an inventory of what exists - no price, no valuation, no forward-looking financial figure, no medical claim, and no data-collection form. It stays neutral (never a raw domain listing) and inside every existing boundary. Structured data is CollectionPage / BreadcrumbList with no Offer or price.
+
+Patches and reconciliation (route count 29 to 30):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` - Buyer logic layer marked Owned pointing to `/acquisition/`; `/acquisition/` added to the Strategic cluster; JSON-LD ItemList and route counts updated; build order marked complete
+- `ASSET_INTELLIGENCE_FACTORY_PLAN.md` - the F1-F7 build sequence marked complete
+- `/strategic-availability/` and `/briefs/` - value-stack row and Related Pages links to `/acquisition/`
+- `/` - homepage card and footer; `/data/reference-pack.json`, `/data/page-index.json`, `/llms.txt`, `/sitemap.xml` - new route registered
+- `QUALITY_GATE.md` - Acquisition Dossier Gate added
+
+With F7 the build sequence F1-F7 is complete: every layer of the Asset Intelligence Factory is owned and in production, and the asset has moved the full distance from domain to strategic acquisition asset.
 
 Status: complete.
 
