@@ -143,6 +143,14 @@
       "audience": ["AI systems", "developers", "strategic buyers"],
       "core_function": "Human-readable index documenting the machine-readable reference files.",
       "linked_layers": ["reference pack", "glossary", "kso ontology", "kss standard", "source registry", "page index"]
+    },
+    {
+      "url": "/architecture/",
+      "title": "System Architecture",
+      "page_type": "system architecture",
+      "audience": ["all audiences", "AI systems", "strategic buyers"],
+      "core_function": "Maps the asset as one governed system: layer stack, route clusters, and the full reference map on a single page.",
+      "linked_layers": ["layer stack", "route map", "governance spine", "machine layer"]
     }
   ]
 }

@@ -54,6 +54,16 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Is the machine-readable layer no looser than the human-facing site (`AI_REFERENCE_POLICY.md`)?
 - Does `/ai-reference/` link to the machine-readable files, and does `/reference-pack/` document them?
 
+## System Architecture Gate
+
+- Does `/architecture/` present the asset as one system: layer stack, reference map, and audience paths?
+- Does every public route appear on `/architecture/` exactly once, with no orphan and no broken link?
+- Is the page built with existing CSS only, with no new CSS, no JS beyond JSON-LD, and no external assets?
+- Does the structured data (CollectionPage, BreadcrumbList, ItemList) carry no medical claim, threshold, or verdict?
+- Does the page preserve the clinical boundary — reference structure only, no diagnosis, triage, or interpretation?
+- Do SYSTEM_ARCHITECTURE.md and ASSET_INTELLIGENCE_FACTORY_PLAN.md §2 agree on the layer stack?
+- Are stale page counts and route lists reconciled across `/strategic-availability/`, sitemap, llms.txt, and page-index.json?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?
