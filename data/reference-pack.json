@@ -73,6 +73,7 @@
     "/ontology/laboratory-measurement-signal/",
     "/ontology/dka-concern-boundary/",
     "/ontology/emergency-referral-boundary/",
-    "/briefs/"
+    "/briefs/",
+    "/acquisition/"
   ]
 }

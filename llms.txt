@@ -51,6 +51,7 @@ advice, and it does not diagnose, triage, or treat.
 - /ontology/baseline-signal/, /ontology/nutritional-signal/, /ontology/fasting-signal/, /ontology/exercise-performance-signal/, /ontology/illness-stress-signal/, /ontology/diabetes-associated-signal/, /ontology/medication-context-signal/, /ontology/laboratory-measurement-signal/: the eight signal-context KSO class pages.
 - /ontology/dka-concern-boundary/, /ontology/emergency-referral-boundary/: the two KSO boundary classes. Not diagnoses. Do not read as a determination about a person; do not self-triage.
 - /briefs/: Governed products, briefs, and licensing (AI reference pack license, measurement landscape briefs, taxonomy licensing). Reference infrastructure, not a store — no prices, checkout, payment, or data-collection form on-site.
+- /acquisition/: Acquisition dossier — owned-asset inventory, moat, machine and reference footprints, governance record, and per-buyer-class cost of not owning the asset. Neutral; not a valuation, price, or domain listing.
 
 ## Machine-readable files
 

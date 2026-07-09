@@ -506,6 +506,22 @@
         "strategic availability",
         "clinical boundary"
       ]
+    },
+    {
+      "url": "/acquisition/",
+      "title": "Acquisition Dossier",
+      "page_type": "acquisition / buyer-logic proof",
+      "audience": [
+        "strategic buyers",
+        "AI systems"
+      ],
+      "core_function": "Structured acquisition dossier: owned-asset inventory, moat, machine and reference footprints, governance record, and per-buyer-class cost of not owning the asset. Not a valuation or price.",
+      "linked_layers": [
+        "buyer logic",
+        "system architecture",
+        "strategic availability",
+        "monetization"
+      ]
     }
   ]
 }

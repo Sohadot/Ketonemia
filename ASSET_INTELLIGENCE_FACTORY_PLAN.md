@@ -199,15 +199,18 @@ Required for every tier-1 asset:
 Ordered by inevitability-per-effort, boundary-safe throughout. Each ships only
 through `QUALITY_GATE.md` (add an **Asset Intelligence Factory Gate**).
 
-| Phase | Deliverable | Gap | Layer added |
-| --- | --- | --- | --- |
-| F1 | `llms.txt`, `sitemap.xml`, `robots.txt`, JSON reference pack, deepened JSON-LD | 1 | Agent-readable machine layer |
-| F2 | `CLASSIFICATION_PROTOCOL.md` | 2 | Protocol |
-| F3 | System Architecture / Reference Map page (`/architecture/`) | 4 | Reference-as-system |
-| F4 | Deterministic reference engine (`/signal-engine/` or upgrade `/signal-map/`) | 3 | Engine |
-| F5 | Ten deep KSO class pages | 5 | Ontology depth |
-| F6 | First governed product spec + inquiry surface | 6 | Monetization proof |
-| F7 | `ACQUISITION_DOSSIER.md` | 7 | Buyer logic proof |
+| Phase | Deliverable | Gap | Layer added | Status |
+| --- | --- | --- | --- | --- |
+| F1 | `llms.txt`, `sitemap.xml`, `robots.txt`, JSON reference pack, deepened JSON-LD | 1 | Agent-readable machine layer | Complete |
+| F2 | `CLASSIFICATION_PROTOCOL.md` | 2 | Protocol | Complete |
+| F3 | System Architecture / Reference Map page (`/architecture/`) | 4 | Reference-as-system | Complete |
+| F4 | Deterministic reference engine (`/classification-engine/`) | 3 | Engine | Complete |
+| F5 | Ten deep KSO class pages (`/ontology/`) | 5 | Ontology depth | Complete |
+| F6 | First governed product spec + inquiry surface (`/briefs/`) | 6 | Monetization proof | Complete |
+| F7 | `ACQUISITION_DOSSIER.md` + `/acquisition/` | 7 | Buyer logic proof | Complete |
+
+The build sequence F1–F7 is complete: every named gap is closed and every layer of
+the factory is owned and in production.
 
 Rules for every phase:
 - Nothing ships that a page cannot back and a source cannot support.

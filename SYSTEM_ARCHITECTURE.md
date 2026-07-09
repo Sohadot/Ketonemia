@@ -34,11 +34,11 @@ be kept in sync with it.
 | 4 | Standard | What is good / complete / trusted? | [KETONEMIA_STATE_STANDARD.md](KETONEMIA_STATE_STANDARD.md), `/data/kss-standard.json` | Owned |
 | 5 | Protocol | How is context classified under governance? | [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) | Owned (F2) |
 | 6 | Engine / Tool | How does the system produce operational output? | [`/classification-engine/`](classification-engine/index.html), `/data/classification-rules.json` | Owned (F4) |
-| 7 | Reference layer | Is the site archivable, searchable, citable? | 29 canonical routes (see Route Map) | Owned |
+| 7 | Reference layer | Is the site archivable, searchable, citable? | 30 canonical routes (see Route Map) | Owned |
 | 8 | Governance | How are stability, versioning, and trust ensured? | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), policy docs | Owned |
 | 9 | Interface thesis | Does the interface embody the asset's meaning? | [INTERFACE_THESIS.md](INTERFACE_THESIS.md), `/signal-map/`, `/architecture/` | Owned |
 | 10 | Monetization | How does it earn without lowering trust? | [MONETIZATION_BOUNDARY.md](MONETIZATION_BOUNDARY.md), [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md), `/briefs/` | Owned (F6) |
-| 11 | Buyer logic | Who is the buyer and why is not-buying a loss? | [BUYER_LOGIC.md](BUYER_LOGIC.md), `/strategic-availability/` | Owned (thesis); dossier pending |
+| 11 | Buyer logic | Who is the buyer and why is not-buying a loss? | [BUYER_LOGIC.md](BUYER_LOGIC.md), [ACQUISITION_DOSSIER.md](ACQUISITION_DOSSIER.md), `/acquisition/`, `/strategic-availability/` | Owned (F7) |
 | + | Machine / agent layer | Can machines read and trust it, not just humans? | `/llms.txt`, `/robots.txt`, `/sitemap.xml`, `/data/*.json`, `/reference-pack/` | Owned (F1) |
 
 ---
@@ -80,6 +80,7 @@ this graph so every route is reachable from one page.
 - `/strategic-availability/` — partnership, licensing, and acquisition context
 - `/architecture/` — this system map (Reference System layer)
 - `/briefs/` — governed products, briefs, and licensing (monetization proof)
+- `/acquisition/` — acquisition dossier: owned-asset inventory and per-buyer-class cost (buyer-logic proof)
 
 ### Cluster G — Ontology (KSO Classes)
 - `/ontology/` — the Signal Ontology hub
@@ -106,8 +107,11 @@ The asset is built in the phased order defined in
 - **F3** — System Architecture / Reference Map (complete).
 - **F4** — Deterministic reference engine, runs the F2 protocol (complete).
 - **F5** — Ten deep ontology class pages under `/ontology/`, deepening layer 3 (complete).
-- **F6** — Governed product spec + inquiry surface at `/briefs/`, layer 10 proof (this layer).
-- **F7** — Acquisition dossier (layer 11 proof).
+- **F6** — Governed product spec + inquiry surface at `/briefs/`, layer 10 proof (complete).
+- **F7** — Acquisition dossier at `/acquisition/`, layer 11 proof (this layer).
+
+With F7 the build sequence F1–F7 is complete: every layer of the Asset Intelligence
+Factory is owned and in production.
 
 Each layer depends on the ones above it in the stack, not below: the engine (F4) is
 bound by the protocol (F2), which is bound by the ontology (layer 3) and standard

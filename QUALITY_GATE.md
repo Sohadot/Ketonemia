@@ -103,6 +103,18 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Does the page preserve the clinical boundary (no diagnosis, triage, or device ranking)?
 - Are route counts reconciled to 29 everywhere they appear, and do all JSON files validate?
 
+## Acquisition Dossier Gate
+
+- Does `/acquisition/` inventory what is owned, the moat, the footprints, the governance record, and the per-buyer-class cost of not owning the asset?
+- Do the buyer classes match the priority list in `BUYER_LOGIC.md` exactly?
+- Is there no price, valuation, or forward-looking financial figure anywhere on the page or in `ACQUISITION_DOSSIER.md`?
+- Does the structured data carry no `Product`, `Offer`, or price markup?
+- Is the tone neutral (not a raw domain listing), and does it carry no medical claim used as a determination?
+- Is there no data-collection form, with inquiry routed to the existing neutral contact?
+- Does the page state its distinct role from `/strategic-availability/` so the two do not read as duplicates?
+- Are the route count (30) and the "Owned" status for layers 10 and 11 reconciled everywhere (architecture, SYSTEM_ARCHITECTURE.md, ASSET_INTELLIGENCE_FACTORY_PLAN.md), with no remaining "pending" language?
+- Do all JSON files validate and does the sitemap contain `/acquisition/`?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?
