@@ -43,6 +43,8 @@ Governance documents:
 - [INTERNAL_LINKING_POLICY.md](INTERNAL_LINKING_POLICY.md)
 - [QUALITY_GATE.md](QUALITY_GATE.md)
 - [DECISION_LOG.md](DECISION_LOG.md)
+- [ASSET_INTELLIGENCE_FACTORY_PLAN.md](ASSET_INTELLIGENCE_FACTORY_PLAN.md)
+- [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md)
 - [ROADMAP.md](ROADMAP.md)
 
 Status: complete.
@@ -169,6 +171,42 @@ Patches:
 - `QUALITY_GATE.md` - Deep Media Brief Gate added
 
 Status: complete. Commit: ce3f718. Merged to main.
+
+## Sprint 4A / F1 - Agent-Readable Reference Layer
+
+Sprint 4A (build phase F1 of the Asset Intelligence Factory Plan) made Ketonemia.com readable, citeable, and retrievable by AI systems, agents, and structured consumers - without adding clinical interpretation, diagnosis, triage, or treatment logic. This is the transition from *category asset* to machine-readable *category intelligence source*.
+
+Files:
+
+- `/llms.txt` - public AI index: positioning, allowed and prohibited AI uses, canonical pages, machine-readable files
+- `/robots.txt` - crawl policy pointing to the sitemap
+- `/sitemap.xml` - all canonical public routes
+- `/data/reference-pack.json` - central manifest of the machine-readable layer
+- `/data/glossary.json` - governed term definitions with clinical-boundary notes
+- `/data/kso-ontology.json` - Ketonemia Signal Ontology (KSO), ten context classes
+- `/data/kss-standard.json` - Ketonemia State Standard (KSS), K0-K5 reference labels
+- `/data/source-registry.json` - claim source registry mirroring `/sources/`
+- `/data/page-index.json` - canonical page index for retrieval
+- `/reference-pack/` - human-readable index of the machine-readable layer
+
+Patches:
+
+- `/` - homepage card grid and footer updated with Reference Pack
+- `/ai-reference/` - Machine-Readable Reference Files section, AI summary, and footer updated
+- `QUALITY_GATE.md` - Agent-Readable Reference Layer Gate added
+- Governing rule: the machine-readable layer is never looser than the human-facing site; prohibited claims stay prohibited in every format; every claim traces to a canonical page and, where medical, to a source ID (see [AI_REFERENCE_POLICY.md](AI_REFERENCE_POLICY.md)).
+
+Status: complete.
+
+## F2 - Classification Protocol
+
+F2 added [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) as the governed bridge between KSO, KSS, source discipline, and future engine outputs. The protocol defines allowed context inputs, prohibited outputs, deterministic classification rules, reference mapping patterns, an output template, and engine-readiness boundaries. It converts observed context into a KSO class, KSS zone language, a boundary statement, canonical references, and source requirements - without diagnosis, triage, treatment, individualized interpretation, safety or danger verdicts, or risk scoring.
+
+Governing sentence: The protocol classifies the interpretive frame, not the person.
+
+This is the operational bridge between knowledge and tool: KSO says what the context classes are, KSS says what the signal-zone language is, F2 says how they are used together under governance, and a future engine (F4) would run F2 in an interface. Any engine built on the asset must produce outputs no broader than this protocol allows.
+
+Status: complete.
 
 ## Methodology
 

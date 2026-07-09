@@ -1,0 +1,117 @@
+{
+  "name": "Ketonemia Glossary",
+  "version": "1.0",
+  "updated": "2026-07-08",
+  "boundary": "Definitions are educational reference language. They do not imply diagnosis, safety, danger, treatment need, or individual interpretation.",
+  "terms": [
+    {
+      "term": "ketonemia",
+      "definition": "The presence or elevation of ketone bodies measurable in blood.",
+      "layer": "blood measurement state",
+      "not_equivalent_to": ["ketosis", "ketonuria", "ketoacidosis", "keto diet"],
+      "canonical_page": "/definition/",
+      "clinical_boundary": "Describes a measurement state, not a diagnosis, safety verdict, or treatment need."
+    },
+    {
+      "term": "ketosis",
+      "definition": "A metabolic process in which the body increases production and use of ketone bodies for fuel, commonly discussed in fasting and nutritional contexts.",
+      "layer": "metabolic process",
+      "not_equivalent_to": ["ketonemia", "ketoacidosis"],
+      "canonical_page": "/ketonemia-vs-ketosis/",
+      "clinical_boundary": "A metabolic process is not automatically beneficial or harmful; context determines meaning."
+    },
+    {
+      "term": "ketonuria",
+      "definition": "The presence of ketone bodies detectable in urine, typically measured as acetoacetate on urine strips.",
+      "layer": "urinary finding",
+      "not_equivalent_to": ["ketonemia", "ketosis", "ketoacidosis"],
+      "canonical_page": "/laboratory-context/",
+      "clinical_boundary": "A urinary finding is not interchangeable with a blood ketone measurement."
+    },
+    {
+      "term": "ketoacidosis",
+      "definition": "A serious clinical syndrome involving a broader clinical picture, not a blood ketone number alone.",
+      "layer": "clinical syndrome",
+      "not_equivalent_to": ["ketonemia", "ketosis", "ketonuria"],
+      "canonical_page": "/ketonemia-vs-ketoacidosis/",
+      "clinical_boundary": "This site explains the relationship but does not diagnose ketoacidosis. Clinical assessment is required."
+    },
+    {
+      "term": "DKA",
+      "definition": "Diabetic ketoacidosis: a serious diabetes complication involving ketones and blood acidity, recognized through clinical assessment and laboratory context.",
+      "layer": "clinical syndrome",
+      "not_equivalent_to": ["ketonemia", "ketosis"],
+      "canonical_page": "/ketonemia-vs-ketoacidosis/",
+      "clinical_boundary": "DKA must not be inferred from a ketone reading alone. Seek professional care for concerns.",
+      "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA", "SRC-NHS-DKA"]
+    },
+    {
+      "term": "beta-hydroxybutyrate",
+      "aliases": ["BHB", "3-hydroxybutyrate"],
+      "definition": "The predominant ketone body measured in blood at elevation and the primary analyte of blood ketone meters.",
+      "layer": "blood ketone body",
+      "canonical_page": "/beta-hydroxybutyrate/",
+      "clinical_boundary": "A biochemical marker; its measurement does not by itself carry a clinical verdict.",
+      "source_ids": ["SRC-LEHNINGER-BIOCHEM", "SRC-STRYER-BIOCHEM", "SRC-LAB-BHB-ACAC"]
+    },
+    {
+      "term": "acetoacetate",
+      "aliases": ["AcAc"],
+      "definition": "A ketone body commonly measured in urine by colorimetric strips; a different fraction from blood BHB.",
+      "layer": "ketone body",
+      "canonical_page": "/laboratory-context/",
+      "clinical_boundary": "Urine AcAc can lag or appear discordant relative to blood BHB and is not interchangeable with it.",
+      "source_ids": ["SRC-LAB-BHB-ACAC", "SRC-LEHNINGER-BIOCHEM"]
+    },
+    {
+      "term": "acetone",
+      "definition": "A volatile ketone body detectable in breath, measured as a proxy signal by breath analyzers.",
+      "layer": "breath ketone body",
+      "canonical_page": "/laboratory-context/",
+      "clinical_boundary": "A proxy measurement; not interchangeable with blood BHB or urine AcAc."
+    },
+    {
+      "term": "blood ketones",
+      "definition": "Ketone bodies measured in blood, predominantly beta-hydroxybutyrate, reported by meters or laboratory analyzers.",
+      "layer": "measurement layer",
+      "canonical_page": "/blood-ketones/",
+      "clinical_boundary": "A blood ketone number is not context-free and does not on its own indicate a clinical state."
+    },
+    {
+      "term": "urine ketones",
+      "definition": "Ketone bodies detected in urine, typically acetoacetate, measured by strip color change.",
+      "layer": "measurement layer",
+      "canonical_page": "/laboratory-context/",
+      "clinical_boundary": "A urinary measurement layer distinct from blood measurement; not interchangeable."
+    },
+    {
+      "term": "breath acetone",
+      "definition": "Acetone measured in exhaled breath as a proxy signal for ketone metabolism.",
+      "layer": "measurement layer",
+      "canonical_page": "/laboratory-context/",
+      "clinical_boundary": "A proxy signal; measurement precision and meaning differ from blood measurement."
+    },
+    {
+      "term": "SGLT2 inhibitor context",
+      "definition": "A medication context in which ketone elevation can occur at blood glucose levels that would not typically prompt concern, documented as euglycemic diabetic ketoacidosis risk.",
+      "layer": "medication context",
+      "canonical_page": "/ketonemia-vs-ketoacidosis/",
+      "clinical_boundary": "This site documents the phenomenon; it does not assess individual medication risk.",
+      "source_ids": ["SRC-FDA-SGLT2"]
+    },
+    {
+      "term": "clinical boundary",
+      "definition": "The formal scope limit separating educational reference from clinical practice on Ketonemia.com.",
+      "layer": "governance",
+      "canonical_page": "/clinical-boundary/",
+      "clinical_boundary": "The site operates on the educational side of this boundary only."
+    },
+    {
+      "term": "signal map",
+      "definition": "The conceptual interface organizing blood ketone signals across state zones (KSS), context dimensions, and interpretation boundaries.",
+      "layer": "interface",
+      "canonical_page": "/signal-map/",
+      "clinical_boundary": "Classifies interpretation layers, not people; it is not a calculator, symptom checker, or triage tool."
+    }
+  ]
+}

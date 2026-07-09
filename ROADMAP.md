@@ -254,6 +254,55 @@ Deliverables:
 
 Status: complete. Commit: ce3f718. Merged to main.
 
+## Sprint 4A / F1 — Agent-Readable Reference Layer
+
+Goal: make Ketonemia.com readable, citeable, and retrievable by AI systems, agents, and structured consumers without adding clinical interpretation. Build phase F1 of the Asset Intelligence Factory Plan — the transition from category asset to machine-readable category intelligence source.
+
+Governing sentence: The machine-readable layer is never looser than the human-facing site; if a claim is prohibited on the pages, it is prohibited in the data.
+
+Deliverables:
+
+- `/llms.txt` — public AI index with allowed and prohibited AI uses, canonical pages, and machine-readable files;
+- `/robots.txt` — crawl policy pointing to the sitemap;
+- `/sitemap.xml` — all canonical public routes;
+- `/data/reference-pack.json` — central manifest;
+- `/data/glossary.json` — governed term definitions with clinical-boundary notes;
+- `/data/kso-ontology.json` — Ketonemia Signal Ontology, ten context classes;
+- `/data/kss-standard.json` — Ketonemia State Standard, K0–K5 reference labels;
+- `/data/source-registry.json` — claim source registry mirroring `/sources/`;
+- `/data/page-index.json` — canonical page index for retrieval;
+- `/reference-pack/` — human-readable index of the machine-readable layer with Dataset JSON-LD;
+- homepage card and footer updated;
+- `/ai-reference/` Machine-Readable Reference Files section, AI summary, and footer updated;
+- Agent-Readable Reference Layer Gate added to QUALITY_GATE.md;
+- DECISION_LOG Implementation Record: Sprint 4A entry added.
+
+Status: complete.
+
+## F2 — Classification Protocol
+
+Goal: build the governed protocol layer that connects observed context to a KSO class, KSS zone language, boundary statement, canonical references, and source requirements. Build phase F2 of the Asset Intelligence Factory Plan — the bridge between the reference knowledge (KSO, KSS) and any future classification engine (F4).
+
+Governing sentence: The protocol classifies the interpretive frame, not the person.
+
+Deliverables:
+
+- CLASSIFICATION_PROTOCOL.md;
+- purpose and non-clinical boundary;
+- context-only inputs (no numeric thresholds);
+- governed outputs (KSO class, KSS language, boundary statement, canonical links, source requirements, allowed and prohibited language);
+- seven deterministic classification rules;
+- reference mapping table using real KSO classes and KSS labels;
+- output template and worked reference example;
+- engine-readiness clause binding any future engine to this protocol;
+- strategic / licensing note;
+- README, ROADMAP, and DECISION_LOG updated;
+- /ai-reference/ note that the protocol governs future machine outputs.
+
+Prohibited: diagnosis, triage, treatment guidance, individualized interpretation, safety verdicts, danger verdicts, risk scoring, device or product endorsement, invented thresholds, clinical algorithms.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

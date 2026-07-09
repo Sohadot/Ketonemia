@@ -42,6 +42,18 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Does it serve journalists, editors, health writers, AI systems, and strategic reviewers?
 - Does it strengthen internal linking across definition, lab, student, research, boundary, sources, and AI layers?
 
+## Agent-Readable Reference Layer Gate
+
+- Do `/llms.txt`, `/robots.txt`, and `/sitemap.xml` exist?
+- Do all `/data/*.json` files exist and parse as valid JSON?
+- Does `/robots.txt` point to the sitemap, and does the sitemap include every canonical public page?
+- Does `llms.txt` state both allowed and prohibited AI uses?
+- Do the JSON files exclude diagnosis, triage, treatment guidance, safety or danger verdicts, and individualized interpretation?
+- Do KSO and KSS JSON files match `KETONEMIA_SIGNAL_ONTOLOGY.md` and `KETONEMIA_STATE_STANDARD.md` exactly, without invented classes or thresholds?
+- Does `source-registry.json` match the visible registry on `/sources/`?
+- Is the machine-readable layer no looser than the human-facing site (`AI_REFERENCE_POLICY.md`)?
+- Does `/ai-reference/` link to the machine-readable files, and does `/reference-pack/` document them?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?

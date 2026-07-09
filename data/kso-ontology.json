@@ -1,0 +1,82 @@
+{
+  "name": "Ketonemia Signal Ontology",
+  "abbreviation": "KSO",
+  "version": "1.0",
+  "updated": "2026-07-08",
+  "source_document": "KETONEMIA_SIGNAL_ONTOLOGY.md",
+  "purpose": "Classify blood ketone signals by context, not by diagnosis. A language system for education, reference pages, interface outputs, AI summaries, and future licensing.",
+  "ontology_rule": "KSO may classify context. It must not declare a patient state.",
+  "classes": [
+    {
+      "id": "KSO-1",
+      "name": "Baseline Signal",
+      "description": "A low or non-prominent ketone signal.",
+      "use": "Educational explanations of normal or low ketone presence when no strong contextual interpretation is being made.",
+      "boundary": "Does not declare a patient state."
+    },
+    {
+      "id": "KSO-2",
+      "name": "Nutritional Signal",
+      "description": "A signal associated with low-carbohydrate nutrition or nutritional ketosis contexts.",
+      "boundary": "Must not imply that a reading is beneficial or safe without context.",
+      "canonical_page": "/ketonemia-vs-ketosis/"
+    },
+    {
+      "id": "KSO-3",
+      "name": "Fasting Signal",
+      "description": "A signal associated with fasting or reduced intake.",
+      "boundary": "Must distinguish educational physiology from individualized medical interpretation."
+    },
+    {
+      "id": "KSO-4",
+      "name": "Exercise / Performance Signal",
+      "description": "A signal associated with exercise, endurance, energy metabolism, or performance contexts.",
+      "boundary": "Must avoid performance claims unless sourced."
+    },
+    {
+      "id": "KSO-5",
+      "name": "Illness / Stress Signal",
+      "description": "A signal associated with illness, vomiting, infection, dehydration, stress physiology, or reduced intake during illness.",
+      "boundary": "Must preserve caution and route to clinical-boundary content where appropriate.",
+      "canonical_page": "/clinical-boundary/"
+    },
+    {
+      "id": "KSO-6",
+      "name": "Diabetes-Associated Signal",
+      "description": "A signal associated with diabetes, insulin deficiency risk, glucose status, or diabetes safety education.",
+      "boundary": "Must not diagnose DKA or tell users they are safe.",
+      "canonical_page": "/ketonemia-vs-ketoacidosis/",
+      "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA", "SRC-NHS-DKA"]
+    },
+    {
+      "id": "KSO-7",
+      "name": "Medication-Context Signal",
+      "description": "A signal associated with medication contexts, especially where ketone risk language may differ from glucose-only assumptions.",
+      "boundary": "Requires careful sourcing and boundary language.",
+      "source_ids": ["SRC-FDA-SGLT2"]
+    },
+    {
+      "id": "KSO-8",
+      "name": "Laboratory Measurement Signal",
+      "description": "A signal explained through specimen type, assay, reporting language, or lab interpretation boundaries.",
+      "boundary": "Must separate blood, urine, and breath ketone measurement.",
+      "canonical_page": "/laboratory-context/",
+      "source_ids": ["SRC-LAB-BHB-ACAC"]
+    },
+    {
+      "id": "KSO-9",
+      "name": "DKA Concern Boundary",
+      "description": "Not a diagnosis. A boundary class used when ketone information belongs in a clinical concern frame.",
+      "boundary": "Must link to clinical care guidance and cited sources.",
+      "canonical_page": "/clinical-boundary/",
+      "source_ids": ["SRC-ADA-2026", "SRC-NHS-DKA"]
+    },
+    {
+      "id": "KSO-10",
+      "name": "Emergency Referral Boundary",
+      "description": "Not treatment advice. A boundary class for language that points toward urgent or emergency medical evaluation where source guidance supports it.",
+      "boundary": "Must not ask users to self-triage.",
+      "canonical_page": "/clinical-boundary/"
+    }
+  ]
+}
