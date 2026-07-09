@@ -72,6 +72,7 @@
     "/ontology/medication-context-signal/",
     "/ontology/laboratory-measurement-signal/",
     "/ontology/dka-concern-boundary/",
-    "/ontology/emergency-referral-boundary/"
+    "/ontology/emergency-referral-boundary/",
+    "/briefs/"
   ]
 }

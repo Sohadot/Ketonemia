@@ -46,6 +46,7 @@ Governance documents:
 - [ASSET_INTELLIGENCE_FACTORY_PLAN.md](ASSET_INTELLIGENCE_FACTORY_PLAN.md)
 - [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md)
 - [SYSTEM_ARCHITECTURE.md](SYSTEM_ARCHITECTURE.md)
+- [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md)
 - [ROADMAP.md](ROADMAP.md)
 
 Status: complete.
@@ -282,6 +283,33 @@ Patches and reconciliation (route count 17 to 28):
 - `QUALITY_GATE.md` - KSO Class Pages Gate added
 
 Sources are reused from the existing registry, never invented; boundary classes carry no self-triage language. Status: complete.
+
+## F6 - Monetization Proof
+
+F6 turned the monetization layer from "boundary owned, proof pending" into a governed, demonstrable revenue path. It added [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md) and the public `/briefs/` page - a product catalog and inquiry surface that earns by licensing and briefing the governed intelligence the asset already produces, without touching neutrality, source discipline, or the clinical boundary.
+
+Governing sentence: Revenue must extend trust, not replace it.
+
+Pages:
+
+- `/briefs/` - governing sentence, "what these are," a product catalog table (each product traceable to a permitted-monetization line), the flagship AI Reference Pack License spec, how sponsorship works ("Supported by," never "recommended by"), a "what this is not" section, a plain inquiry surface, related pages, and an AI-readable summary
+
+Files:
+
+- `MONETIZATION_SPEC.md` - internal spec operationalizing MONETIZATION_BOUNDARY.md: the product catalog mapped to permitted lines, the flagship spec, the inquiry mechanism, and the hard rules (no on-site prices, no payment, no data-collection form, "Supported by" not "recommended by," no restricted/prohibited categories, no Offer/price in structured data)
+
+Discipline:
+
+- Every product is drawn only from the Permitted Monetization list; restricted categories are explicitly deferred and prohibited categories explicitly excluded. The page is static - no store, no checkout, no payment integration, no data-collection form, no ads - so there is no new security or personal-data surface. Structured data is CollectionPage / BreadcrumbList with no Offer or price markup, so the asset is not misrepresented as an e-commerce store.
+
+Patches and reconciliation (route count 28 to 29):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` - Monetization layer marked Owned pointing to `/briefs/`; `/briefs/` added to the Strategic cluster; JSON-LD ItemList and route counts updated
+- `/strategic-availability/` - governed-revenue value-stack row and a Related Pages link to `/briefs/`
+- `/` - homepage card and footer; `/data/reference-pack.json`, `/data/page-index.json`, `/llms.txt`, `/sitemap.xml` - new route registered
+- `QUALITY_GATE.md` - Monetization Proof Gate added
+
+Status: complete.
 
 ## Methodology
 

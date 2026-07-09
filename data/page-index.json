@@ -489,6 +489,23 @@
         "kss standard",
         "clinical boundary"
       ]
+    },
+    {
+      "url": "/briefs/",
+      "title": "Governed Products & Briefs",
+      "page_type": "monetization / product catalog",
+      "audience": [
+        "strategic buyers",
+        "licensing",
+        "AI systems"
+      ],
+      "core_function": "Governed product catalog and inquiry surface: AI reference pack licensing, measurement briefs, and taxonomy licensing. Reference infrastructure, not a store; no prices, checkout, or data collection.",
+      "linked_layers": [
+        "monetization boundary",
+        "reference pack",
+        "strategic availability",
+        "clinical boundary"
+      ]
     }
   ]
 }
