@@ -1,0 +1,317 @@
+{
+  "name": "Ketonemia Classification Rules",
+  "version": "1.0",
+  "updated": "2026-07-09",
+  "source_document": "CLASSIFICATION_PROTOCOL.md",
+  "purpose": "Deterministic, reviewable rule set that runs the Classification Protocol. Maps structured context inputs to governed reference output: KSO class, KSS language, boundary statement, canonical references, and source requirements.",
+  "governing_rule": "This engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.",
+  "matching": "First rule in this array whose 'when' conditions all match the selected inputs wins. Fields omitted from 'when' are wildcards. The final rule is an unconditional catch-all so the engine never fails to produce a governed output.",
+  "constant_boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+  "sensitive_boundary_statement": "This belongs near the clinical-boundary layer. Ketonemia.com can explain terminology and source pathways, but it cannot assess a person, determine urgency, diagnose DKA, or provide instructions.",
+  "rules": [
+    {
+      "id": "RULE-MEASUREMENT-INCOMPLETE",
+      "when": { "measurement_type": "unspecified", "measured_compound": "unspecified", "context": [] },
+      "output": {
+        "context_classification": "Measurement-context incomplete.",
+        "kso_class": "Baseline Signal",
+        "kss_language": "K0 — Baseline",
+        "measurement_note": "No measurement type or compound was selected. A ketone signal cannot be classified without knowing what was measured and how.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Blood ketone signals require a measurement type and compound before they can be classified."
+        ],
+        "prohibited_inference": [
+          "Do not infer any signal meaning from an unspecified measurement.",
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/blood-ketones/", "/laboratory-context/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-LAB-URINE-ACAC",
+      "when": { "measurement_type": "urine", "measured_compound": "AcAc" },
+      "output": {
+        "context_classification": "Laboratory / sample-method context.",
+        "kso_class": "Laboratory Measurement Signal",
+        "kss_language": "K1 — Low Presence, non-equivalent signal",
+        "measurement_note": "Urine AcAc and blood BHB are different measurement signals and should not be treated as interchangeable.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Urine and blood ketone tests measure different signals."
+        ],
+        "prohibited_inference": [
+          "Do not infer blood BHB level from urine AcAc language alone.",
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-LAB-BHB-ACAC"]
+      }
+    },
+    {
+      "id": "RULE-LAB-BREATH-ACETONE",
+      "when": { "measurement_type": "breath", "measured_compound": "acetone" },
+      "output": {
+        "context_classification": "Laboratory / sample-method context.",
+        "kso_class": "Laboratory Measurement Signal",
+        "kss_language": "K1 — Low Presence, proxy signal",
+        "measurement_note": "Breath acetone is a proxy measurement and is not interchangeable with blood BHB or urine AcAc.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Breath ketone measurement is a proxy signal, distinct from blood or urine measurement."
+        ],
+        "prohibited_inference": [
+          "Do not infer blood BHB level from breath acetone language alone.",
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/sources/"],
+        "source_ids": ["SRC-LAB-BHB-ACAC"]
+      }
+    },
+    {
+      "id": "RULE-DIABETES-ILLNESS-SENSITIVE",
+      "when": { "context": ["diabetes", "illness-stress"] },
+      "output": {
+        "context_classification": "Diabetes and illness/stress context — clinical concern boundary.",
+        "kso_class": "DKA Concern Boundary",
+        "kss_language": "K4 — Clinical Concern Boundary",
+        "measurement_note": "Illness combined with diabetes context changes how ketone signals should be read, but no measurement alone determines urgency.",
+        "boundary_statement": "This belongs near the clinical-boundary layer. Ketonemia.com can explain terminology and source pathways, but it cannot assess a person, determine urgency, diagnose DKA, or provide instructions.",
+        "allowed_language": [
+          "Diabetes and illness together are a context that clinical guidance treats with particular caution.",
+          "Ketonemia.com can explain terminology and point to source guidance; it cannot assess an individual."
+        ],
+        "prohibited_inference": [
+          "Do not infer a diagnosis of DKA.",
+          "Do not declare the person safe or in danger.",
+          "Do not provide sick-day instructions or treatment guidance.",
+          "Do not assign a risk score or urgency level."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA", "SRC-NHS-DKA"]
+      }
+    },
+    {
+      "id": "RULE-DIABETES-MEDICATION-SENSITIVE",
+      "when": { "context": ["diabetes", "medication"] },
+      "output": {
+        "context_classification": "Diabetes and medication context — clinical concern boundary.",
+        "kso_class": "DKA Concern Boundary",
+        "kss_language": "K4 — Clinical Concern Boundary",
+        "measurement_note": "Certain diabetes medications, including SGLT2 inhibitors, are documented to affect ketone signals independently of glucose level.",
+        "boundary_statement": "This belongs near the clinical-boundary layer. Ketonemia.com can explain terminology and source pathways, but it cannot assess a person, determine urgency, diagnose DKA, or provide instructions.",
+        "allowed_language": [
+          "Some diabetes medications are documented to change how ketone signals should be read.",
+          "Ketonemia.com documents this phenomenon; it does not assess individual medication risk."
+        ],
+        "prohibited_inference": [
+          "Do not infer a diagnosis of DKA.",
+          "Do not declare the medication safe or unsafe for the person.",
+          "Do not provide dosing or treatment guidance.",
+          "Do not assign a risk score or urgency level."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-FDA-SGLT2"]
+      }
+    },
+    {
+      "id": "RULE-DIABETES-ALONE",
+      "when": { "context": ["diabetes"] },
+      "output": {
+        "context_classification": "Diabetes-associated context.",
+        "kso_class": "Diabetes-Associated Signal",
+        "kss_language": "K3 — Elevated Context Signal",
+        "measurement_note": "Diabetes context changes how a ketone signal is approached, but this classification does not evaluate an individual's status.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "For people with diabetes, ketone signal interpretation follows monitoring guidance distinct from non-diabetic contexts."
+        ],
+        "prohibited_inference": [
+          "Do not diagnose DKA or declare the person safe.",
+          "Do not provide monitoring or treatment instructions."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA"]
+      }
+    },
+    {
+      "id": "RULE-ILLNESS-ALONE",
+      "when": { "context": ["illness-stress"] },
+      "output": {
+        "context_classification": "Illness / metabolic stress context.",
+        "kso_class": "Illness / Stress Signal",
+        "kss_language": "K3 — Elevated Context Signal",
+        "measurement_note": "Illness, vomiting, infection, and dehydration can elevate ketone signals independently of diet.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Illness can elevate ketone signals through a stress response rather than a nutritional cause."
+        ],
+        "prohibited_inference": [
+          "Do not diagnose DKA or declare the person safe.",
+          "Do not provide sick-day instructions."
+        ],
+        "canonical_references": ["/clinical-boundary/", "/blood-ketones/", "/sources/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-MEDICATION-ALONE",
+      "when": { "context": ["medication"] },
+      "output": {
+        "context_classification": "Medication context.",
+        "kso_class": "Medication-Context Signal",
+        "kss_language": "K4 — Clinical Concern Boundary",
+        "measurement_note": "Certain medications, including SGLT2 inhibitors, are documented to affect ketone signals, sometimes without markedly elevated glucose.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Some medications are documented to change how ketone signals should be read."
+        ],
+        "prohibited_inference": [
+          "Do not infer a diagnosis of DKA.",
+          "Do not assess individual medication risk or provide dosing guidance."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-FDA-SGLT2"]
+      }
+    },
+    {
+      "id": "RULE-FASTING-BLOOD",
+      "when": { "measurement_type": "blood", "measured_compound": "BHB", "context": ["fasting"] },
+      "output": {
+        "context_classification": "Fasting context.",
+        "kso_class": "Fasting Signal",
+        "kss_language": "K2 — Nutritional / Fasting Range",
+        "measurement_note": "Ketone elevation during fasting reflects a well-documented metabolic fuel-switching process and rises predictably with fasting duration.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Fasting-related ketone elevation reflects a documented physiological process."
+        ],
+        "prohibited_inference": [
+          "Do not infer that a fasting reading is safe for a specific person.",
+          "Do not diagnose DKA."
+        ],
+        "canonical_references": ["/blood-ketones/", "/ketonemia-vs-ketosis/", "/clinical-boundary/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-NUTRITIONAL-BLOOD",
+      "when": { "measurement_type": "blood", "measured_compound": "BHB", "context": ["nutritional ketosis"] },
+      "output": {
+        "context_classification": "Nutritional ketosis context.",
+        "kso_class": "Nutritional Signal",
+        "kss_language": "K2 — Nutritional / Fasting Range",
+        "measurement_note": "Sustained ketone elevation is expected in intentional low-carbohydrate or ketogenic nutrition contexts.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Nutritional ketosis is a documented, intentional dietary context associated with ketone elevation."
+        ],
+        "prohibited_inference": [
+          "Do not infer that a nutritional-ketosis reading is beneficial or safe for a specific person.",
+          "Do not diagnose DKA."
+        ],
+        "canonical_references": ["/ketonemia-vs-ketosis/", "/blood-ketones/", "/clinical-boundary/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-LABORATORY-CONTEXT",
+      "when": { "context": ["laboratory"] },
+      "output": {
+        "context_classification": "Laboratory measurement context.",
+        "kso_class": "Laboratory Measurement Signal",
+        "kss_language": "Reference language only — not a clinical threshold",
+        "measurement_note": "Measurement method, device, hematocrit, and timing affect the reported number; the number is not context-free.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Measurement method changes how a ketone signal should be described."
+        ],
+        "prohibited_inference": [
+          "Do not infer DKA, safety, danger, or treatment need from method language alone."
+        ],
+        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/clinical-boundary/", "/sources/"],
+        "source_ids": ["SRC-LAB-BHB-ACAC"]
+      }
+    },
+    {
+      "id": "RULE-RESEARCH-CONTEXT",
+      "when": { "context": ["research"] },
+      "output": {
+        "context_classification": "Research comparability context.",
+        "kso_class": "Laboratory Measurement Signal",
+        "kss_language": "Reference language only — source-bound",
+        "measurement_note": "Research use requires preserving compound, method, population, fasting state, medication context, and source class for comparability.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Research comparability depends on preserving measurement and population variables."
+        ],
+        "prohibited_inference": [
+          "Do not generalize a research context to an individual reading.",
+          "Do not infer DKA, safety, or danger."
+        ],
+        "canonical_references": ["/research/", "/sources/", "/laboratory-context/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-MEDIA-CONTEXT",
+      "when": { "context": ["media"] },
+      "output": {
+        "context_classification": "Public-language / media context.",
+        "kso_class": "Baseline Signal",
+        "kss_language": "Terminology-accuracy layer — not a clinical zone",
+        "measurement_note": "Media language must preserve the distinction between molecule, measurement, metabolic state, urinary finding, and clinical syndrome.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Ketonemia, ketosis, ketonuria, and ketoacidosis name different layers and should not be collapsed into one term."
+        ],
+        "prohibited_inference": [
+          "Do not use panic or safety framing.",
+          "Do not infer DKA, safety, or danger from terminology alone."
+        ],
+        "canonical_references": ["/media-brief/", "/clinical-boundary/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-MEASUREMENT-ONLY",
+      "when": { "context": [] },
+      "output": {
+        "context_classification": "Measurement context, no interpretive context selected.",
+        "kso_class": "Baseline Signal",
+        "kss_language": "K1 — Low Presence, context required",
+        "measurement_note": "A measurement type or compound was selected without a context. The signal cannot be interpreted without a context dimension.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "A ketone measurement requires a context dimension before it can carry reference meaning."
+        ],
+        "prohibited_inference": [
+          "Do not infer any signal meaning without a context dimension.",
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/signal-map/", "/blood-ketones/", "/clinical-boundary/"],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-DEFAULT-CATCHALL",
+      "when": {},
+      "output": {
+        "context_classification": "General reference context.",
+        "kso_class": "Baseline Signal",
+        "kss_language": "Reference language only",
+        "measurement_note": "The selected inputs did not match a more specific reference pattern. General reference and boundary language applies.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Blood ketone signals require context before interpretation."
+        ],
+        "prohibited_inference": [
+          "Do not infer DKA, safety, danger, or treatment need."
+        ],
+        "canonical_references": ["/signal-map/", "/clinical-boundary/", "/sources/"],
+        "source_ids": []
+      }
+    }
+  ]
+}

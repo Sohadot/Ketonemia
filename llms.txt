@@ -46,6 +46,7 @@ advice, and it does not diagnose, triage, or treat.
 - /strategic-availability/: Partnership, licensing, and acquisition context.
 - /reference-pack/: Machine-readable reference layer index.
 - /architecture/: System architecture and reference map — the whole system on one page.
+- /classification-engine/: Governed Classification Engine — deterministic reference tool that runs the Classification Protocol. Classifies reference context only. It must not be used as a medical decision system.
 
 ## Machine-readable files
 
@@ -55,6 +56,7 @@ advice, and it does not diagnose, triage, or treat.
 - /data/kss-standard.json: Ketonemia State Standard (KSS) — K0-K5 reference labels.
 - /data/source-registry.json: Claim source registry mirroring /sources/.
 - /data/page-index.json: Canonical page index for retrieval.
+- /data/classification-rules.json: Deterministic rule set behind the Classification Engine.
 
 ## Governance
 

@@ -33,8 +33,8 @@ be kept in sync with it.
 | 3 | Ontology | How do we classify the category? | [KETONEMIA_SIGNAL_ONTOLOGY.md](KETONEMIA_SIGNAL_ONTOLOGY.md), `/data/kso-ontology.json` | Owned (spec); class pages pending |
 | 4 | Standard | What is good / complete / trusted? | [KETONEMIA_STATE_STANDARD.md](KETONEMIA_STATE_STANDARD.md), `/data/kss-standard.json` | Owned |
 | 5 | Protocol | How is context classified under governance? | [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) | Owned (F2) |
-| 6 | Engine / Tool | How does the system produce operational output? | `/signal-map/` (conceptual); engine pending | Partial |
-| 7 | Reference layer | Is the site archivable, searchable, citable? | 16 canonical routes (see Route Map) | Owned |
+| 6 | Engine / Tool | How does the system produce operational output? | [`/classification-engine/`](classification-engine/index.html), `/data/classification-rules.json` | Owned (F4) |
+| 7 | Reference layer | Is the site archivable, searchable, citable? | 17 canonical routes (see Route Map) | Owned |
 | 8 | Governance | How are stability, versioning, and trust ensured? | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), policy docs | Owned |
 | 9 | Interface thesis | Does the interface embody the asset's meaning? | [INTERFACE_THESIS.md](INTERFACE_THESIS.md), `/signal-map/`, `/architecture/` | Owned |
 | 10 | Monetization | How does it earn without lowering trust? | [MONETIZATION_BOUNDARY.md](MONETIZATION_BOUNDARY.md) | Boundary owned; proof pending |
@@ -70,6 +70,7 @@ this graph so every route is reachable from one page.
 - `/clinical-boundary/` — formal trust and safety boundary
 - `/sources/` — source discipline policy and claim source registry
 - `/signal-map/` — conceptual interface: signal zones, context dimensions, boundaries
+- `/classification-engine/` — deterministic reference tool that runs the Classification Protocol
 
 ### Cluster E — Machine & Agent Layer
 - `/ai-reference/` — allowed uses, prohibited inferences, boundary rules for AI
@@ -88,8 +89,8 @@ The asset is built in the phased order defined in
 
 - **F1** — Agent-readable machine layer (complete).
 - **F2** — Classification Protocol (complete).
-- **F3** — System Architecture / Reference Map (this layer).
-- **F4** — Deterministic reference engine (runs the F2 protocol; layer 6).
+- **F3** — System Architecture / Reference Map (complete).
+- **F4** — Deterministic reference engine, runs the F2 protocol (this layer).
 - **F5** — Ten deep ontology class pages (deepens layer 3).
 - **F6** — First governed product spec + inquiry surface (layer 10 proof).
 - **F7** — Acquisition dossier (layer 11 proof).

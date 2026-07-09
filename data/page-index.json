@@ -151,6 +151,14 @@
       "audience": ["all audiences", "AI systems", "strategic buyers"],
       "core_function": "Maps the asset as one governed system: layer stack, route clusters, and the full reference map on a single page.",
       "linked_layers": ["layer stack", "route map", "governance spine", "machine layer"]
+    },
+    {
+      "url": "/classification-engine/",
+      "title": "Governed Classification Engine",
+      "page_type": "operational tool",
+      "audience": ["all audiences", "AI systems", "strategic buyers"],
+      "core_function": "Deterministic reference tool that runs the Classification Protocol: maps selected context to KSO class, KSS language, boundary statement, canonical references, and source requirements. Does not diagnose, triage, treat, or score risk.",
+      "linked_layers": ["classification protocol", "kso ontology", "kss standard", "signal map", "clinical boundary"]
     }
   ]
 }

@@ -39,9 +39,10 @@
         { "@type": "ListItem", "position": 11, "name": "Clinical Boundary", "url": "https://ketonemia.com/clinical-boundary/" },
         { "@type": "ListItem", "position": 12, "name": "Sources", "url": "https://ketonemia.com/sources/" },
         { "@type": "ListItem", "position": 13, "name": "Signal Map", "url": "https://ketonemia.com/signal-map/" },
-        { "@type": "ListItem", "position": 14, "name": "AI Reference", "url": "https://ketonemia.com/ai-reference/" },
-        { "@type": "ListItem", "position": 15, "name": "Reference Pack", "url": "https://ketonemia.com/reference-pack/" },
-        { "@type": "ListItem", "position": 16, "name": "Strategic Availability", "url": "https://ketonemia.com/strategic-availability/" }
+        { "@type": "ListItem", "position": 14, "name": "Governed Classification Engine", "url": "https://ketonemia.com/classification-engine/" },
+        { "@type": "ListItem", "position": 15, "name": "AI Reference", "url": "https://ketonemia.com/ai-reference/" },
+        { "@type": "ListItem", "position": 16, "name": "Reference Pack", "url": "https://ketonemia.com/reference-pack/" },
+        { "@type": "ListItem", "position": 17, "name": "Strategic Availability", "url": "https://ketonemia.com/strategic-availability/" }
       ]
     }
   }
@@ -101,14 +102,15 @@
             <tr><td><strong>Ontology (KSO)</strong></td><td>How do we classify signal context?</td><td><a href="/signal-map/">Signal Map</a> &middot; <a href="/reference-pack/">Reference Pack</a></td></tr>
             <tr><td><strong>Standard (KSS)</strong></td><td>What is the reference language for signal zones?</td><td><a href="/signal-map/">Signal Map</a> &middot; <a href="/reference-pack/">Reference Pack</a></td></tr>
             <tr><td><strong>Protocol</strong></td><td>How is context classified under governance?</td><td><a href="/ai-reference/">AI Reference</a></td></tr>
+            <tr><td><strong>Engine / Tool</strong></td><td>How does the system produce operational output?</td><td><a href="/classification-engine/">Classification Engine</a></td></tr>
             <tr><td><strong>Interface</strong></td><td>How does the interface embody the thesis?</td><td><a href="/signal-map/">Signal Map</a> &middot; this page</td></tr>
-            <tr><td><strong>Reference layer</strong></td><td>Is the system citable and archivable?</td><td>All sixteen routes below</td></tr>
+            <tr><td><strong>Reference layer</strong></td><td>Is the system citable and archivable?</td><td>All seventeen routes below</td></tr>
             <tr><td><strong>Governance</strong></td><td>How are trust and stability ensured?</td><td><a href="/clinical-boundary/">Clinical Boundary</a> &middot; <a href="/sources/">Sources</a></td></tr>
             <tr><td><strong>Machine layer</strong></td><td>Can agents read and trust it?</td><td><a href="/ai-reference/">AI Reference</a> &middot; <a href="/reference-pack/">Reference Pack</a></td></tr>
             <tr><td><strong>Buyer logic</strong></td><td>Why is not owning it a loss?</td><td><a href="/strategic-availability/">Strategic Availability</a></td></tr>
           </tbody>
         </table>
-        <p>The Ketonemia Signal Ontology (KSO) classifies signal <em>context</em>; the Ketonemia State Standard (KSS) organizes signal-zone <em>language</em> (K0&ndash;K5); the classification protocol defines how the two are used together without producing a clinical verdict. Together they are the operational core of the system.</p>
+        <p>The Ketonemia Signal Ontology (KSO) classifies signal <em>context</em>; the Ketonemia State Standard (KSS) organizes signal-zone <em>language</em> (K0&ndash;K5); the classification protocol defines how the two are used together without producing a clinical verdict; and the <a href="/classification-engine/">Classification Engine</a> runs that protocol as a deterministic reference tool. Together they are the operational core of the system.</p>
       </section>
 
       <hr class="section-divider">
@@ -152,6 +154,7 @@
           <a href="/clinical-boundary/" class="link-card"><div class="lc-title">Clinical Boundary</div><div class="lc-desc">Where educational reference ends and clinical practice begins.</div></a>
           <a href="/sources/" class="link-card"><div class="lc-title">Sources</div><div class="lc-desc">Source discipline policy and the claim source registry.</div></a>
           <a href="/signal-map/" class="link-card"><div class="lc-title">Signal Map</div><div class="lc-desc">The conceptual interface: signal zones, context dimensions, boundary gates.</div></a>
+          <a href="/classification-engine/" class="link-card"><div class="lc-title">Classification Engine</div><div class="lc-desc">Turn selected context into governed reference output.</div></a>
         </div>
       </section>
 
@@ -203,7 +206,7 @@
           </div>
           <div class="audience-row">
             <span class="aud-label">AI system / agent</span>
-            <span>Read <a href="/ai-reference/">AI Reference</a> for allowed and prohibited uses, then the <a href="/reference-pack/">Reference Pack</a> and <a href="/llms.txt">/llms.txt</a> for the machine-readable structure.</span>
+            <span>Read <a href="/ai-reference/">AI Reference</a> for allowed and prohibited uses, then the <a href="/reference-pack/">Reference Pack</a> and <a href="/llms.txt">/llms.txt</a> for the machine-readable structure. The <a href="/classification-engine/">Classification Engine</a> exposes the same governed rules as reviewable JSON.</span>
           </div>
           <div class="audience-row">
             <span class="aud-label">Strategic buyer</span>
@@ -229,7 +232,7 @@
 
       <section class="content-block" id="machine-layer">
         <h2>Machine &amp; Agent Layer</h2>
-        <p>The system is legible to machines as well as people. A plain-text index is published at <a href="/llms.txt">/llms.txt</a>, with crawl discipline in <a href="/robots.txt">/robots.txt</a> and <a href="/sitemap.xml">/sitemap.xml</a>. The governed JSON layer &mdash; glossary, ontology, standard, source registry, and page index &mdash; is documented in the <a href="/reference-pack/">Reference Pack</a>. These files are never looser than the human-facing pages.</p>
+        <p>The system is legible to machines as well as people. A plain-text index is published at <a href="/llms.txt">/llms.txt</a>, with crawl discipline in <a href="/robots.txt">/robots.txt</a> and <a href="/sitemap.xml">/sitemap.xml</a>. The governed JSON layer &mdash; glossary, ontology, standard, source registry, page index, and classification rules &mdash; is documented in the <a href="/reference-pack/">Reference Pack</a>. These files are never looser than the human-facing pages, and the <a href="/classification-engine/">Classification Engine</a> is the operational proof: the same rules that govern the reference pages run as a deterministic tool.</p>
       </section>
 
       <div class="boundary-notice">
@@ -253,9 +256,9 @@
         <h3>AI-Readable Summary</h3>
         <div class="ai-row"><span class="ai-key">Page type:</span><span class="ai-val">System architecture and reference map</span></div>
         <div class="ai-row"><span class="ai-key">Governing rule:</span><span class="ai-val">The architecture makes the system legible; it does not add clinical content.</span></div>
-        <div class="ai-row"><span class="ai-key">Layer stack:</span><span class="ai-val">Domain thesis &middot; Category language &middot; KSO ontology &middot; KSS standard &middot; Classification protocol &middot; Interface &middot; Reference layer &middot; Governance &middot; Machine layer &middot; Buyer logic</span></div>
+        <div class="ai-row"><span class="ai-key">Layer stack:</span><span class="ai-val">Domain thesis &middot; Category language &middot; KSO ontology &middot; KSS standard &middot; Classification protocol &middot; Engine / Tool &middot; Interface &middot; Reference layer &middot; Governance &middot; Machine layer &middot; Buyer logic</span></div>
         <div class="ai-row"><span class="ai-key">Route clusters:</span><span class="ai-val">Definition &amp; Comparison &middot; Measurement &amp; Laboratory &middot; Audience Layers &middot; Boundary &amp; Sources &middot; Machine &amp; Agent Layer &middot; Strategic</span></div>
-        <div class="ai-row"><span class="ai-key">Reference routes:</span><span class="ai-val">/definition/ &middot; /ketonemia-vs-ketosis/ &middot; /ketonemia-vs-ketoacidosis/ &middot; /blood-ketones/ &middot; /beta-hydroxybutyrate/ &middot; /laboratory-context/ &middot; /student-guide/ &middot; /research/ &middot; /media-brief/ &middot; /clinical-literacy/ &middot; /clinical-boundary/ &middot; /sources/ &middot; /signal-map/ &middot; /ai-reference/ &middot; /reference-pack/ &middot; /strategic-availability/</span></div>
+        <div class="ai-row"><span class="ai-key">Reference routes:</span><span class="ai-val">/definition/ &middot; /ketonemia-vs-ketosis/ &middot; /ketonemia-vs-ketoacidosis/ &middot; /blood-ketones/ &middot; /beta-hydroxybutyrate/ &middot; /laboratory-context/ &middot; /student-guide/ &middot; /research/ &middot; /media-brief/ &middot; /clinical-literacy/ &middot; /clinical-boundary/ &middot; /sources/ &middot; /signal-map/ &middot; /classification-engine/ &middot; /ai-reference/ &middot; /reference-pack/ &middot; /strategic-availability/</span></div>
         <div class="ai-row"><span class="ai-key">Prohibited inference:</span><span class="ai-val">Do not read any layer, cluster, or route as a diagnosis, risk score, safety verdict, or individual interpretation.</span></div>
         <div class="ai-row"><span class="ai-key">Machine files:</span><span class="ai-val">/llms.txt &middot; /data/reference-pack.json &middot; /data/glossary.json &middot; /data/kso-ontology.json &middot; /data/kss-standard.json &middot; /data/source-registry.json &middot; /data/page-index.json</span></div>
       </div>

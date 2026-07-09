@@ -231,6 +231,33 @@ Files and patches:
 
 Status: complete.
 
+## F4 - Governed Classification Engine
+
+F4 added `/classification-engine/` - the first operational tool on Ketonemia.com, and the first concrete evidence the asset is a Category Intelligence Source, not just a Category Artifact. The engine runs [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) as a deterministic, reviewable rule set: it maps structured context selections to governed reference output, using only the real KSO classes and KSS labels already defined in the repository.
+
+Governing sentence: The engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.
+
+Files:
+
+- `/classification-engine/` - boundary notice, engine thesis, context-only input form (measurement type, measured compound, context, audience - no numeric values, no symptoms, no personal data), a nine-field governed output template, protocol explanation, and AI-readable summary
+- `/data/classification-rules.json` - 15 deterministic rules (first-match wins, unconditional catch-all) mapping context inputs to KSO class, KSS language, boundary statement, allowed language, prohibited inference, canonical references, and source requirements; embedded inline in the page (byte-identical to the standalone file) so the engine has no fetch/backend dependency
+- `/assets/js/classification-engine.js` - vanilla JavaScript, no dependencies, no network calls, no storage; renders output via `textContent` only
+- `assets/css/style.css` - scoped `.engine-*` classes extending the existing visual language, no new design system
+
+Sensitive combinations (diabetes + illness/stress, diabetes + medication) route to explicit clinical-concern-boundary language rather than a verdict; the boundary statement and prohibited-inference language never soften across any input combination or audience.
+
+Patches:
+
+- `/` - homepage card grid and footer updated with the Classification Engine
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` - Engine / Tool layer marked Owned, engine added to the Boundary & Sources cluster, all stale route counts corrected from 16 to 17
+- `/signal-map/` - Reference Pages and AI summary updated with the engine
+- `/ai-reference/` - AI-systems warning paragraph, canonical pages, and AI summary updated
+- `/reference-pack/` and `/data/reference-pack.json` - classification-rules.json added to the machine-readable file set
+- `/data/page-index.json`, `/llms.txt`, `/sitemap.xml` - new route registered
+- `QUALITY_GATE.md` - Governed Classification Engine Gate added
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:
