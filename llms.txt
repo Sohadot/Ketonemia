@@ -45,6 +45,7 @@ advice, and it does not diagnose, triage, or treat.
 - /ai-reference/: Allowed and prohibited AI uses of this site.
 - /strategic-availability/: Partnership, licensing, and acquisition context.
 - /reference-pack/: Machine-readable reference layer index.
+- /architecture/: System architecture and reference map — the whole system on one page.
 
 ## Machine-readable files
 

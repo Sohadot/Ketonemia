@@ -45,6 +45,7 @@ Governance documents:
 - [DECISION_LOG.md](DECISION_LOG.md)
 - [ASSET_INTELLIGENCE_FACTORY_PLAN.md](ASSET_INTELLIGENCE_FACTORY_PLAN.md)
 - [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md)
+- [SYSTEM_ARCHITECTURE.md](SYSTEM_ARCHITECTURE.md)
 - [ROADMAP.md](ROADMAP.md)
 
 Status: complete.
@@ -205,6 +206,28 @@ F2 added [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) as the governe
 Governing sentence: The protocol classifies the interpretive frame, not the person.
 
 This is the operational bridge between knowledge and tool: KSO says what the context classes are, KSS says what the signal-zone language is, F2 says how they are used together under governance, and a future engine (F4) would run F2 in an interface. Any engine built on the asset must produce outputs no broader than this protocol allows.
+
+Status: complete.
+
+## F3 - System Architecture / Reference Map
+
+F3 added [SYSTEM_ARCHITECTURE.md](SYSTEM_ARCHITECTURE.md) and the public `/architecture/` page - the single artifact that shows Ketonemia.com as one governed system rather than a set of pages. This is the layer that converts a set of good pages into one legible category machine, and the page a strategic buyer and an AI agent read first.
+
+Governing sentence: The architecture makes the system legible. It does not add clinical content.
+
+Pages:
+
+- `/architecture/` - the asset as a system, the layer stack (10 layers plus the machine layer), the reference map (all 16 routes clustered on one page with no orphans), a how-to-read-the-system audience block, the governance spine, and the machine and agent layer, with CollectionPage and BreadcrumbList structured data carrying no medical claims
+
+Files and patches:
+
+- `SYSTEM_ARCHITECTURE.md` - internal canonical map: layer stack (kept in sync with the Asset Intelligence Factory Plan), route-map clusters, build order, and the architecture rule that no route may exist without a declared layer and a place in the map
+- `/` - homepage card grid and footer updated with System Architecture
+- `/ai-reference/` - System map paragraph and AI summary updated with `/architecture/`
+- `/strategic-availability/` - reconciled the stale "Nine interconnected reference pages" description, added a System Architecture value-stack row, and linked `/architecture/`
+- `/reference-pack/` - Related Pages updated with `/architecture/`
+- `/sitemap.xml`, `/llms.txt`, `/data/page-index.json`, `/data/reference-pack.json` - `/architecture/` route registered
+- `QUALITY_GATE.md` - System Architecture Gate added
 
 Status: complete.
 

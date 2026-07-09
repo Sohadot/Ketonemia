@@ -303,6 +303,26 @@ Prohibited: diagnosis, triage, treatment guidance, individualized interpretation
 
 Status: complete.
 
+## F3 — System Architecture / Reference Map
+
+Goal: build the single artifact that shows the asset as one governed system — the reference map a strategic buyer and an AI agent read first. Build phase F3 of the Asset Intelligence Factory Plan (Gap 4).
+
+Governing sentence: The architecture makes the system legible. It does not add clinical content.
+
+Deliverables:
+
+- SYSTEM_ARCHITECTURE.md — internal canonical map: layer stack, route-map clusters, build order, and the architecture rule;
+- `/architecture/` — public reference-grade page: the asset as a system, layer-stack table, reference map with all 16 routes clustered on one page, how-to-read-the-system audience block, governance spine, and machine/agent layer;
+- SEO: unique title, meta description, canonical, CollectionPage + BreadcrumbList JSON-LD with no medical claims;
+- built with existing CSS only — no new CSS, no JS beyond JSON-LD, no external assets;
+- wire-in: homepage card and footer, `/ai-reference/`, `/reference-pack/`, sitemap, llms.txt, page-index.json, reference-pack.json;
+- reconcile stale "Nine interconnected reference pages" on `/strategic-availability/` and add a System Architecture value-stack row;
+- README governance index and F3 section, DECISION_LOG record, and QUALITY_GATE System Architecture Gate.
+
+Prohibited: any new clinical content, thresholds, diagnosis, triage, or verdicts; new CSS; orphan or broken routes.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
