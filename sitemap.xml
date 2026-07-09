@@ -19,4 +19,15 @@
   <url><loc>https://ketonemia.com/reference-pack/</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ketonemia.com/architecture/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ketonemia.com/classification-engine/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ketonemia.com/ontology/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ketonemia.com/ontology/baseline-signal/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/nutritional-signal/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/fasting-signal/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/exercise-performance-signal/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/illness-stress-signal/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/diabetes-associated-signal/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/medication-context-signal/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/laboratory-measurement-signal/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/dka-concern-boundary/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ketonemia.com/ontology/emergency-referral-boundary/</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

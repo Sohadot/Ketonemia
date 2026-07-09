@@ -9,6 +9,7 @@
   "classes": [
     {
       "id": "KSO-1",
+      "ontology_page": "/ontology/baseline-signal/",
       "name": "Baseline Signal",
       "description": "A low or non-prominent ketone signal.",
       "use": "Educational explanations of normal or low ketone presence when no strong contextual interpretation is being made.",
@@ -16,6 +17,7 @@
     },
     {
       "id": "KSO-2",
+      "ontology_page": "/ontology/nutritional-signal/",
       "name": "Nutritional Signal",
       "description": "A signal associated with low-carbohydrate nutrition or nutritional ketosis contexts.",
       "boundary": "Must not imply that a reading is beneficial or safe without context.",
@@ -23,18 +25,21 @@
     },
     {
       "id": "KSO-3",
+      "ontology_page": "/ontology/fasting-signal/",
       "name": "Fasting Signal",
       "description": "A signal associated with fasting or reduced intake.",
       "boundary": "Must distinguish educational physiology from individualized medical interpretation."
     },
     {
       "id": "KSO-4",
+      "ontology_page": "/ontology/exercise-performance-signal/",
       "name": "Exercise / Performance Signal",
       "description": "A signal associated with exercise, endurance, energy metabolism, or performance contexts.",
       "boundary": "Must avoid performance claims unless sourced."
     },
     {
       "id": "KSO-5",
+      "ontology_page": "/ontology/illness-stress-signal/",
       "name": "Illness / Stress Signal",
       "description": "A signal associated with illness, vomiting, infection, dehydration, stress physiology, or reduced intake during illness.",
       "boundary": "Must preserve caution and route to clinical-boundary content where appropriate.",
@@ -42,37 +47,53 @@
     },
     {
       "id": "KSO-6",
+      "ontology_page": "/ontology/diabetes-associated-signal/",
       "name": "Diabetes-Associated Signal",
       "description": "A signal associated with diabetes, insulin deficiency risk, glucose status, or diabetes safety education.",
       "boundary": "Must not diagnose DKA or tell users they are safe.",
       "canonical_page": "/ketonemia-vs-ketoacidosis/",
-      "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA", "SRC-NHS-DKA"]
+      "source_ids": [
+        "SRC-ADA-2026",
+        "SRC-DUK-DKA",
+        "SRC-NHS-DKA"
+      ]
     },
     {
       "id": "KSO-7",
+      "ontology_page": "/ontology/medication-context-signal/",
       "name": "Medication-Context Signal",
       "description": "A signal associated with medication contexts, especially where ketone risk language may differ from glucose-only assumptions.",
       "boundary": "Requires careful sourcing and boundary language.",
-      "source_ids": ["SRC-FDA-SGLT2"]
+      "source_ids": [
+        "SRC-FDA-SGLT2"
+      ]
     },
     {
       "id": "KSO-8",
+      "ontology_page": "/ontology/laboratory-measurement-signal/",
       "name": "Laboratory Measurement Signal",
       "description": "A signal explained through specimen type, assay, reporting language, or lab interpretation boundaries.",
       "boundary": "Must separate blood, urine, and breath ketone measurement.",
       "canonical_page": "/laboratory-context/",
-      "source_ids": ["SRC-LAB-BHB-ACAC"]
+      "source_ids": [
+        "SRC-LAB-BHB-ACAC"
+      ]
     },
     {
       "id": "KSO-9",
+      "ontology_page": "/ontology/dka-concern-boundary/",
       "name": "DKA Concern Boundary",
       "description": "Not a diagnosis. A boundary class used when ketone information belongs in a clinical concern frame.",
       "boundary": "Must link to clinical care guidance and cited sources.",
       "canonical_page": "/clinical-boundary/",
-      "source_ids": ["SRC-ADA-2026", "SRC-NHS-DKA"]
+      "source_ids": [
+        "SRC-ADA-2026",
+        "SRC-NHS-DKA"
+      ]
     },
     {
       "id": "KSO-10",
+      "ontology_page": "/ontology/emergency-referral-boundary/",
       "name": "Emergency Referral Boundary",
       "description": "Not treatment advice. A boundary class for language that points toward urgent or emergency medical evaluation where source guidance supports it.",
       "boundary": "Must not ask users to self-triage.",

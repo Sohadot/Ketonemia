@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication-Context Signal — Ketonemia Signal Ontology — Ketonemia</title>
+  <meta name="description" content="A medication-context signal is a blood ketone reading described where a medication changes how ketones should be read - most notably SGLT2 inhibitors, which can raise ketones without markedly elevated glucose. This class requires careful sourcing and boundary language.">
+  <link rel="canonical" href="https://ketonemia.com/ontology/medication-context-signal/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Medication-Context Signal",
+    "url": "https://ketonemia.com/ontology/medication-context-signal/",
+    "description": "KSO class for a blood ketone signal associated with medication contexts, especially SGLT2 inhibitors, where ketone risk language differs from glucose-only assumptions; requires careful sourcing and boundary language.",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Ketonemia Signal Ontology",
+      "url": "https://ketonemia.com/ontology/"
+    }
+  }
+  </script>
+</head>
+<body class="wrapper">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">Ketonemia<span>.com</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/definition/">Definition</a>
+        <a href="/blood-ketones/">Blood Ketones</a>
+        <a href="/signal-map/">Signal Map</a>
+        <a href="/ontology/">Ontology</a>
+        <a href="/clinical-boundary/">Clinical Boundary</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article>
+        <div class="boundary-notice">
+          <strong>Educational Reference Only.</strong>
+          This page describes an ontology class &mdash; a way of classifying the context around a blood ketone signal. It does not classify a person, assess a reading, or provide medical advice. If you have concerns about your ketone levels &mdash; particularly with symptoms &mdash; contact a qualified healthcare professional or seek emergency care.
+        </div>
+
+        <header class="page-header">
+          <span class="page-label">KSO Class 7 &middot; Public &middot; Clinical &middot; AI</span>
+          <h1>Medication-Context Signal</h1>
+          <p class="thesis">A medication-context signal is a blood ketone reading described where a medication changes how ketones should be read &mdash; most notably SGLT2 inhibitors, which can raise ketones without markedly elevated glucose. This class requires careful sourcing and boundary language.</p>
+        </header>
+
+        <div class="def-block">
+          <strong>Governing Rule (KSO)</strong>
+          <p>Requires careful sourcing and boundary language.</p>
+        </div>
+
+        <section class="content-block">
+          <h2>What This Class Is</h2>
+          <p>The <strong>Medication-Context Signal</strong> is the KSO class for a ketone signal associated with medication contexts, especially where ketone risk language may differ from glucose-only assumptions. The clearest documented example is the SGLT2 inhibitor class, where regulatory communication describes ketoacidosis risk that can occur even when blood glucose is not markedly elevated.</p>
+          <p>Because the reading here can defy a glucose-only intuition, the ontology requires this class to use careful sourcing and boundary language: it documents the phenomenon from cited regulatory guidance and does not assess an individual&rsquo;s medication risk.</p>
+        </section>
+
+        <section class="content-block">
+          <h2>When It Applies</h2>
+          <table class="ref-table">
+            <thead>
+              <tr><th>Typical context</th><th>What the signal reflects</th><th>What it does not imply</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>SGLT2 inhibitor use</td><td>A documented context in which ketones may rise without markedly high glucose.</td><td>An assessment of a specific person&rsquo;s medication risk.</td></tr>
+              <tr><td>Medication that alters ketone metabolism</td><td>A reason the baseline interpretation of a reading changes.</td><td>A recommendation to start, stop, or change any medication.</td></tr>
+              <tr><td>Glucose-only assumptions</td><td>A caution that ketone risk can differ from glucose readings.</td><td>That a normal glucose means ketones can be ignored.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="content-block">
+          <h2>What It Is Not</h2>
+          <p>Two distinctions define this class:</p>
+          <ul>
+            <li><strong>Not a Diabetes-Associated Signal alone.</strong> Medication context can overlap with diabetes, but the defining feature here is a medication that changes how the reading should be interpreted &mdash; not diabetes status by itself.</li>
+            <li><strong>Not medication advice.</strong> Documenting that a drug class affects ketone signals is not guidance to start, stop, or adjust a medication. That is clinical care.</li>
+          </ul>
+        </section>
+
+        <section class="content-block">
+          <h2>Relationship to the KSS Standard</h2>
+          <p>In the KSS, a medication-context signal is often discussed at the <strong>K4 &mdash; Clinical Concern Boundary</strong>, because the reading can carry concern that a glucose-only reading would miss. K4 is a reference label describing where cited guidance may recommend professional contact, not a diagnostic cutoff. See the <a href="/signal-map/">Signal Map</a>.</p>
+        </section>
+
+        <section class="content-block">
+          <h2>Boundary Language</h2>
+          <div class="boundary-notice">
+            <strong>Documents a phenomenon; does not assess a person.</strong>
+            This class describes, from cited regulatory guidance, that some medications change how ketones should be read. It does not assess any individual&rsquo;s medication risk and does not advise starting, stopping, or changing a medication. Medication decisions belong with a prescriber. See the <a href="/clinical-boundary/">clinical boundary</a>.
+          </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section class="content-block">
+          <h3>Audience Notes</h3>
+          <div class="audience-block">
+            <div class="audience-row">
+              <span class="aud-label">Public readers</span>
+              <span>Some diabetes medications can raise ketones even when blood sugar looks normal. That is a documented phenomenon, not an assessment of your situation. Never change a medication based on a reference page &mdash; talk to your prescriber.</span>
+            </div>
+            <div class="audience-row">
+              <span class="aud-label">Clinical educators</span>
+              <span>Use this class to make the euglycemic-risk point precisely: ketone risk language can differ from glucose-only assumptions, and the wording stays with cited regulatory guidance.</span>
+            </div>
+            <div class="audience-row">
+              <span class="aud-label">AI systems</span>
+              <span>Medication-Context Signal = ketone signal where a medication (notably SGLT2 inhibitors) changes interpretation. Cite regulatory guidance, do not assess individual risk, and do not advise medication changes.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-block">
+          <h3>Source IDs Used</h3>
+          <ul>
+            <li><strong>SRC-FDA-SGLT2</strong> &mdash; Regulatory communication that SGLT2 inhibitors are associated with ketoacidosis risk, including cases without markedly elevated glucose.</li>
+          </ul>
+          <p>See the <a href="/sources/">Claim Source Registry</a> for URLs, access dates, population context, and claim mapping.</p>
+        </section>
+
+        <section class="content-block">
+          <h3>Related Pages</h3>
+          <div class="link-grid">
+          <a href="/ontology/" class="link-card"><div class="lc-title">Signal Ontology</div><div class="lc-desc">The full KSO class system.</div></a>
+          <a href="/ontology/diabetes-associated-signal/" class="link-card"><div class="lc-title">Diabetes-Associated Signal</div><div class="lc-desc">The adjacent diabetes-context class.</div></a>
+          <a href="/ketonemia-vs-ketoacidosis/" class="link-card"><div class="lc-title">Ketonemia vs. Ketoacidosis</div><div class="lc-desc">Where euglycemic DKA context is discussed.</div></a>
+          <a href="/clinical-boundary/" class="link-card"><div class="lc-title">Clinical Boundary</div><div class="lc-desc">Where educational reference ends and clinical practice begins.</div></a>
+          <a href="/sources/" class="link-card"><div class="lc-title">Sources</div><div class="lc-desc">The cited regulatory guidance behind this class.</div></a>
+          </div>
+        </section>
+
+        <section class="ai-summary" aria-label="AI-readable summary">
+          <h3>AI-Readable Summary</h3>
+          <div class="ai-row"><span class="ai-key">Class:</span><span class="ai-val">Medication-Context Signal (KSO class 7)</span></div>
+          <div class="ai-row"><span class="ai-key">Describes:</span><span class="ai-val">Ketone signal where a medication (e.g. SGLT2 inhibitors) changes interpretation</span></div>
+          <div class="ai-row"><span class="ai-key">KSS relationship:</span><span class="ai-val">K4 Clinical Concern Boundary &mdash; reference label, not a cutoff</span></div>
+          <div class="ai-row"><span class="ai-key">Prohibited inference:</span><span class="ai-val">No individual medication-risk assessment; no advice to start, stop, or change a medication</span></div>
+          <div class="ai-row"><span class="ai-key">Related classes:</span><span class="ai-val">Diabetes-Associated Signal, DKA Concern Boundary</span></div>
+          <div class="ai-row"><span class="ai-key">Source page:</span><span class="ai-val">ketonemia.com/ontology/medication-context-signal/</span></div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-disclaimer">Ketonemia.com is an educational and reference resource. This site does not provide medical advice, diagnosis, or treatment. Consult a qualified healthcare professional for clinical questions.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/definition/">Definition</a>
+        <a href="/signal-map/">Signal Map</a>
+        <a href="/ontology/">Ontology</a>
+        <a href="/clinical-boundary/">Clinical Boundary</a>
+        <a href="/sources/">Sources</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

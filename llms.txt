@@ -47,6 +47,9 @@ advice, and it does not diagnose, triage, or treat.
 - /reference-pack/: Machine-readable reference layer index.
 - /architecture/: System architecture and reference map — the whole system on one page.
 - /classification-engine/: Governed Classification Engine — deterministic reference tool that runs the Classification Protocol. Classifies reference context only. It must not be used as a medical decision system.
+- /ontology/: Ketonemia Signal Ontology (KSO) hub — ten governed classes that classify a blood ketone signal by context, not by diagnosis. KSO may classify context; it must not declare a patient state.
+- /ontology/baseline-signal/, /ontology/nutritional-signal/, /ontology/fasting-signal/, /ontology/exercise-performance-signal/, /ontology/illness-stress-signal/, /ontology/diabetes-associated-signal/, /ontology/medication-context-signal/, /ontology/laboratory-measurement-signal/: the eight signal-context KSO class pages.
+- /ontology/dka-concern-boundary/, /ontology/emergency-referral-boundary/: the two KSO boundary classes. Not diagnoses. Do not read as a determination about a person; do not self-triage.
 
 ## Machine-readable files
 
@@ -56,7 +59,8 @@ advice, and it does not diagnose, triage, or treat.
 - /data/kss-standard.json: Ketonemia State Standard (KSS) — K0-K5 reference labels.
 - /data/source-registry.json: Claim source registry mirroring /sources/.
 - /data/page-index.json: Canonical page index for retrieval.
-- /data/classification-rules.json: Deterministic rule set behind the Classification Engine.
+- /data/classification-rules.json: Deterministic rule set behind the Classification Engine; each rule links its KSO class to the matching /ontology/ class page.
+- /data/kso-ontology.json: The ten KSO classes with their ontology_page routes.
 
 ## Governance
 

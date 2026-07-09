@@ -178,10 +178,15 @@
   "rules": [
     {
       "id": "RULE-MEASUREMENT-INCOMPLETE",
-      "when": { "measurement_type": "unspecified", "measured_compound": "unspecified", "context": [] },
+      "when": {
+        "measurement_type": "unspecified",
+        "measured_compound": "unspecified",
+        "context": []
+      },
       "output": {
         "context_classification": "Measurement-context incomplete.",
         "kso_class": "Baseline Signal",
+        "kso_class_page": "/ontology/baseline-signal/",
         "kss_language": "K0 — Baseline",
         "measurement_note": "No measurement type or compound was selected. A ketone signal cannot be classified without knowing what was measured and how.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -192,16 +197,23 @@
           "Do not infer any signal meaning from an unspecified measurement.",
           "Do not infer DKA, safety, danger, or treatment need."
         ],
-        "canonical_references": ["/blood-ketones/", "/laboratory-context/"],
+        "canonical_references": [
+          "/blood-ketones/",
+          "/laboratory-context/"
+        ],
         "source_ids": []
       }
     },
     {
       "id": "RULE-LAB-URINE-ACAC",
-      "when": { "measurement_type": "urine", "measured_compound": "AcAc" },
+      "when": {
+        "measurement_type": "urine",
+        "measured_compound": "AcAc"
+      },
       "output": {
         "context_classification": "Laboratory / sample-method context.",
         "kso_class": "Laboratory Measurement Signal",
+        "kso_class_page": "/ontology/laboratory-measurement-signal/",
         "kss_language": "K1 — Low Presence, non-equivalent signal",
         "measurement_note": "Urine AcAc and blood BHB are different measurement signals and should not be treated as interchangeable.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -212,16 +224,27 @@
           "Do not infer blood BHB level from urine AcAc language alone.",
           "Do not infer DKA, safety, danger, or treatment need."
         ],
-        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/clinical-boundary/", "/sources/"],
-        "source_ids": ["SRC-LAB-BHB-ACAC"]
+        "canonical_references": [
+          "/laboratory-context/",
+          "/blood-ketones/",
+          "/clinical-boundary/",
+          "/sources/"
+        ],
+        "source_ids": [
+          "SRC-LAB-BHB-ACAC"
+        ]
       }
     },
     {
       "id": "RULE-LAB-BREATH-ACETONE",
-      "when": { "measurement_type": "breath", "measured_compound": "acetone" },
+      "when": {
+        "measurement_type": "breath",
+        "measured_compound": "acetone"
+      },
       "output": {
         "context_classification": "Laboratory / sample-method context.",
         "kso_class": "Laboratory Measurement Signal",
+        "kso_class_page": "/ontology/laboratory-measurement-signal/",
         "kss_language": "K1 — Low Presence, proxy signal",
         "measurement_note": "Breath acetone is a proxy measurement and is not interchangeable with blood BHB or urine AcAc.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -232,16 +255,28 @@
           "Do not infer blood BHB level from breath acetone language alone.",
           "Do not infer DKA, safety, danger, or treatment need."
         ],
-        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/sources/"],
-        "source_ids": ["SRC-LAB-BHB-ACAC"]
+        "canonical_references": [
+          "/laboratory-context/",
+          "/blood-ketones/",
+          "/sources/"
+        ],
+        "source_ids": [
+          "SRC-LAB-BHB-ACAC"
+        ]
       }
     },
     {
       "id": "RULE-DIABETES-ILLNESS-SENSITIVE",
-      "when": { "context": ["diabetes", "illness-stress"] },
+      "when": {
+        "context": [
+          "diabetes",
+          "illness-stress"
+        ]
+      },
       "output": {
         "context_classification": "Diabetes and illness/stress context — clinical concern boundary.",
         "kso_class": "DKA Concern Boundary",
+        "kso_class_page": "/ontology/dka-concern-boundary/",
         "kss_language": "K4 — Clinical Concern Boundary",
         "measurement_note": "Illness combined with diabetes context changes how ketone signals should be read, but no measurement alone determines urgency.",
         "boundary_statement": "This belongs near the clinical-boundary layer. Ketonemia.com can explain terminology and source pathways, but it cannot assess a person, determine urgency, diagnose DKA, or provide instructions.",
@@ -255,16 +290,30 @@
           "Do not provide sick-day instructions or treatment guidance.",
           "Do not assign a risk score or urgency level."
         ],
-        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
-        "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA", "SRC-NHS-DKA"]
+        "canonical_references": [
+          "/ketonemia-vs-ketoacidosis/",
+          "/clinical-boundary/",
+          "/sources/"
+        ],
+        "source_ids": [
+          "SRC-ADA-2026",
+          "SRC-DUK-DKA",
+          "SRC-NHS-DKA"
+        ]
       }
     },
     {
       "id": "RULE-DIABETES-MEDICATION-SENSITIVE",
-      "when": { "context": ["diabetes", "medication"] },
+      "when": {
+        "context": [
+          "diabetes",
+          "medication"
+        ]
+      },
       "output": {
         "context_classification": "Diabetes and medication context — clinical concern boundary.",
         "kso_class": "DKA Concern Boundary",
+        "kso_class_page": "/ontology/dka-concern-boundary/",
         "kss_language": "K4 — Clinical Concern Boundary",
         "measurement_note": "Certain diabetes medications, including SGLT2 inhibitors, are documented to affect ketone signals independently of glucose level.",
         "boundary_statement": "This belongs near the clinical-boundary layer. Ketonemia.com can explain terminology and source pathways, but it cannot assess a person, determine urgency, diagnose DKA, or provide instructions.",
@@ -278,16 +327,27 @@
           "Do not provide dosing or treatment guidance.",
           "Do not assign a risk score or urgency level."
         ],
-        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
-        "source_ids": ["SRC-FDA-SGLT2"]
+        "canonical_references": [
+          "/ketonemia-vs-ketoacidosis/",
+          "/clinical-boundary/",
+          "/sources/"
+        ],
+        "source_ids": [
+          "SRC-FDA-SGLT2"
+        ]
       }
     },
     {
       "id": "RULE-DIABETES-ALONE",
-      "when": { "context": ["diabetes"] },
+      "when": {
+        "context": [
+          "diabetes"
+        ]
+      },
       "output": {
         "context_classification": "Diabetes-associated context.",
         "kso_class": "Diabetes-Associated Signal",
+        "kso_class_page": "/ontology/diabetes-associated-signal/",
         "kss_language": "K3 — Elevated Context Signal",
         "measurement_note": "Diabetes context changes how a ketone signal is approached, but this classification does not evaluate an individual's status.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -298,16 +358,28 @@
           "Do not diagnose DKA or declare the person safe.",
           "Do not provide monitoring or treatment instructions."
         ],
-        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
-        "source_ids": ["SRC-ADA-2026", "SRC-DUK-DKA"]
+        "canonical_references": [
+          "/ketonemia-vs-ketoacidosis/",
+          "/clinical-boundary/",
+          "/sources/"
+        ],
+        "source_ids": [
+          "SRC-ADA-2026",
+          "SRC-DUK-DKA"
+        ]
       }
     },
     {
       "id": "RULE-ILLNESS-ALONE",
-      "when": { "context": ["illness-stress"] },
+      "when": {
+        "context": [
+          "illness-stress"
+        ]
+      },
       "output": {
         "context_classification": "Illness / metabolic stress context.",
         "kso_class": "Illness / Stress Signal",
+        "kso_class_page": "/ontology/illness-stress-signal/",
         "kss_language": "K3 — Elevated Context Signal",
         "measurement_note": "Illness, vomiting, infection, and dehydration can elevate ketone signals independently of diet.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -318,16 +390,25 @@
           "Do not diagnose DKA or declare the person safe.",
           "Do not provide sick-day instructions."
         ],
-        "canonical_references": ["/clinical-boundary/", "/blood-ketones/", "/sources/"],
+        "canonical_references": [
+          "/clinical-boundary/",
+          "/blood-ketones/",
+          "/sources/"
+        ],
         "source_ids": []
       }
     },
     {
       "id": "RULE-MEDICATION-ALONE",
-      "when": { "context": ["medication"] },
+      "when": {
+        "context": [
+          "medication"
+        ]
+      },
       "output": {
         "context_classification": "Medication context.",
         "kso_class": "Medication-Context Signal",
+        "kso_class_page": "/ontology/medication-context-signal/",
         "kss_language": "K4 — Clinical Concern Boundary",
         "measurement_note": "Certain medications, including SGLT2 inhibitors, are documented to affect ketone signals, sometimes without markedly elevated glucose.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -338,16 +419,29 @@
           "Do not infer a diagnosis of DKA.",
           "Do not assess individual medication risk or provide dosing guidance."
         ],
-        "canonical_references": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/sources/"],
-        "source_ids": ["SRC-FDA-SGLT2"]
+        "canonical_references": [
+          "/ketonemia-vs-ketoacidosis/",
+          "/clinical-boundary/",
+          "/sources/"
+        ],
+        "source_ids": [
+          "SRC-FDA-SGLT2"
+        ]
       }
     },
     {
       "id": "RULE-FASTING-BLOOD",
-      "when": { "measurement_type": "blood", "measured_compound": "BHB", "context": ["fasting"] },
+      "when": {
+        "measurement_type": "blood",
+        "measured_compound": "BHB",
+        "context": [
+          "fasting"
+        ]
+      },
       "output": {
         "context_classification": "Fasting context.",
         "kso_class": "Fasting Signal",
+        "kso_class_page": "/ontology/fasting-signal/",
         "kss_language": "K2 — Nutritional / Fasting Range",
         "measurement_note": "Ketone elevation during fasting reflects a well-documented metabolic fuel-switching process and rises predictably with fasting duration.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -358,16 +452,27 @@
           "Do not infer that a fasting reading is safe for a specific person.",
           "Do not diagnose DKA."
         ],
-        "canonical_references": ["/blood-ketones/", "/ketonemia-vs-ketosis/", "/clinical-boundary/"],
+        "canonical_references": [
+          "/blood-ketones/",
+          "/ketonemia-vs-ketosis/",
+          "/clinical-boundary/"
+        ],
         "source_ids": []
       }
     },
     {
       "id": "RULE-NUTRITIONAL-BLOOD",
-      "when": { "measurement_type": "blood", "measured_compound": "BHB", "context": ["nutritional ketosis"] },
+      "when": {
+        "measurement_type": "blood",
+        "measured_compound": "BHB",
+        "context": [
+          "nutritional ketosis"
+        ]
+      },
       "output": {
         "context_classification": "Nutritional ketosis context.",
         "kso_class": "Nutritional Signal",
+        "kso_class_page": "/ontology/nutritional-signal/",
         "kss_language": "K2 — Nutritional / Fasting Range",
         "measurement_note": "Sustained ketone elevation is expected in intentional low-carbohydrate or ketogenic nutrition contexts.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -378,16 +483,25 @@
           "Do not infer that a nutritional-ketosis reading is beneficial or safe for a specific person.",
           "Do not diagnose DKA."
         ],
-        "canonical_references": ["/ketonemia-vs-ketosis/", "/blood-ketones/", "/clinical-boundary/"],
+        "canonical_references": [
+          "/ketonemia-vs-ketosis/",
+          "/blood-ketones/",
+          "/clinical-boundary/"
+        ],
         "source_ids": []
       }
     },
     {
       "id": "RULE-LABORATORY-CONTEXT",
-      "when": { "context": ["laboratory"] },
+      "when": {
+        "context": [
+          "laboratory"
+        ]
+      },
       "output": {
         "context_classification": "Laboratory measurement context.",
         "kso_class": "Laboratory Measurement Signal",
+        "kso_class_page": "/ontology/laboratory-measurement-signal/",
         "kss_language": "Reference language only — not a clinical threshold",
         "measurement_note": "Measurement method, device, hematocrit, and timing affect the reported number; the number is not context-free.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -397,16 +511,28 @@
         "prohibited_inference": [
           "Do not infer DKA, safety, danger, or treatment need from method language alone."
         ],
-        "canonical_references": ["/laboratory-context/", "/blood-ketones/", "/clinical-boundary/", "/sources/"],
-        "source_ids": ["SRC-LAB-BHB-ACAC"]
+        "canonical_references": [
+          "/laboratory-context/",
+          "/blood-ketones/",
+          "/clinical-boundary/",
+          "/sources/"
+        ],
+        "source_ids": [
+          "SRC-LAB-BHB-ACAC"
+        ]
       }
     },
     {
       "id": "RULE-RESEARCH-CONTEXT",
-      "when": { "context": ["research"] },
+      "when": {
+        "context": [
+          "research"
+        ]
+      },
       "output": {
         "context_classification": "Research comparability context.",
         "kso_class": "Laboratory Measurement Signal",
+        "kso_class_page": "/ontology/laboratory-measurement-signal/",
         "kss_language": "Reference language only — source-bound",
         "measurement_note": "Research use requires preserving compound, method, population, fasting state, medication context, and source class for comparability.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -417,16 +543,25 @@
           "Do not generalize a research context to an individual reading.",
           "Do not infer DKA, safety, or danger."
         ],
-        "canonical_references": ["/research/", "/sources/", "/laboratory-context/"],
+        "canonical_references": [
+          "/research/",
+          "/sources/",
+          "/laboratory-context/"
+        ],
         "source_ids": []
       }
     },
     {
       "id": "RULE-MEDIA-CONTEXT",
-      "when": { "context": ["media"] },
+      "when": {
+        "context": [
+          "media"
+        ]
+      },
       "output": {
         "context_classification": "Public-language / media context.",
         "kso_class": "Baseline Signal",
+        "kso_class_page": "/ontology/baseline-signal/",
         "kss_language": "Terminology-accuracy layer — not a clinical zone",
         "measurement_note": "Media language must preserve the distinction between molecule, measurement, metabolic state, urinary finding, and clinical syndrome.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -437,16 +572,22 @@
           "Do not use panic or safety framing.",
           "Do not infer DKA, safety, or danger from terminology alone."
         ],
-        "canonical_references": ["/media-brief/", "/clinical-boundary/"],
+        "canonical_references": [
+          "/media-brief/",
+          "/clinical-boundary/"
+        ],
         "source_ids": []
       }
     },
     {
       "id": "RULE-MEASUREMENT-ONLY",
-      "when": { "context": [] },
+      "when": {
+        "context": []
+      },
       "output": {
         "context_classification": "Measurement context, no interpretive context selected.",
         "kso_class": "Baseline Signal",
+        "kso_class_page": "/ontology/baseline-signal/",
         "kss_language": "K1 — Low Presence, context required",
         "measurement_note": "A measurement type or compound was selected without a context. The signal cannot be interpreted without a context dimension.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -457,7 +598,11 @@
           "Do not infer any signal meaning without a context dimension.",
           "Do not infer DKA, safety, danger, or treatment need."
         ],
-        "canonical_references": ["/signal-map/", "/blood-ketones/", "/clinical-boundary/"],
+        "canonical_references": [
+          "/signal-map/",
+          "/blood-ketones/",
+          "/clinical-boundary/"
+        ],
         "source_ids": []
       }
     },
@@ -467,6 +612,7 @@
       "output": {
         "context_classification": "General reference context.",
         "kso_class": "Baseline Signal",
+        "kso_class_page": "/ontology/baseline-signal/",
         "kss_language": "Reference language only",
         "measurement_note": "The selected inputs did not match a more specific reference pattern. General reference and boundary language applies.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -476,7 +622,11 @@
         "prohibited_inference": [
           "Do not infer DKA, safety, danger, or treatment need."
         ],
-        "canonical_references": ["/signal-map/", "/clinical-boundary/", "/sources/"],
+        "canonical_references": [
+          "/signal-map/",
+          "/clinical-boundary/",
+          "/sources/"
+        ],
         "source_ids": []
       }
     }

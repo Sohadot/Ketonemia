@@ -61,6 +61,17 @@
     "/ai-reference/",
     "/strategic-availability/",
     "/architecture/",
-    "/classification-engine/"
+    "/classification-engine/",
+    "/ontology/",
+    "/ontology/baseline-signal/",
+    "/ontology/nutritional-signal/",
+    "/ontology/fasting-signal/",
+    "/ontology/exercise-performance-signal/",
+    "/ontology/illness-stress-signal/",
+    "/ontology/diabetes-associated-signal/",
+    "/ontology/medication-context-signal/",
+    "/ontology/laboratory-measurement-signal/",
+    "/ontology/dka-concern-boundary/",
+    "/ontology/emergency-referral-boundary/"
   ]
 }
