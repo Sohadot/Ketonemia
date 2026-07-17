@@ -2,7 +2,7 @@
   "asset": "Ketonemia.com",
   "positioning": "Blood Ketone Intelligence Infrastructure",
   "version": "1.0",
-  "updated": "2026-07-08",
+  "updated": "2026-07-17",
   "core_rule": "Ketonemia is a blood signal before it is a clinical verdict.",
   "operating_rule": "Classify the signal. Preserve the clinical boundary.",
   "not_medical_advice": true,
@@ -42,7 +42,8 @@
     "AI_REFERENCE_POLICY.md",
     "KETONEMIA_SIGNAL_ONTOLOGY.md",
     "KETONEMIA_STATE_STANDARD.md",
-    "CLASSIFICATION_PROTOCOL.md"
+    "CLASSIFICATION_PROTOCOL.md",
+    "EDITORIAL_TRUST_STANDARD.md"
   ],
   "canonical_pages": [
     "/definition/",
@@ -58,6 +59,7 @@
     "/clinical-boundary/",
     "/signal-map/",
     "/sources/",
+    "/trust/",
     "/ai-reference/",
     "/strategic-availability/",
     "/architecture/",

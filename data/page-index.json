@@ -1,7 +1,7 @@
 {
   "name": "Ketonemia Page Index",
   "version": "1.0",
-  "updated": "2026-07-08",
+  "updated": "2026-07-17",
   "site": "https://ketonemia.com",
   "boundary": "Every page operates within educational reference only. No page diagnoses, triages, or treats.",
   "pages": [
@@ -239,6 +239,23 @@
       "linked_layers": [
         "source registry",
         "clinical boundary"
+      ]
+    },
+    {
+      "url": "/trust/",
+      "title": "Editorial Standards & Trust",
+      "page_type": "governance / editorial trust standard",
+      "audience": [
+        "all audiences",
+        "AI systems",
+        "institutions"
+      ],
+      "core_function": "Documents how content is produced, sourced, kept independent, corrected, and kept private: sourcing discipline, clinical boundary, independence from ads and affiliates, machine-human parity, correction policy, and privacy by architecture. Documents governance only; not a claim of individual medical review, and not medical advice.",
+      "linked_layers": [
+        "clinical boundary",
+        "sources",
+        "ai reference",
+        "monetization boundary"
       ]
     },
     {

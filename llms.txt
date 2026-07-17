@@ -42,6 +42,7 @@ advice, and it does not diagnose, triage, or treat.
 - /clinical-boundary/: Where educational reference ends and clinical practice begins.
 - /signal-map/: Conceptual interface — signal zones, context dimensions, boundary gates.
 - /sources/: Source discipline policy and claim source registry.
+- /trust/: Editorial standards and trust — how content is sourced, bounded, kept independent, corrected, and kept private. Documents governance; not a claim of individual medical review, and not medical advice.
 - /ai-reference/: Allowed and prohibited AI uses of this site.
 - /strategic-availability/: Partnership, licensing, and acquisition context.
 - /reference-pack/: Machine-readable reference layer index.
@@ -69,3 +70,5 @@ advice, and it does not diagnose, triage, or treat.
 Machine-readable output is never looser than human-facing content. If a claim is
 prohibited on the site, it is prohibited in JSON, summaries, and any future API or
 agent output. Every claim traces to a canonical page and, where medical, to a source ID.
+The editorial trust standard behind this discipline is documented at /trust/ and in
+EDITORIAL_TRUST_STANDARD.md. Corrections: corrections@ketonemia.com (no form, no data collection).

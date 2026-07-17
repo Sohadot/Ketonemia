@@ -46,6 +46,7 @@ Governance documents:
 - [ASSET_INTELLIGENCE_FACTORY_PLAN.md](ASSET_INTELLIGENCE_FACTORY_PLAN.md)
 - [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md)
 - [SYSTEM_ARCHITECTURE.md](SYSTEM_ARCHITECTURE.md)
+- [EDITORIAL_TRUST_STANDARD.md](EDITORIAL_TRUST_STANDARD.md)
 - [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md)
 - [ACQUISITION_DOSSIER.md](ACQUISITION_DOSSIER.md)
 - [ROADMAP.md](ROADMAP.md)
@@ -339,6 +340,36 @@ Patches and reconciliation (route count 29 to 30):
 - `QUALITY_GATE.md` - Acquisition Dossier Gate added
 
 With F7 the build sequence F1-F7 is complete: every layer of the Asset Intelligence Factory is owned and in production, and the asset has moved the full distance from domain to strategic acquisition asset.
+
+Status: complete.
+
+## F8 - Editorial Trust & Transparency Layer
+
+F8 deepened the governance layer (layer 8) the way F5 deepened the ontology layer: it turned the source discipline the asset already practices into a visible, citable trust surface. It added [EDITORIAL_TRUST_STANDARD.md](EDITORIAL_TRUST_STANDARD.md) and the public `/trust/` page.
+
+Governing sentence: Trust is a standard the asset holds to, not a badge it awards itself.
+
+The honesty rule is the point of the layer: it documents the standard and the mechanism, and never asserts a review, endorsement, credential, or accuracy metric that did not occur. The page states, in the same table, what it claims and what it does not — most importantly, that no page is claimed to have been individually reviewed or approved by a named clinician.
+
+Pages:
+
+- `/trust/` - the trust contract (seven disciplines, each tied to the artifact that proves it), a "what this page claims and does not" table, how content is produced, the correction and change policy (neutral `corrections@ketonemia.com`, no form, no data collection), independence and funding, and privacy by architecture
+
+Files:
+
+- `EDITORIAL_TRUST_STANDARD.md` - the internal standard operationalizing SOURCE_POLICY.md, CLAIM_POLICY.md, CLINICAL_BOUNDARY.md, and AI_REFERENCE_POLICY.md into one trust contract, with an explicit list of what may and may not be claimed
+
+Discipline:
+
+- The page is static - no new script, form, third-party dependency, or data-collection surface. It adds no clinical content, threshold, or interpretation. Structured data is CollectionPage / BreadcrumbList with no Offer, price, or medical claim.
+
+Patches and reconciliation (route count 30 to 31):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` - Governance layer "Where it lives" now points to `/trust/`; `/trust/` added to the Boundary & Sources cluster; JSON-LD ItemList extended to 31; route counts and build order updated (layer 8 marked deepened F8)
+- `/ai-reference/` - Canonical Reference Pages and AI summary updated with `/trust/`
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` - Governance and moat rows point to the published trust standard; route counts reconciled to thirty-one
+- `/` - homepage card grid and footer; `/data/reference-pack.json` (canonical page + governance document), `/data/page-index.json`, `/llms.txt`, `/sitemap.xml` - new route registered
+- `QUALITY_GATE.md` - Editorial Trust Gate added
 
 Status: complete.
 

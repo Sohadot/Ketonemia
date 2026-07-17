@@ -34,8 +34,8 @@ be kept in sync with it.
 | 4 | Standard | What is good / complete / trusted? | [KETONEMIA_STATE_STANDARD.md](KETONEMIA_STATE_STANDARD.md), `/data/kss-standard.json` | Owned |
 | 5 | Protocol | How is context classified under governance? | [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) | Owned (F2) |
 | 6 | Engine / Tool | How does the system produce operational output? | [`/classification-engine/`](classification-engine/index.html), `/data/classification-rules.json` | Owned (F4) |
-| 7 | Reference layer | Is the site archivable, searchable, citable? | 30 canonical routes (see Route Map) | Owned |
-| 8 | Governance | How are stability, versioning, and trust ensured? | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), policy docs | Owned |
+| 7 | Reference layer | Is the site archivable, searchable, citable? | 31 canonical routes (see Route Map) | Owned |
+| 8 | Governance | How are stability, versioning, and trust ensured? | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), [EDITORIAL_TRUST_STANDARD.md](EDITORIAL_TRUST_STANDARD.md), `/trust/`, policy docs | Owned (deepened F8) |
 | 9 | Interface thesis | Does the interface embody the asset's meaning? | [INTERFACE_THESIS.md](INTERFACE_THESIS.md), `/signal-map/`, `/architecture/` | Owned |
 | 10 | Monetization | How does it earn without lowering trust? | [MONETIZATION_BOUNDARY.md](MONETIZATION_BOUNDARY.md), [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md), `/briefs/` | Owned (F6) |
 | 11 | Buyer logic | Who is the buyer and why is not-buying a loss? | [BUYER_LOGIC.md](BUYER_LOGIC.md), [ACQUISITION_DOSSIER.md](ACQUISITION_DOSSIER.md), `/acquisition/`, `/strategic-availability/` | Owned (F7) |
@@ -69,6 +69,7 @@ this graph so every route is reachable from one page.
 ### Cluster D — Boundary & Sources
 - `/clinical-boundary/` — formal trust and safety boundary
 - `/sources/` — source discipline policy and claim source registry
+- `/trust/` — editorial standards and trust: sourcing, boundary, independence, corrections, privacy
 - `/signal-map/` — conceptual interface: signal zones, context dimensions, boundaries
 - `/classification-engine/` — deterministic reference tool that runs the Classification Protocol
 
@@ -112,6 +113,11 @@ The asset is built in the phased order defined in
 
 With F7 the build sequence F1–F7 is complete: every layer of the Asset Intelligence
 Factory is owned and in production.
+
+- **F8** — Editorial Trust & Transparency layer (`EDITORIAL_TRUST_STANDARD.md`, `/trust/`),
+  deepening layer 8 (Governance) the way F5 deepened layer 3 (complete). It adds no new
+  layer to the stack; it makes an owned layer visible and citable, moving the route count
+  from 30 to 31.
 
 Each layer depends on the ones above it in the stack, not below: the engine (F4) is
 bound by the protocol (F2), which is bound by the ontology (layer 3) and standard
