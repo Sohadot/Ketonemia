@@ -402,6 +402,25 @@ Prohibited: prices, valuations, forward-looking financial figures, new clinical 
 
 Status: complete. With F7 the F1–F7 build sequence is complete.
 
+## F8 — Editorial Trust & Transparency Layer
+
+Goal: turn the source discipline the asset already practices into a visible, citable trust surface, deepening layer 8 (Governance) the way F5 deepened layer 3 (Ontology). Post-factory reinforcement, not a new layer in the stack.
+
+Governing sentence: Trust is a standard the asset holds to, not a badge it awards itself.
+
+Deliverables:
+
+- `EDITORIAL_TRUST_STANDARD.md` — internal standard operationalizing SOURCE_POLICY.md, CLAIM_POLICY.md, CLINICAL_BOUNDARY.md, and AI_REFERENCE_POLICY.md, with an explicit list of what may and may not be claimed;
+- `/trust/` — public trust page: the trust contract (seven disciplines tied to proving artifacts), a "claims / does not claim" table, how content is produced, the correction and change policy, independence and funding, and privacy by architecture;
+- honesty rule enforced: no claim of individual clinician review, unheld credential, endorsement, or unmeasured accuracy metric;
+- static-only: no new script, form, third-party dependency, or data-collection surface; CollectionPage + BreadcrumbList JSON-LD with no Offer/price/medical claim;
+- wire-in and route-count reconciliation 30 → 31: `/architecture/` + `SYSTEM_ARCHITECTURE.md` (Governance layer points to `/trust/`, Boundary & Sources cluster, ItemList, counts), `/ai-reference/`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- `QUALITY_GATE.md` Editorial Trust Gate; README and DECISION_LOG entries.
+
+Prohibited: fabricated reviewers, credentials, endorsements, or reviews; unmeasured accuracy or trust metrics; any new clinical content, threshold, or interpretation; new data-collection surface.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

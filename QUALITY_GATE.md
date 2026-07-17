@@ -115,6 +115,18 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Are the route count (30) and the "Owned" status for layers 10 and 11 reconciled everywhere (architecture, SYSTEM_ARCHITECTURE.md, ASSET_INTELLIGENCE_FACTORY_PLAN.md), with no remaining "pending" language?
 - Do all JSON files validate and does the sitemap contain `/acquisition/`?
 
+## Editorial Trust Gate
+
+- Does `/trust/` state the trust disciplines (sourcing, clinical boundary, independence, machine parity, corrections, privacy by architecture, governance record), each tied to the artifact that proves it?
+- Is every claim on the page true and verifiable from the site or the public governance record — with nothing overstated?
+- Does the page explicitly refrain from claiming individual clinician review, unheld credentials, endorsements, or any unmeasured accuracy metric?
+- Does it preserve the clinical boundary: no diagnosis, threshold, triage, or interpretation of any individual reading?
+- Is the correction path stated (neutral contact, no form, no data collection), with a defined triage → correct → record → version flow?
+- Does the page add no new script, form, third-party dependency, or data-collection surface (static only)?
+- Does `EDITORIAL_TRUST_STANDARD.md` govern the page, and do the two agree without drift?
+- Is the route count reconciled to 31 everywhere it appears (architecture Layer Stack, AI summary, and JSON-LD ItemList; SYSTEM_ARCHITECTURE.md; `/acquisition/` and `ACQUISITION_DOSSIER.md`), with `/trust/` in the Boundary & Sources cluster exactly once?
+- Are `sitemap.xml`, `llms.txt`, `data/page-index.json`, and `data/reference-pack.json` updated with the new route, and do all JSON files validate?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?
