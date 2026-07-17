@@ -70,6 +70,48 @@
       ]
     },
     {
+      "url": "/urine-ketones/",
+      "title": "Urine Ketones (Ketonuria)",
+      "page_type": "measurement",
+      "audience": [
+        "public",
+        "laboratory",
+        "AI systems"
+      ],
+      "core_function": "Urine ketone testing measures mostly acetoacetate (AcAc), not the beta-hydroxybutyrate measured in blood; it is time-lagged and semi-quantitative, and is not interchangeable with blood ketones.",
+      "linked_layers": [
+        "blood ketones",
+        "beta-hydroxybutyrate",
+        "laboratory context"
+      ],
+      "source_ids": [
+        "SRC-LAB-BHB-ACAC",
+        "SRC-LEHNINGER-BIOCHEM",
+        "SRC-NHS-DKA"
+      ]
+    },
+    {
+      "url": "/breath-ketones/",
+      "title": "Breath Ketones (Breath Acetone)",
+      "page_type": "measurement",
+      "audience": [
+        "public",
+        "laboratory",
+        "AI systems"
+      ],
+      "core_function": "Breath ketone analyzers measure exhaled acetone as a proxy for ketone state, not the beta-hydroxybutyrate measured in blood; it is a non-invasive trend indicator, sensor-based, and not interchangeable with a blood ketone value.",
+      "linked_layers": [
+        "blood ketones",
+        "urine ketones",
+        "beta-hydroxybutyrate",
+        "laboratory context"
+      ],
+      "source_ids": [
+        "SRC-LEHNINGER-BIOCHEM",
+        "SRC-LAB-BHB-ACAC"
+      ]
+    },
+    {
       "url": "/ketonemia-vs-ketosis/",
       "title": "Ketonemia vs. Ketosis",
       "page_type": "comparison",

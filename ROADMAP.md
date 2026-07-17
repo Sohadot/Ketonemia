@@ -421,6 +421,40 @@ Prohibited: fabricated reviewers, credentials, endorsements, or reviews; unmeasu
 
 Status: complete.
 
+## Content — Urine Ketones (Ketonuria)
+
+Goal: complete the measurement triad (blood / urine / breath) with a deep public-reference and SEO pillar for "urine ketones," owning the blood-vs-urine distinction that the category is built to preserve.
+
+Governing distinction: Ketonemia is a blood measurement state; ketonuria is a urinary finding — same molecules, different measurement layer, different meaning.
+
+Deliverables:
+
+- `/urine-ketones/` — urine-vs-blood comparison, nitroprusside / AcAc measurement, urine lag and DKA-resolution discordance, context table, limits, audience notes, source IDs, AI-readable summary;
+- sources reused only (SRC-LAB-BHB-ACAC, SRC-LEHNINGER-BIOCHEM, SRC-NHS-DKA); strip categories framed as reporting language, not severity or thresholds;
+- wire-in and route-count reconciliation 31 → 32: `/architecture/` + `SYSTEM_ARCHITECTURE.md` (Measurement & Laboratory cluster, ItemList, counts), `/blood-ketones/`, `/laboratory-context/`, `/sources/` + `data/source-registry.json` (pages-using-source), `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- README and DECISION_LOG entries.
+
+Prohibited: new or invented sources; numeric or clinical thresholds; diagnosis, triage, or interpretation of an individual reading; treating urine AcAc and blood BHB as interchangeable.
+
+Status: complete.
+
+## Content — Breath Ketones (Breath Acetone)
+
+Goal: complete the measurement triad (blood / urine / breath) with a deep public-reference and SEO pillar for "breath ketones," anchoring the third ketone body (acetone) to its measurement layer.
+
+Governing distinction: Blood measures BHB as a number; urine measures acetoacetate as a category; breath measures acetone as a proxy — three windows onto the same metabolism.
+
+Deliverables:
+
+- `/breath-ketones/` — three-layer comparison, sensor-proxy measurement, why breath is a proxy not a blood value, context table, limits, audience notes, source IDs, AI-readable summary;
+- sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-LAB-BHB-ACAC); breath framed as a trend proxy, never a clinical decision tool;
+- wire-in and route-count reconciliation 32 → 33: `/architecture/` + `SYSTEM_ARCHITECTURE.md` (Measurement & Laboratory cluster, ItemList, counts), `/blood-ketones/`, `/urine-ketones/`, `/laboratory-context/`, `/sources/` + `data/source-registry.json`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- README and DECISION_LOG entries.
+
+Prohibited: new or invented sources; numeric or clinical thresholds; using breath output for acute clinical decisions; treating breath acetone, urine AcAc, and blood BHB as interchangeable.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
