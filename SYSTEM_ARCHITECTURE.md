@@ -34,7 +34,7 @@ be kept in sync with it.
 | 4 | Standard | What is good / complete / trusted? | [KETONEMIA_STATE_STANDARD.md](KETONEMIA_STATE_STANDARD.md), `/data/kss-standard.json` | Owned |
 | 5 | Protocol | How is context classified under governance? | [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) | Owned (F2) |
 | 6 | Engine / Tool | How does the system produce operational output? | [`/classification-engine/`](classification-engine/index.html), `/data/classification-rules.json` | Owned (F4) |
-| 7 | Reference layer | Is the site archivable, searchable, citable? | 31 canonical routes (see Route Map) | Owned |
+| 7 | Reference layer | Is the site archivable, searchable, citable? | 33 canonical routes (see Route Map) | Owned |
 | 8 | Governance | How are stability, versioning, and trust ensured? | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), [EDITORIAL_TRUST_STANDARD.md](EDITORIAL_TRUST_STANDARD.md), `/trust/`, policy docs | Owned (deepened F8) |
 | 9 | Interface thesis | Does the interface embody the asset's meaning? | [INTERFACE_THESIS.md](INTERFACE_THESIS.md), `/signal-map/`, `/architecture/` | Owned |
 | 10 | Monetization | How does it earn without lowering trust? | [MONETIZATION_BOUNDARY.md](MONETIZATION_BOUNDARY.md), [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md), `/briefs/` | Owned (F6) |
@@ -58,6 +58,8 @@ this graph so every route is reachable from one page.
 ### Cluster B — Measurement & Laboratory
 - `/blood-ketones/` — signal layer and measurement context
 - `/beta-hydroxybutyrate/` — primary blood ketone marker, biochemistry depth
+- `/urine-ketones/` — urinary layer (acetoacetate) and why it differs from blood BHB
+- `/breath-ketones/` — breath layer (exhaled acetone) as a proxy, not a blood value
 - `/laboratory-context/` — measurement methods, substrates, report-language limits
 
 ### Cluster C — Audience Layers

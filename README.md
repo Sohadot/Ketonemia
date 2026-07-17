@@ -373,6 +373,54 @@ Patches and reconciliation (route count 30 to 31):
 
 Status: complete.
 
+## Content — Urine Ketones (Ketonuria)
+
+A deep public-reference and SEO pillar completing the measurement triad (blood / urine / breath). It captures high-intent search around "urine ketones" and "ketones in urine" and routes it correctly: a urine strip measures mostly acetoacetate (AcAc), not the beta-hydroxybutyrate (BHB) measured in blood, on a time lag, and the two are not interchangeable.
+
+Governing distinction: Ketonemia is a blood measurement state; ketonuria is a urinary finding — same family of molecules, different measurement layer, and different meaning.
+
+Pages:
+
+- `/urine-ketones/` — what urine ketones are, a urine-vs-blood comparison table, how urine strips measure (nitroprusside / AcAc), why urine lags and can disagree with blood (DKA-resolution discordance), context that changes meaning, what urine ketones cannot tell you alone, interpretation limits, audience notes, source IDs, and an AI-readable summary
+
+Discipline:
+
+- Every claim is sourced from the existing registry only (SRC-LAB-BHB-ACAC, SRC-LEHNINGER-BIOCHEM, SRC-NHS-DKA) — no new or invented source. Strip categories (negative / trace / small / moderate / large) are presented as the strip's semi-quantitative reporting language, never as clinical severity, thresholds, or a diagnosis. Clinical questions route to professional care. `WebPage` JSON-LD with no medical claim, matching the measurement-cluster siblings.
+
+Patches and reconciliation (route count 31 to 32):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — `/urine-ketones/` added to the Measurement & Laboratory cluster; JSON-LD ItemList extended to 32; route counts updated
+- `/blood-ketones/` and `/laboratory-context/` — Related Pages and AI summary linked pages updated with `/urine-ketones/`
+- `/sources/` and `data/source-registry.json` — pages-using-source updated for the three cited sources
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to thirty-two
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered
+
+Status: complete.
+
+## Content — Breath Ketones (Breath Acetone)
+
+The page that completes the measurement triad (blood / urine / breath). A breath ketone analyzer measures exhaled acetone — a volatile by-product of ketone metabolism — as a non-invasive proxy for ketone state, not the beta-hydroxybutyrate (BHB) measured in blood. It is best read as a trend, not as a blood number.
+
+Governing distinction: Blood measures BHB as a number; urine measures acetoacetate as a category; breath measures acetone as a proxy — three windows onto the same metabolism, not three versions of one number.
+
+Pages:
+
+- `/breath-ketones/` — what breath ketones are, a three-layer (blood / urine / breath) comparison table, how breath acetone is measured (sensor proxy), why breath is a proxy and not a blood value, context that changes meaning, what it cannot tell you alone, interpretation limits, audience notes, source IDs, and an AI-readable summary
+
+Discipline:
+
+- Sources reused only (SRC-LEHNINGER-BIOCHEM for acetone from spontaneous decarboxylation of acetoacetate, SRC-LAB-BHB-ACAC for measurement across fractions and the primacy of blood BHB). No invented source, no numeric thresholds, no clinical decision use — the page explicitly routes acute concern to blood measurement and professional care. `WebPage` JSON-LD with no medical claim.
+
+Patches and reconciliation (route count 32 to 33):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — `/breath-ketones/` added to the Measurement & Laboratory cluster; JSON-LD ItemList extended to 33; route counts updated
+- `/blood-ketones/`, `/urine-ketones/`, and `/laboratory-context/` — Related Pages and AI summary linked pages updated with `/breath-ketones/`
+- `/sources/` and `data/source-registry.json` — pages-using-source updated for the two cited sources
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to thirty-three
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered
+
+Status: complete. With this the measurement triad (blood / urine / breath) is fully owned, each ketone body anchored to its measurement layer.
+
 ## Methodology
 
 The asset is developed through this sequence:

@@ -192,6 +192,42 @@ The page is static: no new script, form, third-party dependency, or data-collect
 
 No DEC was created because F8 operationalized existing source, claim, clinical-boundary, and AI-reference discipline into a visible standard without changing a governance rule - with one rule made explicit for the future: expert review, if added, must be named, scoped, and dated, never implied.
 
+### Content — Urine Ketones (Ketonuria)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/urine-ketones/`, a deep public-reference and SEO pillar completing the measurement triad (blood / urine / breath). The page owns the blood-vs-urine distinction the category is built to preserve: a urine ketone strip measures mostly acetoacetate (AcAc) via the nitroprusside reaction, not the beta-hydroxybutyrate (BHB) measured in blood; it is time-lagged and semi-quantitative; and urine AcAc can under-represent rising blood BHB and stay positive during DKA resolution as BHB converts back to AcAc. Governing distinction: ketonemia is a blood measurement state, ketonuria is a urinary finding — same molecules, different measurement layer, different meaning.
+
+Every claim is sourced from the existing registry only — SRC-LAB-BHB-ACAC (BHB/AcAc measure different fractions; urine lag and DKA-resolution discordance), SRC-LEHNINGER-BIOCHEM (BHB/AcAc interconversion), and SRC-NHS-DKA (public ketone guidance depends on diabetes context, symptoms, and measurement type). No new or invented source. The strip categories (negative / trace / small / moderate / large) are presented as the strip's own semi-quantitative reporting language, not as clinical severity, thresholds, or a diagnosis; clinical questions route to professional care. Structured data is WebPage with no medical claim, matching the measurement-cluster siblings.
+
+Reconciliation moved the route count from 31 to 32: architecture/index.html and SYSTEM_ARCHITECTURE.md (`/urine-ketones/` added to the Measurement & Laboratory cluster / Cluster B, JSON-LD ItemList extended to 32, counts), blood-ketones and laboratory-context (Related Pages and AI summary linked pages), sources/index.html and data/source-registry.json (pages-using-source for the three cited sources), acquisition/index.html and ACQUISITION_DOSSIER.md (thirty-one → thirty-two), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page applied existing content-production, source-discipline, and clinical-boundary rules without changing a governance rule.
+
+### Operations — GitHub Pages deployment
+
+Date: 2026-07-17
+
+Status: complete.
+
+The default "pages build and deployment" builder was failing: GitHub Pages was configured to build from a `/docs` folder that does not exist, and it ran Jekyll against a plain static HTML site, attempting to convert a `jekyll-theme-primer` `assets/css/style.scss` the repository never had (`No such file or directory @ dir_chdir0 - /github/workspace/docs`). Ketonemia.com is a static HTML site served from the repository root — no `_config.yml`, no Gemfile, no `.scss`. Resolution: added `.github/workflows/deploy-pages.yml` (uploads the repository root and deploys it verbatim via `actions/upload-pages-artifact` + `actions/deploy-pages`, no Jekyll build) and `.nojekyll` (bypass Jekyll). The custom domain `ketonemia.com` was verified at the account level and attached; a root `CNAME` file pins it across Actions deploys. This required setting Settings → Pages → Source to "GitHub Actions". No DEC was created because this is a deployment-configuration fix, not a governance rule.
+
+### Content — Breath Ketones (Breath Acetone)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/breath-ketones/`, completing the measurement triad (blood / urine / breath). A breath ketone analyzer measures exhaled acetone — formed largely by spontaneous decarboxylation of acetoacetate and exhaled because it is volatile — as a non-invasive proxy for ketone state, not the beta-hydroxybutyrate (BHB) measured in blood. The page anchors the third ketone body to its measurement layer and preserves the governing distinction: blood measures BHB as a number, urine measures AcAc as a category, breath measures acetone as a proxy. It presents a three-layer comparison table, sensor-proxy measurement, why breath correlates with but does not equal a blood value, a context table, limits, audience notes, source IDs, and an AI-readable summary.
+
+Every claim is sourced from the existing registry only — SRC-LEHNINGER-BIOCHEM (acetone as a ketone body from spontaneous decarboxylation of acetoacetate, and its volatility) and SRC-LAB-BHB-ACAC (measurement across fractions and methods; primacy of blood BHB for clinical monitoring). No new or invented source, no numeric thresholds, and no clinical-decision use: the page routes acute concern to blood measurement and professional care. Structured data is WebPage with no medical claim, matching the measurement-cluster siblings.
+
+Reconciliation moved the route count from 32 to 33: architecture/index.html and SYSTEM_ARCHITECTURE.md (`/breath-ketones/` added to the Measurement & Laboratory cluster / Cluster B, JSON-LD ItemList extended to 33, counts), blood-ketones, urine-ketones, and laboratory-context (Related Pages and AI summary linked pages), sources/index.html and data/source-registry.json (pages-using-source for the two cited sources), acquisition/index.html and ACQUISITION_DOSSIER.md (thirty-two → thirty-three), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page applied existing content-production, source-discipline, and clinical-boundary rules without changing a governance rule. With this the measurement triad is fully owned.
+
 ## Open Decisions
 
 - None at this time.
