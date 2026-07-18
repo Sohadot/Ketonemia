@@ -421,6 +421,30 @@ Patches and reconciliation (route count 32 to 33):
 
 Status: complete. With this the measurement triad (blood / urine / breath) is fully owned, each ketone body anchored to its measurement layer.
 
+## Content — Ketone Bodies
+
+The foundational biochemistry hub that anchors the measurement triad: `/ketone-bodies/` defines the three ketone bodies — beta-hydroxybutyrate (BHB), acetoacetate (AcAc), and acetone — and maps each to the measurement layer that reads it (blood / urine / breath). High-intent, high-volume, and purely foundational, it is the parent concept the compound and measurement pages hang from.
+
+Governing idea: There is no single "ketone." There are three ketone bodies, related but distinct — and which one you are measuring depends on how you measure.
+
+Pages:
+
+- `/ketone-bodies/` — what ketone bodies are (hepatic ketogenesis as fuel), the three-compound table mapped to blood/urine/breath, how BHB and AcAc interconvert and acetone forms, a naming note (BHB is a hydroxy acid grouped with ketones by convention), what "ketone bodies present" does not mean, interpretation limits, audience notes, source IDs, and an AI-readable summary
+
+Discipline:
+
+- Sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-STRYER-BIOCHEM) — textbook biochemistry, no invented source, no thresholds, no clinical claim. Explicitly states ketone-body presence is normal fuel, is not a disease, and does not equal ketoacidosis. `WebPage` JSON-LD with no medical claim.
+
+Patches and reconciliation (route count 33 to 34):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — `/ketone-bodies/` added to the Measurement & Laboratory cluster; JSON-LD ItemList extended to 34; route counts updated
+- `/beta-hydroxybutyrate/`, `/blood-ketones/`, and `/laboratory-context/` — Related Pages and AI summary linked pages updated with `/ketone-bodies/`
+- `/sources/` and `data/source-registry.json` — pages-using-source updated for the two cited sources
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to thirty-four
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:
