@@ -526,6 +526,24 @@ Prohibited: medication advice; dosing or start/stop guidance; diagnosis or triag
 
 Status: complete.
 
+## Content — Diabetes & Blood Ketones (Cluster H)
+
+Goal: build the diabetes ketone context — how the diabetes context changes ketone-signal interpretation — as a strictly bounded reference. Deliberately scoped as the *diabetes ketone context*, not a generic diabetes page, to keep depth aligned with the asset's name.
+
+Governing distinction: Diabetes changes what a ketone signal may mean, not what a ketone is; ketone presence is still not a diagnosis, but the context raises the stakes of interpretation and timing.
+
+Deliverables:
+
+- `/diabetes-ketone-context/` — why diabetes changes the reading (insulin, DKA pathway), type 1 / type 2 note, compounding contexts (illness, missed insulin, SGLT2), held boundary, "what this page does not do," emergency-aware boundary block, audience notes, source IDs, AI-readable summary;
+- highest clinical sensitivity, strictest boundary: no diagnosis/triage, no safety verdicts, no thresholds, no sick-day rules (defers to the reader's care team), no insulin/medication advice; DKA framed as a medical emergency with urgent-care routing;
+- sources reused only (SRC-ADA-2026, SRC-DUK-DKA, SRC-NHS-DKA);
+- wire-in and reconciliation 38 → 39 (cluster count stays eight; all four route lists kept identical): `/architecture/` + `SYSTEM_ARCHITECTURE.md`, `/ketonemia-vs-ketoacidosis/`, `/sglt2-context/`, `/ontology/diabetes-associated-signal/`, `/sources/` + `data/source-registry.json`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- README and DECISION_LOG entries.
+
+Prohibited: generic diabetes-management content; diagnosis or triage; safety/danger verdicts; thresholds; sick-day rules; insulin or medication advice.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

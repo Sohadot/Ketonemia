@@ -300,6 +300,20 @@ Reconciliation moved the route count from 37 to 38 (cluster count unchanged at e
 
 No DEC was created because the page applied existing source-discipline, clinical-boundary, and medication-context rules without changing a governance rule.
 
+### Content — Diabetes & Blood Ketones (Cluster H)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/diabetes-ketone-context/`, the fourth Metabolic & Clinical Context page. A deliberate scope decision drove it: rather than a generic `/diabetes/` page, the page is the *diabetes ketone context* — how the diabetes context changes interpretation of a blood ketone signal — keeping depth aligned with the asset's name (blood ketone intelligence) instead of drifting into a general diabetes site. It explains why the diabetes context is the strongest modifier of ketone interpretation: insulin insufficiency can drive rapid ketone production even with high glucose, the pathway toward diabetic ketoacidosis (DKA), a medical emergency. Governing distinction: diabetes changes what a ketone signal may mean, not what a ketone is; ketone presence is still not a diagnosis, but the context raises the stakes of interpretation and timing.
+
+This is the most clinically sensitive context page on the site, so it carries the strictest boundary: no diagnosis or triage, no safety/danger verdicts, no ketone or glucose thresholds, no sick-day rules (it defers explicitly to the reader's own diabetes care team's plan), and no insulin or medication advice. It routes warning symptoms to the sick-day plan and urgent care, states plainly that DKA is a medical emergency, and holds the core boundary that a home reading cannot confirm or exclude DKA. Sources are reused from the registry only — SRC-ADA-2026, SRC-DUK-DKA, and SRC-NHS-DKA. Structured data is WebPage with no medical claim.
+
+Reconciliation moved the route count from 38 to 39 (cluster count unchanged at eight), keeping all four route lists identical per the source-of-truth rule: architecture/index.html and SYSTEM_ARCHITECTURE.md (`/diabetes-ketone-context/` added to Cluster H, now four pages; JSON-LD ItemList extended to 39; counts and the source-of-truth line updated to 39), ketonemia-vs-ketoacidosis, sglt2-context, and ontology/diabetes-associated-signal (Related Pages and AI summaries), sources/index.html and data/source-registry.json (pages-using-source for ADA, Diabetes UK, and NHS), acquisition/index.html and ACQUISITION_DOSSIER.md (thirty-eight → thirty-nine), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page applied existing source-discipline, clinical-boundary, and context-scoping rules without changing a governance rule. The scope decision (diabetes ketone context, not generic diabetes) is an application of the existing doctrine that every page must serve the category thesis, recorded here for traceability.
+
 ## Open Decisions
 
 - None at this time.

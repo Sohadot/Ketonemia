@@ -213,6 +213,28 @@
       ]
     },
     {
+      "url": "/diabetes-ketone-context/",
+      "title": "Diabetes and Blood Ketones (the Diabetes Ketone Context)",
+      "page_type": "clinical context",
+      "audience": [
+        "clinical",
+        "public",
+        "AI systems"
+      ],
+      "core_function": "How the diabetes context changes interpretation of a blood ketone signal: insulin insufficiency can drive ketone rise toward diabetic ketoacidosis (a medical emergency), and ketones are read within clinical monitoring guidance. Reference only; no diagnosis, triage, thresholds, sick-day rules, or insulin/medication advice.",
+      "linked_layers": [
+        "ketonemia vs ketoacidosis",
+        "sglt2 context",
+        "diabetes-associated signal",
+        "clinical boundary"
+      ],
+      "source_ids": [
+        "SRC-ADA-2026",
+        "SRC-DUK-DKA",
+        "SRC-NHS-DKA"
+      ]
+    },
+    {
       "url": "/ketonemia-vs-ketoacidosis/",
       "title": "Ketonemia vs. Ketoacidosis",
       "page_type": "comparison",
