@@ -469,6 +469,30 @@ Patches and reconciliation (route count 34 to 35; clusters 7 to 8):
 
 Status: complete.
 
+## Content — Nutritional Ketosis (Cluster H)
+
+The second page in the Metabolic & Clinical Context cluster, and the highest-volume search term in the category. `/nutritional-ketosis/` defines nutritional ketosis as a diet-driven metabolic state and holds the line the category is built on: the state is not the measurement, and neither is ketoacidosis.
+
+Governing distinction: Nutritional ketosis is a metabolic state; ketonemia is the blood measurement that can accompany it. A diet can produce the state; only a measurement reports the signal — and neither is a diagnosis.
+
+Pages:
+
+- `/nutritional-ketosis/` — what the state is (sustained low-carbohydrate intake, low insulin, hepatic ketogenesis, BHB as fuel), state vs. measurement, a nutritional/fasting/ketoacidosis comparison, how it is measured (across the triad, no thresholds), what it is not, where context still matters, interpretation limits, audience notes, source IDs, AI-readable summary
+
+Discipline:
+
+- The highest keto-hype-risk topic on the site, handled with the strictest framing: no diet advice, no "how to get into ketosis," no macro or food guidance, no health-benefit or weight-loss claims, no exogenous-ketone or supplement promotion, and no numeric thresholds. Sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-STRYER-BIOCHEM, SRC-NHS-DKA). `WebPage` JSON-LD with no medical claim. Nutritional ketosis is never equated with ketoacidosis.
+
+Patches and reconciliation (route count 35 to 36; cluster count stays eight):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — `/nutritional-ketosis/` added to the Metabolic & Clinical Context cluster (now two pages); JSON-LD ItemList extended to 36; route counts updated
+- `/ketonemia-vs-ketosis/`, `/fasting-ketones/`, and `/ontology/nutritional-signal/` — Related Pages and AI summary linked pages updated with `/nutritional-ketosis/`
+- `/sources/` and `data/source-registry.json` — pages-using-source updated for the three cited sources
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to thirty-six
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

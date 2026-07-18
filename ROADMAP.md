@@ -490,6 +490,24 @@ Prohibited: new or invented sources; numeric thresholds; recommending a fast; de
 
 Status: complete.
 
+## Content — Nutritional Ketosis (Cluster H)
+
+Goal: own the highest-volume term in the category ("nutritional ketosis") as a governed reference — the second page of the Metabolic & Clinical Context cluster.
+
+Governing distinction: Nutritional ketosis is a metabolic state; ketonemia is the blood measurement that can accompany it; neither is a diagnosis, and neither is ketoacidosis.
+
+Deliverables:
+
+- `/nutritional-ketosis/` — the state defined, state vs. measurement, nutritional/fasting/ketoacidosis comparison, measurement across the triad without thresholds, what it is not, context, limits, audience notes, source IDs, AI-readable summary;
+- strictest keto-hype guardrails: no diet advice, no macros/food guidance, no health-benefit or weight-loss claims, no supplement/exogenous-ketone promotion, no numeric thresholds;
+- sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-STRYER-BIOCHEM, SRC-NHS-DKA);
+- wire-in and reconciliation 35 → 36 routes (cluster count stays eight): `/architecture/` + `SYSTEM_ARCHITECTURE.md`, `/ketonemia-vs-ketosis/`, `/fasting-ketones/`, `/ontology/nutritional-signal/`, `/sources/` + `data/source-registry.json`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- README and DECISION_LOG entries.
+
+Prohibited: diet advice; macro/food guidance; health-benefit, weight-loss, or supplement claims; numeric thresholds; equating nutritional ketosis with ketoacidosis.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

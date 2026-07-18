@@ -37,6 +37,7 @@ advice, and it does not diagnose, triage, or treat.
 - /breath-ketones/: Breath acetone — breath analyzers measure exhaled acetone as a proxy for ketone state, not the beta-hydroxybutyrate measured in blood; a trend indicator, not interchangeable with a blood ketone value.
 - /ketonemia-vs-ketosis/: Blood measurement state vs. metabolic state.
 - /fasting-ketones/: Why blood ketones rise during fasting - falling glucose/insulin shift the liver to ketogenesis; an expected physiological rise whose meaning still depends on context (diabetes, medication, illness). Not equal to ketoacidosis.
+- /nutritional-ketosis/: The diet-driven metabolic state of sustained ketone-body elevation from a low-carbohydrate diet; related to but not identical with ketonemia (the measurement), distinct from fasting ketosis and from ketoacidosis. No numeric thresholds, no diet advice, no health claims.
 - /ketonemia-vs-ketoacidosis/: Signal vs. clinical syndrome, clinically bounded.
 - /laboratory-context/: Measurement methods, substrates, and report-language limits.
 - /student-guide/: Terminology ladder and study pathway across disciplines.
