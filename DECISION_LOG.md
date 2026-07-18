@@ -342,6 +342,18 @@ Human side — `/signal-map/`: enriched the "See also" links on the matching con
 
 No routes were added, so the four-route-list source of truth is unchanged at 40 and remains byte-identical. No new source was introduced and no boundary changed. No DEC was created because this operationalized existing internal-linking and machine-parity discipline without changing a governance rule.
 
+### Deepening — Engine Loop-Closure (classification engine ↔ context pages)
+
+Date: 2026-07-17
+
+Status: complete.
+
+The second half of the loop-closure: after linking the KSO ontology and Signal Map to the deep public context pages, the operational tool — the Classification Engine — did not yet route to them. This change makes the engine's output point to the matching public context reference, so a user (or agent) who classifies a context is handed the deep page for it.
+
+For the four non-sensitive context rules whose KSO class has a dedicated public context page, the matching page was added as the first entry of the rule's existing `output.canonical_references` array — RULE-FASTING-BLOOD → `/fasting-ketones/`, RULE-NUTRITIONAL-BLOOD → `/nutritional-ketosis/`, RULE-DIABETES-ALONE → `/diabetes-ketone-context/`, RULE-MEDICATION-ALONE → `/sglt2-context/`. The two sensitive combinations (diabetes+illness, diabetes+medication) route to the DKA Concern Boundary class, which has no context page, and were left unchanged to preserve their deliberate clinical restraint; their boundary and prohibited-inference language is untouched.
+
+Because `canonical_references` is already rendered by the engine (`assets/js/classification-engine.js`), no JavaScript logic changed — the new links appear automatically. Both `data/classification-rules.json` and the inline copy embedded in `/classification-engine/` were edited together and re-verified byte-identical, per the engine gate. No rule matching, boundary statement, KSO/KSS label, or source was changed; no route was added, so the four-route-list source of truth remains 40. No DEC was created because this operationalized existing internal-linking and machine-parity discipline without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.
