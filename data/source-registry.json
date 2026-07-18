@@ -1,7 +1,7 @@
 {
   "name": "Ketonemia Claim Source Registry",
   "version": "1.0",
-  "updated": "2026-07-08",
+  "updated": "2026-07-17",
   "source_document": "/sources/",
   "policy": "All medical claims are sourced or rewritten as concept language. No unsourced medical claim is published. Manufacturer claims are labeled and not treated as neutral clinical guidance. Media is not used for medical claims.",
   "sources": [
@@ -14,7 +14,13 @@
       "access_date": "2026-07-03",
       "claim_supported": "DKA and diabetes-care claims require clinical assessment, laboratory context, and current professional guidance.",
       "population_context": "People with diabetes; clinical and educational diabetes care contexts.",
-      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/research/", "/sglt2-context/", "/diabetes-ketone-context/"]
+      "pages_using_source": [
+        "/ketonemia-vs-ketoacidosis/",
+        "/clinical-boundary/",
+        "/research/",
+        "/sglt2-context/",
+        "/diabetes-ketone-context/"
+      ]
     },
     {
       "id": "SRC-DUK-DKA",
@@ -25,7 +31,13 @@
       "access_date": "2026-07-03",
       "claim_supported": "DKA is a serious diabetes complication involving ketones and blood acidity; public readers should seek care pathways rather than self-diagnose.",
       "population_context": "Public diabetes education; UK context.",
-      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/student-guide/", "/diabetes-ketone-context/"]
+      "pages_using_source": [
+        "/ketonemia-vs-ketoacidosis/",
+        "/clinical-boundary/",
+        "/student-guide/",
+        "/diabetes-ketone-context/",
+        "/illness-ketones/"
+      ]
     },
     {
       "id": "SRC-NHS-DKA",
@@ -36,7 +48,15 @@
       "access_date": "2026-07-03",
       "claim_supported": "Public ketone guidance depends on diabetes context, symptoms, and measurement type; numeric thresholds must remain tied to source context.",
       "population_context": "Public readers and people with diabetes; UK emergency-care context.",
-      "pages_using_source": ["/clinical-boundary/", "/ketonemia-vs-ketoacidosis/", "/urine-ketones/", "/nutritional-ketosis/", "/sglt2-context/", "/diabetes-ketone-context/"]
+      "pages_using_source": [
+        "/clinical-boundary/",
+        "/ketonemia-vs-ketoacidosis/",
+        "/urine-ketones/",
+        "/nutritional-ketosis/",
+        "/sglt2-context/",
+        "/diabetes-ketone-context/",
+        "/illness-ketones/"
+      ]
     },
     {
       "id": "SRC-FDA-SGLT2",
@@ -47,7 +67,12 @@
       "access_date": "2026-07-03",
       "claim_supported": "SGLT2 inhibitors are associated with ketoacidosis risk, including cases where glucose may not be markedly elevated.",
       "population_context": "Medication safety; people taking SGLT2 inhibitors for diabetes.",
-      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/research/", "/sglt2-context/"]
+      "pages_using_source": [
+        "/ketonemia-vs-ketoacidosis/",
+        "/clinical-boundary/",
+        "/research/",
+        "/sglt2-context/"
+      ]
     },
     {
       "id": "SRC-LEHNINGER-BIOCHEM",
@@ -58,7 +83,20 @@
       "access_date": "2026-07-03",
       "claim_supported": "Ketone-body metabolism, hepatic ketogenesis, BHB/AcAc interconversion, and the biochemical convention that BHB is a ketone body.",
       "population_context": "Academic biochemistry; student and laboratory reference.",
-      "pages_using_source": ["/beta-hydroxybutyrate/", "/blood-ketones/", "/laboratory-context/", "/student-guide/", "/research/", "/urine-ketones/", "/breath-ketones/", "/ketone-bodies/", "/fasting-ketones/", "/nutritional-ketosis/", "/exercise-ketones/"]
+      "pages_using_source": [
+        "/beta-hydroxybutyrate/",
+        "/blood-ketones/",
+        "/laboratory-context/",
+        "/student-guide/",
+        "/research/",
+        "/urine-ketones/",
+        "/breath-ketones/",
+        "/ketone-bodies/",
+        "/fasting-ketones/",
+        "/nutritional-ketosis/",
+        "/exercise-ketones/",
+        "/illness-ketones/"
+      ]
     },
     {
       "id": "SRC-STRYER-BIOCHEM",
@@ -69,7 +107,15 @@
       "access_date": "2026-07-03",
       "claim_supported": "Ketone-body synthesis, utilization, and BHB as an energy substrate in peripheral tissues.",
       "population_context": "Academic biochemistry; student reference.",
-      "pages_using_source": ["/beta-hydroxybutyrate/", "/student-guide/", "/research/", "/ketone-bodies/", "/fasting-ketones/", "/nutritional-ketosis/", "/exercise-ketones/"]
+      "pages_using_source": [
+        "/beta-hydroxybutyrate/",
+        "/student-guide/",
+        "/research/",
+        "/ketone-bodies/",
+        "/fasting-ketones/",
+        "/nutritional-ketosis/",
+        "/exercise-ketones/"
+      ]
     },
     {
       "id": "SRC-LAB-BHB-ACAC",
@@ -80,7 +126,15 @@
       "access_date": "2026-07-03",
       "claim_supported": "Blood BHB and urine AcAc measure different ketone fractions; urine AcAc can lag or appear discordant during DKA treatment and resolution.",
       "population_context": "Clinical laboratory measurement; DKA monitoring context.",
-      "pages_using_source": ["/blood-ketones/", "/beta-hydroxybutyrate/", "/laboratory-context/", "/student-guide/", "/research/", "/urine-ketones/", "/breath-ketones/"]
+      "pages_using_source": [
+        "/blood-ketones/",
+        "/beta-hydroxybutyrate/",
+        "/laboratory-context/",
+        "/student-guide/",
+        "/research/",
+        "/urine-ketones/",
+        "/breath-ketones/"
+      ]
     }
   ]
 }

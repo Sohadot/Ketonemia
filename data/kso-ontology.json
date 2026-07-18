@@ -43,6 +43,7 @@
     {
       "id": "KSO-5",
       "ontology_page": "/ontology/illness-stress-signal/",
+      "context_page": "/illness-ketones/",
       "name": "Illness / Stress Signal",
       "description": "A signal associated with illness, vomiting, infection, dehydration, stress physiology, or reduced intake during illness.",
       "boundary": "Must preserve caution and route to clinical-boundary content where appropriate.",
