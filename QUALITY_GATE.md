@@ -127,6 +127,16 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Is the route count reconciled to 31 everywhere it appears (architecture Layer Stack, AI summary, and JSON-LD ItemList; SYSTEM_ARCHITECTURE.md; `/acquisition/` and `ACQUISITION_DOSSIER.md`), with `/trust/` in the Boundary & Sources cluster exactly once?
 - Are `sitemap.xml`, `llms.txt`, `data/page-index.json`, and `data/reference-pack.json` updated with the new route, and do all JSON files validate?
 
+## Glossary Tool Gate
+
+- Does `/glossary/` mirror `data/glossary.json` exactly (every term, layer, non-equivalent, clinical-boundary note, and canonical page), so the human page is never looser than the data?
+- Is all glossary content present as static HTML (crawlable and AI-readable), with the client-side search only filtering what is already on the page?
+- Is the tool static with no backend, no external API, no tracking, and no storage of any kind?
+- Are there zero personal or numeric-value inputs (search over terminology only), and does it interpret no individual reading?
+- Does every term preserve the clinical boundary (definitions only; no diagnosis, safety verdict, or treatment need)?
+- Does each term link to its canonical reference page, and do all those links resolve?
+- Is `/glossary/` registered in all four route lists (sitemap, page-index, reference-pack canonical_pages, architecture ItemList) and reconciled in the route count?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?

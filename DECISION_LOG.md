@@ -354,6 +354,20 @@ For the four non-sensitive context rules whose KSO class has a dedicated public 
 
 Because `canonical_references` is already rendered by the engine (`assets/js/classification-engine.js`), no JavaScript logic changed — the new links appear automatically. Both `data/classification-rules.json` and the inline copy embedded in `/classification-engine/` were edited together and re-verified byte-identical, per the engine gate. No rule matching, boundary statement, KSO/KSS label, or source was changed; no route was added, so the four-route-list source of truth remains 40. No DEC was created because this operationalized existing internal-linking and machine-parity discipline without changing a governance rule.
 
+### Tool — Interactive Glossary (retention as reference gravity)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/glossary/`, the second operational tool on the site and a deliberate answer to the question of repeat-usage tools. Owner decision: the asset's retention model is "reference gravity" — being the default place people and AI systems return to look terminology up — not the consumer-app engagement loop. Tools that require accounts, tracking, personalization, saved state, notifications, or interpretation of a personal value are rejected, because they would break privacy-by-architecture, neutrality, and the clinical boundary, which are the source of the asset's value and acquirability. A glossary lookup drives return visits entirely inside that boundary.
+
+The page is a searchable, client-side glossary generated to mirror `data/glossary.json` exactly (14 terms, each with measurement layer, non-equivalents, clinical-boundary note, and canonical reference), so the human page is never looser than the data. All content is static HTML (crawlable and AI-readable); the JavaScript (`assets/js/glossary.js`, vanilla, no network/storage/tracking) only filters what is already on the page, so the tool works without JS. There are no personal or numeric-value inputs — search is over terminology only — and it interprets no individual reading. Scoped `.glossary-*` CSS reuses existing variables, mirroring the F4 engine precedent. Structured data is `DefinedTermSet` with no medical claim.
+
+Reconciliation moved the route count from 40 to 41 (cluster count unchanged at eight), keeping all four route lists identical per the source-of-truth rule: architecture/index.html and SYSTEM_ARCHITECTURE.md (`/glossary/` added to the Definition & Comparison cluster; JSON-LD ItemList extended to 41; counts and the source-of-truth line updated to 41), reference-pack (glossary.json now points to `/glossary/` as its human view), student-guide (Reference Pathways), acquisition/index.html and ACQUISITION_DOSSIER.md (forty → forty-one), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml. A Glossary Tool Gate was added to QUALITY_GATE.md.
+
+No DEC was created because the tool operationalized existing content-production, machine-parity, privacy, and clinical-boundary rules without changing a governance rule; the retention-model decision (reference gravity, no engagement loops) is an application of the existing doctrine and monetization/interface boundaries, recorded here for traceability.
+
 ## Open Decisions
 
 - None at this time.

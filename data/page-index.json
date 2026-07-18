@@ -39,6 +39,23 @@
       ]
     },
     {
+      "url": "/glossary/",
+      "title": "Blood Ketone Glossary",
+      "page_type": "reference tool / glossary",
+      "audience": [
+        "all audiences",
+        "students",
+        "AI systems"
+      ],
+      "core_function": "Searchable governed glossary of blood ketone terminology (client-side filter over glossary.json). Each term carries its measurement layer, non-equivalents, a clinical-boundary note, and a canonical reference page. Definitions only; no diagnosis, no personal-value interpretation, no data collection.",
+      "linked_layers": [
+        "glossary",
+        "definition",
+        "student guide",
+        "reference pack"
+      ]
+    },
+    {
       "url": "/blood-ketones/",
       "title": "Blood Ketones",
       "page_type": "measurement",

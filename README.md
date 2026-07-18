@@ -565,6 +565,32 @@ Patches and reconciliation (route count 39 to 40; cluster count stays eight):
 
 Status: complete.
 
+## Tool — Interactive Glossary
+
+The second operational tool on the site (after the Classification Engine), and a governed retention mechanism: a place people and AI systems return to look terminology up. `/glossary/` is a searchable, client-side glossary that mirrors `data/glossary.json` exactly.
+
+Decision as owner: the site's retention model is "reference gravity," not engagement loops. Tools that require accounts, tracking, personalization, or personal-value interpretation are rejected because they would break privacy-by-architecture, neutrality, and the clinical boundary — the very things that make the asset valuable. A glossary lookup drives repeat use while staying entirely inside the boundary.
+
+Pages and files:
+
+- `/glossary/` — 14 governed terms, each with its measurement layer, non-equivalents, a clinical-boundary note, and a canonical reference; a client-side search box filters the static list
+- `/assets/js/glossary.js` — vanilla JS, no network, no storage, no tracking; filters static content only (content works and is crawlable without JS)
+- `assets/css/style.css` — scoped `.glossary-*` classes using existing CSS variables, mirroring the F4 engine precedent
+
+Discipline:
+
+- The page is generated to mirror `glossary.json` (human view never looser than the data), all content is static HTML (crawlable/AI-readable; JS only filters), and there are no personal or numeric-value inputs — search is over terminology only. Definitions only: no diagnosis, no safety verdict, no interpretation of an individual reading. `DefinedTermSet` JSON-LD with no medical claim.
+
+Patches and reconciliation (route count 40 to 41; cluster count stays eight):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — `/glossary/` added to the Definition & Comparison cluster; JSON-LD ItemList extended to 41; counts and the source-of-truth rule updated to 41
+- `/reference-pack/` — glossary.json entry now points to `/glossary/` as its human view; `/student-guide/` — Reference Pathways updated with the glossary
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to forty-one
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered (all four route lists kept identical at 41)
+- `QUALITY_GATE.md` — Glossary Tool Gate added
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:
