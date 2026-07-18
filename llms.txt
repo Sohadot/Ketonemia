@@ -40,6 +40,7 @@ advice, and it does not diagnose, triage, or treat.
 - /nutritional-ketosis/: The diet-driven metabolic state of sustained ketone-body elevation from a low-carbohydrate diet; related to but not identical with ketonemia (the measurement), distinct from fasting ketosis and from ketoacidosis. No numeric thresholds, no diet advice, no health claims.
 - /sglt2-context/: How SGLT2-inhibitor medication changes ketone-signal interpretation - regulator-warned ketoacidosis risk that can occur without markedly elevated glucose, so normal glucose does not by itself rule out concern. Reference only; no medication advice, dosing, diagnosis, triage, or thresholds.
 - /diabetes-ketone-context/: How the diabetes context changes ketone-signal interpretation - insulin insufficiency can drive ketone rise toward DKA (a medical emergency); ketones are read within clinical monitoring guidance. Reference only; no diagnosis, triage, thresholds, sick-day rules, or insulin/medication advice - routes to professional or urgent care.
+- /exercise-ketones/: How exercise shifts fuel use and blood ketone levels (prolonged/fasted/low-carb exercise raises ketogenesis); a context that shapes the signal. Makes no claim that ketones improve or impair performance, does not endorse ketone supplements, and attaches no thresholds.
 - /ketonemia-vs-ketoacidosis/: Signal vs. clinical syndrome, clinically bounded.
 - /laboratory-context/: Measurement methods, substrates, and report-language limits.
 - /student-guide/: Terminology ladder and study pathway across disciplines.

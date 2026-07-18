@@ -235,6 +235,27 @@
       ]
     },
     {
+      "url": "/exercise-ketones/",
+      "title": "Exercise and Blood Ketones",
+      "page_type": "metabolic context",
+      "audience": [
+        "public",
+        "students",
+        "AI systems"
+      ],
+      "core_function": "How exercise shifts fuel use and blood ketone levels: lower carbohydrate availability during prolonged, fasted, or low-carbohydrate exercise raises ketogenesis, and readings depend on timing, intensity, duration, feeding state, and diet background. Makes no claim that ketones improve or impair performance, does not endorse ketone supplements, and attaches no thresholds.",
+      "linked_layers": [
+        "ketone bodies",
+        "fasting ketones",
+        "nutritional ketosis",
+        "exercise-performance signal"
+      ],
+      "source_ids": [
+        "SRC-LEHNINGER-BIOCHEM",
+        "SRC-STRYER-BIOCHEM"
+      ]
+    },
+    {
       "url": "/ketonemia-vs-ketoacidosis/",
       "title": "Ketonemia vs. Ketoacidosis",
       "page_type": "comparison",

@@ -544,6 +544,24 @@ Prohibited: generic diabetes-management content; diagnosis or triage; safety/dan
 
 Status: complete.
 
+## Content — Exercise & Blood Ketones (Cluster H)
+
+Goal: complete the metabolic side of the Metabolic & Clinical Context cluster with the exercise/performance context, refusing the performance-claim and supplement hype the topic attracts.
+
+Governing distinction: Exercise is a context that shapes the signal, not a claim about it; a ketone reading around exercise reflects fuel metabolism, not benefit, a performance metric, or a diagnosis.
+
+Deliverables:
+
+- `/exercise-ketones/` — fuel-substrate physiology, context-dependence (timing, feeding state, intensity/duration, diet background), "what exercise ketones are not," a neutral no-endorsement note on ketone supplements, measurement across the triad without thresholds, limits, audience notes, source IDs, AI-readable summary;
+- no performance claim (either direction), no supplement endorsement, no thresholds; diabetes/medication context preserved;
+- sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-STRYER-BIOCHEM);
+- wire-in and reconciliation 39 → 40 (cluster count stays eight; all four route lists kept identical): `/architecture/` + `SYSTEM_ARCHITECTURE.md`, `/fasting-ketones/`, `/nutritional-ketosis/`, `/ontology/exercise-performance-signal/`, `/sources/` + `data/source-registry.json`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- README and DECISION_LOG entries.
+
+Prohibited: performance-benefit or performance-harm claims; treating a reading as a fitness metric; endorsing or assessing ketone supplements; numeric thresholds.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
