@@ -256,6 +256,36 @@ This is the first cluster added since F5 introduced the Ontology cluster (Cluste
 
 No DEC was created because the page and the new cluster applied existing content-production, source-discipline, internal-linking, and clinical-boundary rules without changing a governance rule.
 
+### Content — Nutritional Ketosis (Cluster H)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/nutritional-ketosis/`, the second page of the Metabolic & Clinical Context cluster (Cluster H) and the highest-volume search term in the category. It defines nutritional ketosis as a diet-driven metabolic state — sustained low-carbohydrate intake keeps insulin low and maintains hepatic ketogenesis, elevating ketone bodies (primarily BHB) as fuel — and holds three distinctions the category depends on: the state is not the blood measurement (ketonemia), it is the same physiology as fasting ketosis driven by diet rather than absence of food, and it is emphatically not ketoacidosis (a clinical syndrome, not a diet state).
+
+This is the highest keto-hype-risk topic on the site, so it was handled with the strictest framing: no diet advice, no "how to get into ketosis," no macro or food-list guidance, no health-benefit or weight-loss claims, no exogenous-ketone or supplement promotion, and no numeric thresholds (consistent with the fasting-ketones precedent). Sources are reused from the registry only — SRC-LEHNINGER-BIOCHEM and SRC-STRYER-BIOCHEM (ketogenesis and ketone bodies as fuel) and SRC-NHS-DKA (public framing that interpretation is context-dependent and that ketoacidosis is a clinical emergency, not a diet state). Structured data is WebPage with no medical claim.
+
+Reconciliation moved the route count from 35 to 36 (cluster count unchanged at eight): architecture/index.html and SYSTEM_ARCHITECTURE.md (`/nutritional-ketosis/` added to Cluster H, now two pages; JSON-LD ItemList extended to 36; counts), ketonemia-vs-ketosis, fasting-ketones, and ontology/nutritional-signal (Related Pages and AI summary linked pages), sources/index.html and data/source-registry.json (pages-using-source for the three cited sources), acquisition/index.html and ACQUISITION_DOSSIER.md (thirty-five → thirty-six), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page applied existing content-production, source-discipline, and clinical-boundary rules without changing a governance rule.
+
+### Consistency — Route-Set Symmetry Hardening
+
+Date: 2026-07-17
+
+Status: complete.
+
+Resolved two internal-consistency observations in the machine layer (non-blocking; no deploy, SEO, or Search Console impact) by making the canonical route set identical across every surface.
+
+Before: three route lists each silently excluded a different page. `data/reference-pack.json` `canonical_pages` (36) omitted `/reference-pack/`; the `/architecture/` JSON-LD `hasPart` ItemList (36) omitted `/architecture/` itself; `/sitemap.xml` and `data/page-index.json` listed all 37. The stated route count (36) therefore undercounted the true total (37) and the two "36" lists held different members.
+
+After: the canonical route set is a single 37-route source of truth (every page except home `/`), and all four lists — `sitemap.xml` (minus home), `data/page-index.json` (minus home), `data/reference-pack.json` `canonical_pages`, and the `/architecture/` `hasPart` ItemList — are now byte-verified as the identical 37-member set. Changes: added `/reference-pack/` to `canonical_pages`; added `/architecture/` to its own Reference Map (a card in the Strategic cluster, matching SYSTEM_ARCHITECTURE Cluster F, which already listed it) and to the `hasPart` ItemList (position 37) and AI summary; corrected the count from 36 to 37 on `/architecture/` (layer stack), `SYSTEM_ARCHITECTURE.md` (layer 7), and the acquisition surfaces. `SYSTEM_ARCHITECTURE.md` now records the architecture rule that the 37-route count is the single source of truth and that no canonical route — including `/architecture/` and `/reference-pack/` — may be silently excluded from any list.
+
+The second observation (whether `/architecture/` should appear in its own map) is resolved by inclusion: it is now carded as "the container page that renders every route on one page," so the map is complete and self-consistent rather than relying on an undocumented exception.
+
+No DEC was created because this hardened existing internal-linking and machine-parity discipline without changing a governance rule; it makes the "machine layer is never looser than the human site" guarantee exact.
+
 ## Open Decisions
 
 - None at this time.

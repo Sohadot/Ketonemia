@@ -169,6 +169,28 @@
       ]
     },
     {
+      "url": "/nutritional-ketosis/",
+      "title": "Nutritional Ketosis",
+      "page_type": "metabolic context",
+      "audience": [
+        "public",
+        "students",
+        "AI systems"
+      ],
+      "core_function": "Nutritional ketosis as a diet-driven metabolic state of sustained ketone-body elevation from a low-carbohydrate diet; related to but not identical with ketonemia (the measurement), and distinct from fasting ketosis and from ketoacidosis. No numeric thresholds, no diet advice, no health claims.",
+      "linked_layers": [
+        "ketonemia vs ketosis",
+        "fasting ketones",
+        "ketone bodies",
+        "clinical boundary"
+      ],
+      "source_ids": [
+        "SRC-LEHNINGER-BIOCHEM",
+        "SRC-STRYER-BIOCHEM",
+        "SRC-NHS-DKA"
+      ]
+    },
+    {
       "url": "/ketonemia-vs-ketoacidosis/",
       "title": "Ketonemia vs. Ketoacidosis",
       "page_type": "comparison",
