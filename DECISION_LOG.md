@@ -489,10 +489,40 @@ boundary intact, machine-human parity preserved.
 No DEC was created because this changes what the project *does next*, not any governance rule;
 the playbook is a strategy document, not a route, so the route count stays 43.
 
+### Activation — Phase A indexing live; Phase C measurement instrument
+
+Date: 2026-07-18
+
+Status: in progress.
+
+Phase A (indexing & discovery) is live on the owner's side: the site is confirmed live and
+current at `https://ketonemia.com/`, `sitemap.xml` is submitted to Google Search Console
+("Opération effectuée", 35 of 44 URLs discovered and rising), and URL indexing was requested.
+
+Diagnosed a Search Console "Merchant listings" (Fiches de marchand) report — missing `image`,
+`offers`/`hasMerchantReturnPolicy`/`shippingDetails`, invalid `brand` — as **stale data from a
+previous version of the site**, not the current build: the flagged URL was `www.ketonemia.com`
+crawled 1 June 2026 (before this build), and a full grep of the current code confirms zero
+`Product`/`Offer`/`brand`/merchant structured data (by design — `MONETIZATION_SPEC.md` forbids
+`Offer`/price markup). Correct resolution is to let Google re-crawl and to "validate the fix"
+(already started by the owner); explicitly **not** to add merchant fields, which would break the
+asset's neutrality. No code change was warranted.
+
+Added [ADOPTION_MEASUREMENT.md](ADOPTION_MEASUREMENT.md), the Phase C instrument: a fixed
+ten-query set mapped to canonical pages, the surfaces to test (Google, Bing, major AI
+assistants), four outcome codes (CITED / REFLECTED / ABSENT / MISQUOTED), a recording template,
+and a monthly cadence. Its hard rule is no fabricated metrics — a result counts only if
+reproducible — and a MISQUOTED result is a page-clarity task, never a reason to overstate or to
+relax the clinical boundary. Query 6 (universal "safe" level) is the fidelity bellwether, since a
+faithful answer must decline a universal number.
+
+No DEC was created: this measures and diagnoses within existing honesty and boundary rules; the
+document is an instrument, not a route, so the route count stays 43.
+
 ## Open Decisions
 
-- **Activation inputs (owner):** confirm the site is live and Deploy is green; confirm Search
-  Console access; confirm `inquiry@`/`corrections@` deliver; state available resources. Each
-  unblocks a step in `ACTIVATION_PLAYBOOK.md`.
+- **Activation (owner):** run the Phase C baseline measurement round when ready (or grant access
+  and the PM runs it); confirm `inquiry@`/`corrections@` deliver; approve or edit the launch copy
+  before posting. Each unblocks a step in `ACTIVATION_PLAYBOOK.md`.
 
 - None at this time.
