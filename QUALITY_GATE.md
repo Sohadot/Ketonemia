@@ -41,6 +41,14 @@ human responsibility; the machine check cannot read intent, only structure.
 - Does it have a unique strategic purpose?
 - Does it link into the category graph?
 
+## Social & Discovery Gate
+
+- Does every canonical page declare OpenGraph (`og:title`, `og:description`, `og:url`, `og:image`, `og:type`, `og:site_name`) and Twitter card tags, derived from the page's own title, description, and canonical URL (never looser or divergent)?
+- Do the `og:title` / `twitter:title` and `og:description` / `twitter:description` match the page's `<title>` and meta description, so the shared card is never a claim the page does not make?
+- Do all pages carry a favicon and `theme-color`, and do the referenced assets (`favicon.svg`, `favicon-32.png`, `favicon.png`, `assets/og-card.png`) exist?
+- Does the OpenGraph card image stay on-brand and boundary-safe (positioning and the core rule only; no medical claim, threshold, or verdict)?
+- Do non-indexed pages (e.g. `404.html`) stay exempt from OpenGraph while still carrying the favicon?
+
 ## Deep Media Brief Gate
 
 - Does the page have search-intent blocks, not only a generic article?

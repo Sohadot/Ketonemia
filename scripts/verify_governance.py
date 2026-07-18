@@ -24,6 +24,9 @@ Invariants checked:
   9. Edge files: the custom 404 page (404.html) and the RFC 9116 security
      contact (.well-known/security.txt, with Contact/Expires/Canonical
      fields) are present.
+ 10. Social / discovery tags: the shared favicon and OpenGraph card assets
+     exist, and every canonical page (every page carrying a canonical link)
+     declares og:title, og:image, twitter:card, and a favicon.
 
 Run from the repository root: python3 scripts/verify_governance.py
 """
@@ -284,6 +287,32 @@ else:
         fail(f".well-known/security.txt missing field(s): {missing_fields}")
     else:
         ok(".well-known/security.txt present with Contact/Expires/Canonical")
+
+# ---- 10. Social / discovery tags ------------------------------------------
+required_assets = [
+    "favicon.svg",
+    "favicon-32.png",
+    "favicon.png",
+    os.path.join("assets", "og-card.png"),
+]
+missing_assets = [a for a in required_assets if not os.path.exists(a)]
+if missing_assets:
+    fail(f"missing social/favicon assets: {missing_assets}")
+else:
+    ok("favicon and OpenGraph card assets present")
+
+social_needed = ("og:title", "og:image", 'name="twitter:card"', 'rel="icon"')
+social_bad = False
+for path in sorted(glob.glob("**/*.html", recursive=True)):
+    html = read(path)
+    if 'rel="canonical"' not in html:
+        continue  # non-canonical pages (e.g. 404.html) are exempt
+    missing = [tag for tag in social_needed if tag not in html]
+    if missing:
+        social_bad = True
+        fail(f"{path} missing social/discovery tag(s): {missing}")
+if not social_bad:
+    ok("every canonical page declares og:title, og:image, twitter:card, favicon")
 
 # ---- Result ---------------------------------------------------------------
 print()
