@@ -562,6 +562,25 @@ Prohibited: performance-benefit or performance-harm claims; treating a reading a
 
 Status: complete.
 
+## Tool — Interactive Glossary
+
+Goal: add a governed retention tool ("reference gravity," not an engagement loop) — a searchable glossary people and AI return to for terminology — while staying entirely inside privacy-by-architecture and the clinical boundary.
+
+Owner decision: reject engagement/tracking/personalization tools (they break the moat); build reference tools that make the site the default place to look terminology up.
+
+Deliverables:
+
+- `/glossary/` — searchable, client-side glossary mirroring `data/glossary.json` (14 terms; layer, non-equivalents, boundary note, canonical page each);
+- `/assets/js/glossary.js` — vanilla JS filter, no network/storage/tracking; content static and crawlable without JS;
+- scoped `.glossary-*` CSS using existing variables;
+- static-only, no personal or numeric-value inputs, definitions only (no diagnosis or reading interpretation); `DefinedTermSet` JSON-LD;
+- wire-in and reconciliation 40 → 41 (cluster count stays eight; all four route lists kept identical): `/architecture/` + `SYSTEM_ARCHITECTURE.md`, `/reference-pack/`, `/student-guide/`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- `QUALITY_GATE.md` Glossary Tool Gate; README and DECISION_LOG entries.
+
+Prohibited: accounts, tracking, personalization, saved state; personal or numeric-value inputs; interpreting an individual reading; any definition looser than glossary.json.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

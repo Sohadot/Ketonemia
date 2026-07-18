@@ -362,3 +362,15 @@ a { color: var(--accent); }
 @media (max-width: 400px) {
   .link-grid, .page-grid, .engagement-grid { grid-template-columns: 1fr; }
 }
+
+/* Interactive Glossary (scoped) */
+.glossary-search { width: 100%; padding: 0.7rem 0.9rem; font-size: 1rem; border: 1px solid var(--border); border-radius: 6px; background: var(--bg-alt); color: inherit; margin: 0.4rem 0 0.75rem; box-sizing: border-box; }
+.glossary-count { font-size: 0.82rem; color: var(--text-muted); margin: 0 0 1.25rem; }
+.glossary-empty { color: var(--text-muted); font-style: italic; margin: 0 0 1.25rem; }
+.glossary-list { display: grid; gap: 0.9rem; }
+.glossary-term { border: 1px solid var(--border); border-radius: 6px; padding: 1rem 1.15rem; background: var(--bg-alt); }
+.glossary-term h3 { margin: 0 0 0.15rem; font-size: 1.05rem; }
+.glossary-layer { display: inline-block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin: 0 0 0.5rem; }
+.glossary-def { margin: 0 0 0.4rem; }
+.glossary-meta { font-size: 0.85rem; color: var(--text-muted); margin: 0.3rem 0 0; }
+.glossary-boundary { font-size: 0.85rem; margin: 0.4rem 0 0; }
