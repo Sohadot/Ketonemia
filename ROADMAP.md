@@ -616,6 +616,23 @@ Prohibited: sick-day rules; thresholds; diagnosis/triage; treatment advice; chan
 
 Status: complete.
 
+## Content — Blood Ketone FAQ (Cluster A, GEO surface)
+
+Goal: add a governed FAQ answer layer that captures the highest-intent natural-language questions about blood ketones and answers each within the clinical boundary, routing every answer to its canonical page — a generative-engine-optimization surface for humans and AI systems alike.
+
+Governing distinction: An answer is a routing decision, not a verdict; the FAQ names the governed distinction and hands off to the page that owns it, and it never assigns a safe/normal number.
+
+Deliverables:
+
+- `/faq/` — eight boundary-safe Q&A (what ketonemia is; vs. ketoacidosis; whether ketones mean something is wrong; the "normal/safe level" question, answered by refusing a universal number and routing to a clinician; what raises ketones; blood/urine/breath differences; vs. ketosis; whether the site can interpret a personal reading), each answer linking to its canonical page;
+- `FAQPage` JSON-LD whose `acceptedAnswer` text is byte-identical to the visible answers (machine-human parity verified programmatically);
+- wire-in and reconciliation 42 → 43 (cluster count stays eight; four route lists identical): architecture + SYSTEM_ARCHITECTURE, homepage, acquisition + ACQUISITION_DOSSIER, reciprocal links from `/definition/` and `/glossary/`, reference-pack.json, page-index.json, llms.txt, sitemap.xml;
+- README and DECISION_LOG entries.
+
+Prohibited: numeric thresholds; safe/danger verdicts; diagnosis, triage, or individual interpretation; any structured-data claim looser than the visible answer; new unsourced claims.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

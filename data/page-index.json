@@ -56,6 +56,23 @@
       ]
     },
     {
+      "url": "/faq/",
+      "title": "Blood Ketone FAQ",
+      "page_type": "reference tool / FAQ",
+      "audience": [
+        "all audiences",
+        "public",
+        "AI systems"
+      ],
+      "core_function": "Governed, boundary-safe answers to the most common blood ketone questions: what ketonemia is, ketonemia vs. ketoacidosis, whether ketones mean something is wrong, whether there is a universal safe number, what raises ketones, whether blood/urine/breath are the same, and ketonemia vs. ketosis. Carries FAQPage structured data. Every answer routes to a canonical page; no diagnosis, no personal-value interpretation, no safe or danger verdict.",
+      "linked_layers": [
+        "definition",
+        "glossary",
+        "ketonemia vs ketoacidosis",
+        "clinical boundary"
+      ]
+    },
+    {
       "url": "/blood-ketones/",
       "title": "Blood Ketones",
       "page_type": "measurement",

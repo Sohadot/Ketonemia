@@ -146,6 +146,15 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Does `CLASSIFICATION_PROTOCOL.md` list the context reference as a formal governed output?
 - Does the inline rules JSON remain byte-identical to `data/classification-rules.json` after the change, and do all rules still validate as JSON?
 
+## FAQ Gate
+
+- Is every visible answer on `/faq/` boundary-safe: no numeric threshold, no safe/danger or normal-level verdict, no diagnosis, no triage, and no interpretation of an individual reading?
+- Does each answer name a governed distinction and route to a canonical page that owns it, and do all those links resolve?
+- Is the `FAQPage` JSON-LD `acceptedAnswer` text byte-identical to the visible answer text for every question (machine-human parity: the structured data is never looser than, nor divergent from, the human-facing answer)?
+- Does the "normal or safe level" question decline to give a universal number and route the reader to a qualified professional?
+- Are answers definitional and free of any new unsourced claim (they defer to already-sourced canonical pages), so the FAQ introduces no source not already governed?
+- Is `/faq/` registered in all four route lists (sitemap, page-index, reference-pack canonical_pages, architecture ItemList) and reconciled in the route count, with reciprocal links from at least `/definition/` and `/glossary/`?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?
