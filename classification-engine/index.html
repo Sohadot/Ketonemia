@@ -97,6 +97,7 @@
             <div class="engine-checkbox-grid">
               <label class="engine-checkbox"><input type="checkbox" name="context" value="fasting"> Fasting</label>
               <label class="engine-checkbox"><input type="checkbox" name="context" value="nutritional ketosis"> Nutritional ketosis</label>
+              <label class="engine-checkbox"><input type="checkbox" name="context" value="exercise"> Exercise / performance</label>
               <label class="engine-checkbox"><input type="checkbox" name="context" value="diabetes"> Diabetes</label>
               <label class="engine-checkbox"><input type="checkbox" name="context" value="illness-stress"> Illness / metabolic stress</label>
               <label class="engine-checkbox"><input type="checkbox" name="context" value="medication"> Medication context</label>
@@ -132,7 +133,7 @@
 
       <section class="content-block" id="protocol">
         <h2>How This Engine Is Governed</h2>
-        <p>The engine is a deterministic lookup, not a model and not a calculator. Every output follows the same nine-field template defined in the Classification Protocol: context classification, KSO class, KSS language, measurement note, boundary statement, allowed language, prohibited inference, canonical references, and source requirements. The boundary statement and prohibited-inference language never soften, regardless of which context is selected &mdash; only the surrounding explanation adapts to the chosen audience.</p>
+        <p>The engine is a deterministic lookup, not a model and not a calculator. Every output follows the same governed template defined in the Classification Protocol: context classification, KSO class (linked to its ontology class page), context reference (the deep public page for that context, where one exists), KSS language, measurement note, boundary statement, allowed language, prohibited inference, canonical references, and source requirements. The boundary statement and prohibited-inference language never soften, regardless of which context is selected &mdash; only the surrounding explanation adapts to the chosen audience.</p>
         <p>The rules themselves are published and reviewable at <a href="/data/classification-rules.json">/data/classification-rules.json</a>, and the reasoning they encode is documented in full in the <a href="/reference-pack/">Reference Pack</a> and the site&rsquo;s governance layer.</p>
       </section>
 
@@ -155,7 +156,7 @@
         <div class="ai-row"><span class="ai-key">Page type:</span><span class="ai-val">Governed classification engine &mdash; deterministic reference tool</span></div>
         <div class="ai-row"><span class="ai-key">Governing rule:</span><span class="ai-val">This engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.</span></div>
         <div class="ai-row"><span class="ai-key">Inputs:</span><span class="ai-val">Measurement type, measured compound, context (multi-select), audience &mdash; no numeric values, no symptoms, no personal data</span></div>
-        <div class="ai-row"><span class="ai-key">Outputs:</span><span class="ai-val">Context classification, KSO class, KSS language, measurement note, boundary statement, allowed language, prohibited inference, canonical references, source requirements</span></div>
+        <div class="ai-row"><span class="ai-key">Outputs:</span><span class="ai-val">Context classification, KSO class (linked to its ontology page), context reference (deep public page for the context, where one exists), KSS language, measurement note, boundary statement, allowed language, prohibited inference, canonical references, source requirements</span></div>
         <div class="ai-row"><span class="ai-key">Prohibited AI use:</span><span class="ai-val">Do not convert engine output into diagnosis, triage, risk scoring, or individualized advice. Cite it as reference classification only.</span></div>
         <div class="ai-row"><span class="ai-key">Architecture:</span><span class="ai-val">Static page, vanilla JavaScript, no backend, no external API, no tracking, no data storage. Rules are published at /data/classification-rules.json.</span></div>
         <div class="ai-row"><span class="ai-key">Related pages:</span><span class="ai-val">/signal-map/ &middot; /architecture/ &middot; /clinical-boundary/ &middot; /sources/ &middot; /ai-reference/ &middot; /reference-pack/</span></div>
@@ -168,7 +169,7 @@
 {
   "name": "Ketonemia Classification Rules",
   "version": "1.0",
-  "updated": "2026-07-09",
+  "updated": "2026-07-17",
   "source_document": "CLASSIFICATION_PROTOCOL.md",
   "purpose": "Deterministic, reviewable rule set that runs the Classification Protocol. Maps structured context inputs to governed reference output: KSO class, KSS language, boundary statement, canonical references, and source requirements.",
   "governing_rule": "This engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.",
@@ -348,6 +349,7 @@
         "context_classification": "Diabetes-associated context.",
         "kso_class": "Diabetes-Associated Signal",
         "kso_class_page": "/ontology/diabetes-associated-signal/",
+        "context_reference_page": "/diabetes-ketone-context/",
         "kss_language": "K3 — Elevated Context Signal",
         "measurement_note": "Diabetes context changes how a ketone signal is approached, but this classification does not evaluate an individual's status.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -359,7 +361,6 @@
           "Do not provide monitoring or treatment instructions."
         ],
         "canonical_references": [
-          "/diabetes-ketone-context/",
           "/ketonemia-vs-ketoacidosis/",
           "/clinical-boundary/",
           "/sources/"
@@ -410,6 +411,7 @@
         "context_classification": "Medication context.",
         "kso_class": "Medication-Context Signal",
         "kso_class_page": "/ontology/medication-context-signal/",
+        "context_reference_page": "/sglt2-context/",
         "kss_language": "K4 — Clinical Concern Boundary",
         "measurement_note": "Certain medications, including SGLT2 inhibitors, are documented to affect ketone signals, sometimes without markedly elevated glucose.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -421,7 +423,6 @@
           "Do not assess individual medication risk or provide dosing guidance."
         ],
         "canonical_references": [
-          "/sglt2-context/",
           "/ketonemia-vs-ketoacidosis/",
           "/clinical-boundary/",
           "/sources/"
@@ -444,6 +445,7 @@
         "context_classification": "Fasting context.",
         "kso_class": "Fasting Signal",
         "kso_class_page": "/ontology/fasting-signal/",
+        "context_reference_page": "/fasting-ketones/",
         "kss_language": "K2 — Nutritional / Fasting Range",
         "measurement_note": "Ketone elevation during fasting reflects a well-documented metabolic fuel-switching process and rises predictably with fasting duration.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -455,7 +457,6 @@
           "Do not diagnose DKA."
         ],
         "canonical_references": [
-          "/fasting-ketones/",
           "/blood-ketones/",
           "/ketonemia-vs-ketosis/",
           "/clinical-boundary/"
@@ -476,6 +477,7 @@
         "context_classification": "Nutritional ketosis context.",
         "kso_class": "Nutritional Signal",
         "kso_class_page": "/ontology/nutritional-signal/",
+        "context_reference_page": "/nutritional-ketosis/",
         "kss_language": "K2 — Nutritional / Fasting Range",
         "measurement_note": "Sustained ketone elevation is expected in intentional low-carbohydrate or ketogenic nutrition contexts.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -487,9 +489,40 @@
           "Do not diagnose DKA."
         ],
         "canonical_references": [
-          "/nutritional-ketosis/",
           "/ketonemia-vs-ketosis/",
           "/blood-ketones/",
+          "/clinical-boundary/"
+        ],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-EXERCISE-BLOOD",
+      "when": {
+        "measurement_type": "blood",
+        "measured_compound": "BHB",
+        "context": [
+          "exercise"
+        ]
+      },
+      "output": {
+        "context_classification": "Exercise / performance context.",
+        "kso_class": "Exercise / Performance Signal",
+        "kso_class_page": "/ontology/exercise-performance-signal/",
+        "context_reference_page": "/exercise-ketones/",
+        "kss_language": "K2 — Nutritional / Fasting Range",
+        "measurement_note": "Ketone levels can shift with prolonged, fasted, or low-carbohydrate exercise as fuel use moves toward fat; a reading is a context-dependent snapshot.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Exercise-related ketone change reflects a documented shift in fuel metabolism."
+        ],
+        "prohibited_inference": [
+          "Do not infer that ketones improve or impair performance.",
+          "Do not treat a reading as a performance metric or diagnose DKA."
+        ],
+        "canonical_references": [
+          "/blood-ketones/",
+          "/ketone-bodies/",
           "/clinical-boundary/"
         ],
         "source_ids": []

@@ -591,6 +591,19 @@ Patches and reconciliation (route count 40 to 41; cluster count stays eight):
 
 Status: complete.
 
+## Engine Upgrade — Context Reference as a Formal Output
+
+Closed four remaining gaps in the engine loop-closure (raised in review), completing the engine ↔ context-page link:
+
+1. **Exercise context in the engine.** Added an "Exercise / performance" context option to the engine form and a deterministic rule (`RULE-EXERCISE-BLOOD`) that routes a blood/BHB exercise context to the Exercise / Performance Signal class and `/exercise-ketones/`. The rule set is now 16 rules.
+2. **`context_reference_page` as a dedicated field.** Refactored from being buried in `canonical_references` into its own output field (mirroring `kso_class_page`) on the five context rules (fasting, nutritional, exercise, diabetes, medication), and removed from `canonical_references` to avoid duplication. The engine JS renders it as its own "Context reference" link.
+3. **`CLASSIFICATION_PROTOCOL.md`** now lists the context reference as a formal governed output, requires it to match the `context_page` in `data/kso-ontology.json`, and adds it to the output chain.
+4. **`QUALITY_GATE.md`** gained a Context Reference Linkage Gate.
+
+Discipline: both `data/classification-rules.json` and the inline copy in `/classification-engine/` were edited together and re-verified byte-identical; no boundary statement, prohibited-inference text, KSO/KSS label, or source changed; the two sensitive combinations (diabetes+illness, diabetes+medication) route to the boundary class and carry no context reference. No route was added (route lists stay 41). The engine page prose and AI summary were updated to describe the current output template.
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

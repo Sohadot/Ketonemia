@@ -24,7 +24,7 @@ Ketonemia State Standard (KSS), source discipline, and any future engine output.
 The purpose of this protocol is to define how Ketonemia.com converts structured
 context inputs into governed reference outputs:
 
-Observed context → KSO class → KSS zone language → boundary statement → canonical references → source requirements.
+Observed context → KSO class → context reference → KSS zone language → boundary statement → canonical references → source requirements.
 
 The protocol is the operational layer that sits between knowledge and tool:
 
@@ -85,7 +85,8 @@ no individual reading is collected (consistent with [INTERFACE_THESIS.md](INTERF
 
 Every classification produces a governed output only:
 
-- KSO class (from the ten classes in [KETONEMIA_SIGNAL_ONTOLOGY.md](KETONEMIA_SIGNAL_ONTOLOGY.md));
+- KSO class (from the ten classes in [KETONEMIA_SIGNAL_ONTOLOGY.md](KETONEMIA_SIGNAL_ONTOLOGY.md)), linked to its ontology class page;
+- context reference — the deep public reference page for that context, where one exists (for example a fasting, nutritional-ketosis, exercise, diabetes, or medication context). This is a formal output field (`context_reference_page`), distinct from the general canonical references, and it must match the `context_page` recorded for the same KSO class in `data/kso-ontology.json`. A context with no dedicated public page (baseline, illness/stress, and the boundary classes) omits this field;
 - KSS zone language (K0–K5 reference labels from [KETONEMIA_STATE_STANDARD.md](KETONEMIA_STATE_STANDARD.md));
 - boundary statement;
 - canonical page links;
