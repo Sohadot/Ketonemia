@@ -455,6 +455,23 @@ Prohibited: new or invented sources; numeric or clinical thresholds; using breat
 
 Status: complete.
 
+## Content — Ketone Bodies
+
+Goal: build the foundational biochemistry hub that anchors the measurement triad, capturing high-volume "ketone bodies" search intent while strengthening the internal link graph.
+
+Governing idea: There is no single "ketone." There are three ketone bodies (BHB, AcAc, acetone), related but distinct — and which one you measure depends on how you measure.
+
+Deliverables:
+
+- `/ketone-bodies/` — the three-compound table mapped to blood/urine/breath, ketogenesis and interconversion, a naming note, what "ketone bodies present" does not mean, limits, audience notes, source IDs, AI-readable summary;
+- sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-STRYER-BIOCHEM); no thresholds; states ketone bodies are normal fuel and not equal to ketoacidosis;
+- wire-in and route-count reconciliation 33 → 34: `/architecture/` + `SYSTEM_ARCHITECTURE.md` (Measurement & Laboratory cluster, ItemList, counts), `/beta-hydroxybutyrate/`, `/blood-ketones/`, `/laboratory-context/`, `/sources/` + `data/source-registry.json`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- README and DECISION_LOG entries.
+
+Prohibited: new or invented sources; numeric or clinical thresholds; presenting ketone-body presence as a disease or as ketoacidosis.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

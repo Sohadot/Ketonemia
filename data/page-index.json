@@ -70,6 +70,27 @@
       ]
     },
     {
+      "url": "/ketone-bodies/",
+      "title": "Ketone Bodies",
+      "page_type": "biochemistry",
+      "audience": [
+        "public",
+        "students",
+        "AI systems"
+      ],
+      "core_function": "The three ketone bodies (beta-hydroxybutyrate, acetoacetate, acetone): hepatic ketogenesis, interconversion, and the mapping of each compound to its measurement layer (blood/urine/breath). Ketone-body presence is not a diagnosis and does not equal ketoacidosis.",
+      "linked_layers": [
+        "beta-hydroxybutyrate",
+        "blood ketones",
+        "urine ketones",
+        "breath ketones"
+      ],
+      "source_ids": [
+        "SRC-LEHNINGER-BIOCHEM",
+        "SRC-STRYER-BIOCHEM"
+      ]
+    },
+    {
       "url": "/urine-ketones/",
       "title": "Urine Ketones (Ketonuria)",
       "page_type": "measurement",

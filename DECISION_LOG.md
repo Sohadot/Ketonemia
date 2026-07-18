@@ -228,6 +228,20 @@ Reconciliation moved the route count from 32 to 33: architecture/index.html and 
 
 No DEC was created because the page applied existing content-production, source-discipline, and clinical-boundary rules without changing a governance rule. With this the measurement triad is fully owned.
 
+### Content — Ketone Bodies
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/ketone-bodies/`, the foundational biochemistry hub anchoring the measurement triad. It defines the three ketone bodies — beta-hydroxybutyrate (BHB), acetoacetate (AcAc), and acetone — describes hepatic ketogenesis and their role as fuel, and maps each compound to the measurement layer that reads it (blood → BHB, urine → AcAc, breath → acetone), tying the blood/urine/breath pages together under one parent concept. Governing idea: there is no single "ketone"; there are three ketone bodies, and which one you measure depends on how you measure. It includes a naming note (BHB is chemically a hydroxy acid grouped with ketones by biochemical convention) and states plainly that ketone-body presence is a normal fuel, is not a disease, and does not equal ketoacidosis.
+
+Every claim is sourced from the existing registry only — SRC-LEHNINGER-BIOCHEM (ketogenesis, the three ketone bodies, BHB/AcAc interconversion, acetone from decarboxylation, and the convention that BHB is a ketone body) and SRC-STRYER-BIOCHEM (ketone-body synthesis and utilization, BHB as a peripheral energy substrate). No new or invented source, no thresholds, no clinical claim; structured data is WebPage with no medical claim.
+
+Reconciliation moved the route count from 33 to 34: architecture/index.html and SYSTEM_ARCHITECTURE.md (`/ketone-bodies/` added to the Measurement & Laboratory cluster / Cluster B, JSON-LD ItemList extended to 34, counts), beta-hydroxybutyrate, blood-ketones, and laboratory-context (Related Pages and AI summary linked pages), sources/index.html and data/source-registry.json (pages-using-source for the two cited sources), acquisition/index.html and ACQUISITION_DOSSIER.md (thirty-three → thirty-four), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page applied existing content-production, source-discipline, and clinical-boundary rules without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.

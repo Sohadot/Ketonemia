@@ -31,6 +31,7 @@ advice, and it does not diagnose, triage, or treat.
 
 - /definition/: Definition of ketonemia as a blood measurement state.
 - /blood-ketones/: What a blood ketone measurement represents and its limits.
+- /ketone-bodies/: The three ketone bodies (beta-hydroxybutyrate, acetoacetate, acetone) - biochemistry, how the liver makes them, how they interconvert, and which measurement layer reads each (blood/urine/breath).
 - /beta-hydroxybutyrate/: BHB, the primary blood ketone body.
 - /urine-ketones/: Ketonuria — urine ketone testing measures mostly acetoacetate (AcAc), not the beta-hydroxybutyrate measured in blood; time-lagged and not interchangeable with blood ketones.
 - /breath-ketones/: Breath acetone — breath analyzers measure exhaled acetone as a proxy for ketone state, not the beta-hydroxybutyrate measured in blood; a trend indicator, not interchangeable with a blood ketone value.
