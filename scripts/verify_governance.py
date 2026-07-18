@@ -21,6 +21,9 @@ Invariants checked:
      index.html, and every internal file link points to a file that exists.
   8. FAQ machine-human parity: each FAQPage acceptedAnswer text is identical
      to the corresponding visible answer text (minus its trailing link).
+  9. Edge files: the custom 404 page (404.html) and the RFC 9116 security
+     contact (.well-known/security.txt, with Contact/Expires/Canonical
+     fields) are present.
 
 Run from the repository root: python3 scripts/verify_governance.py
 """
@@ -260,6 +263,27 @@ if os.path.exists(faq_path):
                     fail(f"FAQ Q{i}: acceptedAnswer text differs from visible answer")
             if parity:
                 ok(f"FAQ machine-human parity holds across {len(visible)} answers")
+
+# ---- 9. Edge files present -------------------------------------------------
+if not os.path.exists("404.html"):
+    fail("404.html (custom Not Found page) is missing")
+else:
+    ok("custom 404.html is present")
+
+sec_path = os.path.join(".well-known", "security.txt")
+if not os.path.exists(sec_path):
+    fail(".well-known/security.txt (RFC 9116) is missing")
+else:
+    sec = read(sec_path)
+    missing_fields = [
+        field
+        for field in ("Contact:", "Expires:", "Canonical:")
+        if field not in sec
+    ]
+    if missing_fields:
+        fail(f".well-known/security.txt missing field(s): {missing_fields}")
+    else:
+        ok(".well-known/security.txt present with Contact/Expires/Canonical")
 
 # ---- Result ---------------------------------------------------------------
 print()

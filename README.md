@@ -673,6 +673,19 @@ Discipline:
 
 Status: complete.
 
+## Technical — Edge Hardening (custom 404 and security.txt)
+
+Two edge gaps closed, outside the reference-page discipline but affecting the asset's technical and security posture.
+
+- `404.html` — a custom Not Found page in the site's own layout. Previously an unknown URL fell through to GitHub Pages' generic 404, dropping the header, footer, disclaimer, and all navigation. The new page routes a lost visitor back to eight governed entry points and is marked `noindex, follow` (never indexed, links still crawlable). Not a canonical route.
+- `.well-known/security.txt` — an RFC 9116 security contact pointing to the already-live `corrections@ketonemia.com` channel (no new mailbox invented), with `Expires`, `Canonical`, `Policy` (→ `/trust/`), and `Preferred-Languages: en, ar`. It states plainly that the site is static — no accounts, forms, or backend — so the realistic surface is content and domain integrity.
+
+Discipline:
+
+- `scripts/verify_governance.py` gained a tenth invariant asserting both files exist and that `security.txt` carries Contact/Expires/Canonical, so neither can be silently deleted. `QUALITY_GATE.md` adds an Edge Hardening Gate. Neither file is a page; the route count stays 43 and the four route lists are unchanged.
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

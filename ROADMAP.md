@@ -651,6 +651,23 @@ Prohibited: weakening any invariant to make the check pass; adding a canonical r
 
 Status: complete.
 
+## Technical — Edge Hardening (404 and security.txt)
+
+Goal: close the technical and security edges that sit outside the reference-page discipline, so an unknown URL and a security report both land somewhere governed.
+
+Governing distinction: The edges of an asset — where a visitor mistypes a URL, or where a researcher needs to report an issue — are part of its posture; leaving them to platform defaults is a gap, not a non-issue.
+
+Deliverables:
+
+- `404.html` — a custom Not Found page in the site's layout, routing lost visitors to governed entry points, `noindex, follow`, not a canonical route;
+- `.well-known/security.txt` — RFC 9116 contact pointing to the already-live `corrections@` channel (no invented mailbox), with Expires, Canonical, Policy (→ `/trust/`), Preferred-Languages;
+- a tenth invariant in `scripts/verify_governance.py` asserting both files exist and security.txt is well-formed;
+- `QUALITY_GATE.md` Edge Hardening Gate; README and DECISION_LOG entries.
+
+Prohibited: inventing a security mailbox that could bounce; adding clinical content or a verdict to the 404 page; turning either edge file into a canonical route.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

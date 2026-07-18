@@ -1,0 +1,10 @@
+# Security contact for Ketonemia.com (RFC 9116)
+# Ketonemia.com is a static reference site: no accounts, no forms, no data
+# collection, and no backend. Reports about content integrity, the domain, or
+# this site's configuration are welcome at the contact below.
+
+Contact: mailto:corrections@ketonemia.com
+Expires: 2027-07-18T00:00:00.000Z
+Preferred-Languages: en, ar
+Canonical: https://ketonemia.com/.well-known/security.txt
+Policy: https://ketonemia.com/trust/
