@@ -668,6 +668,24 @@ Prohibited: inventing a security mailbox that could bounce; adding clinical cont
 
 Status: complete.
 
+## SEO / Social — Discovery Tags, Favicon, OpenGraph Card
+
+Goal: give the asset a clean, governed link-preview and discovery layer, so a shared or cited page presents a branded card rather than a bare URL — SEO/GEO polish, not new content.
+
+Governing distinction: A link preview is a claim about the page; it must be governed to the same standard as the page, never looser and never divergent.
+
+Deliverables:
+
+- OpenGraph and Twitter card tags on every canonical page (home + 43), derived from each page's own title, description, and canonical URL;
+- favicon (`favicon.svg`, `favicon-32.png`, `favicon.png`) and `theme-color` on all pages; `404.html` exempt from OpenGraph but carrying the favicon;
+- a locally generated, boundary-safe OpenGraph card (`assets/og-card.png`, 1200×630: wordmark, positioning, core rule, "not medical advice");
+- two new invariants in `scripts/verify_governance.py` and a Social & Discovery Gate in `QUALITY_GATE.md`;
+- an accessibility pass (zero issues across 45 pages); README and DECISION_LOG entries.
+
+Prohibited: a card claim the page does not make; any medical claim, threshold, or verdict on the card image; an external asset dependency; adding a canonical route.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

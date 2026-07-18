@@ -686,6 +686,20 @@ Discipline:
 
 Status: complete.
 
+## SEO / Social — Discovery Tags, Favicon, OpenGraph Card
+
+The asset's link-preview and discovery layer, so a shared, cited, or AI-surfaced page presents a clean, governed, on-brand card instead of a bare URL. SEO/GEO polish, not new content — no page's meaning changed.
+
+- Every canonical page (home + 43 routes) declares OpenGraph (`og:type`, `og:site_name`, `og:title`, `og:description`, `og:url`, `og:image` with dimensions and alt) and Twitter card tags, all derived from the page's own `<title>`, meta description, and canonical URL — so the shared card is never looser than, nor divergent from, the page itself.
+- All pages carry a favicon (`favicon.svg` vector, `favicon-32.png`, `favicon.png` apple-touch) and a `theme-color`; the non-indexed `404.html` carries the favicon but is exempt from OpenGraph.
+- Assets are generated locally (Pillow), no external dependency: `assets/og-card.png` (1200×630) shows only the wordmark, positioning, core rule, and a "not medical advice" footer — on-brand and boundary-safe; `favicon.*` is a neutral "K" monogram on the accent color.
+
+Discipline:
+
+- An accessibility pass over all 45 pages found zero issues (every page has `lang`, `<title>`, viewport; the site uses no `<img>` elements). `scripts/verify_governance.py` gained two invariants (assets exist; every canonical page declares og:title, og:image, twitter:card, favicon) and `QUALITY_GATE.md` adds a Social & Discovery Gate. No page added; the route count stays 43.
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

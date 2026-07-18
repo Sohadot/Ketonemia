@@ -448,6 +448,22 @@ The verification script (`scripts/verify_governance.py`) gained a tenth invarian
 
 No DEC was created because this applied existing layout, boundary, and honesty rules to the site's technical edges without changing a governance rule.
 
+### SEO / Social — Discovery tags, favicon, OpenGraph card
+
+Date: 2026-07-18
+
+Status: complete.
+
+Added the social and discovery layer the asset was missing, so that when a page is shared, cited, or surfaced by an AI or a search engine, it presents a clean, governed, on-brand card instead of a bare URL. This is SEO/GEO polish, not new content: no page's meaning changed.
+
+Every canonical page (the home page plus all 43 routes) now declares OpenGraph (`og:type`, `og:site_name`, `og:title`, `og:description`, `og:url`, `og:image` with dimensions and alt) and Twitter card tags, all derived programmatically from the page's own `<title>`, meta description, and canonical URL — so the shared card is never looser than, nor divergent from, the page itself (the same machine-human parity discipline applied to link previews). All pages also carry a favicon (`favicon.svg` vector, `favicon-32.png`, `favicon.png` apple-touch) and a `theme-color`. The non-indexed `404.html` carries the favicon but is exempt from OpenGraph.
+
+Assets were generated locally (Pillow) to avoid any external dependency: `assets/og-card.png` (1200×630) shows only the wordmark, the positioning line, the core rule, and a "not medical advice" footer — on-brand and boundary-safe, no medical claim; `favicon.*` is a neutral "K" monogram on the accent color. An accessibility pass over all 45 pages found zero issues (every page has `lang`, `<title>`, viewport; the site uses no `<img>` elements, so there are no missing `alt` attributes).
+
+`scripts/verify_governance.py` gained two invariants (the favicon/OG assets exist; every canonical page declares og:title, og:image, twitter:card, and a favicon), and `QUALITY_GATE.md` adds a Social & Discovery Gate. No page was added; the route count stays 43 and the four route lists are unchanged.
+
+No DEC was created because this applied the existing machine-human parity, honesty, and clinical-boundary rules to the link-preview and discovery layer without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.
