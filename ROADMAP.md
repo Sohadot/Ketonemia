@@ -508,6 +508,24 @@ Prohibited: diet advice; macro/food guidance; health-benefit, weight-loss, or su
 
 Status: complete.
 
+## Content — SGLT2 Inhibitors & Ketones (Cluster H)
+
+Goal: own the highest-authority safety topic in the category — how SGLT2-inhibitor medication changes ketone-signal interpretation — as a strictly bounded reference, opening the clinical/medication dimension of the Metabolic & Clinical Context cluster.
+
+Governing distinction: On an SGLT2 inhibitor, ketoacidosis can occur without markedly elevated glucose, so a normal glucose reading does not by itself rule out concern.
+
+Deliverables:
+
+- `/sglt2-context/` — what the medication class is, why it changes interpretation, a common-assumption table, an explicit "what this page does not do," a strong boundary block, audience notes, source IDs, AI-readable summary;
+- strongest sourcing on the site: SRC-FDA-SGLT2 (regulatory warning) + SRC-ADA-2026 + SRC-NHS-DKA, reused only;
+- strictest boundary: no medication/dosing/start-stop advice, no diagnosis or triage, no sick-day rules, no thresholds, no product naming;
+- wire-in and reconciliation 37 → 38 (cluster count stays eight; all four route lists kept identical): `/architecture/` + `SYSTEM_ARCHITECTURE.md`, `/ketonemia-vs-ketoacidosis/`, `/ontology/medication-context-signal/`, `/fasting-ketones/`, `/nutritional-ketosis/`, `/sources/` + `data/source-registry.json`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- README and DECISION_LOG entries.
+
+Prohibited: medication advice; dosing or start/stop guidance; diagnosis or triage; sick-day rules; numeric thresholds; naming, ranking, or recommending products.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

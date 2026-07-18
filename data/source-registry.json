@@ -14,7 +14,7 @@
       "access_date": "2026-07-03",
       "claim_supported": "DKA and diabetes-care claims require clinical assessment, laboratory context, and current professional guidance.",
       "population_context": "People with diabetes; clinical and educational diabetes care contexts.",
-      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/research/"]
+      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/research/", "/sglt2-context/"]
     },
     {
       "id": "SRC-DUK-DKA",
@@ -36,7 +36,7 @@
       "access_date": "2026-07-03",
       "claim_supported": "Public ketone guidance depends on diabetes context, symptoms, and measurement type; numeric thresholds must remain tied to source context.",
       "population_context": "Public readers and people with diabetes; UK emergency-care context.",
-      "pages_using_source": ["/clinical-boundary/", "/ketonemia-vs-ketoacidosis/", "/urine-ketones/", "/nutritional-ketosis/"]
+      "pages_using_source": ["/clinical-boundary/", "/ketonemia-vs-ketoacidosis/", "/urine-ketones/", "/nutritional-ketosis/", "/sglt2-context/"]
     },
     {
       "id": "SRC-FDA-SGLT2",
@@ -47,7 +47,7 @@
       "access_date": "2026-07-03",
       "claim_supported": "SGLT2 inhibitors are associated with ketoacidosis risk, including cases where glucose may not be markedly elevated.",
       "population_context": "Medication safety; people taking SGLT2 inhibitors for diabetes.",
-      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/research/"]
+      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/research/", "/sglt2-context/"]
     },
     {
       "id": "SRC-LEHNINGER-BIOCHEM",
