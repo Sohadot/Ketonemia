@@ -445,6 +445,30 @@ Patches and reconciliation (route count 33 to 34):
 
 Status: complete.
 
+## Content — Fasting Ketones (new Cluster H)
+
+The first page of a new Route Map cluster, **Metabolic & Clinical Context** — the public-facing, SEO-facing counterparts to the KSO context classes. `/fasting-ketones/` captures the highest-intent "ketones" search context (fasting) and routes it correctly: blood ketones rise during fasting because falling glucose and insulin shift the liver to ketogenesis, an expected physiological rise whose meaning still depends on context.
+
+Governing distinction: Fasting is a driver of the signal; ketonemia is the blood measurement. A rise in fasting ketones is usually expected — but "expected" is a statement about context, not a clinical clearance.
+
+Pages:
+
+- `/fasting-ketones/` — why ketones rise during fasting (glycogen depletion, falling insulin, hepatic ketogenesis, BHB as fuel), what changes as a fast continues (direction, no numeric thresholds), what fasting ketones are not (nutritional ketosis / ketoacidosis / one interchangeable number), where context still matters (diabetes, SGLT2 and other medications, illness, pregnancy, prolonged fasting), interpretation limits, audience notes, source IDs, AI-readable summary
+
+Discipline:
+
+- Sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-STRYER-BIOCHEM) — textbook fasting physiology, none invented, and deliberately no numeric thresholds or fasting-duration advice. States plainly that fasting ketosis is not ketoacidosis and never declares an individual reading safe. `WebPage` JSON-LD with no medical claim.
+
+Patches and reconciliation (route count 34 to 35; clusters 7 to 8):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — new **Metabolic & Clinical Context** cluster (Cluster H) added, seeded with `/fasting-ketones/`; JSON-LD ItemList extended to 35; route counts and cluster count updated
+- `/ketonemia-vs-ketosis/` and `/ontology/fasting-signal/` — Related Pages and AI summary linked pages updated with `/fasting-ketones/`
+- `/sources/` and `data/source-registry.json` — pages-using-source updated for the two cited sources
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to thirty-five, cluster count to eight
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

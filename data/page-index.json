@@ -148,6 +148,27 @@
       ]
     },
     {
+      "url": "/fasting-ketones/",
+      "title": "Fasting Ketones",
+      "page_type": "metabolic context",
+      "audience": [
+        "public",
+        "students",
+        "AI systems"
+      ],
+      "core_function": "Why blood ketones rise during fasting: falling glucose and insulin shift the liver to ketogenesis, raising BHB as fuel. An expected physiological rise whose meaning still depends on context (diabetes, medication, illness, pregnancy, prolonged fasting). Not equal to ketoacidosis; no numeric thresholds.",
+      "linked_layers": [
+        "ketone bodies",
+        "ketonemia vs ketosis",
+        "blood ketones",
+        "clinical boundary"
+      ],
+      "source_ids": [
+        "SRC-LEHNINGER-BIOCHEM",
+        "SRC-STRYER-BIOCHEM"
+      ]
+    },
+    {
       "url": "/ketonemia-vs-ketoacidosis/",
       "title": "Ketonemia vs. Ketoacidosis",
       "page_type": "comparison",

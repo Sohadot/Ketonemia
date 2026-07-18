@@ -39,7 +39,7 @@ Layer Stack in [SYSTEM_ARCHITECTURE.md](SYSTEM_ARCHITECTURE.md).
 | Protocol | A deterministic classification protocol | [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) |
 | Engine / Tool | A working reference tool that runs the protocol | `/classification-engine/` |
 | Interface | An interface that embodies signal → context → boundary | [INTERFACE_THESIS.md](INTERFACE_THESIS.md), `/signal-map/`, `/architecture/` |
-| Reference layer | Thirty-four citable, archivable routes | See Reference Footprint |
+| Reference layer | Thirty-five citable, archivable routes | See Reference Footprint |
 | Governance | Quality gates, decision log, clinical boundary, source discipline, published editorial trust standard | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), [EDITORIAL_TRUST_STANDARD.md](EDITORIAL_TRUST_STANDARD.md), `/trust/` |
 | Machine layer | Agent-readable index, JSON reference pack, deep JSON-LD | See Machine Footprint |
 | Monetization | A governed product catalog and inquiry surface | [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md), `/briefs/` |
@@ -61,7 +61,7 @@ line is now backed by a concrete, shipped artifact.
 | The clinical boundary system | [CLINICAL_BOUNDARY.md](CLINICAL_BOUNDARY.md), enforced on every page |
 | The interface thesis | `/signal-map/` and `/architecture/` |
 | The working tool | `/classification-engine/` running the classification protocol |
-| The internal link graph | Thirty-four routes, no orphans, mapped on `/architecture/` |
+| The internal link graph | Thirty-five routes, no orphans, mapped on `/architecture/` |
 | The neutral trust layer | Source discipline + the clinical boundary, documented, gated, and published as an editorial trust standard (`/trust/`) |
 | The AI-readable reference surface | `/llms.txt`, `/data/*.json`, `/reference-pack/`, and deep JSON-LD |
 
@@ -93,9 +93,9 @@ site. If a claim is prohibited on the pages, it is prohibited in the data.
 
 ## Reference Footprint
 
-- **Thirty-four routes** across seven clusters: Definition & Comparison, Measurement &
+- **Thirty-five routes** across eight clusters: Definition & Comparison, Measurement &
   Laboratory, Audience Layers, Boundary & Sources, Machine & Agent Layer, Ontology
-  (KSO Classes), and Strategic.
+  (KSO Classes), Strategic, and Metabolic & Clinical Context.
 - A complete internal link graph with **no orphan pages**, rendered on `/architecture/`.
 - A **source registry of seven cited institutional, regulatory, and academic sources**,
   with every medical claim traced to a source ID.

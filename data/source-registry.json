@@ -58,7 +58,7 @@
       "access_date": "2026-07-03",
       "claim_supported": "Ketone-body metabolism, hepatic ketogenesis, BHB/AcAc interconversion, and the biochemical convention that BHB is a ketone body.",
       "population_context": "Academic biochemistry; student and laboratory reference.",
-      "pages_using_source": ["/beta-hydroxybutyrate/", "/blood-ketones/", "/laboratory-context/", "/student-guide/", "/research/", "/urine-ketones/", "/breath-ketones/", "/ketone-bodies/"]
+      "pages_using_source": ["/beta-hydroxybutyrate/", "/blood-ketones/", "/laboratory-context/", "/student-guide/", "/research/", "/urine-ketones/", "/breath-ketones/", "/ketone-bodies/", "/fasting-ketones/"]
     },
     {
       "id": "SRC-STRYER-BIOCHEM",
@@ -69,7 +69,7 @@
       "access_date": "2026-07-03",
       "claim_supported": "Ketone-body synthesis, utilization, and BHB as an energy substrate in peripheral tissues.",
       "population_context": "Academic biochemistry; student reference.",
-      "pages_using_source": ["/beta-hydroxybutyrate/", "/student-guide/", "/research/", "/ketone-bodies/"]
+      "pages_using_source": ["/beta-hydroxybutyrate/", "/student-guide/", "/research/", "/ketone-bodies/", "/fasting-ketones/"]
     },
     {
       "id": "SRC-LAB-BHB-ACAC",

@@ -242,6 +242,20 @@ Reconciliation moved the route count from 33 to 34: architecture/index.html and 
 
 No DEC was created because the page applied existing content-production, source-discipline, and clinical-boundary rules without changing a governance rule.
 
+### Content — Fasting Ketones (new Cluster H)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/fasting-ketones/`, the first page of a new Route Map cluster, **Metabolic & Clinical Context** (Cluster H) — the public-facing, SEO-facing counterparts to the KSO context classes. The page explains why blood ketones rise during fasting: as glucose and insulin fall, the liver shifts to hepatic ketogenesis and BHB rises as an alternative fuel for the brain and peripheral tissues. Governing distinction: fasting is a driver of the signal, ketonemia is the blood measurement; a fasting rise is usually expected, but "expected" describes context, not a clinical clearance. It distinguishes fasting ketones from nutritional ketosis, from ketoacidosis, and from a single interchangeable number, and it preserves the boundary for people with diabetes, on medications such as SGLT2 inhibitors, who are ill or pregnant, or undertaking prolonged fasts.
+
+Every claim is sourced from the existing registry only — SRC-LEHNINGER-BIOCHEM (hepatic ketogenesis and the fasting metabolic shift) and SRC-STRYER-BIOCHEM (ketone bodies as an energy substrate during fasting and starvation). No new or invented source, deliberately no numeric thresholds and no fasting-duration advice; fasting ketosis is never equated with ketoacidosis and no individual reading is declared safe. Structured data is WebPage with no medical claim.
+
+This is the first cluster added since F5 introduced the Ontology cluster (Cluster G). Reconciliation moved the route count from 34 to 35 and the cluster count from seven to eight: architecture/index.html and SYSTEM_ARCHITECTURE.md (new Cluster H "Metabolic & Clinical Context" seeded with `/fasting-ketones/`, JSON-LD ItemList extended to 35, route and cluster counts, Route clusters list), ketonemia-vs-ketosis and ontology/fasting-signal (Related Pages and AI summary linked pages), sources/index.html and data/source-registry.json (pages-using-source for the two cited sources), acquisition/index.html and ACQUISITION_DOSSIER.md (thirty-four → thirty-five routes, seven → eight clusters), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page and the new cluster applied existing content-production, source-discipline, internal-linking, and clinical-boundary rules without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.

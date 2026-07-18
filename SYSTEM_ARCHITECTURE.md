@@ -34,7 +34,7 @@ be kept in sync with it.
 | 4 | Standard | What is good / complete / trusted? | [KETONEMIA_STATE_STANDARD.md](KETONEMIA_STATE_STANDARD.md), `/data/kss-standard.json` | Owned |
 | 5 | Protocol | How is context classified under governance? | [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) | Owned (F2) |
 | 6 | Engine / Tool | How does the system produce operational output? | [`/classification-engine/`](classification-engine/index.html), `/data/classification-rules.json` | Owned (F4) |
-| 7 | Reference layer | Is the site archivable, searchable, citable? | 34 canonical routes (see Route Map) | Owned |
+| 7 | Reference layer | Is the site archivable, searchable, citable? | 35 canonical routes (see Route Map) | Owned |
 | 8 | Governance | How are stability, versioning, and trust ensured? | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), [EDITORIAL_TRUST_STANDARD.md](EDITORIAL_TRUST_STANDARD.md), `/trust/`, policy docs | Owned (deepened F8) |
 | 9 | Interface thesis | Does the interface embody the asset's meaning? | [INTERFACE_THESIS.md](INTERFACE_THESIS.md), `/signal-map/`, `/architecture/` | Owned |
 | 10 | Monetization | How does it earn without lowering trust? | [MONETIZATION_BOUNDARY.md](MONETIZATION_BOUNDARY.md), [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md), `/briefs/` | Owned (F6) |
@@ -98,6 +98,12 @@ this graph so every route is reachable from one page.
 - `/ontology/laboratory-measurement-signal/` — Laboratory Measurement Signal
 - `/ontology/dka-concern-boundary/` — DKA Concern Boundary (boundary class)
 - `/ontology/emergency-referral-boundary/` — Emergency Referral Boundary (boundary class)
+
+### Cluster H — Metabolic & Clinical Context
+Public-facing pages for the metabolic and clinical drivers of a blood ketone signal —
+the SEO-facing counterparts to the KSO context classes. A seeded cluster designed to
+grow (fasting, and future nutritional, exercise, medication/SGLT2, and diabetes context pages).
+- `/fasting-ketones/` — why blood ketones rise during fasting, and where context still governs meaning
 
 ---
 
