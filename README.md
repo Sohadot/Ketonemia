@@ -541,6 +541,30 @@ Patches and reconciliation (route count 38 to 39; cluster count stays eight):
 
 Status: complete.
 
+## Content — Exercise & Blood Ketones (Cluster H)
+
+The fifth Metabolic & Clinical Context page, completing the metabolic side of the cluster (fasting, nutritional, exercise) alongside the clinical side (SGLT2, diabetes). `/exercise-ketones/` covers the exercise/performance context while explicitly refusing the performance-claim and supplement hype that dominates the topic.
+
+Governing distinction: Exercise is a context that shapes the signal, not a claim about it. A ketone reading around exercise reflects fuel metabolism at that moment — it is not evidence of benefit, not a performance metric, and not a diagnosis.
+
+Pages:
+
+- `/exercise-ketones/` — why exercise changes ketone levels (fuel-substrate shift under lower carbohydrate availability), why a reading is context-dependent (timing, feeding state, intensity/duration, diet background), what exercise ketones are not (no performance claim, not a fitness score), a neutral note on ketone supplements (no endorsement), measurement across the triad (no thresholds), limits, audience notes, source IDs, and an AI-readable summary
+
+Discipline:
+
+- The topic's main risks are performance hype and supplement promotion, so the page makes no claim that ketones improve or impair performance (in either direction), treats no reading as a performance metric, and explicitly does not assess or endorse exogenous ketone products. No numeric thresholds; diabetes/medication context is preserved where present. Sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-STRYER-BIOCHEM). `WebPage` JSON-LD with no medical claim.
+
+Patches and reconciliation (route count 39 to 40; cluster count stays eight):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — `/exercise-ketones/` added to the Metabolic & Clinical Context cluster (now five pages); JSON-LD ItemList extended to 40; counts and the source-of-truth rule updated to 40
+- `/fasting-ketones/`, `/nutritional-ketosis/`, and `/ontology/exercise-performance-signal/` — Related Pages and AI summaries linked to `/exercise-ketones/`
+- `/sources/` and `data/source-registry.json` — pages-using-source updated for the two cited sources
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to forty
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered (all four route lists kept identical at 40)
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

@@ -34,7 +34,7 @@ be kept in sync with it.
 | 4 | Standard | What is good / complete / trusted? | [KETONEMIA_STATE_STANDARD.md](KETONEMIA_STATE_STANDARD.md), `/data/kss-standard.json` | Owned |
 | 5 | Protocol | How is context classified under governance? | [CLASSIFICATION_PROTOCOL.md](CLASSIFICATION_PROTOCOL.md) | Owned (F2) |
 | 6 | Engine / Tool | How does the system produce operational output? | [`/classification-engine/`](classification-engine/index.html), `/data/classification-rules.json` | Owned (F4) |
-| 7 | Reference layer | Is the site archivable, searchable, citable? | 39 canonical routes (see Route Map) | Owned |
+| 7 | Reference layer | Is the site archivable, searchable, citable? | 40 canonical routes (see Route Map) | Owned |
 | 8 | Governance | How are stability, versioning, and trust ensured? | [QUALITY_GATE.md](QUALITY_GATE.md), [DECISION_LOG.md](DECISION_LOG.md), [EDITORIAL_TRUST_STANDARD.md](EDITORIAL_TRUST_STANDARD.md), `/trust/`, policy docs | Owned (deepened F8) |
 | 9 | Interface thesis | Does the interface embody the asset's meaning? | [INTERFACE_THESIS.md](INTERFACE_THESIS.md), `/signal-map/`, `/architecture/` | Owned |
 | 10 | Monetization | How does it earn without lowering trust? | [MONETIZATION_BOUNDARY.md](MONETIZATION_BOUNDARY.md), [MONETIZATION_SPEC.md](MONETIZATION_SPEC.md), `/briefs/` | Owned (F6) |
@@ -107,6 +107,7 @@ grow (fasting, and future nutritional, exercise, medication/SGLT2, and diabetes 
 - `/nutritional-ketosis/` — the diet-driven metabolic state, distinct from the measurement and from ketoacidosis
 - `/sglt2-context/` — how SGLT2-inhibitor medication changes ketone-signal interpretation (regulator-warned ketoacidosis risk without markedly high glucose)
 - `/diabetes-ketone-context/` — how the diabetes context changes ketone-signal interpretation (insulin status, the DKA pathway); reference only, routes assessment to care
+- `/exercise-ketones/` — how exercise shifts fuel use and ketone levels; a context that shapes the signal, with no performance claim
 
 ---
 
@@ -139,7 +140,7 @@ bound by the protocol (F2), which is bound by the ontology (layer 3) and standar
 
 ## Architecture Rule
 
-- The site has **39 canonical routes** (every page except the home page `/`). This count is the single source of truth and must agree across `/architecture/` (layer stack, JSON-LD `hasPart` ItemList, AI summary), `/sitemap.xml`, `/data/page-index.json`, `/data/reference-pack.json` (`canonical_pages`), and the acquisition surfaces. Every canonical route — including `/architecture/` itself and `/reference-pack/` — appears in all of these lists; none is silently excluded.
+- The site has **40 canonical routes** (every page except the home page `/`). This count is the single source of truth and must agree across `/architecture/` (layer stack, JSON-LD `hasPart` ItemList, AI summary), `/sitemap.xml`, `/data/page-index.json`, `/data/reference-pack.json` (`canonical_pages`), and the acquisition surfaces. Every canonical route — including `/architecture/` itself and `/reference-pack/` — appears in all of these lists; none is silently excluded.
 - No route may exist without a declared layer and a place in a Route Map cluster.
 - Every new page must name its layer, join a cluster, and link back into the graph
   (this extends [INTERNAL_LINKING_POLICY.md](INTERNAL_LINKING_POLICY.md)).

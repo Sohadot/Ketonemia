@@ -314,6 +314,20 @@ Reconciliation moved the route count from 38 to 39 (cluster count unchanged at e
 
 No DEC was created because the page applied existing source-discipline, clinical-boundary, and context-scoping rules without changing a governance rule. The scope decision (diabetes ketone context, not generic diabetes) is an application of the existing doctrine that every page must serve the category thesis, recorded here for traceability.
 
+### Content — Exercise & Blood Ketones (Cluster H)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/exercise-ketones/`, the fifth Metabolic & Clinical Context page, completing the metabolic side of the cluster (fasting, nutritional, exercise) alongside the clinical side (SGLT2, diabetes). It explains why exercise changes blood ketone levels — lower carbohydrate availability during prolonged, fasted, or low-carbohydrate exercise shifts fuel toward fat and raises ketogenesis, and BHB can itself serve as fuel — and why a reading around exercise is context-dependent (timing, feeding state, intensity, duration, diet background). Governing distinction: exercise is a context that shapes the signal, not a claim about it; a reading reflects fuel metabolism, not benefit, a performance metric, or a diagnosis.
+
+The topic's principal risks are performance hype and supplement promotion, so the page makes no claim that ketones improve or impair performance (in either direction), treats no reading as a performance or fitness metric, and includes an explicit note that exogenous ketone products are a separate topic which the page does not assess or endorse. It attaches no numeric thresholds and preserves diabetes/medication context (linking to /sglt2-context/) where relevant. This mirrors the guardrail already stated on the exercise/performance KSO class. Sources are reused from the registry only — SRC-LEHNINGER-BIOCHEM and SRC-STRYER-BIOCHEM. Structured data is WebPage with no medical claim.
+
+Reconciliation moved the route count from 39 to 40 (cluster count unchanged at eight), keeping all four route lists identical per the source-of-truth rule: architecture/index.html and SYSTEM_ARCHITECTURE.md (`/exercise-ketones/` added to Cluster H, now five pages; JSON-LD ItemList extended to 40; counts and the source-of-truth line updated to 40), fasting-ketones, nutritional-ketosis, and ontology/exercise-performance-signal (Related Pages and AI summaries), sources/index.html and data/source-registry.json (pages-using-source for the two cited sources), acquisition/index.html and ACQUISITION_DOSSIER.md (thirty-nine → forty), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page applied existing content-production, source-discipline, and clinical-boundary rules without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.
