@@ -472,6 +472,24 @@ Prohibited: new or invented sources; numeric or clinical thresholds; presenting 
 
 Status: complete.
 
+## Content — Fasting Ketones (Cluster H)
+
+Goal: open the Metabolic & Clinical Context cluster — the public/SEO-facing counterparts to the KSO context classes — with the highest-intent context page, fasting.
+
+Governing distinction: Fasting is a driver of the signal; ketonemia is the blood measurement. A fasting rise is usually expected, but "expected" is about context, not clinical clearance.
+
+Deliverables:
+
+- `/fasting-ketones/` — fasting physiology and ketogenesis, what changes as a fast continues (direction, no thresholds), distinctions from nutritional ketosis / ketoacidosis / a single number, where context still matters, limits, audience notes, source IDs, AI-readable summary;
+- new Route Map cluster **Metabolic & Clinical Context** (Cluster H), seeded to grow (future: nutritional, exercise, medication/SGLT2, diabetes context pages);
+- sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-STRYER-BIOCHEM); no thresholds, no fasting-duration advice; fasting ketosis never equated with ketoacidosis;
+- wire-in and reconciliation 34 → 35 routes, 7 → 8 clusters: `/architecture/` + `SYSTEM_ARCHITECTURE.md`, `/ketonemia-vs-ketosis/`, `/ontology/fasting-signal/`, `/sources/` + `data/source-registry.json`, `/acquisition/` + `ACQUISITION_DOSSIER.md`, homepage, `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml`;
+- README and DECISION_LOG entries.
+
+Prohibited: new or invented sources; numeric thresholds; recommending a fast; declaring an individual reading safe; equating fasting ketosis with ketoacidosis.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
