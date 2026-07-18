@@ -38,6 +38,7 @@ advice, and it does not diagnose, triage, or treat.
 - /ketonemia-vs-ketosis/: Blood measurement state vs. metabolic state.
 - /fasting-ketones/: Why blood ketones rise during fasting - falling glucose/insulin shift the liver to ketogenesis; an expected physiological rise whose meaning still depends on context (diabetes, medication, illness). Not equal to ketoacidosis.
 - /nutritional-ketosis/: The diet-driven metabolic state of sustained ketone-body elevation from a low-carbohydrate diet; related to but not identical with ketonemia (the measurement), distinct from fasting ketosis and from ketoacidosis. No numeric thresholds, no diet advice, no health claims.
+- /sglt2-context/: How SGLT2-inhibitor medication changes ketone-signal interpretation - regulator-warned ketoacidosis risk that can occur without markedly elevated glucose, so normal glucose does not by itself rule out concern. Reference only; no medication advice, dosing, diagnosis, triage, or thresholds.
 - /ketonemia-vs-ketoacidosis/: Signal vs. clinical syndrome, clinically bounded.
 - /laboratory-context/: Measurement methods, substrates, and report-language limits.
 - /student-guide/: Terminology ladder and study pathway across disciplines.

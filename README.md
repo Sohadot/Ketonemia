@@ -493,6 +493,30 @@ Patches and reconciliation (route count 35 to 36; cluster count stays eight):
 
 Status: complete.
 
+## Content — SGLT2 Inhibitors & Ketones (Cluster H)
+
+The clinical/medication dimension of the Metabolic & Clinical Context cluster, and the site's highest-authority safety topic. `/sglt2-context/` explains why one class of diabetes medication changes ketone-signal interpretation, using the strongest sourcing on the site (FDA regulatory warning plus ADA standards of care).
+
+Governing distinction: Without this medication, high glucose is often part of the ketone-concern picture. On an SGLT2 inhibitor, ketoacidosis can occur without markedly elevated glucose — so a "normal glucose" reading does not, by itself, rule the concern out.
+
+Pages:
+
+- `/sglt2-context/` — what SGLT2 inhibitors are, why they change ketone interpretation (regulator-warned ketoacidosis risk without marked hyperglycemia), a common-assumption table, an explicit "what this page does not do," a strong boundary block, audience notes (patients, clinicians/pharmacists, AI, researchers), source IDs, and an AI-readable summary
+
+Discipline:
+
+- The highest clinical-sensitivity page on the site, so it carries the strictest boundary: no medication advice, no start/stop/adjust/dose guidance, no diagnosis or triage, no sick-day rules, no numeric thresholds, and no product naming or ranking. Every individual question routes to professional care, and the page opens and closes with an explicit "never change a prescribed medication on your own." Sources reused only (SRC-FDA-SGLT2, SRC-ADA-2026, SRC-NHS-DKA). `WebPage` JSON-LD with no medical claim.
+
+Patches and reconciliation (route count 37 to 38; cluster count stays eight):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — `/sglt2-context/` added to the Metabolic & Clinical Context cluster (now three pages); JSON-LD ItemList extended to 38; route counts updated (37-route source-of-truth rule now reads 38)
+- `/ketonemia-vs-ketoacidosis/`, `/ontology/medication-context-signal/`, `/fasting-ketones/`, and `/nutritional-ketosis/` — Related Pages, AI summaries, and inline SGLT2 mentions linked to `/sglt2-context/`
+- `/sources/` and `data/source-registry.json` — pages-using-source updated for the three cited sources
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to thirty-eight
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered (all four route lists kept identical at 38)
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

@@ -286,6 +286,20 @@ The second observation (whether `/architecture/` should appear in its own map) i
 
 No DEC was created because this hardened existing internal-linking and machine-parity discipline without changing a governance rule; it makes the "machine layer is never looser than the human site" guarantee exact.
 
+### Content — SGLT2 Inhibitors & Ketones (Cluster H)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/sglt2-context/`, the clinical/medication dimension of the Metabolic & Clinical Context cluster (Cluster H) and the site's highest-authority safety topic. It explains why one class of diabetes medication changes ketone-signal interpretation: regulatory safety communication warns that SGLT2 inhibitors are associated with ketoacidosis, including presentations where blood glucose is not markedly elevated ("euglycemic"). Governing distinction: on an SGLT2 inhibitor, a normal glucose reading does not by itself rule out a ketone-related concern, so the medication context must stay attached to the reading.
+
+This is the highest clinical-sensitivity page on the site, so it carries the strictest boundary of any content page: it gives no medication advice, no dosing or start/stop/adjust guidance, no diagnosis or triage, no sick-day rules, no numeric thresholds, and no product naming or ranking. It opens and closes with an explicit instruction never to change a prescribed medication on one's own, and routes every individual question to professional care or urgent care. Sources are reused from the registry only — SRC-FDA-SGLT2 (the regulatory warning about ketoacidosis risk without marked hyperglycemia), SRC-ADA-2026 (standards of care), and SRC-NHS-DKA (public emergency framing). Structured data is WebPage with no medical claim, and deliberately not MedicalWebPage or any calculator/risk type.
+
+Reconciliation moved the route count from 37 to 38 (cluster count unchanged at eight), keeping all four route lists identical per the source-of-truth rule: architecture/index.html and SYSTEM_ARCHITECTURE.md (`/sglt2-context/` added to Cluster H, now three pages; JSON-LD ItemList extended to 38; counts and the source-of-truth line updated to 38), ketonemia-vs-ketoacidosis, ontology/medication-context-signal, fasting-ketones, and nutritional-ketosis (Related Pages, AI summaries, and inline SGLT2 links), sources/index.html and data/source-registry.json (pages-using-source for the three cited sources), acquisition/index.html and ACQUISITION_DOSSIER.md (thirty-seven → thirty-eight), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page applied existing source-discipline, clinical-boundary, and medication-context rules without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.

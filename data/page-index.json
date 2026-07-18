@@ -191,6 +191,28 @@
       ]
     },
     {
+      "url": "/sglt2-context/",
+      "title": "SGLT2 Inhibitors and Blood Ketones",
+      "page_type": "medication context",
+      "audience": [
+        "clinical",
+        "public",
+        "AI systems"
+      ],
+      "core_function": "How SGLT2-inhibitor medication changes the interpretation of a blood ketone signal: regulator-warned ketoacidosis risk that can occur without markedly elevated glucose, so normal glucose does not by itself rule out concern. Reference only; no medication advice, dosing, diagnosis, triage, or numeric thresholds.",
+      "linked_layers": [
+        "ketonemia vs ketoacidosis",
+        "medication-context signal",
+        "clinical boundary",
+        "clinical literacy"
+      ],
+      "source_ids": [
+        "SRC-FDA-SGLT2",
+        "SRC-ADA-2026",
+        "SRC-NHS-DKA"
+      ]
+    },
+    {
       "url": "/ketonemia-vs-ketoacidosis/",
       "title": "Ketonemia vs. Ketoacidosis",
       "page_type": "comparison",
