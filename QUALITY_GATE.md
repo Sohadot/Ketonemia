@@ -2,6 +2,16 @@
 
 No page, tool, brief, or monetization surface should ship unless it passes this gate.
 
+The structural gates below — route-count reconciliation across the four route
+lists, the source-of-truth count, JSON and inline JSON-LD validity, the
+Classification Engine inline-rules byte-identity, the internal link graph, and
+FAQ machine-human parity — are enforced automatically by
+`scripts/verify_governance.py`, which runs on every push and pull request via
+the **Verify governance invariants** workflow (`.github/workflows/verify-governance.yml`).
+A regression fails the check and blocks the merge. The judgment gates (doctrine,
+clinical boundary, source discipline, and the content-production gates) remain a
+human responsibility; the machine check cannot read intent, only structure.
+
 ## Doctrine Gate
 
 - Does it strengthen Blood Ketone Intelligence Infrastructure?

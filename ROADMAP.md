@@ -633,6 +633,24 @@ Prohibited: numeric thresholds; safe/danger verdicts; diagnosis, triage, or indi
 
 Status: complete.
 
+## Governance — Automated Invariant Enforcement (CI)
+
+Goal: make the structural governance discipline self-enforcing rather than manual, so drift cannot merge. Convert the checks run by hand on every change into an automated, merge-blocking gate.
+
+Governing distinction: A governed asset is only as durable as its weakest manual step; encoding the invariants makes the moat outlast any single reviewer's diligence.
+
+Deliverables:
+
+- `scripts/verify_governance.py` — asserts the four route lists are identical, the source-of-truth count agrees, every route is in `llms.txt`, all `data/*.json` and inline JSON-LD are valid, the engine inline rules equal the data copy, no internal link is broken, and each FAQPage `acceptedAnswer` matches its visible answer; exits non-zero with precise diagnostics;
+- `.github/workflows/verify-governance.yml` — runs the script on every push and pull request to `main`;
+- `QUALITY_GATE.md` and `SYSTEM_ARCHITECTURE.md` updated to record which gates are machine-enforced;
+- verified in both directions (passes clean; fails on an injected route drift);
+- README and DECISION_LOG entries.
+
+Prohibited: weakening any invariant to make the check pass; adding a canonical route (this is tooling, not a page); letting the human judgment gates (doctrine, boundary, source, content) be treated as covered by the machine check.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.
