@@ -418,6 +418,20 @@ Reconciliation moved the route count from 42 to 43 (cluster count unchanged at e
 
 No DEC was created because the page applied existing content-production, machine-parity, and clinical-boundary rules without changing a governance rule.
 
+### Governance — Automated invariant enforcement (CI)
+
+Date: 2026-07-18
+
+Status: complete.
+
+Converted the structural governance discipline from a manual routine into an automated, merge-blocking check. Every reconciliation and machine-parity invariant that had been verified by hand on each change is now encoded in `scripts/verify_governance.py` and run on every push and pull request by a new GitHub Actions workflow, `.github/workflows/verify-governance.yml` (**Verify governance invariants**).
+
+The script asserts: (1) the four route lists — `sitemap.xml`, `data/page-index.json`, `data/reference-pack.json` `canonical_pages`, and the `/architecture/` JSON-LD `hasPart` ItemList — are the identical set of canonical routes; (2) that count equals the source-of-truth number declared in `SYSTEM_ARCHITECTURE.md`; (3) every canonical route is discoverable in `llms.txt`; (4) every `data/*.json` file is valid JSON; (5) every inline JSON-LD block on every page is valid; (6) the Classification Engine's inline rules are equal to `data/classification-rules.json`; (7) no internal link is broken; (8) each FAQPage `acceptedAnswer` is byte-identical to its visible answer. It exits non-zero with precise diagnostics on any violation.
+
+Verified both directions: the script passes on the current tree, and a negative test (removing one route from `sitemap.xml` only) makes it fail with an exact diff and a source-of-truth mismatch. `QUALITY_GATE.md` now records which gates are machine-enforced versus which remain human judgment (doctrine, clinical boundary, source discipline, content production — the machine cannot read intent, only structure); `SYSTEM_ARCHITECTURE.md`'s Architecture Rule notes the automated enforcement.
+
+No DEC was created because this operationalized existing reconciliation and machine-parity rules — it changed how they are enforced, not what they require. It adds no canonical route (the script is tooling, not a page), so the route count stays 43.
+
 ## Open Decisions
 
 - None at this time.

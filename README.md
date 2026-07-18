@@ -652,6 +652,27 @@ Patches and reconciliation (route count 42 to 43; cluster count stays eight):
 
 Status: complete.
 
+## Governance — Automated Invariant Enforcement (CI)
+
+The structural governance discipline is now self-enforcing. Every reconciliation and machine-parity invariant that was verified by hand on each change is encoded in `scripts/verify_governance.py` and run on every push and pull request by `.github/workflows/verify-governance.yml` (**Verify governance invariants**). A regression fails the check and blocks the merge.
+
+Governing distinction: A governed asset is only as durable as its weakest manual step. Encoding the invariants makes the moat outlast any single reviewer's diligence.
+
+What the check asserts:
+
+- the four route lists (`sitemap.xml`, `data/page-index.json`, `data/reference-pack.json` `canonical_pages`, and the `/architecture/` JSON-LD `hasPart` ItemList) are the identical set of canonical routes;
+- that count equals the source-of-truth number in `SYSTEM_ARCHITECTURE.md`, and every route appears in `llms.txt`;
+- every `data/*.json` file and every inline JSON-LD block is valid;
+- the Classification Engine's inline rules equal `data/classification-rules.json`;
+- no internal link is broken;
+- each FAQPage `acceptedAnswer` is byte-identical to its visible answer.
+
+Discipline:
+
+- Verified in both directions — passes clean on the current tree; a negative test (dropping one route from `sitemap.xml`) makes it fail with an exact diff and a source-of-truth mismatch. `QUALITY_GATE.md` records which gates are machine-enforced and which remain human judgment (doctrine, clinical boundary, source discipline, content production — the machine reads structure, not intent). No canonical route added; the count stays 43.
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

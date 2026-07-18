@@ -143,7 +143,7 @@ bound by the protocol (F2), which is bound by the ontology (layer 3) and standar
 
 ## Architecture Rule
 
-- The site has **43 canonical routes** (every page except the home page `/`). This count is the single source of truth and must agree across `/architecture/` (layer stack, JSON-LD `hasPart` ItemList, AI summary), `/sitemap.xml`, `/data/page-index.json`, `/data/reference-pack.json` (`canonical_pages`), and the acquisition surfaces. Every canonical route — including `/architecture/` itself and `/reference-pack/` — appears in all of these lists; none is silently excluded.
+- The site has **43 canonical routes** (every page except the home page `/`). This count is the single source of truth and must agree across `/architecture/` (layer stack, JSON-LD `hasPart` ItemList, AI summary), `/sitemap.xml`, `/data/page-index.json`, `/data/reference-pack.json` (`canonical_pages`), and the acquisition surfaces. Every canonical route — including `/architecture/` itself and `/reference-pack/` — appears in all of these lists; none is silently excluded. This reconciliation, the source-of-truth count in this document, and the machine-parity invariants are enforced automatically on every push and pull request by `scripts/verify_governance.py` (the **Verify governance invariants** workflow); a drift fails the check and blocks the merge.
 - No route may exist without a declared layer and a place in a Route Map cluster.
 - Every new page must name its layer, join a cluster, and link back into the graph
   (this extends [INTERNAL_LINKING_POLICY.md](INTERNAL_LINKING_POLICY.md)).
