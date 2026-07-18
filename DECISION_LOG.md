@@ -464,6 +464,35 @@ Assets were generated locally (Pillow) to avoid any external dependency: `assets
 
 No DEC was created because this applied the existing machine-human parity, honesty, and clinical-boundary rules to the link-preview and discovery layer without changing a governance rule.
 
+### Strategy — Phase transition: Build → Activation
+
+Date: 2026-07-18
+
+Status: in progress (owner-gated).
+
+Declared the end of the primary build phase and the start of activation. The reference
+asset is complete (43 routes, all layers), self-governing (12 CI invariants), and hardened
+(edges + discovery layer). Further internal page-building has reached diminishing returns;
+remaining value is in the asset being discovered, cited, contacted, and — on the owner's
+terms — licensed or acquired. This operationalizes the already-owned buyer-logic (layer 11)
+and monetization (layer 10) layers; it does not add a new layer.
+
+Recorded the plan in [ACTIVATION_PLAYBOOK.md](ACTIVATION_PLAYBOOK.md): three value paths in
+dependency order (authority/citation → licensing → acquisition), a division of labor between
+the AI PM (build, govern, prepare materials, draft outreach, design measurement) and the human
+owner (merge, accounts, real inboxes, sending outreach, holding conversations), and four phases —
+A: indexing & discovery (Search Console, Bing, sitemap, card verification), B: contact-channel
+verification, C: honest adoption/citation measurement, D: owner-gated licensing & acquisition.
+Guardrails carried forward verbatim: no fabricated adoption, neutral (never a funnel), clinical
+boundary intact, machine-human parity preserved.
+
+No DEC was created because this changes what the project *does next*, not any governance rule;
+the playbook is a strategy document, not a route, so the route count stays 43.
+
 ## Open Decisions
+
+- **Activation inputs (owner):** confirm the site is live and Deploy is green; confirm Search
+  Console access; confirm `inquiry@`/`corrections@` deliver; state available resources. Each
+  unblocks a step in `ACTIVATION_PLAYBOOK.md`.
 
 - None at this time.
