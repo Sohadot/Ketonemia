@@ -432,6 +432,22 @@ Verified both directions: the script passes on the current tree, and a negative 
 
 No DEC was created because this operationalized existing reconciliation and machine-parity rules — it changed how they are enforced, not what they require. It adds no canonical route (the script is tooling, not a page), so the route count stays 43.
 
+### Technical — Edge hardening (custom 404 and security.txt)
+
+Date: 2026-07-18
+
+Status: complete.
+
+Closed two edge gaps that sat outside the reference-page discipline but affected the asset's technical and security posture.
+
+1. **Custom `404.html`** — previously an unknown URL on the custom domain fell through to GitHub Pages' generic 404, which drops the governed header, footer, disclaimer, and every navigation path. The new page uses the site's own layout and routes a lost visitor back to eight governed entry points (reference map, definition, glossary, FAQ, signal map, architecture, clinical boundary, sources). It is marked `noindex, follow` so it is never itself indexed but its links are still crawlable. It is not a canonical route and stays out of the four route lists.
+
+2. **`.well-known/security.txt`** (RFC 9116) — the asset had no published security contact. The file points to the already-live, already-published `corrections@ketonemia.com` channel (so it invents no new mailbox), with `Expires`, `Canonical`, `Policy` (→ `/trust/`), and `Preferred-Languages: en, ar`. It explicitly notes that the site is static with no accounts, forms, or backend, so the realistic surface is content and domain integrity. A dedicated `security@` alias is an optional future upgrade the owner can route in Cloudflare; until then the existing monitored channel avoids publishing a contact that could bounce.
+
+The verification script (`scripts/verify_governance.py`) gained a tenth invariant asserting both files exist and that `security.txt` carries Contact/Expires/Canonical, so neither can be silently deleted; `QUALITY_GATE.md` records the new Edge Hardening Gate. Neither file is a page, so the route count stays 43 and the four route lists are unchanged.
+
+No DEC was created because this applied existing layout, boundary, and honesty rules to the site's technical edges without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.

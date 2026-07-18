@@ -165,6 +165,13 @@ human responsibility; the machine check cannot read intent, only structure.
 - Are answers definitional and free of any new unsourced claim (they defer to already-sourced canonical pages), so the FAQ introduces no source not already governed?
 - Is `/faq/` registered in all four route lists (sitemap, page-index, reference-pack canonical_pages, architecture ItemList) and reconciled in the route count, with reciprocal links from at least `/definition/` and `/glossary/`?
 
+## Edge Hardening Gate
+
+- Is there a custom `404.html` at the repository root that uses the site's layout and routes a lost visitor back to governed entry points, marked `noindex, follow`?
+- Does the 404 page introduce no clinical content, verdict, or claim, and are all its links resolvable?
+- Is `.well-known/security.txt` present and RFC 9116-shaped (Contact, Expires, Canonical at minimum), pointing only to a monitored channel the asset already publishes (no invented mailbox that could bounce)?
+- Do the edge files stay out of the four route lists (they are not canonical pages) so the route count is unaffected?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?
