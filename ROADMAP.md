@@ -598,6 +598,24 @@ Prohibited: changing boundary or prohibited-inference language; softening sensit
 
 Status: complete.
 
+## Content — Illness & Blood Ketones (Cluster H)
+
+Goal: complete public-page coverage of every non-boundary KSO context class by building the illness / metabolic-stress context page, and extend the engine loop to it.
+
+Governing distinction: Illness can drive the signal by a stress response, not a nutritional choice; ketone presence during illness is still not a diagnosis.
+
+Deliverables:
+
+- `/illness-ketones/` — illness ketogenesis (reduced intake + stress response, vomiting/dehydration), context-changes-the-reading table, held boundary, "what this page does not do," emergency-aware boundary block, audience notes, source IDs, AI-readable summary;
+- engine loop: KSO-5 `context_page` + `RULE-ILLNESS-ALONE` `context_reference_page` = `/illness-ketones/` (matching), inline byte-identical;
+- highest-sensitivity boundary: no diagnosis/triage, no safety verdicts, no sick-day rules, no thresholds, no treatment advice; sources reused only (LEHNINGER, NHS, DUK);
+- wire-in and reconciliation 41 → 42 (cluster count stays eight; four route lists identical): architecture + SYSTEM_ARCHITECTURE, signal-map, ontology/illness-stress-signal, sources + source-registry, acquisition + ACQUISITION_DOSSIER, homepage, reference-pack.json, page-index.json, llms.txt, sitemap.xml;
+- README and DECISION_LOG entries.
+
+Prohibited: sick-day rules; thresholds; diagnosis/triage; treatment advice; changing the constant boundary statement or sensitive-combination handling.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

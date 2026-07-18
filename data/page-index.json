@@ -273,6 +273,28 @@
       ]
     },
     {
+      "url": "/illness-ketones/",
+      "title": "Illness, Metabolic Stress, and Blood Ketones",
+      "page_type": "clinical context",
+      "audience": [
+        "clinical",
+        "public",
+        "AI systems"
+      ],
+      "core_function": "How illness and metabolic stress change interpretation of a blood ketone signal: infection, fever, vomiting, dehydration, and reduced intake can raise ketones independently of diet, and interpretation is highest-stakes in diabetes. Reference only; no diagnosis, thresholds, sick-day rules, or treatment advice.",
+      "linked_layers": [
+        "diabetes ketone context",
+        "fasting ketones",
+        "ketonemia vs ketoacidosis",
+        "clinical boundary"
+      ],
+      "source_ids": [
+        "SRC-LEHNINGER-BIOCHEM",
+        "SRC-NHS-DKA",
+        "SRC-DUK-DKA"
+      ]
+    },
+    {
       "url": "/ketonemia-vs-ketoacidosis/",
       "title": "Ketonemia vs. Ketoacidosis",
       "page_type": "comparison",

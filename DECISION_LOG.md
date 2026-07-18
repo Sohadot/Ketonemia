@@ -386,6 +386,22 @@ Closed four gaps identified in review of the engine loop-closure, completing and
 
 Discipline: `data/classification-rules.json` and the inline copy in `/classification-engine/` were edited together and re-verified byte-identical; the constant boundary statement and sensitive-combination handling (diabetes+illness, diabetes+medication route to DKA Concern Boundary, no context reference) are unchanged; no KSO/KSS label or source was invented (KSS uses the existing "K2 — Nutritional / Fasting Range"); no route was added (four route lists stay 41). The engine page prose and AI-summary Outputs line were updated to describe the current template. No DEC was created because this operationalized the existing protocol and machine-parity discipline without changing a governance rule.
 
+### Content — Illness & Blood Ketones (completes context-class coverage)
+
+Date: 2026-07-17
+
+Status: complete.
+
+Added `/illness-ketones/`, completing the Metabolic & Clinical Context cluster and public-page coverage of every non-boundary KSO context class. The review that closed the engine-context gaps also surfaced that the illness / stress class (KSO-5) was the last selectable engine context and citable ontology class without its own public reference page. This page closes that and extends the engine loop to it. It explains why illness raises ketones (reduced intake layered on stress-driven ketogenesis, plus vomiting and dehydration), why the context changes the reading (highest-stakes in diabetes), and holds the boundary that ketone presence during illness is still not a diagnosis and does not by itself mean ketoacidosis.
+
+Engine loop extension: `data/kso-ontology.json` KSO-5 now carries `context_page: /illness-ketones/`, and `RULE-ILLNESS-ALONE` in `data/classification-rules.json` (and the byte-identical inline copy) now carries `context_reference_page: /illness-ketones/`, matching the ontology. Six of sixteen rules now carry a context reference; the two sensitive combinations still route to the DKA Concern Boundary class with no context reference, unchanged.
+
+Highest-sensitivity handling: no diagnosis or triage, no safety/danger verdicts, no sick-day rules (defers to the reader's own care team), no thresholds, no treatment advice; the page routes worrying symptoms to urgent care and frames DKA as a medical emergency. Sources reused only — SRC-LEHNINGER-BIOCHEM, SRC-NHS-DKA, SRC-DUK-DKA. Structured data is WebPage with no medical claim.
+
+Reconciliation moved the route count from 41 to 42 (cluster count unchanged at eight), keeping all four route lists identical: architecture/index.html and SYSTEM_ARCHITECTURE.md (Cluster H now six pages; JSON-LD ItemList extended to 42; counts and source-of-truth line updated to 42), signal-map (Context 4 and AI summary context-reference list) and ontology/illness-stress-signal (Related Pages), sources/index.html and data/source-registry.json (pages-using-source for LEHNINGER, NHS, DUK; registry date advanced), acquisition/index.html and ACQUISITION_DOSSIER.md (forty-one → forty-two), homepage card grid, data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page and the engine-loop extension applied existing content-production, source-discipline, machine-parity, and clinical-boundary rules without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.

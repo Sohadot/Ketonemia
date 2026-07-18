@@ -604,6 +604,30 @@ Discipline: both `data/classification-rules.json` and the inline copy in `/class
 
 Status: complete.
 
+## Content — Illness & Blood Ketones (Cluster H; completes context-class coverage)
+
+`/illness-ketones/` completes the Metabolic & Clinical Context cluster and, with it, public-page coverage of every non-boundary KSO context class. The illness / stress class (KSO-5) was the last selectable engine context and citable ontology class without its own public reference page; this closes that gap and extends the engine loop to it.
+
+Governing distinction: Illness is a context that can drive the signal by a stress response, not a nutritional choice. Ketone presence during illness is still not a diagnosis — but why the ketones are there, and what to do, is a question for a clinician.
+
+Pages:
+
+- `/illness-ketones/` — why illness raises ketones (reduced intake layered on stress-driven ketogenesis; vomiting/dehydration), why the context changes the reading (highest-stakes in diabetes), the held boundary that ketone presence is still not a diagnosis, an explicit "what this page does not do," an emergency-aware boundary block, audience notes, source IDs, and an AI-readable summary
+
+Engine loop extension:
+
+- `data/kso-ontology.json` — KSO-5 gains `context_page: /illness-ketones/`; `data/classification-rules.json` (and the byte-identical inline copy) — `RULE-ILLNESS-ALONE` gains `context_reference_page: /illness-ketones/`, matching the ontology. Six of the sixteen rules now carry a context reference; the sensitive combinations still route to the boundary class with none.
+
+Discipline:
+
+- Highest-sensitivity handling (illness + diabetes = sick-day/DKA territory): no diagnosis or triage, no safety/danger verdicts, no sick-day rules (defers to the reader's own care team), no thresholds, no treatment advice. Sources reused only (SRC-LEHNINGER-BIOCHEM, SRC-NHS-DKA, SRC-DUK-DKA). `WebPage` JSON-LD with no medical claim.
+
+Patches and reconciliation (route count 41 to 42; cluster count stays eight):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md`; `/signal-map/` (Context 4) and `/ontology/illness-stress-signal/`; `/sources/` and `data/source-registry.json`; `/acquisition/` and `ACQUISITION_DOSSIER.md`; homepage; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — all four route lists kept identical at 42.
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:
