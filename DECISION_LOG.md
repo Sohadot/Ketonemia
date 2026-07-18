@@ -402,6 +402,22 @@ Reconciliation moved the route count from 41 to 42 (cluster count unchanged at e
 
 No DEC was created because the page and the engine-loop extension applied existing content-production, source-discipline, machine-parity, and clinical-boundary rules without changing a governance rule.
 
+### Content — Blood Ketone FAQ (governed answer layer, GEO surface)
+
+Date: 2026-07-18
+
+Status: complete.
+
+Added `/faq/`, a governed FAQ answer layer in Cluster A (Definition & Comparison). It captures the highest-intent natural-language questions people and AI assistants actually ask about blood ketones and answers each one within the clinical boundary, routing every answer to the canonical page that governs it. This is a generative-engine-optimization (GEO) surface: it makes the site's governed distinctions directly retrievable as question-answer pairs, both for humans and for AI systems that prefer FAQPage structured data.
+
+Eight questions, each boundary-safe: what ketonemia is; ketonemia vs. ketoacidosis; whether having ketones means something is wrong; what a "normal or safe" level is (the answer refuses a universal number and routes the reader to a clinician — no threshold, no verdict); what raises blood ketones; whether blood/urine/breath ketones are the same; ketonemia vs. ketosis; and whether the site can interpret an individual reading (no). Each visible answer links to its canonical page (`/definition/`, `/ketonemia-vs-ketoacidosis/`, `/ketone-bodies/`, `/clinical-boundary/`, `/signal-map/`, `/ketonemia-vs-ketosis/`).
+
+Machine-human parity: the page carries `FAQPage` JSON-LD whose `acceptedAnswer` text is byte-identical to the visible answer text (verified programmatically), so the structured data is never looser than — nor divergent from — the human-facing content, satisfying both the editorial trust standard and FAQPage rich-result eligibility. No new source was cited (answers are definitional and defer to already-sourced canonical pages); no numeric threshold, safe/danger verdict, diagnosis, triage, or individual interpretation appears in any answer.
+
+Reconciliation moved the route count from 42 to 43 (cluster count unchanged at eight), keeping all four route lists identical (verified: sitemap, page-index, reference-pack canonical_pages, and the architecture JSON-LD ItemList all 43): architecture/index.html and SYSTEM_ARCHITECTURE.md (Cluster A now carries `/faq/`; JSON-LD ItemList extended to 43; counts and source-of-truth line updated to 43), homepage card, acquisition/index.html and ACQUISITION_DOSSIER.md (forty-two → forty-three), reciprocal links added from `/definition/` and `/glossary/` (Related Pages grid and AI-summary linked-pages row), data/reference-pack.json, data/page-index.json, llms.txt, and sitemap.xml.
+
+No DEC was created because the page applied existing content-production, machine-parity, and clinical-boundary rules without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.

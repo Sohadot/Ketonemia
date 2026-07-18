@@ -31,6 +31,7 @@ advice, and it does not diagnose, triage, or treat.
 
 - /definition/: Definition of ketonemia as a blood measurement state.
 - /glossary/: Searchable governed glossary of blood ketone terminology (client-side filter over glossary.json); each term with its measurement layer, non-equivalents, clinical-boundary note, and canonical reference. Definitions only - not diagnoses.
+- /faq/: Governed, boundary-safe answers to the most common blood ketone questions (what ketonemia is, ketonemia vs. ketoacidosis, whether ketones mean something is wrong, whether there is a universal safe number, what raises ketones, whether blood/urine/breath are the same, ketonemia vs. ketosis). FAQPage structured data. Answers route to canonical pages; no diagnosis, no personal-value interpretation, no safe/danger verdict.
 - /blood-ketones/: What a blood ketone measurement represents and its limits.
 - /ketone-bodies/: The three ketone bodies (beta-hydroxybutyrate, acetoacetate, acetone) - biochemistry, how the liver makes them, how they interconvert, and which measurement layer reads each (blood/urine/breath).
 - /beta-hydroxybutyrate/: BHB, the primary blood ketone body.

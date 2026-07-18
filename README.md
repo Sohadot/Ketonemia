@@ -628,6 +628,30 @@ Patches and reconciliation (route count 41 to 42; cluster count stays eight):
 
 Status: complete.
 
+## Content — Blood Ketone FAQ (Cluster A; GEO answer layer)
+
+`/faq/` is a governed FAQ answer layer that captures the highest-intent natural-language questions about blood ketones and answers each one within the clinical boundary, routing every answer to the canonical page that governs it. It is a generative-engine-optimization (GEO) surface: it exposes the site's governed distinctions as question-answer pairs for both people and AI systems, and it carries `FAQPage` structured data.
+
+Governing distinction: An answer is a routing decision, not a verdict. The FAQ names the governed distinction and hands off to the page that owns it; it never assigns a "normal" or "safe" number.
+
+Pages:
+
+- `/faq/` — eight boundary-safe Q&A: what ketonemia is; ketonemia vs. ketoacidosis; whether having ketones means something is wrong; what a "normal or safe" level is (answered by declining a universal number and routing to a clinician); what raises blood ketones; whether blood/urine/breath ketones are the same; ketonemia vs. ketosis; and whether the site can interpret an individual reading. Each visible answer links to its canonical page, followed by Related Pages and an AI-readable summary.
+
+Machine-human parity:
+
+- The `FAQPage` JSON-LD `acceptedAnswer` text is byte-identical to the visible answer text (verified programmatically), so the structured data is never looser than, nor divergent from, the human-facing content — satisfying the editorial trust standard and FAQPage rich-result eligibility.
+
+Discipline:
+
+- No numeric threshold, safe/danger verdict, diagnosis, triage, or individual interpretation in any answer. No new source cited — answers are definitional and defer to already-sourced canonical pages. Reciprocal links added from `/definition/` and `/glossary/`.
+
+Patches and reconciliation (route count 42 to 43; cluster count stays eight):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md`; homepage; `/acquisition/` and `ACQUISITION_DOSSIER.md`; `/definition/` and `/glossary/` (Related Pages + AI summary); `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — all four route lists kept identical at 43.
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:
