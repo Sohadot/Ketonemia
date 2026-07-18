@@ -517,6 +517,30 @@ Patches and reconciliation (route count 37 to 38; cluster count stays eight):
 
 Status: complete.
 
+## Content — Diabetes & Blood Ketones (Cluster H)
+
+The fourth Metabolic & Clinical Context page, and a deliberate scope decision: **not** a generic diabetes page, but a page about the *diabetes ketone context* — how the diabetes context changes interpretation of a blood ketone signal. This keeps the depth aligned with the asset's name (blood ketone intelligence) rather than drifting into a general diabetes site.
+
+Governing distinction: Diabetes does not change what a ketone is; it changes what a ketone signal may mean. Ketone presence is still not a diagnosis, but in diabetes the context raises the stakes of interpretation and timing — which is exactly why it belongs with a professional.
+
+Pages:
+
+- `/diabetes-ketone-context/` — why diabetes changes the reading (insulin insufficiency, the DKA pathway), a type 1 / type 2 note, what compounds the context (illness, missed insulin, SGLT2 inhibitors), the held boundary that ketone presence is still not a diagnosis, an explicit "what this page does not do," a strong emergency-aware boundary block, audience notes, source IDs, and an AI-readable summary
+
+Discipline:
+
+- The most clinically sensitive context on the site (acute DKA risk), so it carries the strictest boundary: no diagnosis or triage, no safety/danger verdicts, no ketone or glucose thresholds, no sick-day rules (it defers to the reader's own diabetes care team), and no insulin/medication advice. It routes warning symptoms to the reader's sick-day plan and urgent care, and states plainly that DKA is a medical emergency. Sources reused only (SRC-ADA-2026, SRC-DUK-DKA, SRC-NHS-DKA). `WebPage` JSON-LD with no medical claim.
+
+Patches and reconciliation (route count 38 to 39; cluster count stays eight):
+
+- `/architecture/` and `SYSTEM_ARCHITECTURE.md` — `/diabetes-ketone-context/` added to the Metabolic & Clinical Context cluster (now four pages); JSON-LD ItemList extended to 39; counts and the source-of-truth rule updated to 39
+- `/ketonemia-vs-ketoacidosis/`, `/sglt2-context/`, and `/ontology/diabetes-associated-signal/` — Related Pages and AI summaries linked to `/diabetes-ketone-context/`
+- `/sources/` and `data/source-registry.json` — pages-using-source updated for the three cited sources (ADA, Diabetes UK, NHS)
+- `/acquisition/` and `ACQUISITION_DOSSIER.md` — route counts reconciled to thirty-nine
+- `/` — homepage card grid; `data/reference-pack.json`, `data/page-index.json`, `llms.txt`, `sitemap.xml` — new route registered (all four route lists kept identical at 39)
+
+Status: complete.
+
 ## Methodology
 
 The asset is developed through this sequence:

@@ -14,7 +14,7 @@
       "access_date": "2026-07-03",
       "claim_supported": "DKA and diabetes-care claims require clinical assessment, laboratory context, and current professional guidance.",
       "population_context": "People with diabetes; clinical and educational diabetes care contexts.",
-      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/research/", "/sglt2-context/"]
+      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/research/", "/sglt2-context/", "/diabetes-ketone-context/"]
     },
     {
       "id": "SRC-DUK-DKA",
@@ -25,7 +25,7 @@
       "access_date": "2026-07-03",
       "claim_supported": "DKA is a serious diabetes complication involving ketones and blood acidity; public readers should seek care pathways rather than self-diagnose.",
       "population_context": "Public diabetes education; UK context.",
-      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/student-guide/"]
+      "pages_using_source": ["/ketonemia-vs-ketoacidosis/", "/clinical-boundary/", "/student-guide/", "/diabetes-ketone-context/"]
     },
     {
       "id": "SRC-NHS-DKA",
@@ -36,7 +36,7 @@
       "access_date": "2026-07-03",
       "claim_supported": "Public ketone guidance depends on diabetes context, symptoms, and measurement type; numeric thresholds must remain tied to source context.",
       "population_context": "Public readers and people with diabetes; UK emergency-care context.",
-      "pages_using_source": ["/clinical-boundary/", "/ketonemia-vs-ketoacidosis/", "/urine-ketones/", "/nutritional-ketosis/", "/sglt2-context/"]
+      "pages_using_source": ["/clinical-boundary/", "/ketonemia-vs-ketoacidosis/", "/urine-ketones/", "/nutritional-ketosis/", "/sglt2-context/", "/diabetes-ketone-context/"]
     },
     {
       "id": "SRC-FDA-SGLT2",
