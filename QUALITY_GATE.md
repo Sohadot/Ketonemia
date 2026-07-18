@@ -137,6 +137,15 @@ No page, tool, brief, or monetization surface should ship unless it passes this 
 - Does each term link to its canonical reference page, and do all those links resolve?
 - Is `/glossary/` registered in all four route lists (sitemap, page-index, reference-pack canonical_pages, architecture ItemList) and reconciled in the route count?
 
+## Context Reference Linkage Gate
+
+- Is `context_reference_page` a dedicated output field on every classification-engine rule whose KSO class has a dedicated public context page (fasting, nutritional, exercise, diabetes, medication), and absent on rules whose class has none (baseline, illness/stress, laboratory-only, and the boundary classes)?
+- Does each rule's `context_reference_page` exactly match the `context_page` recorded for the same KSO class in `data/kso-ontology.json`, and does every such route resolve?
+- Is `context_reference_page` kept out of the same rule's `canonical_references` (no duplication), and does the engine JS render it as its own labelled "Context reference" link?
+- Is the exercise context selectable in the engine form and matched by a deterministic rule that routes to the Exercise / Performance Signal class and `/exercise-ketones/`?
+- Does `CLASSIFICATION_PROTOCOL.md` list the context reference as a formal governed output?
+- Does the inline rules JSON remain byte-identical to `data/classification-rules.json` after the change, and do all rules still validate as JSON?
+
 ## Content Production Gate
 
 - What reference idea does this page prove?

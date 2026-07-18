@@ -581,6 +581,23 @@ Prohibited: accounts, tracking, personalization, saved state; personal or numeri
 
 Status: complete.
 
+## Engine Upgrade — Context Reference as a Formal Output
+
+Goal: close four review-identified gaps so the engine ↔ context-page link is complete and formalized.
+
+Deliverables:
+
+- exercise context added to the engine form + `RULE-EXERCISE-BLOOD` (rule set 15 → 16), routing to Exercise / Performance Signal and `/exercise-ketones/`;
+- `context_reference_page` promoted to a dedicated output field (mirroring `kso_class_page`) on the five context rules, removed from `canonical_references`, and rendered by the engine JS as its own "Context reference" link;
+- `CLASSIFICATION_PROTOCOL.md` lists the context reference as a formal governed output that must match `data/kso-ontology.json` `context_page`;
+- `QUALITY_GATE.md` Context Reference Linkage Gate;
+- inline rules JSON re-verified byte-identical; no boundary/label/source change; sensitive combinations unchanged; no new route (lists stay 41);
+- engine prose and AI summary updated; README and DECISION_LOG entries.
+
+Prohibited: changing boundary or prohibited-inference language; softening sensitive-combination handling; duplicating the context page in canonical_references; any inline/standalone JSON drift.
+
+Status: complete.
+
 ## Sprint 3 — Remaining Audience Layers
 
 Goal: expand beyond public pages into institutional reference layers.

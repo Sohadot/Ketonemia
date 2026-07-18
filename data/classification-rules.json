@@ -1,7 +1,7 @@
 {
   "name": "Ketonemia Classification Rules",
   "version": "1.0",
-  "updated": "2026-07-09",
+  "updated": "2026-07-17",
   "source_document": "CLASSIFICATION_PROTOCOL.md",
   "purpose": "Deterministic, reviewable rule set that runs the Classification Protocol. Maps structured context inputs to governed reference output: KSO class, KSS language, boundary statement, canonical references, and source requirements.",
   "governing_rule": "This engine classifies the interpretive frame around a blood ketone signal. It does not classify a person, diagnose a condition, triage urgency, recommend treatment, or declare safety or danger.",
@@ -181,6 +181,7 @@
         "context_classification": "Diabetes-associated context.",
         "kso_class": "Diabetes-Associated Signal",
         "kso_class_page": "/ontology/diabetes-associated-signal/",
+        "context_reference_page": "/diabetes-ketone-context/",
         "kss_language": "K3 — Elevated Context Signal",
         "measurement_note": "Diabetes context changes how a ketone signal is approached, but this classification does not evaluate an individual's status.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -192,7 +193,6 @@
           "Do not provide monitoring or treatment instructions."
         ],
         "canonical_references": [
-          "/diabetes-ketone-context/",
           "/ketonemia-vs-ketoacidosis/",
           "/clinical-boundary/",
           "/sources/"
@@ -243,6 +243,7 @@
         "context_classification": "Medication context.",
         "kso_class": "Medication-Context Signal",
         "kso_class_page": "/ontology/medication-context-signal/",
+        "context_reference_page": "/sglt2-context/",
         "kss_language": "K4 — Clinical Concern Boundary",
         "measurement_note": "Certain medications, including SGLT2 inhibitors, are documented to affect ketone signals, sometimes without markedly elevated glucose.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -254,7 +255,6 @@
           "Do not assess individual medication risk or provide dosing guidance."
         ],
         "canonical_references": [
-          "/sglt2-context/",
           "/ketonemia-vs-ketoacidosis/",
           "/clinical-boundary/",
           "/sources/"
@@ -277,6 +277,7 @@
         "context_classification": "Fasting context.",
         "kso_class": "Fasting Signal",
         "kso_class_page": "/ontology/fasting-signal/",
+        "context_reference_page": "/fasting-ketones/",
         "kss_language": "K2 — Nutritional / Fasting Range",
         "measurement_note": "Ketone elevation during fasting reflects a well-documented metabolic fuel-switching process and rises predictably with fasting duration.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -288,7 +289,6 @@
           "Do not diagnose DKA."
         ],
         "canonical_references": [
-          "/fasting-ketones/",
           "/blood-ketones/",
           "/ketonemia-vs-ketosis/",
           "/clinical-boundary/"
@@ -309,6 +309,7 @@
         "context_classification": "Nutritional ketosis context.",
         "kso_class": "Nutritional Signal",
         "kso_class_page": "/ontology/nutritional-signal/",
+        "context_reference_page": "/nutritional-ketosis/",
         "kss_language": "K2 — Nutritional / Fasting Range",
         "measurement_note": "Sustained ketone elevation is expected in intentional low-carbohydrate or ketogenic nutrition contexts.",
         "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
@@ -320,9 +321,40 @@
           "Do not diagnose DKA."
         ],
         "canonical_references": [
-          "/nutritional-ketosis/",
           "/ketonemia-vs-ketosis/",
           "/blood-ketones/",
+          "/clinical-boundary/"
+        ],
+        "source_ids": []
+      }
+    },
+    {
+      "id": "RULE-EXERCISE-BLOOD",
+      "when": {
+        "measurement_type": "blood",
+        "measured_compound": "BHB",
+        "context": [
+          "exercise"
+        ]
+      },
+      "output": {
+        "context_classification": "Exercise / performance context.",
+        "kso_class": "Exercise / Performance Signal",
+        "kso_class_page": "/ontology/exercise-performance-signal/",
+        "context_reference_page": "/exercise-ketones/",
+        "kss_language": "K2 — Nutritional / Fasting Range",
+        "measurement_note": "Ketone levels can shift with prolonged, fasted, or low-carbohydrate exercise as fuel use moves toward fat; a reading is a context-dependent snapshot.",
+        "boundary_statement": "This classification does not diagnose, triage, declare safety, or interpret an individual reading.",
+        "allowed_language": [
+          "Exercise-related ketone change reflects a documented shift in fuel metabolism."
+        ],
+        "prohibited_inference": [
+          "Do not infer that ketones improve or impair performance.",
+          "Do not treat a reading as a performance metric or diagnose DKA."
+        ],
+        "canonical_references": [
+          "/blood-ketones/",
+          "/ketone-bodies/",
           "/clinical-boundary/"
         ],
         "source_ids": []

@@ -166,6 +166,14 @@
     } else {
       appendRow(output, "KSO class", textNode(o.kso_class));
     }
+    if (o.context_reference_page) {
+      var ctxWrap = el("div");
+      var ctxLink = document.createElement("a");
+      ctxLink.href = o.context_reference_page;
+      ctxLink.textContent = o.context_reference_page;
+      ctxWrap.appendChild(ctxLink);
+      appendRow(output, "Context reference", ctxWrap);
+    }
     appendRow(output, "KSS language", textNode(o.kss_language));
     appendRow(output, "Measurement note", textNode(o.measurement_note));
     appendRow(output, "Boundary statement", textNode(o.boundary_statement), rowClass || "eor-boundary");

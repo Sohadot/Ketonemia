@@ -368,6 +368,24 @@ Reconciliation moved the route count from 40 to 41 (cluster count unchanged at e
 
 No DEC was created because the tool operationalized existing content-production, machine-parity, privacy, and clinical-boundary rules without changing a governance rule; the retention-model decision (reference gravity, no engagement loops) is an application of the existing doctrine and monetization/interface boundaries, recorded here for traceability.
 
+### Engine Upgrade — Context Reference as a Formal Output
+
+Date: 2026-07-17
+
+Status: complete.
+
+Closed four gaps identified in review of the engine loop-closure, completing and formalizing the engine ↔ context-page link.
+
+1. Exercise context in the engine: added an "Exercise / performance" option to the engine form and a deterministic rule `RULE-EXERCISE-BLOOD` (blood + BHB + exercise context) routing to the Exercise / Performance Signal class, `/ontology/exercise-performance-signal/`, and `/exercise-ketones/`. The rule set is now 16 rules (was 15). The rule mirrors the fasting/nutritional pattern; the boundary and prohibited-inference language is the constant boundary text plus the exercise-specific "do not infer that ketones improve or impair performance."
+
+2. `context_reference_page` as a dedicated field: previously the context page had been added into `canonical_references`. It is now its own output field (mirroring `kso_class_page`) on the five context rules — RULE-FASTING-BLOOD, RULE-NUTRITIONAL-BLOOD, RULE-EXERCISE-BLOOD, RULE-DIABETES-ALONE, RULE-MEDICATION-ALONE — and removed from those rules' `canonical_references` to avoid duplication. The engine JS renders it as its own "Context reference" link, immediately after the KSO class row. Each rule's `context_reference_page` matches the `context_page` for the same KSO class in `data/kso-ontology.json`.
+
+3. CLASSIFICATION_PROTOCOL.md now lists the context reference as a formal governed output, states it must match the ontology `context_page`, notes that classes without a public page (baseline, illness/stress, boundary classes) omit it, and adds it to the output chain (Observed context → KSO class → context reference → KSS zone language → boundary statement → canonical references → source requirements).
+
+4. QUALITY_GATE.md gained a Context Reference Linkage Gate verifying the field's presence/absence rules, the ontology match, no duplication in canonical_references, the exercise rule, the protocol listing, and inline byte-identity.
+
+Discipline: `data/classification-rules.json` and the inline copy in `/classification-engine/` were edited together and re-verified byte-identical; the constant boundary statement and sensitive-combination handling (diabetes+illness, diabetes+medication route to DKA Concern Boundary, no context reference) are unchanged; no KSO/KSS label or source was invented (KSS uses the existing "K2 — Nutritional / Fasting Range"); no route was added (four route lists stay 41). The engine page prose and AI-summary Outputs line were updated to describe the current template. No DEC was created because this operationalized the existing protocol and machine-parity discipline without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.
