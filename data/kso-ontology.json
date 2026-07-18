@@ -2,7 +2,7 @@
   "name": "Ketonemia Signal Ontology",
   "abbreviation": "KSO",
   "version": "1.0",
-  "updated": "2026-07-08",
+  "updated": "2026-07-17",
   "source_document": "KETONEMIA_SIGNAL_ONTOLOGY.md",
   "purpose": "Classify blood ketone signals by context, not by diagnosis. A language system for education, reference pages, interface outputs, AI summaries, and future licensing.",
   "ontology_rule": "KSO may classify context. It must not declare a patient state.",
@@ -18,6 +18,7 @@
     {
       "id": "KSO-2",
       "ontology_page": "/ontology/nutritional-signal/",
+      "context_page": "/nutritional-ketosis/",
       "name": "Nutritional Signal",
       "description": "A signal associated with low-carbohydrate nutrition or nutritional ketosis contexts.",
       "boundary": "Must not imply that a reading is beneficial or safe without context.",
@@ -26,6 +27,7 @@
     {
       "id": "KSO-3",
       "ontology_page": "/ontology/fasting-signal/",
+      "context_page": "/fasting-ketones/",
       "name": "Fasting Signal",
       "description": "A signal associated with fasting or reduced intake.",
       "boundary": "Must distinguish educational physiology from individualized medical interpretation."
@@ -33,6 +35,7 @@
     {
       "id": "KSO-4",
       "ontology_page": "/ontology/exercise-performance-signal/",
+      "context_page": "/exercise-ketones/",
       "name": "Exercise / Performance Signal",
       "description": "A signal associated with exercise, endurance, energy metabolism, or performance contexts.",
       "boundary": "Must avoid performance claims unless sourced."
@@ -48,6 +51,7 @@
     {
       "id": "KSO-6",
       "ontology_page": "/ontology/diabetes-associated-signal/",
+      "context_page": "/diabetes-ketone-context/",
       "name": "Diabetes-Associated Signal",
       "description": "A signal associated with diabetes, insulin deficiency risk, glucose status, or diabetes safety education.",
       "boundary": "Must not diagnose DKA or tell users they are safe.",
@@ -61,6 +65,7 @@
     {
       "id": "KSO-7",
       "ontology_page": "/ontology/medication-context-signal/",
+      "context_page": "/sglt2-context/",
       "name": "Medication-Context Signal",
       "description": "A signal associated with medication contexts, especially where ketone risk language may differ from glucose-only assumptions.",
       "boundary": "Requires careful sourcing and boundary language.",

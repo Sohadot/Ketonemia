@@ -328,6 +328,20 @@ Reconciliation moved the route count from 39 to 40 (cluster count unchanged at e
 
 No DEC was created because the page applied existing content-production, source-discipline, and clinical-boundary rules without changing a governance rule.
 
+### Deepening — Context Loop-Closure (structure ↔ context pages)
+
+Date: 2026-07-17
+
+Status: complete.
+
+A vertical deepening rather than a new page: after the Metabolic & Clinical Context cluster reached five deep public context pages (fasting, nutritional, exercise, diabetes, SGLT2), the abstract context structures did not yet point to them. This change closes that loop on both the machine and human sides, so the ontology and the conceptual interface route into the deep public reference, and the machine layer's context representation is no looser than the human layer.
+
+Machine side — `data/kso-ontology.json`: added a `context_page` field (mirroring the existing `ontology_page` pattern) to the five KSO classes that now have a dedicated public context page — KSO-2 Nutritional → `/nutritional-ketosis/`, KSO-3 Fasting → `/fasting-ketones/`, KSO-4 Exercise/Performance → `/exercise-ketones/`, KSO-6 Diabetes-Associated → `/diabetes-ketone-context/`, KSO-7 Medication-Context → `/sglt2-context/`. Laboratory Measurement (KSO-8) already carries `/laboratory-context/` as its `canonical_page`, and the boundary/baseline/illness classes have no dedicated public context page, so they were left unchanged. The file `updated` date advanced to 2026-07-17.
+
+Human side — `/signal-map/`: enriched the "See also" links on the matching context-dimension cards (Fasting → fasting + exercise ketones; Nutritional Ketosis → nutritional-ketosis; Diabetes → diabetes-ketone-context; Medication → sglt2-context) and added a "Context reference pages" row to the AI-readable summary listing all five.
+
+No routes were added, so the four-route-list source of truth is unchanged at 40 and remains byte-identical. No new source was introduced and no boundary changed. No DEC was created because this operationalized existing internal-linking and machine-parity discipline without changing a governance rule.
+
 ## Open Decisions
 
 - None at this time.
